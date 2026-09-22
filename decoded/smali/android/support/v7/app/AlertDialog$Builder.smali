@@ -797,11 +797,17 @@
 .end method
 
 .method public show()Landroid/support/v7/app/AlertDialog;
-    .locals 1
+    .locals 2
 
     invoke-virtual {p0}, Landroid/support/v7/app/AlertDialog$Builder;->create()Landroid/support/v7/app/AlertDialog;
 
     move-result-object v0
+
+    new-instance v1, Lcom/lge/media/musicflow/DialogDarkFix;
+
+    invoke-direct {v1}, Lcom/lge/media/musicflow/DialogDarkFix;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/support/v7/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     invoke-virtual {v0}, Landroid/support/v7/app/AlertDialog;->show()V
 

@@ -1857,5 +1857,11 @@
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:backgroundDimAmount">0.65</item>
         <item name="android:windowAnimationStyle">@style/Animation.Design.BottomSheetDialog</item>
+        <item name="alertDialogTheme">@style/AlertDialog.Multiroom</item>
+        <item name="android:alertDialogTheme">@style/AlertDialog.Multiroom</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/bg_base</item>
+        <item name="colorAccent">@color/multiroom_highlight</item>
     </style>
 </resources>

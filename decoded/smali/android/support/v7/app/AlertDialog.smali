@@ -131,6 +131,20 @@
     return-object v0
 .end method
 
+.method public show()V
+    .locals 1
+
+    new-instance v0, Lcom/lge/media/musicflow/DialogDarkFix;
+
+    invoke-direct {v0}, Lcom/lge/media/musicflow/DialogDarkFix;-><init>()V
+
+    invoke-virtual {p0, v0}, Landroid/support/v7/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+
+    invoke-super {p0}, Landroid/support/v7/app/AlertDialog;->show()V
+
+    return-void
+.end method
+
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 

@@ -11,13 +11,7 @@
 
 
 # static fields
-.field private static final DRW_ART:I = 0x7f08009a
-
 .field private static final DRW_MUTE:I = 0x7f080517
-
-.field private static final DRW_PAUSE:I = 0x7f08051c
-
-.field private static final DRW_PLAY:I = 0x7f08051b
 
 .field private static final DRW_VOLUME:I = 0x7f080516
 
@@ -26,18 +20,6 @@
 .field private static final ID_MUTE:I = 0x7f090384
 
 .field private static final ID_NAME:I = 0x7f09037a
-
-.field private static final ID_NEXT:I = 0x7f09038a
-
-.field private static final ID_NP_ART:I = 0x7f09037e
-
-.field private static final ID_NP_ARTIST:I = 0x7f090380
-
-.field private static final ID_NP_TITLE:I = 0x7f09037f
-
-.field private static final ID_PLAY:I = 0x7f090389
-
-.field private static final ID_PREV:I = 0x7f090388
 
 .field private static final ID_SEEK:I = 0x7f090386
 
@@ -54,8 +36,6 @@
 .field private static final NAV_SPEAKER_LIST:I = 0x7f0901d5
 
 .field private static final STR_CONNECTED:I = 0x7f100493
-
-.field private static final STR_NOTHING:I = 0x7f100491
 
 .field private static final STYLE_SHEET:I = 0x7f1101c3
 
@@ -340,18 +320,6 @@
 
     invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
 
-    const v2, 0x7f090388
-
-    invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
-
-    const v2, 0x7f090389
-
-    invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
-
-    const v2, 0x7f09038a
-
-    invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
-
     const v2, 0x7f09038d
 
     invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
@@ -449,67 +417,6 @@
     const/4 v0, 0x0
 
     return v0
-.end method
-
-.method private mediaKey(I)V
-    .registers 8
-
-    iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mRoot:Landroid/view/View;
-
-    if-nez v0, :cond_go
-
-    return-void
-
-    :cond_go
-    :try_start_0
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    new-instance v2, Landroid/content/Intent;
-
-    const-string v3, "android.intent.action.MEDIA_BUTTON"
-
-    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-class v3, Lcom/lge/media/musicflow/MediaActionReceiver;
-
-    invoke-virtual {v2, v1, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
-
-    const-string v3, "android.intent.extra.KEY_EVENT"
-
-    new-instance v4, Landroid/view/KeyEvent;
-
-    const/4 v5, 0x0
-
-    invoke-direct {v4, v5, p1}, Landroid/view/KeyEvent;-><init>(II)V
-
-    invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v1
-
-    :goto_0
-    iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mRoot:Landroid/view/View;
-
-    if-eqz v0, :cond_end
-
-    const-wide/16 v1, 0xfa
-
-    invoke-virtual {v0, p0, v1, v2}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    :cond_end
-    return-void
 .end method
 
 .method private nudge(I)V
@@ -636,57 +543,6 @@
     return-object v0
 .end method
 
-.method private setArt(Landroid/widget/ImageView;Lcom/lge/media/musicflow/c/h;)V
-    .registers 6
-
-    const v0, 0x7f08009a
-
-    const/4 v1, 0x0
-
-    :try_start_0
-    invoke-virtual {p2}, Lcom/lge/media/musicflow/c/h;->c()Landroid/net/Uri;
-
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v2
-
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_def
-
-    :try_start_1
-    invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageURI(Landroid/net/Uri;)V
-
-    invoke-virtual {p1}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
-
-    move-result-object v2
-
-    if-nez v2, :cond_ok
-
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    :cond_ok
-    nop
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    return-void
-
-    :catchall_1
-    move-exception v2
-
-    :cond_def
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    return-void
-.end method
-
 .method private setText(ILjava/lang/String;)V
     .registers 5
 
@@ -769,90 +625,6 @@
     return-object v0
 .end method
 
-.method private subtitleOf(Lcom/lge/media/musicflow/c/h;)Ljava/lang/String;
-    .registers 6
-
-    const/4 v0, 0x0
-
-    :try_start_0
-    invoke-virtual {p1}, Lcom/lge/media/musicflow/c/h;->j()Ljava/lang/String;
-
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :try_start_1
-    invoke-virtual {p1}, Lcom/lge/media/musicflow/c/h;->k()Ljava/lang/String;
-
-    move-result-object v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    goto :goto_0
-
-    :catchall_1
-    move-exception v2
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v2
-
-    move-object v1, v0
-
-    :goto_0
-    if-eqz v1, :cond_x
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-lez v2, :cond_x
-
-    if-eqz v0, :cond_ret1
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-lez v2, :cond_ret1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " · "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    return-object v2
-
-    :cond_ret1
-    return-object v1
-
-    :cond_x
-    if-nez v0, :cond_ret0
-
-    const-string v0, ""
-
-    :cond_ret0
-    return-object v0
-.end method
-
 .method private syncMuteIcon()V
     .registers 5
 
@@ -914,162 +686,6 @@
     :goto_set
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    return-void
-.end method
-
-.method private syncNowPlaying()V
-    .registers 8
-
-    iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mRoot:Landroid/view/View;
-
-    if-nez v0, :cond_go
-
-    return-void
-
-    :cond_go
-    const/4 v1, 0x0
-
-    :try_start_0
-    invoke-static {}, Lcom/lge/media/musicflow/playback/b;->l()Lcom/lge/media/musicflow/c/h;
-
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v2
-
-    const/4 v1, 0x0
-
-    :goto_0
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_title
-
-    :try_start_1
-    invoke-virtual {v1}, Lcom/lge/media/musicflow/c/h;->f()Ljava/lang/String;
-
-    move-result-object v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    goto :goto_title
-
-    :catchall_1
-    move-exception v3
-
-    const/4 v2, 0x0
-
-    :goto_title
-    :cond_title
-    const v3, 0x7f09037e
-
-    invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    if-eqz v2, :cond_empty
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    if-lez v4, :cond_empty
-
-    const v4, 0x7f09037f
-
-    invoke-direct {p0, v4, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->setText(ILjava/lang/String;)V
-
-    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->subtitleOf(Lcom/lge/media/musicflow/c/h;)Ljava/lang/String;
-
-    move-result-object v4
-
-    const v5, 0x7f090380
-
-    invoke-direct {p0, v5, v4}, Lcom/lge/media/musicflow/SpeakerSheet;->setText(ILjava/lang/String;)V
-
-    instance-of v4, v3, Landroid/widget/ImageView;
-
-    if-eqz v4, :goto_play
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    invoke-direct {p0, v3, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->setArt(Landroid/widget/ImageView;Lcom/lge/media/musicflow/c/h;)V
-
-    goto :goto_play
-
-    :cond_empty
-    const v4, 0x7f100491
-
-    invoke-direct {p0, v4}, Lcom/lge/media/musicflow/SpeakerSheet;->string(I)Ljava/lang/String;
-
-    move-result-object v4
-
-    const v5, 0x7f09037f
-
-    invoke-direct {p0, v5, v4}, Lcom/lge/media/musicflow/SpeakerSheet;->setText(ILjava/lang/String;)V
-
-    const v4, 0x7f090380
-
-    const-string v5, ""
-
-    invoke-direct {p0, v4, v5}, Lcom/lge/media/musicflow/SpeakerSheet;->setText(ILjava/lang/String;)V
-
-    instance-of v4, v3, Landroid/widget/ImageView;
-
-    if-eqz v4, :goto_play
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    const v4, 0x7f08009a
-
-    invoke-virtual {v3, v4}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    :goto_play
-    const v3, 0x7f090389
-
-    invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    instance-of v4, v3, Landroid/widget/ImageView;
-
-    if-eqz v4, :cond_end
-
-    check-cast v3, Landroid/widget/ImageView;
-
-    const/4 v4, 0x0
-
-    :try_start_2
-    invoke-static {}, Lcom/lge/media/musicflow/playback/b;->p()Z
-
-    move-result v4
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    goto :goto_p
-
-    :catchall_2
-    move-exception v5
-
-    const/4 v4, 0x0
-
-    :goto_p
-    if-eqz v4, :cond_pl
-
-    const v5, 0x7f08051c
-
-    goto :goto_pl2
-
-    :cond_pl
-    const v5, 0x7f08051b
-
-    :goto_pl2
-    invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setImageResource(I)V
-
-    :cond_end
     return-void
 .end method
 
@@ -1231,39 +847,6 @@
     return-void
 
     :cond_2
-    const v1, 0x7f090388
-
-    if-ne v0, v1, :cond_3
-
-    const/16 v1, 0x58
-
-    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->mediaKey(I)V
-
-    return-void
-
-    :cond_3
-    const v1, 0x7f090389
-
-    if-ne v0, v1, :cond_4
-
-    const/16 v1, 0x55
-
-    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->mediaKey(I)V
-
-    return-void
-
-    :cond_4
-    const v1, 0x7f09038a
-
-    if-ne v0, v1, :cond_5
-
-    const/16 v1, 0x57
-
-    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->mediaKey(I)V
-
-    return-void
-
-    :cond_5
     const v1, 0x7f090384
 
     if-ne v0, v1, :cond_6
@@ -1589,8 +1172,6 @@
 
     :cond_txt
     invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->syncMuteIcon()V
-
-    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->syncNowPlaying()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -3198,7 +2779,7 @@
 .end method
 
 .method private showChooser(I[Ljava/lang/CharSequence;I)V
-    .locals 4
+    .locals 8
 
     iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mRoot:Landroid/view/View;
 
@@ -3211,7 +2792,9 @@
 
     new-instance v1, Landroid/support/v7/app/AlertDialog$Builder;
 
-    invoke-direct {v1, v0}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    const v4, 0x7f110002
+
+    invoke-direct {v1, v0, v4}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     invoke-virtual {v1, p1}, Landroid/support/v7/app/AlertDialog$Builder;->setTitle(I)Landroid/support/v7/app/AlertDialog$Builder;
 
@@ -3229,7 +2812,17 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/support/v7/app/AlertDialog$Builder;->show()Landroid/support/v7/app/AlertDialog;
+    invoke-virtual {v1}, Landroid/support/v7/app/AlertDialog$Builder;->create()Landroid/support/v7/app/AlertDialog;
+
+    move-result-object v5
+
+    new-instance v6, Lcom/lge/media/musicflow/DialogDarkFix;
+
+    invoke-direct {v6}, Lcom/lge/media/musicflow/DialogDarkFix;-><init>()V
+
+    invoke-virtual {v5, v6}, Landroid/support/v7/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+
+    invoke-virtual {v5}, Landroid/support/v7/app/AlertDialog;->show()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -3564,7 +3157,7 @@
 .end method
 
 .method private showEq()V
-    .locals 6
+    .locals 9
 
     iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mRoot:Landroid/view/View;
 
@@ -3654,7 +3247,9 @@
     :cond_build
     new-instance v2, Landroid/support/v7/app/AlertDialog$Builder;
 
-    invoke-direct {v2, v0}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    const v5, 0x7f110002
+
+    invoke-direct {v2, v0, v5}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     const v3, 0x7f1000d2
 
@@ -3674,7 +3269,17 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/support/v7/app/AlertDialog$Builder;->show()Landroid/support/v7/app/AlertDialog;
+    invoke-virtual {v2}, Landroid/support/v7/app/AlertDialog$Builder;->create()Landroid/support/v7/app/AlertDialog;
+
+    move-result-object v6
+
+    new-instance v7, Lcom/lge/media/musicflow/DialogDarkFix;
+
+    invoke-direct {v7}, Lcom/lge/media/musicflow/DialogDarkFix;-><init>()V
+
+    invoke-virtual {v6, v7}, Landroid/support/v7/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+
+    invoke-virtual {v6}, Landroid/support/v7/app/AlertDialog;->show()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

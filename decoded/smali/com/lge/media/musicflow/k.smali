@@ -832,6 +832,12 @@
 
     move-result-object p1
 
+    new-instance v1, Lcom/lge/media/musicflow/DialogDarkFix;
+
+    invoke-direct {v1}, Lcom/lge/media/musicflow/DialogDarkFix;-><init>()V
+
+    invoke-virtual {p1, v1}, Landroid/support/v7/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+
     invoke-virtual {p0, p1}, Lcom/lge/media/musicflow/k;->setCanceledTouch(Landroid/app/Dialog;)V
 
     return-object p1

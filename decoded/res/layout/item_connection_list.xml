@@ -7,6 +7,6 @@
             <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="25.0dip" android:src="@drawable/wiz_list_connect_wire" />
             <TextView android:textSize="16.0sp" android:textColor="@color/setup_list_item_text" android:gravity="left" android:id="@android:id/text1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:layout_weight="1.0" />
         </LinearLayout>
-        <TextView android:textSize="13.0sp" android:textColor="#ff7c7b85" android:gravity="center|top" android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:gravity="center|top" android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="64.0dip" />
     </LinearLayout>
 </RelativeLayout>

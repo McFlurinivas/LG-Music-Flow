@@ -1817,4 +1817,5 @@ When the update is completed, the device reboots automatically."</string>
     <string name="whats_hot">"What's hot"</string>
     <string name="wifi_signal_weak">Weak network signal</string>
     <string name="woofer_level">Woofer level</string>
+    <string name="apple_music">Apple Music</string>
 </resources>

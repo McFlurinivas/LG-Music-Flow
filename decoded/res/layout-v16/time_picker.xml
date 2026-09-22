@@ -6,11 +6,11 @@
             <ImageButton android:layout_gravity="center_horizontal" android:id="@id/hour_before" android:layout_width="22.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_set_arrow_up" android:layout_centerInParent="true" />
         </RelativeLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/layout_hour" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
-            <TextView android:textSize="26.0sp" android:textColor="#ff737373" android:gravity="center_horizontal" android:id="@id/txt_before_hour" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="5" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
-            <TextView android:textSize="40.0sp" android:textColor="#ff12121a" android:gravity="center_horizontal" android:id="@id/txt_selected_hour" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="90.0dip" android:text="6" android:fontFamily="@string/font_light" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
-            <TextView android:textSize="26.0sp" android:textColor="#ff737373" android:gravity="center_horizontal" android:id="@id/txt_after_hour" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="7" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/txt_before_hour" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="5" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:id="@id/txt_selected_hour" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="90.0dip" android:text="6" android:fontFamily="@string/font_light" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/txt_after_hour" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="7" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
         </LinearLayout>
         <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/btn_hour_after" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/label_alarm_hour_down">
             <ImageButton android:layout_gravity="center_horizontal" android:id="@id/hour_after" android:layout_width="22.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_set_arrow_down" android:layout_centerInParent="true" />
@@ -20,9 +20,9 @@
         <View android:layout_gravity="center_horizontal" android:layout_width="22.0dip" android:layout_height="10.0dip" />
         <LinearLayout android:orientation="vertical" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <ImageView android:layout_gravity="center_horizontal" android:paddingTop="8.0dip" android:paddingBottom="14.0dip" android:layout_width="10.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_set_colon_01" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
             <ImageView android:gravity="center_horizontal" android:paddingTop="31.0dip" android:paddingBottom="31.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip" android:src="@drawable/ic_set_colon_02" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
             <ImageView android:layout_gravity="center_horizontal" android:paddingTop="17.0dip" android:paddingBottom="6.0dip" android:layout_width="10.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_set_colon_01" />
         </LinearLayout>
         <View android:layout_gravity="center_horizontal" android:layout_width="22.0dip" android:layout_height="10.0dip" />
@@ -32,11 +32,11 @@
             <ImageButton android:layout_gravity="center_horizontal" android:id="@id/minute_before" android:layout_width="22.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_set_arrow_up" android:layout_centerInParent="true" />
         </RelativeLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/layout_minute" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
-            <TextView android:textSize="26.0sp" android:textColor="#ff737373" android:gravity="center_horizontal" android:id="@id/txt_before_minute" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="14" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
-            <TextView android:textSize="40.0sp" android:textColor="#ff12121a" android:gravity="center_horizontal" android:id="@id/txt_selected_minute" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="90.0dip" android:text="15" android:fontFamily="@string/font_light" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
-            <TextView android:textSize="26.0sp" android:textColor="#ff737373" android:gravity="center_horizontal" android:id="@id/txt_after_minute" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="16" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/txt_before_minute" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="14" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <TextView android:textSize="40.0sp" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:id="@id/txt_selected_minute" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="90.0dip" android:text="15" android:fontFamily="@string/font_light" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <TextView android:textSize="26.0sp" android:textColor="@color/text_secondary" android:gravity="center_horizontal" android:id="@id/txt_after_minute" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="16" android:importantForAccessibility="no" android:fontFamily="@string/font_light" />
         </LinearLayout>
         <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/btn_minute_after" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/label_alarm_minute_down">
             <ImageButton android:layout_gravity="center_horizontal" android:id="@id/minute_after" android:layout_width="22.0dip" android:layout_height="10.0dip" android:src="@drawable/ic_set_arrow_down" android:layout_centerInParent="true" />
@@ -46,9 +46,9 @@
         <View android:layout_gravity="center_horizontal" android:layout_width="22.0dip" android:layout_height="10.0dip" />
         <LinearLayout android:orientation="vertical" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <View android:gravity="center_horizontal" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
             <View android:gravity="center_horizontal" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip" />
-            <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+            <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
             <View android:gravity="center_horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" />
         </LinearLayout>
         <View android:layout_gravity="center_horizontal" android:layout_width="22.0dip" android:layout_height="10.0dip" />

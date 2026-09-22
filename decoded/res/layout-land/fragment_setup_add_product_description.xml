@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/header_layout" android:background="#ff242433" android:layout_width="fill_parent" android:layout_height="@dimen/header_setup_height" android:layout_alignParentTop="true">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header_layout" android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="@dimen/header_setup_height" android:layout_alignParentTop="true">
         <TextView android:textSize="20.0sp" android:textColor="@color/setup_action_bar_title_text" android:gravity="center" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
     </LinearLayout>
     <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_two_button_layout" android:layout_below="@id/header_layout">

@@ -1896,7 +1896,30 @@
 .end method
 
 .method public openFragment(I)V
-    .locals 0
+    .locals 1
+
+    const v0, 0x7f09035f
+
+    if-ne p1, v0, :cond_navsp
+
+    const-string v0, "com.spotify.music"
+
+    invoke-virtual {p0, v0}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navsp
+    const v0, 0x7f090360
+
+    if-ne p1, v0, :cond_navam
+
+    const-string v0, "com.apple.android.music"
+
+    invoke-virtual {p0, v0}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navam
 
     return-void
 .end method
@@ -3068,6 +3091,62 @@
     iget-object v0, p0, Lcom/lge/media/musicflow/g;->mSlidingUpPanelLayout:Lcom/lge/media/musicflow/widget/SlidingUpPanelLayout;
 
     invoke-static {v0, p1}, Lcom/lge/media/musicflow/j/g;->a(Landroid/view/View;Z)V
+
+    return-void
+.end method
+
+.method public launchExternalApp(Ljava/lang/String;)V
+    .locals 3
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/g;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p1}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0, v0}, Lcom/lge/media/musicflow/g;->startActivity(Landroid/content/Intent;)V
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "market://details?id="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.VIEW"
+
+    invoke-direct {v1, v2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {p0, v1}, Lcom/lge/media/musicflow/g;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    return-void
+
+    :catch_0
+    move-exception v0
 
     return-void
 .end method

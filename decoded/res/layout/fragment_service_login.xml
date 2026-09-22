@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ScrollView android:orientation="vertical" android:id="@id/scroll_loginLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
@@ -14,17 +14,17 @@
                         <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/id_layout" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="8.0dip">
                             <ImageView android:id="@id/id_image" android:background="@drawable/ic_set_pw_01" android:layout_width="20.0dip" android:layout_height="20.0dip" />
                             <EditText android:id="@id/cpIdText" android:background="@null" android:paddingLeft="10.0dip" android:longClickable="false" android:layout_width="185.69998dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/id" android:singleLine="true" android:layout_toRightOf="@id/id_image" android:inputType="textEmailAddress|textNoSuggestions" />
-                            <ImageView android:background="#ff242433" android:layout_width="220.0dip" android:layout_height="1.0dip" android:layout_below="@id/id_image" />
+                            <ImageView android:background="@color/bg_surface" android:layout_width="220.0dip" android:layout_height="1.0dip" android:layout_below="@id/id_image" />
                         </RelativeLayout>
                         <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/password_layout" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginTop="26.0dip" android:layout_below="@id/id_layout">
                             <ImageView android:id="@id/password_image" android:background="@drawable/ic_set_pw_02" android:layout_width="20.0dip" android:layout_height="20.0dip" />
                             <EditText android:id="@id/cpPasswordText" android:background="@null" android:paddingLeft="10.0dip" android:longClickable="false" android:layout_width="185.69998dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/password" android:singleLine="true" android:layout_toRightOf="@id/password_image" android:inputType="textPassword" />
-                            <ImageView android:background="#ff242433" android:layout_width="220.0dip" android:layout_height="1.0dip" android:layout_below="@id/password_image" />
+                            <ImageView android:background="@color/bg_surface" android:layout_width="220.0dip" android:layout_height="1.0dip" android:layout_below="@id/password_image" />
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
                 <LinearLayout android:orientation="vertical" android:id="@id/logoutLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="115.0dip">
-                    <TextView android:textSize="20.0sp" android:textColor="#ff464556" android:layout_gravity="center_horizontal" android:id="@id/login_id_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/text_primary" android:layout_gravity="center_horizontal" android:id="@id/login_id_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
                 </LinearLayout>
             </FrameLayout>
             <CheckBox android:textSize="17.0sp" android:layout_gravity="center" android:id="@id/explicit_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginTop="11.0dip" android:text="@string/iheartradio_explicit" />

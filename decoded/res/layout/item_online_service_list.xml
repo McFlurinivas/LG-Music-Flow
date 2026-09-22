@@ -3,9 +3,9 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <ImageView android:id="@id/list_item_image" android:layout_width="@dimen/list_item_thumbnail_width" android:layout_height="@dimen/list_item_thumbnail_height" android:layout_marginRight="7.0dip" android:scaleType="fitXY" />
     <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="@dimen/list_item_setting_top_bottom_padding" android:paddingBottom="@dimen/list_item_setting_top_bottom_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_padding_vertical" android:layout_weight="85.0" android:dividerPadding="1.0dip">
-        <TextView android:textSize="@dimen/list_item_setting_title" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/setting_list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true"
+        <TextView android:textSize="@dimen/list_item_setting_title" android:textColor="@color/text_primary" android:layout_gravity="center_vertical" android:id="@id/setting_list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true"
           xmlns:android="http://schemas.android.com/apk/res/android" />
-        <TextView android:textSize="@dimen/list_item_subtitle_text_size" android:textColor="@color/gray" android:layout_gravity="center_vertical" android:id="@id/setting_list_item_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true"
+        <TextView android:textSize="@dimen/list_item_subtitle_text_size" android:textColor="@color/text_secondary" android:layout_gravity="center_vertical" android:id="@id/setting_list_item_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scrollHorizontally="true"
           xmlns:android="http://schemas.android.com/apk/res/android" />
     </LinearLayout>
     <ImageView android:layout_gravity="center" android:id="@id/setting_list_option_imageview" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="fitXY" />

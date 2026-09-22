@@ -4,20 +4,20 @@
     <LinearLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <include layout="@layout/proto_header_setup" />
         <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-            <TextView android:textSize="16.0sp" android:textColor="#ff464556" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="95.0dip" android:text="@string/setup_sound_bar_choose_description" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_primary" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="95.0dip" android:text="@string/setup_sound_bar_choose_description" />
             <RadioGroup android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checkedButton="@id/button_optical">
                 <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/optical_connection" android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
                     <RadioButton android:id="@id/button_optical" android:focusable="false" android:clickable="false" android:layout_width="34.0dip" android:layout_height="34.0dip" />
                     <ImageView android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/wiz_list_connect_optical" />
                     <TextView android:textSize="16.0sp" android:textColor="@color/setup_list_item_text" android:gravity="left" android:id="@id/text_optical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setup_sound_bar_optical_title" android:layout_weight="1.0" />
                 </LinearLayout>
-                <TextView android:textSize="13.0sp" android:textColor="#ff7c7b85" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:text="@string/setup_sound_bar_optical_description" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:text="@string/setup_sound_bar_optical_description" />
                 <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/hdmi_connection" android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.5">
                     <RadioButton android:id="@id/button_hdmi" android:focusable="false" android:clickable="false" android:layout_width="34.0dip" android:layout_height="34.0dip" />
                     <ImageView android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/wiz_list_connect_hdmi" />
                     <TextView android:textSize="16.0sp" android:textColor="@color/setup_list_item_text" android:gravity="left" android:id="@id/text_hdmi" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setup_sound_bar_hdmi_title" android:layout_weight="1.0" />
                 </LinearLayout>
-                <TextView android:textSize="13.0sp" android:textColor="#ff7c7b85" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:text="@string/setup_sound_bar_hdmi_description" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:text="@string/setup_sound_bar_hdmi_description" />
             </RadioGroup>
         </LinearLayout>
         <include layout="@layout/footer_two_button_horizontally" />

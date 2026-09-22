@@ -462,32 +462,6 @@
 
     new-instance p3, Lcom/lge/media/musicflow/navigation/d;
 
-    const v2, 0x7f0801bd
-
-    const v6, 0x7f100282
-
-    iget v7, p0, Lcom/lge/media/musicflow/navigation/c;->g:I
-
-    const v8, 0x7f0901d1
-
-    if-ne v7, v8, :cond_1
-
-    const/4 v7, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v7, 0x0
-
-    :goto_1
-    invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
-
-    invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    iget-object p2, p0, Lcom/lge/media/musicflow/navigation/c;->d:Ljava/util/ArrayList;
-
-    new-instance p3, Lcom/lge/media/musicflow/navigation/d;
-
     const v2, 0x7f0801ad
 
     const v6, 0x7f100285
@@ -532,6 +506,58 @@
     const/4 v7, 0x0
 
     :goto_3
+    invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
+
+    invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/navigation/c;->d:Ljava/util/ArrayList;
+
+    new-instance p3, Lcom/lge/media/musicflow/navigation/d;
+
+    const v2, 0x7f0800b6
+
+    const v6, 0x7f10045a
+
+    iget v7, p0, Lcom/lge/media/musicflow/navigation/c;->g:I
+
+    const v8, 0x7f09035f
+
+    if-ne v7, v8, :cond_sp
+
+    const/4 v7, 0x1
+
+    goto :goto_sp
+
+    :cond_sp
+    const/4 v7, 0x0
+
+    :goto_sp
+    invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
+
+    invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/navigation/c;->d:Ljava/util/ArrayList;
+
+    new-instance p3, Lcom/lge/media/musicflow/navigation/d;
+
+    const v2, 0x7f0804e3
+
+    const v6, 0x7f10048a
+
+    iget v7, p0, Lcom/lge/media/musicflow/navigation/c;->g:I
+
+    const v8, 0x7f090360
+
+    if-ne v7, v8, :cond_am
+
+    const/4 v7, 0x1
+
+    goto :goto_am
+
+    :cond_am
+    const/4 v7, 0x0
+
+    :goto_am
     invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
 
     invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

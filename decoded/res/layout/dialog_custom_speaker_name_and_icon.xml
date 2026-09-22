@@ -6,5 +6,5 @@
         <EditText android:textSize="19.0sp" android:textColor="@color/input_text" android:textColorHint="@color/input_text" android:id="@id/speaker_name_edit" android:background="#00000000" android:longClickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/label_input_speaker_name" android:cursorVisible="true" android:maxLines="2" android:maxLength="20" android:layout_weight="1.0" />
         <Button android:id="@id/clear_button" android:background="@drawable/ic_popup_input_clear" android:layout_width="26.0dip" android:layout_height="26.0dip" android:contentDescription="@string/label_delete_input" />
     </LinearLayout>
-    <ImageView android:background="#ff242433" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ImageView android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="1.0dip" />
 </LinearLayout>

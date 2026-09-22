@@ -5,6 +5,7 @@
         <package android:name="com.google.android.apps.chromecast.app"/>
         <package android:name="com.rhapsody"/>
         <package android:name="com.spotify.music"/>
+        <package android:name="com.apple.android.music"/>
         <package android:name="com.pandora.android"/>
         <package android:name="com.clearchannel.iheartradio.controller"/>
         <package android:name="com.google.android.music"/>

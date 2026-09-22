@@ -5079,4 +5079,8 @@
     <public type="style" name="WizardPageContainer" id="0x7f1101c0" />
     <public type="style" name="WizardPageTitle" id="0x7f1101c1" />
     <public type="xml" name="searchable" id="0x7f130000" />
+    <public type="string" name="apple_music" id="0x7f10048a" />
+    <public type="drawable" name="ic_navi_item_apple_music" id="0x7f0804e3" />
+    <public type="id" name="nav_spotify" id="0x7f09035f" />
+    <public type="id" name="nav_apple_music" id="0x7f090360" />
 </resources>

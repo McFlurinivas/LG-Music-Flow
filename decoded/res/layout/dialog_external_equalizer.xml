@@ -12,23 +12,23 @@
         <LinearLayout android:orientation="vertical" android:id="@id/layout_bass" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="69.0dip">
             <TextView android:textAppearance="@style/TextAppearance.Small.Multiroom" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="26.0dip" android:text="@string/bass" />
             <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
-                <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-6dB" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:gravity="center" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-6dB" />
                 <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-                    <ImageView android:layout_gravity="center" android:background="@color/gray" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+                    <ImageView android:layout_gravity="center" android:background="@color/divider" android:layout_width="1.0dip" android:layout_height="20.0dip" />
                     <SeekBar android:id="@id/bass_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="12" android:progressDrawable="@drawable/multiroom_scrubber_track_holo_light" android:thumb="@drawable/icon_music_player_sliderthumb" />
                 </FrameLayout>
-                <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="6dB" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="6dB" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/layout_treble" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="69.0dip">
             <TextView android:textAppearance="@style/TextAppearance.Small.Multiroom" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="26.0dip" android:text="@string/treble" />
             <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
-                <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-6dB" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:gravity="center" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-6dB" />
                 <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-                    <ImageView android:layout_gravity="center" android:background="@color/gray" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+                    <ImageView android:layout_gravity="center" android:background="@color/divider" android:layout_width="1.0dip" android:layout_height="20.0dip" />
                     <SeekBar android:id="@id/treble_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="12" android:progressDrawable="@drawable/multiroom_scrubber_track_holo_light" android:thumb="@drawable/icon_music_player_sliderthumb" />
                 </FrameLayout>
-                <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="6dB" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="6dB" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/layout_balance" android:focusable="false" android:layout_width="fill_parent" android:layout_height="69.0dip">
@@ -36,7 +36,7 @@
             <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
                 <ImageView android:id="@id/volume_l_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_popup_vol_l_normal" />
                 <FrameLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
-                    <ImageView android:layout_gravity="center" android:background="@color/gray" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+                    <ImageView android:layout_gravity="center" android:background="@color/divider" android:layout_width="1.0dip" android:layout_height="20.0dip" />
                     <SeekBar android:id="@id/balance_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="40" android:progressDrawable="@drawable/multiroom_scrubber_track_holo_light" android:thumb="@drawable/icon_music_player_sliderthumb" />
                 </FrameLayout>
                 <ImageView android:id="@id/volume_r_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_popup_vol_r_normal" />

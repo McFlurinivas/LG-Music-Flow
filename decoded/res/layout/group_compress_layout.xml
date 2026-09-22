@@ -2,13 +2,13 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/auto_compress_layout" android:paddingLeft="@dimen/list_item_setting_padding" android:paddingRight="@dimen/list_item_setting_padding" android:layout_width="fill_parent" android:layout_height="80.0dip" android:dividerPadding="1.0dip">
-        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auto" />
-        <TextView android:textSize="@dimen/list_item_desc_text_size" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/group_compress_auto_description" />
+        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/text_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auto" />
+        <TextView android:textSize="@dimen/list_item_desc_text_size" android:textColor="@color/text_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/group_compress_auto_description" />
     </LinearLayout>
-    <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
     <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/none_compress_layout" android:paddingLeft="@dimen/list_item_setting_padding" android:paddingRight="@dimen/list_item_setting_padding" android:layout_width="fill_parent" android:layout_height="50.0dip" android:dividerPadding="1.0dip">
-        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/black" android:id="@id/update_everyday_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/group_none_compress" />
+        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/text_primary" android:id="@id/update_everyday_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/group_none_compress" />
     </LinearLayout>
-    <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
-    <TextView android:textSize="@dimen/list_item_desc_text_size" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:text="@string/group_compress_description_tip" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <TextView android:textSize="@dimen/list_item_desc_text_size" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:text="@string/group_compress_description_tip" />
 </LinearLayout>

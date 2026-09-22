@@ -791,4 +791,6 @@
     <item type="id" name="wireless_setup_guide_8" />
     <item type="id" name="wireless_setup_guide_9" />
     <item type="id" name="zero_value" />
+    <item type="id" name="nav_spotify" />
+    <item type="id" name="nav_apple_music" />
 </resources>

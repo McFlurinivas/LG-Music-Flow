@@ -209,7 +209,30 @@
 .end method
 
 .method public openFragment(I)V
-    .locals 3
+    .locals 4
+
+    const v3, 0x7f09035f
+
+    if-ne p1, v3, :cond_navsp
+
+    const-string v3, "com.spotify.music"
+
+    invoke-virtual {p0, v3}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navsp
+    const v3, 0x7f090360
+
+    if-ne p1, v3, :cond_navam
+
+    const-string v3, "com.apple.android.music"
+
+    invoke-virtual {p0, v3}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navam
 
     invoke-virtual {p0}, Lcom/lge/media/musicflow/SubActivity;->getSupportFragmentManager()Landroid/support/v4/app/p;
 

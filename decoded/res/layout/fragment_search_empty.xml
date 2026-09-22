@@ -2,9 +2,9 @@
 <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <android.support.v4.widget.NestedScrollView android:layout_gravity="fill_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="fill_parent">
             <ImageView android:id="@id/search_empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_global_menu_search_noresult" />
-            <TextView android:textSize="16.0sp" android:textColor="#ff565565" android:gravity="center" android:id="@id/search_empty_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/search_empty_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </RelativeLayout>

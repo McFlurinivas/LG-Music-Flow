@@ -4,6 +4,6 @@
     <TextView android:textSize="16.0sp" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="8.0dip" />
     <LinearLayout android:gravity="right|bottom" android:layout_gravity="right" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
         <CheckBox android:id="@android:id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <TextView android:textSize="15.0sp" android:textColor="#ff464556" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_primary" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
     </LinearLayout>
 </LinearLayout>

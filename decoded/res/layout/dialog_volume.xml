@@ -5,6 +5,6 @@
         <ImageButton android:id="@id/all_speaker_mute" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
         <com.lge.media.musicflow.playback.CustomStepSeekBar android:layout_gravity="center_vertical" android:id="@id/group_volume_seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="100" android:thumb="@drawable/icon_music_player_sliderthumb" android:layout_weight="1.0" />
     </LinearLayout>
-    <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <ImageView android:layout_gravity="center_horizontal" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
     <ListView android:layout_gravity="center" android:id="@android:id/list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/default_list_item_selector" android:horizontalSpacing="@dimen/list_item_padding_horizontal" android:verticalSpacing="@dimen/list_item_padding_vertical" android:stretchMode="columnWidth" android:fastScrollEnabled="true" />
 </LinearLayout>

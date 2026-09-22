@@ -5,7 +5,7 @@
     <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <ImageView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wiz_google_cast_logo" android:contentDescription="@string/google_cast_built_in" />
-            <LinearLayout android:scrollbarStyle="outsideOverlay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="0.0dip" android:minHeight="30.0dip" android:layout_weight="1.0">
+            <LinearLayout android:scrollbarStyle="outsideOverlay" android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_marginBottom="0.0dip" android:minHeight="30.0dip" android:layout_weight="1.0">
                 <TextView android:id="@id/setup_welcome_title" android:text="@string/google_cast_tos" style="@style/SetupEulaDescription" />
             </LinearLayout>
             <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_weight="1.0">

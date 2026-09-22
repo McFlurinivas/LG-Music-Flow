@@ -11,7 +11,7 @@
                     <TextView android:textSize="@dimen/list_item_setting_title" android:textColor="@color/text_primary" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mesh_network_channel" android:scrollHorizontally="true" />
                     <TextView android:textSize="@dimen/list_item_subtitle_text_size" android:textColor="@color/text_secondary" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/mesh_network_channel_description" android:scrollHorizontally="true" />
                 </LinearLayout>
-                <TextView android:textSize="@dimen/list_item_desc_text_size" android:ellipsize="end" android:layout_gravity="right|center" android:id="@id/setting_list_option_text_first" android:paddingRight="@dimen/list_item_padding_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textColor="@color/text_primary" android:textSize="@dimen/list_item_desc_text_size" android:ellipsize="end" android:layout_gravity="right|center" android:id="@id/setting_list_option_text_first" android:paddingRight="@dimen/list_item_padding_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:orientation="vertical" android:id="@id/auto_music_play_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">

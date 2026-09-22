@@ -10,7 +10,7 @@
             <TextView android:textSize="@dimen/list_item_subtitle_text_size" android:textColor="@color/multiroom_secondary_text" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/list_item_subtitle" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="45.0" android:fontFamily="@string/font_regular"
               xmlns:android="http://schemas.android.com/apk/res/android" />
         </LinearLayout>
-        <TextView android:textSize="@dimen/list_item_desc_text_size" android:gravity="right|center" android:id="@id/list_item_desc" android:paddingLeft="@dimen/list_item_padding_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fontFamily="@string/font_regular" />
+        <TextView android:textColor="@color/text_primary" android:textSize="@dimen/list_item_desc_text_size" android:gravity="right|center" android:id="@id/list_item_desc" android:paddingLeft="@dimen/list_item_padding_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fontFamily="@string/font_regular" />
         <ImageButton android:gravity="right|center" android:id="@id/list_item_overflow_menu" android:background="@drawable/button_background" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_global_list_edit_cue" android:scaleType="center" />
     </LinearLayout>
 </RelativeLayout>

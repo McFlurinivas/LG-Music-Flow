@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:text="@string/google_cast_setting_groups_description" />
+    <TextView android:textColor="@color/text_primary" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:text="@string/google_cast_setting_groups_description" />
     <Button android:gravity="center" android:layout_gravity="center" android:id="@android:id/button1" android:background="@drawable/ic_cover_google_home" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="40.0dip" />
 </LinearLayout>

@@ -42,7 +42,7 @@
             <com.lge.media.musicflow.setup.steps.CenterAnimatedImageView android:id="@id/image04" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         </LinearLayout>
         <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <TextView android:textSize="13.0sp" android:gravity="center|top" android:id="@id/tip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/power_guide_smart_audio_tip1" />
+            <TextView android:textColor="@color/text_primary" android:textSize="13.0sp" android:gravity="center|top" android:id="@id/tip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/power_guide_smart_audio_tip1" />
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

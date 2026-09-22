@@ -4,7 +4,7 @@
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_setting_height" android:layout_marginLeft="@dimen/list_item_setting_padding" android:layout_marginRight="@dimen/list_item_setting_padding">
         <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/text_primary" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/setting_list_item_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="8.0" android:marqueeRepeatLimit="marquee_forever"
           xmlns:android="http://schemas.android.com/apk/res/android" />
-        <TextView android:textSize="@dimen/list_item_desc_text_size" android:ellipsize="end" android:gravity="right|center" android:id="@id/setting_list_option_text_first" android:paddingRight="@dimen/list_item_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textColor="@color/text_primary" android:textSize="@dimen/list_item_desc_text_size" android:ellipsize="end" android:gravity="right|center" android:id="@id/setting_list_option_text_first" android:paddingRight="@dimen/list_item_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
     </LinearLayout>
     <ImageView android:layout_gravity="center_horizontal" android:id="@id/line_image" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
 </LinearLayout>

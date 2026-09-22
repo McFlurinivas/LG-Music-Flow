@@ -4,7 +4,7 @@
     <include layout="@layout/proto_header_setup" />
     <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_search_speaker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@id/add_speaker_progress_wheel" android:layout_width="60.0dip" android:layout_height="60.0dip" wheel:matProg_barColor="@color/multiroom_highlight" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
-        <TextView android:id="@id/connecting_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/setup_connecting" />
+        <TextView android:textColor="@color/text_primary" android:id="@id/connecting_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/setup_connecting" />
     </LinearLayout>
     <LinearLayout android:orientation="vertical" android:id="@id/layout_speaker_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <TextView android:textSize="19.0sp" android:textColor="@color/text_secondary" android:gravity="center" android:id="@id/connected_text" android:layout_width="fill_parent" android:layout_height="75.0dip" />

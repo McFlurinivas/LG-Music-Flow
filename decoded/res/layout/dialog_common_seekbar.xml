@@ -3,8 +3,8 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.lge.media.musicflow.playback.CustomStepSeekBar android:layout_gravity="center_vertical" android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:max="100" />
     <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:gravity="left" android:id="@id/left_limit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-        <TextView android:gravity="center" android:id="@id/current_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
-        <TextView android:gravity="right" android:id="@id/right_limit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/text_primary" android:gravity="left" android:id="@id/left_limit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/text_primary" android:gravity="center" android:id="@id/current_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/text_primary" android:gravity="right" android:id="@id/right_limit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
     </LinearLayout>
 </LinearLayout>

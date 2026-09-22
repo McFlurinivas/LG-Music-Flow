@@ -5,7 +5,7 @@
         <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <include layout="@layout/proto_header_setup" />
             <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
-                <TextView android:textSize="16.0sp" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="95.0dip" />
+                <TextView android:textColor="@color/text_primary" android:textSize="16.0sp" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="95.0dip" />
                 <TextView android:textSize="16.0sp" android:textColor="@color/setup_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginTop="16.0dip" android:text="@string/setup_ap_name" />
                 <RelativeLayout android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
                     <TextView android:textSize="19.0sp" android:textColor="@color/text_secondary" android:id="@id/ssid_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true" />

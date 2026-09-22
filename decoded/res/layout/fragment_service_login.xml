@@ -28,7 +28,7 @@
                 </LinearLayout>
             </FrameLayout>
             <CheckBox android:textSize="17.0sp" android:layout_gravity="center" android:id="@id/explicit_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginTop="11.0dip" android:text="@string/iheartradio_explicit" />
-            <TextView android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="" />
+            <TextView android:textColor="@color/text_primary" android:textSize="15.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/login_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="" />
         </LinearLayout>
     </ScrollView>
     <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">

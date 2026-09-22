@@ -287,6 +287,28 @@
     return-void
 
     :cond_navam
+    const v6, 0x7f090374
+
+    if-ne p1, v6, :cond_navyt
+
+    const-string v6, "com.google.android.youtube"
+
+    invoke-virtual {p0, v6}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navyt
+    const v6, 0x7f090375
+
+    if-ne p1, v6, :cond_navytm
+
+    const-string v6, "com.google.android.apps.youtube.music"
+
+    invoke-virtual {p0, v6}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navytm
 
     invoke-virtual {p0}, Lcom/lge/media/musicflow/MainActivity;->getSupportFragmentManager()Landroid/support/v4/app/p;
 
@@ -385,7 +407,7 @@
 
     move-result-object v5
 
-    instance-of v5, v5, Lcom/lge/media/musicflow/musiccover/a;
+    instance-of v5, v5, Lcom/lge/media/musicflow/HomeFragment;
 
     if-eqz v5, :cond_2
 
@@ -410,11 +432,11 @@
 
     const v1, 0x7f09009a
 
-    invoke-static {}, Lcom/lge/media/musicflow/musiccover/a;->a()Lcom/lge/media/musicflow/musiccover/a;
+    invoke-static {}, Lcom/lge/media/musicflow/HomeFragment;->newInstance()Lcom/lge/media/musicflow/HomeFragment;
 
     move-result-object v2
 
-    const-string v3, "MusicCoverFragment"
+    const-string v3, "HomeFragment"
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/support/v4/app/v;->b(ILandroid/support/v4/app/k;Ljava/lang/String;)Landroid/support/v4/app/v;
 

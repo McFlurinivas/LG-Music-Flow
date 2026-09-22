@@ -92,7 +92,7 @@
     <color name="multiroom_default">#ff1a1a23</color>
     <color name="multiroom_disable">#ff74748a</color>
     <color name="multiroom_error">#ffdd2c00</color>
-    <color name="multiroom_highlight">#ffff2e6d</color>
+    <color name="multiroom_highlight">#ff8b5cff</color>
     <color name="multiroom_light">#66ff2e6d</color>
     <color name="multiroom_primary_text">#fff2f2f5</color>
     <color name="multiroom_secondary_text">#ff9a9aa8</color>
@@ -117,10 +117,10 @@
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
     <color name="notification_material_background_media_default_color">#ff424242</color>
     <color name="olive">#ff808000</color>
-    <color name="playback_head_title">#ffff2e6d</color>
+    <color name="playback_head_title">@color/multiroom_highlight</color>
     <color name="playback_playinfo_track_album">#ff9a9aa8</color>
     <color name="playback_playinfo_track_artist">#ff9a9aa8</color>
-    <color name="playback_playinfo_track_title">#ffff2e6d</color>
+    <color name="playback_playinfo_track_title">#fff2f2f5</color>
     <color name="playback_progress_background">#33ffffff</color>
     <color name="playback_track_info_bg_land">#ee1a1a23</color>
     <color name="playlist_artist_normal">#ff9a9aa8</color>
@@ -204,4 +204,18 @@
     <color name="text_disabled">#ff74748a</color>
     <color name="divider">#ff2e2e3a</color>
     <color name="accent">#ffff2e6d</color>
+    <color name="home_card">#ff20202c</color>
+    <color name="home_card_sunken">#ff17171f</color>
+    <color name="home_card_stroke">#ff2e2e3e</color>
+    <color name="home_card_pressed">#ff2a2a3a</color>
+    <color name="accent_music">@color/multiroom_highlight</color>
+    <color name="accent_music_dim">#ff3d2d70</color>
+    <color name="accent_music_pressed">#ff6f45d9</color>
+    <color name="spk_sheet_top">#ff272338</color>
+    <color name="spk_sheet_bottom">#ff16161e</color>
+    <color name="spk_sheet_stroke">#ff35314d</color>
+    <color name="spk_btn">#ff262633</color>
+    <color name="spk_btn_stroke">#ff3a3a4e</color>
+    <color name="spk_track">#ff2e2e3e</color>
+    <color name="accent_music_alt">#ffff2e6d</color>
 </resources>

@@ -514,7 +514,7 @@
 
     new-instance p3, Lcom/lge/media/musicflow/navigation/d;
 
-    const v2, 0x7f0800b6
+    const v2, 0x7f080500
 
     const v6, 0x7f10045a
 
@@ -558,6 +558,58 @@
     const/4 v7, 0x0
 
     :goto_am
+    invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
+
+    invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/navigation/c;->d:Ljava/util/ArrayList;
+
+    new-instance p3, Lcom/lge/media/musicflow/navigation/d;
+
+    const v2, 0x7f0804f9
+
+    const v6, 0x7f10048b
+
+    iget v7, p0, Lcom/lge/media/musicflow/navigation/c;->g:I
+
+    const v8, 0x7f090374
+
+    if-ne v7, v8, :cond_yt
+
+    const/4 v7, 0x1
+
+    goto :goto_yt
+
+    :cond_yt
+    const/4 v7, 0x0
+
+    :goto_yt
+    invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
+
+    invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/navigation/c;->d:Ljava/util/ArrayList;
+
+    new-instance p3, Lcom/lge/media/musicflow/navigation/d;
+
+    const v2, 0x7f0804fa
+
+    const v6, 0x7f10048c
+
+    iget v7, p0, Lcom/lge/media/musicflow/navigation/c;->g:I
+
+    const v8, 0x7f090375
+
+    if-ne v7, v8, :cond_ytm
+
+    const/4 v7, 0x1
+
+    goto :goto_ytm
+
+    :cond_ytm
+    const/4 v7, 0x0
+
+    :goto_ytm
     invoke-direct {p3, v2, v6, v8, v7}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
 
     invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -630,7 +682,12 @@
 
     const/4 v0, 0x1
 
+    goto :goto_6
+
     :cond_6
+    const/4 v0, 0x0
+
+    :goto_6
     invoke-direct {p3, v2, v6, v8, v0}, Lcom/lge/media/musicflow/navigation/d;-><init>(IIIZ)V
 
     invoke-virtual {p2, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

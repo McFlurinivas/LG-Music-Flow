@@ -16,36 +16,13 @@
 .end method
 
 .method public static a(Landroid/content/Context;)Z
-    .locals 3
+    .locals 1
 
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+    # Storage access is disabled in this build: the permission is no longer
+    # declared in the manifest, so report it as denied and never prompt.
+    const/4 v0, 0x0
 
-    const/4 v1, 0x1
-
-    const/16 v2, 0x10
-
-    if-lt v0, v2, :cond_1
-
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object p0
-
-    const-string v0, "android.permission.READ_EXTERNAL_STORAGE"
-
-    invoke-static {p0, v0}, Landroid/support/v4/a/c;->a(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :cond_1
-    :goto_0
-    return v1
+    return v0
 .end method
 
 .method public static b(Landroid/content/Context;)Z

@@ -299,36 +299,6 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/lge/media/musicflow/t;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/lge/media/musicflow/j/e;->a(Landroid/content/Context;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    sget-boolean v0, Lcom/lge/media/musicflow/j/e;->a:Z
-
-    if-nez v0, :cond_1
-
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v2, 0x10
-
-    if-lt v0, v2, :cond_1
-
-    const/4 v0, 0x1
-
-    new-array v2, v0, [Ljava/lang/String;
-
-    const-string v3, "android.permission.READ_EXTERNAL_STORAGE"
-
-    aput-object v3, v2, v1
-
-    invoke-virtual {p0, v2, v0, v0}, Lcom/lge/media/musicflow/t;->requestPermission([Ljava/lang/String;IZ)V
-
     :cond_1
     :goto_0
     invoke-super {p0}, Lcom/lge/media/musicflow/l;->onStart()V

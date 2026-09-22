@@ -1096,23 +1096,11 @@
 .end method
 
 .method public synthetic lambda$setupNavigationDrawer$0$g(Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
-    new-instance p1, Landroid/content/Intent;
+    const v0, 0x7f0901d4
 
-    const-class v0, Lcom/lge/media/musicflow/navigation/NavigationActivity;
-
-    invoke-direct {p1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
-    sget v0, Lcom/lge/media/musicflow/g;->mCurrentNavItemId:I
-
-    const-string v1, "selected_menu"
-
-    invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
-
-    const/4 v0, 0x3
-
-    invoke-virtual {p0, p1, v0}, Lcom/lge/media/musicflow/g;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0}, Lcom/lge/media/musicflow/g;->openFragment(I)V
 
     return-void
 .end method
@@ -2619,7 +2607,7 @@
 
     if-eqz p1, :cond_0
 
-    const v1, 0x7f1001c3
+    const v1, 0x7f10037c
 
     goto :goto_0
 
@@ -2642,7 +2630,7 @@
 
     iget-object p1, p0, Lcom/lge/media/musicflow/g;->mToolbar:Landroid/support/v7/widget/Toolbar;
 
-    const v0, 0x7f080291
+    const v0, 0x7f08051e
 
     invoke-virtual {p1, v0}, Landroid/support/v7/widget/Toolbar;->setNavigationIcon(I)V
 

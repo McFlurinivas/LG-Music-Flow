@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/home_scroll" android:background="@color/bg_base" android:scrollbars="none" android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="24.0dip">
+
+        <!-- Now playing -->
+        <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:id="@id/home_label_now_playing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/home_now_playing" />
+
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:id="@id/home_now_playing_card" android:background="@drawable/home_np_card_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:padding="12.0dip">
+            <ImageView android:id="@id/home_np_art" android:background="@drawable/home_art_frame" android:scaleType="centerCrop" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_album_art_default" android:contentDescription="@string/home_now_playing" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="12.0dip" android:layout_marginRight="8.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/home_np_title" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/home_np_artist" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@id/home_np_prev" android:background="@drawable/home_transport_bg" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/playback_con_pre_normal" android:contentDescription="@string/home_previous" />
+            <ImageView android:id="@id/home_np_play" android:background="@drawable/home_play_button_bg" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/playback_con_play_normal" android:contentDescription="@string/home_play_pause" />
+            <ImageView android:id="@id/home_np_next" android:background="@drawable/home_transport_bg" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/playback_con_nex_normal" android:contentDescription="@string/home_next" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:id="@id/home_np_empty" android:background="@drawable/home_np_empty_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:padding="18.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_nothing_playing" />
+        </LinearLayout>
+
+        <!-- Speakers -->
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_your_speakers" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:gravity="center" android:id="@id/home_speaker_count" android:background="@drawable/home_count_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minWidth="18.0dip" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:gravity="end|center_vertical" android:id="@id/home_add_speaker" android:clickable="true" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:padding="4.0dip" android:text="@string/home_add_speaker" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:id="@id/home_speaker_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+
+        <LinearLayout android:orientation="vertical" android:id="@id/home_speaker_empty" android:background="@drawable/home_np_empty_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:padding="18.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_no_speakers" />
+        </LinearLayout>
+
+        <!-- Streaming services -->
+        <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="26.0dip" android:layout_marginBottom="10.0dip" android:text="@string/home_streaming" />
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <LinearLayout android:orientation="vertical" android:gravity="center" android:id="@id/home_tile_youtube" android:background="@drawable/home_tile_bg" android:clickable="true" android:focusable="true" android:layout_width="0.0dip" android:layout_height="92.0dip" android:layout_weight="1.0" android:layout_marginRight="6.0dip">
+                <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_home_youtube" android:contentDescription="@string/youtube" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/youtube" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:gravity="center" android:id="@id/home_tile_youtube_music" android:background="@drawable/home_tile_bg" android:clickable="true" android:focusable="true" android:layout_width="0.0dip" android:layout_height="92.0dip" android:layout_weight="1.0" android:layout_marginLeft="6.0dip">
+                <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_home_youtube_music" android:contentDescription="@string/youtube_music" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/youtube_music" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip">
+            <LinearLayout android:orientation="vertical" android:gravity="center" android:id="@id/home_tile_spotify" android:background="@drawable/home_tile_bg" android:clickable="true" android:focusable="true" android:layout_width="0.0dip" android:layout_height="92.0dip" android:layout_weight="1.0" android:layout_marginRight="6.0dip">
+                <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_home_spotify" android:contentDescription="@string/spotify" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/spotify" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:gravity="center" android:id="@id/home_tile_apple_music" android:background="@drawable/home_tile_bg" android:clickable="true" android:focusable="true" android:layout_width="0.0dip" android:layout_height="92.0dip" android:layout_weight="1.0" android:layout_marginLeft="6.0dip">
+                <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/ic_home_apple_music" android:contentDescription="@string/apple_music" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/apple_music" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

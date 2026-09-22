@@ -127,20 +127,34 @@
     <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title">
         <item name="android:textColor">@color/primary_text_default_material_dark</item>
     </style>
-    <style name="Theme.Multiroom" parent="@style/Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Multiroom" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="alertDialogTheme">@style/AlertDialog.Multiroom</item>
+        <item name="android:windowBackground">@color/bg_base</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorTertiary">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/bg_base</item>
+        <item name="android:editTextStyle">@style/EditText.Multiroom</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Multiroom</item>
         <item name="android:progressBarStyleHorizontal">@style/ProgressBarHorizontal.Multiroom</item>
         <item name="android:seekBarStyle">@style/SeekBar.Multiroom</item>
+        <item name="android:textSelectHandleLeft">@drawable/multiroom_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/multiroom_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/multiroom_text_select_handle_middle</item>
+        <item name="android:dropDownSpinnerStyle">@style/Spinner.Multiroom</item>
+        <item name="android:selectableItemBackground">@drawable/selectable_background_multiroom</item>
         <item name="android:fastScrollThumbDrawable">@drawable/multiroom_fastscroll_thumb_holo</item>
+        <item name="android:editTextBackground">@drawable/multiroom_edit_text_holo_light</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@color/multiroom_dark</item>
+        <item name="android:statusBarColor">@color/bg_base</item>
+        <item name="android:navigationBarColor">@color/bg_base</item>
         <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
         <item name="actionModeBackground">@color/multiroom_action_mode</item>
         <item name="colorAccent">@color/multiroom_highlight</item>
         <item name="colorControlActivated">@color/multiroom_highlight</item>
         <item name="colorControlHighlight">@color/multiroom_highlight</item>
-        <item name="colorControlNormal">@color/multiroom_highlight</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
         <item name="colorPrimary">@color/multiroom_default</item>
         <item name="colorPrimaryDark">@color/multiroom_dark</item>
         <item name="colorSwitchThumbNormal">@color/multiroom_switch_off</item>

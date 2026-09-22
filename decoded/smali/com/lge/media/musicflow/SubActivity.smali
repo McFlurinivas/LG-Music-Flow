@@ -233,6 +233,28 @@
     return-void
 
     :cond_navam
+    const v3, 0x7f090374
+
+    if-ne p1, v3, :cond_navyt
+
+    const-string v3, "com.google.android.youtube"
+
+    invoke-virtual {p0, v3}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navyt
+    const v3, 0x7f090375
+
+    if-ne p1, v3, :cond_navytm
+
+    const-string v3, "com.google.android.apps.youtube.music"
+
+    invoke-virtual {p0, v3}, Lcom/lge/media/musicflow/g;->launchExternalApp(Ljava/lang/String;)V
+
+    return-void
+
+    :cond_navytm
 
     invoke-virtual {p0}, Lcom/lge/media/musicflow/SubActivity;->getSupportFragmentManager()Landroid/support/v4/app/p;
 

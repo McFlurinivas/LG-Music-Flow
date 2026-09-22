@@ -5,6 +5,10 @@
 .implements Lcom/lge/media/musicflow/route/MediaRouteService$a;
 
 
+# instance fields
+.field private mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 0
@@ -214,7 +218,7 @@
 .end method
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
-    .locals 0
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -225,44 +229,65 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lcom/lge/media/musicflow/settings/g/j;->getActivity()Landroid/support/v4/app/l;
+    iget-object p1, p0, Lcom/lge/media/musicflow/settings/g/j;->a:Ljava/util/List;
+
+    if-eqz p1, :cond_ret
+
+    :try_start_0
+    invoke-interface {p1, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroid/support/v4/app/l;->getSupportFragmentManager()Landroid/support/v4/app/p;
+    check-cast p1, Lcom/lge/media/musicflow/i/i;
+
+    if-eqz p1, :cond_ret
+
+    iget-object p1, p1, Lcom/lge/media/musicflow/i/i;->b:Ljava/util/UUID;
+
+    if-eqz p1, :cond_ret
+
+    invoke-static {p1}, Lcom/lge/media/musicflow/settings/g/j;->findMediaRoute(Ljava/util/UUID;)Lcom/lge/media/musicflow/route/e;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Landroid/support/v4/app/p;->a()Landroid/support/v4/app/v;
+    if-eqz p1, :cond_ret
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/settings/g/j;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-eqz p2, :cond_show
+
+    invoke-virtual {p2}, Lcom/lge/media/musicflow/SpeakerSheet;->dismiss()V
+
+    :cond_show
+    invoke-static {p0, p1}, Lcom/lge/media/musicflow/SpeakerSheet;->show(Lcom/lge/media/musicflow/l;Lcom/lge/media/musicflow/route/e;)Lcom/lge/media/musicflow/SpeakerSheet;
 
     move-result-object p1
 
-    iget-object p2, p0, Lcom/lge/media/musicflow/settings/g/j;->a:Ljava/util/List;
+    iput-object p1, p0, Lcom/lge/media/musicflow/settings/g/j;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-interface {p2, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    return-void
 
-    move-result-object p2
+    :catchall_0
+    move-exception p1
 
-    check-cast p2, Lcom/lge/media/musicflow/i/i;
+    :cond_ret
+    return-void
+.end method
 
-    invoke-static {p2}, Lcom/lge/media/musicflow/settings/g/k;->a(Lcom/lge/media/musicflow/i/i;)Lcom/lge/media/musicflow/settings/g/k;
+.method public onActivityResult(IILandroid/content/Intent;)V
+    .locals 1
 
-    move-result-object p2
+    invoke-super {p0, p1, p2, p3}, Lcom/lge/media/musicflow/settings/a;->onActivityResult(IILandroid/content/Intent;)V
 
-    const p3, 0x7f09009a
+    iget-object v0, p0, Lcom/lge/media/musicflow/settings/g/j;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
 
-    invoke-virtual {p1, p3, p2}, Landroid/support/v4/app/v;->b(ILandroid/support/v4/app/k;)Landroid/support/v4/app/v;
+    if-eqz v0, :cond_x
 
-    move-result-object p1
+    invoke-virtual {v0, p1, p2, p3}, Lcom/lge/media/musicflow/SpeakerSheet;->onActivityResult(IILandroid/content/Intent;)V
 
-    const/4 p2, 0x0
-
-    invoke-virtual {p1, p2}, Landroid/support/v4/app/v;->a(Ljava/lang/String;)Landroid/support/v4/app/v;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/support/v4/app/v;->d()I
-
+    :cond_x
     return-void
 .end method
 

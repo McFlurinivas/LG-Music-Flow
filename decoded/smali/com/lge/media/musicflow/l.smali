@@ -4003,23 +4003,11 @@
 .end method
 
 .method protected showTerminateAppDialog(Ljava/lang/String;)V
-    .locals 2
+    .locals 0
 
-    new-instance v0, Landroid/os/Handler;
-
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
-
-    new-instance v1, Lcom/lge/media/musicflow/l$1;
-
-    invoke-direct {v1, p0, p1}, Lcom/lge/media/musicflow/l$1;-><init>(Lcom/lge/media/musicflow/l;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
+    # end-of-service popup suppressed
     return-void
+
 .end method
 
 .method public showUpdateAlertDialog()V

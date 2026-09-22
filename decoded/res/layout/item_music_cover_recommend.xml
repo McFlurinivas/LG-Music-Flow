@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.lge.media.musicflow.widget.PressHighlightImageButton android:textAppearance="@style/TextAppearance.MyMusicCover.Recommend" android:gravity="left|top" android:id="@id/recommend_button" android:background="@drawable/cover_skip_area" android:layout_width="fill_parent" android:layout_height="fill_parent" app:textPaddingLeft="@dimen/music_cover_recommend_text_padding_side" app:textPaddingRight="@dimen/music_cover_recommend_text_padding_side" app:textPaddingTop="@dimen/music_cover_recommend_text_padding_top" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_speaker_layout_in_view" android:background="@drawable/cover_skip_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="start|top" android:orientation="vertical" android:id="@id/default_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.MyMusicCover.RecommendDefault" android:textSize="24.0sp" android:gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/music_cover_recommend_text_padding_side" android:layout_marginTop="@dimen/music_cover_recommend_text_padding_top" android:layout_marginRight="@dimen/music_cover_recommend_text_padding_side" android:text="@string/my_songs" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

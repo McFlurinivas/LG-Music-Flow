@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <CheckBox android:id="@id/list_item_check_box" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+        <ImageView android:id="@id/list_item_cover_art" android:layout_width="@dimen/list_item_thumbnail_width" android:layout_height="@dimen/list_item_thumbnail_height" android:layout_marginRight="7.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_padding_vertical" android:layout_marginRight="5.0dip" android:layout_weight="85.0" android:dividerPadding="1.0dip">
+            <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/playlist_title_normal" android:ellipsize="end" android:gravity="left|bottom" android:layout_gravity="center_vertical" android:id="@id/list_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+            <TextView android:textSize="@dimen/list_item_subtitle_text_size" android:textColor="@color/multiroom_secondary_text" android:ellipsize="end" android:gravity="left|top" android:layout_gravity="center_vertical" android:id="@id/list_item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/list_item_desc_text_size" android:gravity="right|center" android:id="@id/list_item_desc" android:paddingLeft="@dimen/list_item_padding_left" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/drag_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/list_item_move_down" android:layout_width="50.0dip" android:layout_height="wrap_content" android:src="@drawable/move_down_selector" android:scaleType="center" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/list_item_move_up" android:layout_width="50.0dip" android:layout_height="wrap_content" android:src="@drawable/move_up_selector" android:scaleType="center" />
+    </LinearLayout>
+    <ImageButton android:gravity="right|center" android:id="@id/list_item_overflow_menu" android:background="@drawable/button_background" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_global_list_edit_cue" android:scaleType="center" />
+</LinearLayout>

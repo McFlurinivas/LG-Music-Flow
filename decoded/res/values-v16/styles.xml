@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AutoMusicPlayAdjustNormal">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff464556</item>
+        <item name="android:fontFamily">@string/font_regular</item>
+    </style>
+    <style name="AutoMusicPlayAdjustNormalLight">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff464556</item>
+        <item name="android:fontFamily">@string/font_light</item>
+    </style>
+    <style name="AutoMusicPlayNormal">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff565565</item>
+        <item name="android:fontFamily">@string/font_regular</item>
+    </style>
+    <style name="AutoMusicPlayNormalLight">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ff565565</item>
+        <item name="android:fontFamily">@string/font_light</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Tooltip" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MyMusicCover.MenuItem" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/music_cover_menu_item_text_size</item>
+        <item name="android:textColor">@color/music_cover_menu_item_text</item>
+        <item name="android:shadowColor">@color/music_cover_menu_item_text_shadow</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:fontFamily">@string/font_regular</item>
+    </style>
+    <style name="TextAppearance.MyMusicCover.Recommend" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/music_cover_recommend_text_size</item>
+        <item name="android:textColor">@color/music_cover_recommend_text</item>
+        <item name="android:shadowColor">@color/music_cover_recommend_text_shadow</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:fontFamily">@string/font_light</item>
+    </style>
+    <style name="TextAppearance.MyMusicCover.Recommend.Guide" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/music_cover_recommend_text_size</item>
+        <item name="android:textColor">@color/music_cover_recommend_guide_text</item>
+        <item name="android:shadowColor">@color/music_cover_recommend_text_shadow</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:fontFamily">@string/font_light</item>
+    </style>
+    <style name="TextAppearance.MyMusicCover.RecommendDefault" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/music_cover_recommend_text</item>
+        <item name="android:shadowColor">@color/music_cover_recommend_text_shadow</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:fontFamily">@string/font_light</item>
+    </style>
+    <style name="TextAppearance.Playback.Lyrics" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/music_cover_recommend_text</item>
+        <item name="android:shadowColor">@color/music_cover_recommend_text_shadow</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:fontFamily">@string/font_regular</item>
+    </style>
+    <style name="TextAppearance.Playback.ProgressTime" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/playback_panel_progress_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:shadowColor">@color/music_cover_recommend_text_shadow</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:fontFamily">@string/font_regular</item>
+    </style>
+</resources>

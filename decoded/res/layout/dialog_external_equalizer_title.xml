@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/alert_dialog_padding" android:paddingTop="@dimen/alert_dialog_padding" android:paddingRight="@dimen/alert_dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/alert_dialog_title_size" android:textColor="@color/multiroom_highlight" android:id="@id/dialog_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_effect" android:layout_alignParentLeft="true" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/test_tone_button" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playback_con_tone_control_btn" android:layout_alignParentRight="true" android:contentDescription="@string/label_tone_control" />
+</RelativeLayout>

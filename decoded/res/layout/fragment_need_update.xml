@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/proto_header_setup" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/update_layout" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="61.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/setup_title_text" android:layout_gravity="center_vertical" android:id="@id/update_list_text" android:focusable="true" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/total_update_layout" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/setup_title_text" android:layout_gravity="center_vertical" android:id="@id/total_update_text" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/google_cast_total_update" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/total_update_button" android:background="@drawable/setup_device_update_btn" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/update_list_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/update_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/default_list_item_selector" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/update_rules_layout" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/update_list_status_text" android:id="@id/update_rules_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/update_list_status_text" android:id="@id/update_rules_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/google_cast_step_two_update_rules" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/latest_text_layout" android:focusable="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/setup_title_text" android:gravity="center" android:id="@id/latest_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/latest_list" android:paddingLeft="@dimen/list_item_padding_horizontal" android:paddingRight="@dimen/list_item_padding_horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/default_list_item_selector" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="18.0sp" android:textColor="@color/google_cast_common_text" android:gravity="center" android:id="@android:id/button2" android:background="@drawable/setup_bottom_oblong_left_btn" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/setup_next" />
+    </LinearLayout>
+</LinearLayout>

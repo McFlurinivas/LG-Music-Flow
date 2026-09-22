@@ -1,0 +1,30 @@
+.class final Lcom/google/android/gms/c/ey;
+.super Lcom/google/android/gms/c/bl;
+
+
+# instance fields
+.field private synthetic a:Lcom/google/android/gms/c/ex;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/gms/c/ex;Lcom/google/android/gms/c/df;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/google/android/gms/c/ey;->a:Lcom/google/android/gms/c/ex;
+
+    invoke-direct {p0, p2}, Lcom/google/android/gms/c/bl;-><init>(Lcom/google/android/gms/c/df;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/c/ey;->a:Lcom/google/android/gms/c/ex;
+
+    invoke-static {v0}, Lcom/google/android/gms/c/ex;->c(Lcom/google/android/gms/c/ex;)V
+
+    return-void
+.end method

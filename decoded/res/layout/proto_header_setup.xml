@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/header_layout" android:background="#ff242433" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/header_setup_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="@color/setup_action_bar_title_text" android:gravity="center" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/setup_info_button" android:background="@drawable/ic_setup_info" android:visibility="gone" android:layout_width="@dimen/header_setup_title_button" android:layout_height="@dimen/header_setup_title_button" android:layout_marginRight="10.0dip" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/overflow_menu" android:background="@drawable/button_background" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_global_list_edit_cue" android:scaleType="center" />
+    </LinearLayout>
+</LinearLayout>

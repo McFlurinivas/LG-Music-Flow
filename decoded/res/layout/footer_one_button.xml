@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <Button android:id="@android:id/button1" style="@style/SetupBottomTwoButtonHorizontally" />
+</LinearLayout>

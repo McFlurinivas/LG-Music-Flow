@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/play_next" android:title="@string/play_next" />
+    <item android:id="@id/add_to_now_playing_list" android:title="@string/add_to_queue" />
+    <item android:id="@id/add_to_playlist" android:title="@string/add_to_playlist" />
+    <item android:id="@id/delete_playlist" android:title="@string/delete" />
+    <item android:id="@id/action_close" android:title="@string/close" />
+</menu>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_setting_height" android:layout_marginLeft="@dimen/list_item_dms_padding" android:layout_marginRight="@dimen/list_item_dms_padding">
+        <ImageView android:id="@id/dms_image" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_wizard_dms_normal" />
+        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="#ff12121a" android:ellipsize="middle" android:gravity="left|center" android:id="@id/dms_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

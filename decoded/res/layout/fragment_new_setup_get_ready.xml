@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/proto_header_setup" />
+    <ScrollView android:id="@id/scroll_password" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="center_horizontal" android:id="@id/__faq_a1" android:layout_width="15.0dip" android:layout_height="wrap_content" android:text="1." android:layout_alignParentTop="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:id="@id/setup_wireless_step_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/__faq_a1" />
+            </RelativeLayout>
+            <com.lge.media.musicflow.setup.steps.CenterAnimatedImageView android:id="@id/animation01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_led_lamp_bg" android:layout_weight="0.5" />
+            <RelativeLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="center_horizontal" android:id="@id/__faq_a2" android:layout_width="15.0dip" android:layout_height="wrap_content" android:text="2." android:layout_alignParentTop="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:id="@id/setup_wireless_step_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/__faq_a2" />
+            </RelativeLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_device_wifi" android:layout_weight="0.5" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/footer_two_button_horizontally" />
+</LinearLayout>

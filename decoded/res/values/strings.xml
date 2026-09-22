@@ -1,0 +1,1820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_font_family_body_1_material">sans-serif</string>
+    <string name="abc_font_family_body_2_material">sans-serif-medium</string>
+    <string name="abc_font_family_button_material">sans-serif-medium</string>
+    <string name="abc_font_family_caption_material">sans-serif</string>
+    <string name="abc_font_family_display_1_material">sans-serif</string>
+    <string name="abc_font_family_display_2_material">sans-serif</string>
+    <string name="abc_font_family_display_3_material">sans-serif</string>
+    <string name="abc_font_family_display_4_material">sans-serif-light</string>
+    <string name="abc_font_family_headline_material">sans-serif</string>
+    <string name="abc_font_family_menu_material">sans-serif</string>
+    <string name="abc_font_family_subhead_material">sans-serif</string>
+    <string name="abc_font_family_title_material">sans-serif-medium</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="add_application">Add application</string>
+    <string name="add_playlist_error">Select a song.</string>
+    <string name="add_to_playlist">Add to playlist</string>
+    <string name="add_to_queue">Add to queue</string>
+    <string name="added_to_album_successfully">"'%1$s' was successfully added to your favourite albums."</string>
+    <string name="added_to_artist_successfully">Artist added to favourites.</string>
+    <string name="added_to_favorites">Added to your favorites.</string>
+    <string name="added_to_playlist">Added to your playlist</string>
+    <string name="added_to_playlist_successfully">"'%1$s' was successfully added to playlist '%2$s'."</string>
+    <string name="added_to_queue">Added to queue</string>
+    <string name="advanced_description">Advanced features</string>
+    <string name="alarm">Alarm</string>
+    <string name="alarm_and_timer_description">You can turn on and off Music Flow at a designated time.</string>
+    <string name="alarm_description">Music Flow will let you know when it is time.</string>
+    <string name="alarm_select_speaker">Select a speaker</string>
+    <string name="alarm_warning_comment">You can set up to seven alarms for each speaker.</string>
+    <string name="alarms">Alarm</string>
+    <string name="albums">Albums</string>
+    <string name="all_songs">All music</string>
+    <string name="app_exit">Exit</string>
+    <string name="app_name">Music Flow Player</string>
+    <string name="app_update_description">"The application needs to be updated for efficient use.
+Do you want to update the software?"</string>
+    <string name="app_version">App version info.</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="arc">HDMI(ARC)</string>
+    <string name="arc_new">ARC</string>
+    <string name="artist_unknown">Unknown Artist</string>
+    <string name="artists">Artists</string>
+    <string name="auto">Auto</string>
+    <string name="auto_display">Auto Display On/Off</string>
+    <string name="auto_display_description">Inactivity will cause the display to turn off automatically.</string>
+    <string name="auto_music_play">Auto Music Play</string>
+    <string name="auto_music_play_adjust">Sensitivity Settings</string>
+    <string name="auto_music_play_adjust_description">You can set the Auto Music Play operating range of the Music Flow and smart device by adjusting the sensitivity of the smart device Bluetooth.</string>
+    <string name="auto_music_play_adjust_detected">The speaker is detected.</string>
+    <string name="auto_music_play_adjust_help_faq_a1">Find a suitable level and set by adjusting the sensitivity toward weak.</string>
+    <string name="auto_music_play_adjust_help_faq_a2">Set the sensitivity toward strong and try again.</string>
+    <string name="auto_music_play_adjust_help_faq_q1">If the Auto Music Play works even when the smart device is away from the speakers?</string>
+    <string name="auto_music_play_adjust_help_faq_q2">If the Auto Music Play does not work normally even when the smart device is close to the speakers?</string>
+    <string name="auto_music_play_adjust_help_text1">You can set the Auto Music Play operating range of the Music Flow and smart device by adjusting the sensitivity of the smart device Bluetooth.</string>
+    <string name="auto_music_play_adjust_help_text2">Try adjusting the sensitivity settings for your smart device and the Music Flow.</string>
+    <string name="auto_music_play_adjust_help_title">Sensitivity Settings</string>
+    <string name="auto_music_play_adjust_not_detected">Speaker is not detected.</string>
+    <string name="auto_music_play_adjust_tip1">Tip! If the speaker is not detected,</string>
+    <string name="auto_music_play_adjust_tip2">please move the smart device closer to the speaker.</string>
+    <string name="auto_music_play_bluetooth_request_message">"To use the auto music play function, Bluetooth should be turned on.
+Would you like to turn on Bluetooth?"</string>
+    <string name="auto_music_play_closer">Weak</string>
+    <string name="auto_music_play_description">It plays the audio currently playing by tagging the mobile to LG Music Flow.</string>
+    <string name="auto_music_play_farther">Strong</string>
+    <string name="auto_music_play_gesture">Gesture</string>
+    <string name="auto_music_play_gesture_description">If you shake the smart device, the music playing on the speakers will switch to the smart device.</string>
+    <string name="auto_music_play_guide">It is the function to tag the mobile device to LG Music Flow to continuously play the music played in other LG Music Flow or mobile devices.</string>
+    <string name="auto_music_play_normal">Normal</string>
+    <string name="auto_music_play_usage1">Turn on Bluetooth function in mobile setting.</string>
+    <string name="auto_music_play_usage2">Tag the mobile to LG Music Flow to play for about 1 second.</string>
+    <string name="auto_music_play_usage3">But, the mobile device should support low power Bluetooth(BLE).</string>
+    <string name="auto_music_play_usage_title">How to use</string>
+    <string name="auto_power">Auto Power On/Off</string>
+    <string name="auto_power_description">Sound Bar is turned on and off according to TV status.</string>
+    <string name="auto_volume">Auto Volume On/Off</string>
+    <string name="auto_volume_description">It prevents sudden increase of volume.</string>
+    <string name="aux">AUX</string>
+    <string name="aux_new">AUX</string>
+    <string name="av_sync">AV Sync</string>
+    <string name="balance">Balance</string>
+    <string name="bass">Bass</string>
+    <string name="battery">Remaining battery</string>
+    <string name="beyond_pod">BeyondPod</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_new">Bluetooth</string>
+    <string name="bluetooth_turning_on">Turning on Bluetooth…</string>
+    <string name="bluray_disc_home_theater_system">Blu-ray Disc Home Theater</string>
+    <string name="bluray_disc_player">Blu-ray Disc Player</string>
+    <string name="bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="bridge">"Bridge "</string>
+    <string name="bt_connect">It has been paired with %s.</string>
+    <string name="bt_connect_limit">Bluetooth connection restriction</string>
+    <string name="bt_connect_limit_description">Set Bluetooth device to be connected only in Bluetooth function.</string>
+    <string name="bt_fi_already_connected">"%s is connected with other device. Pressing 'Continue' will proceed with the bluetooth connection. Do you want to continue?"</string>
+    <string name="bt_fi_connection_title">Bluetooth Connection</string>
+    <string name="bt_fi_continue">Continue</string>
+    <string name="bt_fi_new_connection">To play %s, the speaker and the mobile device should be connected with bluetooth. Do you want to connect?</string>
+    <string name="bt_not_connect">Bluetooth device is not connected.</string>
+    <string name="bt_party">Bluetooth multi play mode</string>
+    <string name="bt_party_description">When two or more Bluetooth devices are connected, a play mode is set.</string>
+    <string name="bt_party_mode">PARTY</string>
+    <string name="bt_party_mode_description">While music is played from one device, music from the other devices can be played.</string>
+    <string name="bt_private_mode">PRIVATE</string>
+    <string name="bt_private_mode_description">While music is played from one device, no music from the other devices can be played.</string>
+    <string name="bt_stand_by_mode">Bluetooth standby mode</string>
+    <string name="bt_stand_by_mode_description">It enters standby mode in order for the Bluetooth device to connect even when the network is not available.</string>
+    <string name="bugs_music">Bugs!Music</string>
+    <string name="cancel_connection">It will cancel all the connections in progress. Do you want to cancel it?</string>
+    <string name="change">Change</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="charts">Charts</string>
+    <string name="close">Close</string>
+    <string name="coach_mark_function_desc">You can check and then change the function in current use.</string>
+    <string name="coach_mark_function_title">[Functions]</string>
+    <string name="coach_mark_grouping_desc">You can listen to the music playing on Music Flow through another product.</string>
+    <string name="coach_mark_grouping_title">[Grouping]</string>
+    <string name="coach_mark_menu_desc">You can tap to move to the desired menu.</string>
+    <string name="coach_mark_menu_title">[Menu]</string>
+    <string name="coach_mark_playlist_desc">It gathers and shows the songs that you like and have listened to.</string>
+    <string name="coach_mark_playlist_title">[Playlist]</string>
+    <string name="coach_mark_search_desc">You can search the music.</string>
+    <string name="coach_mark_search_title">[Search]</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="connect">Connect</string>
+    <string name="connect_to_tv">@string/setup_sound_bar_title</string>
+    <string name="connect_to_tv_description">You can easily connect TV and Sound Bar.</string>
+    <string name="connect_wifi">Please connect Wi-Fi.</string>
+    <string name="cp_login_failed">Login Failed.</string>
+    <string name="cp_login_succeed">Login Succeed.</string>
+    <string name="cp_playback_error">The broadcasting cannot be played.</string>
+    <string name="daily">Everyday</string>
+    <string name="date_time_automatic_time_zone">Automatic Time Zone</string>
+    <string name="date_time_automatic_time_zone_description">Use network provided time</string>
+    <string name="date_time_set_time_zone">Set Time Zone</string>
+    <string name="deezer">Deezer</string>
+    <string name="deezer_add_to_favorite">Add to favourites</string>
+    <string name="deezer_add_to_playlist">Add to a playlist</string>
+    <string name="deezer_add_to_tracks_you_love">Add to Favourite tracks</string>
+    <string name="deezer_album_page">Album Page</string>
+    <string name="deezer_artist_page">Artist Page</string>
+    <string name="deezer_remove_from_favorite">Remove from favourites</string>
+    <string name="deezer_remove_from_library">Remove from Library</string>
+    <string name="deezer_remove_from_playlist">@string/deezer_remove_from_favorite</string>
+    <string name="deezer_remove_from_tracks_you_love">Remove from Favourite tracks</string>
+    <string name="default_alarm">Default alarm sound</string>
+    <string name="default_progressbar">Default Progressbar:</string>
+    <string name="default_web_client_id">41169428152-5nojpdq8o193cci2tsb67h6cnfedafkp.apps.googleusercontent.com</string>
+    <string name="delete">Delete</string>
+    <string name="delete_playlist">Delete playlist</string>
+    <string name="denial">@string/setup_terms_of_use_decline</string>
+    <string name="device_reboot">The device will automatically reboot.</string>
+    <string name="dlna">Wi-Fi</string>
+    <string name="dlna_new">Wi-Fi</string>
+    <string name="downloading">Downloading…</string>
+    <string name="drc">DRC</string>
+    <string name="duration">Alarm duration</string>
+    <string name="edit_alarm">Edit alarm</string>
+    <string name="edit_playlist">Edit playlist</string>
+    <string name="email">Email address</string>
+    <string name="eq_asc">ASC</string>
+    <string name="eq_bass">Bass</string>
+    <string name="eq_bass_blast">Bass Blast</string>
+    <string name="eq_boost">Boost</string>
+    <string name="eq_cinema">Cinema</string>
+    <string name="eq_dolby_atmos">Dolby ATMOS</string>
+    <string name="eq_flat">Flat</string>
+    <string name="eq_isound">I.A SOUND</string>
+    <string name="eq_movie">Movie</string>
+    <string name="eq_music">Music</string>
+    <string name="eq_news">News</string>
+    <string name="eq_night">Night</string>
+    <string name="eq_standard">Standard</string>
+    <string name="eq_treble_bass">Treble/Bass</string>
+    <string name="eq_user_eq">User EQ</string>
+    <string name="eq_voice">Voice</string>
+    <string name="equalizer_bass_boost">Bass boost</string>
+    <string name="equalizer_preset">Preset</string>
+    <string name="equalizer_preset_custom">Custom</string>
+    <string name="equalizer_preset_reverb">Preset reverb</string>
+    <string name="equalizer_preset_title">Presets</string>
+    <string name="equalizer_title">Equalizer</string>
+    <string name="equalizer_virtualizer">Virtualizer</string>
+    <string name="fail">Fail</string>
+    <string name="favorite_album">My Albums</string>
+    <string name="favorite_artist">My Artists</string>
+    <string name="firebase_database_url">https://musicflow-735b9.firebaseio.com</string>
+    <string name="font_light">sans-serif-light</string>
+    <string name="font_regular">sans-serif</string>
+    <string name="friend_playlist">"Friend's Playlists"</string>
+    <string name="function">Functions</string>
+    <string name="gcm_defaultSenderId">41169428152</string>
+    <string name="general_description">These are the settings for easier use of Music Flow.</string>
+    <string name="genre_unknown">Unknown genre</string>
+    <string name="get_info">Get info</string>
+    <string name="go_to_internet_unavailable">For proper wireless network connection, turn off internet unavailable function.</string>
+    <string name="go_to_smart_wifi_service">For proper wireless network connection, turn off smart Wi-Fi function of the device.</string>
+    <string name="go_to_wifi_connection">Go to Wi-Fi connection</string>
+    <string name="go_to_wifi_connection_description">To use Music Flow, you need Wi-Fi connection. Do you wish to connect to Wi-Fi now?</string>
+    <string name="go_to_wifi_connection_title">To use Music Flow, you need Wi-Fi connection.</string>
+    <string name="google_api_key">AIzaSyA02ErbplVoFfqKrhqlgN2UMy3xdxwpH7c</string>
+    <string name="google_app_id">1:41169428152:android:5a2c8bf87e63b8f4</string>
+    <string name="google_cast_built_in">Chromecast built-in logo</string>
+    <string name="google_cast_close">@string/close</string>
+    <string name="google_cast_device_update">Update speakers</string>
+    <string name="google_cast_fail_update">Update failed. Do you want us to retry?</string>
+    <string name="google_cast_function_apply">Google Cast function applies</string>
+    <string name="google_cast_learn_about">Learn about Chromecast built-in Privacy</string>
+    <string name="google_cast_learn_about_cast_groups_address">https://www.google.com/cast/learn/audio/#multiroom</string>
+    <string name="google_cast_learn_cast_address">https://www.google.com/cast/audio/learn</string>
+    <string name="google_cast_learn_privacy_policy_address">https://support.google.com/googlecast/answer/6076570</string>
+    <string name="google_cast_no_thanks">No thanks</string>
+    <string name="google_cast_open_source_license_address">http://support.google.com/googlecast/answer/6121012</string>
+    <string name="google_cast_playback_app_name">Casting</string>
+    <string name="google_cast_privacy_legal">Google Privacy Policy</string>
+    <string name="google_cast_privacy_policy_address">http://www.google.com/policies/privacy/</string>
+    <string name="google_cast_read_more">Learn more</string>
+    <string name="google_cast_ready_apps_address">https://www.google.com/cast/apps/?device=audio&amp;partner=LGE&amp;webview=true</string>
+    <string name="google_cast_select_google_cast_learn_more">Cast your favorite music and radio apps from your phone or tablet to your Music Flow</string>
+    <string name="google_cast_service">Chromecast service</string>
+    <string name="google_cast_service_description">By pressing \"Accept\" below, you acknowledge that you agree to the Google Terms of Service and Google Privacy Policy.</string>
+    <string name="google_cast_service_legal">Google Terms of Service</string>
+    <string name="google_cast_setting_groups">Cast groups</string>
+    <string name="google_cast_setting_groups_description">"If you wish to enjoy Chromecast in Multi-room, you need to create a group in 'Google Home' app."</string>
+    <string name="google_cast_setting_how_to_cast_to_a_group">How to cast to a group</string>
+    <string name="google_cast_setting_launch_google_home">"'Google Home App' 바로가기"</string>
+    <string name="google_cast_setting_learn_about_cast_groups">Learn about cast groups</string>
+    <string name="google_cast_setting_learn_more">Learn how to Cast</string>
+    <string name="google_cast_setting_legal">Chromecast built-in open legal documents</string>
+    <string name="google_cast_setting_open_source_license">@string/open_source_licenses</string>
+    <string name="google_cast_setting_privacy_of_policy">Google Privacy Policy</string>
+    <string name="google_cast_setting_ready_apps">Chromecast enabled apps</string>
+    <string name="google_cast_setting_terms_of_service">Google Terms of Service</string>
+    <string name="google_cast_share_data_description">Send Chromecast built-in usage data and crash reports to Google</string>
+    <string name="google_cast_speaker_list_grouping_notice">Cast for Audio 서비스를 이용할 수 없습니다.</string>
+    <string name="google_cast_speaker_update_list_version_info">Version</string>
+    <string name="google_cast_step_one_update_rules">Do not turn off the product during the update.</string>
+    <string name="google_cast_step_two_update_rules">Please wait until the product reboots after the update is complete.</string>
+    <string name="google_cast_step_update_rules_title">[Cautions]</string>
+    <string name="google_cast_terms_of_service_address">http://www.google.com/policies/terms/</string>
+    <string name="google_cast_title">Chromecast</string>
+    <string name="google_cast_tos">The Google Privacy Policy describes the information that Google collects during your set-up and use of Chromecast. You can modify your device’s Chromecast built-in privacy settings, such as whether it sends usage data and crash reports to Google, after you have set up your device by accessing the device settings in this application.</string>
+    <string name="google_cast_total_update">Update all</string>
+    <string name="google_cast_update_check">Checking for updates…</string>
+    <string name="google_cast_ver_info">Chromecast :</string>
+    <string name="google_crash_reporting_api_key">AIzaSyA02ErbplVoFfqKrhqlgN2UMy3xdxwpH7c</string>
+    <string name="google_play_music">Google Play Music</string>
+    <string name="google_storage_bucket">musicflow-735b9.appspot.com</string>
+    <string name="group_compress">Compressed sound transmission</string>
+    <string name="group_compress_auto_description">It transmits by adjusting the compression ratio automatically according to the network status.</string>
+    <string name="group_compress_description">It transmits compressed sound source, for smooth playback when performing group playback.</string>
+    <string name="group_compress_description_tip">The sound-quality may degrade because of the compressed transmission.</string>
+    <string name="group_destroy">To play as surround, the group connection should be released in advance. Do you want to disconnect the group connection?</string>
+    <string name="group_destroy_for_google_cast">Grouping has been cancelled due to Chromecast.</string>
+    <string name="group_none_compress">Non-compression</string>
+    <string name="group_not_supported_in_google_cast">This product does not support the grouping function when using Chromecast.</string>
+    <string name="grouping">Grouping</string>
+    <string name="grouping_guide_description">"You can enjoy the music simultaneously in several Music Flow products through the grouping.
+
+2 or more speakers should be connected."</string>
+    <string name="grouping_play_together">Music Flow to play together</string>
+    <string name="hdmi_1">HDMI In 1</string>
+    <string name="hdmi_1_new">HDMI In 1</string>
+    <string name="hdmi_2">HDMI In 2</string>
+    <string name="hdmi_2_new">HDMI In 2</string>
+    <string name="hdmi_3">HDMI In 3</string>
+    <string name="hdmi_3_new">HDMI In 3</string>
+    <string name="hdmi_in">HDMI In</string>
+    <string name="hdmi_in_new">HDMI In</string>
+    <string name="hdmi_not_in">Connect an hdmi input cable</string>
+    <string name="hour_1">1 hr</string>
+    <string name="hour_2">2 hrs</string>
+    <string name="id">User ID</string>
+    <string name="iheartradio">iHeartradio</string>
+    <string name="iheartradio_add_to_favorite">Add to Favorite Stations</string>
+    <string name="iheartradio_build_custom_radio">Nice! Building Custom Station.</string>
+    <string name="iheartradio_build_custom_radio_fail">Cannot Create Custom Station.</string>
+    <string name="iheartradio_delete_from_favorite">Remove from Favorites</string>
+    <string name="iheartradio_explicit">Explicit ON</string>
+    <string name="iheartradio_explicit_contents">Custom radio may contain explicit lyrics. You can turn on explicit content in Account Management</string>
+    <string name="iheartradio_favorite_added">favorite station added</string>
+    <string name="iheartradio_favorite_deleted">favorite station deleted</string>
+    <string name="iheartradio_guide_create_radio">"1. Click the search icon above.
+
+2. Enter any station, artist, song or show to create a custom station based on what you searched for.
+
+3. Once created, the station will be added to your Recently Played. Then you can save it to your Favorites."</string>
+    <string name="iheartradio_info_create_account">Don‘t have an account? Visit <a href="http://www.iheart.com">http://www.iheart.com</a> to create a free account</string>
+    <string name="iheartradio_info_day_skip_limit">Sorry, you’ve reached your daily skip limit. You can still thumb down a song. Want to know more? See help.iheartradio.com.</string>
+    <string name="iheartradio_info_favorite_limit_size_over">Favorite limit size OVER.</string>
+    <string name="iheartradio_info_hour_skip_limit">Sorry, You’ve reached your skip limit for this station. You can still thumb down a song. Want to know more? See help.iheartradio.com.</string>
+    <string name="iheartradio_info_loading">Loading…</string>
+    <string name="iheartradio_info_no_seed_to_play">It cannot find seeds to play</string>
+    <string name="iheartradio_info_not_yet_supported">Not yet supported</string>
+    <string name="iheartradio_menu_all_favorites">All Favorite</string>
+    <string name="iheartradio_menu_cities">Cities</string>
+    <string name="iheartradio_menu_create_station">Create Station</string>
+    <string name="iheartradio_menu_entertainment">Music &amp; Entertainment</string>
+    <string name="iheartradio_menu_favorites">Favorites</string>
+    <string name="iheartradio_menu_live_radio">Live Radio</string>
+    <string name="iheartradio_menu_music">Music</string>
+    <string name="iheartradio_menu_news_n_talk">News &amp; Talk</string>
+    <string name="iheartradio_menu_public_radio">Public Radio</string>
+    <string name="iheartradio_menu_recently_played">Recently Played</string>
+    <string name="iheartradio_menu_sports">Sports</string>
+    <string name="iheartradio_menu_station_near_you">Stations Near You</string>
+    <string name="iheartradio_menu_talk">Talk</string>
+    <string name="iheartradio_menu_talk_radio">Talk Radio</string>
+    <string name="iheartradio_search_info">Enter any station, artist, song, or show</string>
+    <string name="iheartradio_station_delete">Delete Station</string>
+    <string name="iheartradio_station_deleted">station deleted.</string>
+    <string name="initialization">Initialize</string>
+    <string name="initialization_question">This will reset settings of Music Flow product back to original state.</string>
+    <string name="ip_information">IP Info.</string>
+    <string name="juke">JUKE</string>
+    <string name="juke_add_to_my_music">Add to My Music</string>
+    <string name="juke_add_to_playlist">Add to playlist</string>
+    <string name="juke_add_to_queue">Add to queue</string>
+    <string name="juke_albums">Albums</string>
+    <string name="juke_artists">Artists</string>
+    <string name="juke_create_new_playlist">Create new Playlist</string>
+    <string name="juke_empty_playlist">This playlist is empty. Please add some tracks.</string>
+    <string name="juke_genre_alternative">Alternative</string>
+    <string name="juke_genre_ambient">Ambient</string>
+    <string name="juke_genre_blues">Blues</string>
+    <string name="juke_genre_children">Children</string>
+    <string name="juke_genre_christmas">Christmas</string>
+    <string name="juke_genre_classic">Classic</string>
+    <string name="juke_genre_country">Country</string>
+    <string name="juke_genre_dance">Dance</string>
+    <string name="juke_genre_hip_hop">Hip-Hop</string>
+    <string name="juke_genre_hit_songs">Hit-Songs</string>
+    <string name="juke_genre_jazz">Jazz</string>
+    <string name="juke_genre_latin">Latin</string>
+    <string name="juke_genre_metal">Metal</string>
+    <string name="juke_genre_pop_rock">Pop/Rock</string>
+    <string name="juke_genre_reggae">Reggae</string>
+    <string name="juke_genre_religious">Religious</string>
+    <string name="juke_genre_soul">Soul</string>
+    <string name="juke_genre_soundtracks">Soundtracks</string>
+    <string name="juke_genre_world">World</string>
+    <string name="juke_go_to_album">Go to album</string>
+    <string name="juke_go_to_artist">Go to artist</string>
+    <string name="juke_menu_charts">Charts</string>
+    <string name="juke_menu_genres">Genres</string>
+    <string name="juke_menu_my_music">My Music</string>
+    <string name="juke_menu_my_playlists">My Playlists</string>
+    <string name="juke_menu_new_recommend">New &amp; Recommend</string>
+    <string name="juke_menu_public_playlists">Public Playlists</string>
+    <string name="juke_menu_radios">Radios</string>
+    <string name="juke_msg_add_my_music">Added to My Music</string>
+    <string name="juke_msg_add_playlist_success">Added to Playlist</string>
+    <string name="juke_msg_create_account">"You dont have JUKE account?
+Then simply register at "<a href="http://www.juke.com">http://www.juke.com</a> now!</string>
+    <string name="juke_msg_create_playlist_success">Playlist saved</string>
+    <string name="juke_msg_dto_user_notification">Please note: with your account you can listen to 30-second samples only.</string>
+    <string name="juke_msg_exception">Sorry, something unexpected happened!</string>
+    <string name="juke_msg_no_user_found">Please check your username and password and try again.</string>
+    <string name="juke_msg_not_premium_subscription_user">A JUKE Subscription or purchased content is required. You can get an account on juke.com</string>
+    <string name="juke_msg_premium_subscription_expired">Your JUKE subscription has expired. Renew it online on juke.com.</string>
+    <string name="juke_msg_remove_from_playlist_success">Track removed</string>
+    <string name="juke_msg_remove_my_music">Removed from My Music</string>
+    <string name="juke_msg_remove_playlist_success">Playlist removed</string>
+    <string name="juke_msg_sample_track">This track is only available as a 30-second sample.</string>
+    <string name="juke_msg_wait_for_loading">Please wait…</string>
+    <string name="juke_no_data">No Data</string>
+    <string name="juke_no_my_playlist">You do not have any playlists yet.</string>
+    <string name="juke_no_search_album">No Album available for your search</string>
+    <string name="juke_no_search_artist">No Artist available for your search</string>
+    <string name="juke_no_search_track">No Track available for your search</string>
+    <string name="juke_no_similar_artist">No similar artists available</string>
+    <string name="juke_play_next">Play next</string>
+    <string name="juke_play_now">Play now</string>
+    <string name="juke_play_playlist">Play Playlist</string>
+    <string name="juke_remove_from_my_music">Remove from My Music</string>
+    <string name="juke_remove_from_playlist">Remove from Playlist</string>
+    <string name="juke_remove_playlist">Remove</string>
+    <string name="juke_rename_playlist">Rename Playlist</string>
+    <string name="juke_rename_playlist_title">Rename Playlist</string>
+    <string name="juke_search">Search</string>
+    <string name="juke_similar_artists">Similar</string>
+    <string name="juke_suggested">Suggested</string>
+    <string name="juke_termination">"This app will stop supporting JUKE sevice soon (as of December, 2017).
+Transmit to Chromecast built-in by using JUKE app."</string>
+    <string name="juke_tracks">Tracks</string>
+    <string name="kkbox">KKBox</string>
+    <string name="label_add_favorite">Add to Favorites</string>
+    <string name="label_add_speaker">Add Speaker</string>
+    <string name="label_add_to_playlist">Add to playlist</string>
+    <string name="label_alarm_am_pm">Hour Zone Settings. %s</string>
+    <string name="label_alarm_hour">Hour Settings. %s hours</string>
+    <string name="label_alarm_hour_down">Hour Settings. Down</string>
+    <string name="label_alarm_hour_up">Hour Settings. Up</string>
+    <string name="label_alarm_minute">Minute settings. %s minutes</string>
+    <string name="label_alarm_minute_down">Minute settings. Down</string>
+    <string name="label_alarm_minute_up">Minute settings. Up</string>
+    <string name="label_alarm_volume_change">The volume of the alarm is %1$d of %2$d.</string>
+    <string name="label_auto_music_play_adjust">The current sensitivity setting value is %2$d of %1$d. Weak %3$d, Strong %4$d</string>
+    <string name="label_avsync">AV Sync setting value is %1$d ms. Minimum Value %2$d ms, Maximum Value %3$d ms</string>
+    <string name="label_balance_sound_effect">The speaker volume balance setting value is [%1$s] %2$d. L%3$d [%4$d%%], R%5$d [%6$d%%]</string>
+    <string name="label_balance_sound_effect_zero">The speaker volume balance setting value is %1$d. L%2$d [%3$d%%], R%4$d [%5$d%%]</string>
+    <string name="label_bass_sound_effect">The bass setting value is %1$d. Minimum Value %2$d dB, Maximum Value %3$d dB</string>
+    <string name="label_channel_change">%1$s Channel change</string>
+    <string name="label_channel_left">Left speaker</string>
+    <string name="label_channel_mono">Mono</string>
+    <string name="label_channel_right">Right speaker</string>
+    <string name="label_channel_stereo">Stereo</string>
+    <string name="label_close">Close</string>
+    <string name="label_close_coachmark">Close coachmark</string>
+    <string name="label_close_option">Close %s options</string>
+    <string name="label_close_playback">"Down player "</string>
+    <string name="label_current_sound_effect">The current sound effect is %s.</string>
+    <string name="label_delete_input">"Delete entered contents "</string>
+    <string name="label_dislike">Dislike</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_eight">팔</string>
+    <string name="label_enter_id">Enter your ID</string>
+    <string name="label_enter_password">Enter your password.</string>
+    <string name="label_execute_app">Run %s</string>
+    <string name="label_five">오</string>
+    <string name="label_four">사</string>
+    <string name="label_functions">Open %s function selection pop-up</string>
+    <string name="label_go_back_to_previous">Move to previous screen</string>
+    <string name="label_group">Group %s</string>
+    <string name="label_group_speaker_info">%2$s is playing in %1$s</string>
+    <string name="label_help">Open guide pop-up</string>
+    <string name="label_hour">Hour</string>
+    <string name="label_indexer">Index</string>
+    <string name="label_input_speaker_name">Please enter a speaker name.</string>
+    <string name="label_legacy_help">%s Help</string>
+    <string name="label_lg_smart_audio_menu">Open LG Music Flow menu</string>
+    <string name="label_like">Like</string>
+    <string name="label_linked_device">Linked device</string>
+    <string name="label_list_content">"[%2$d] of [%1$d] items
+"</string>
+    <string name="label_listen_to_sound">Listen to the %s sound</string>
+    <string name="label_loading">Loading…</string>
+    <string name="label_mini_player">Mini player</string>
+    <string name="label_minute">Minute</string>
+    <string name="label_more_than_one_hour">Hours</string>
+    <string name="label_more_than_one_minute">Minutes</string>
+    <string name="label_more_than_one_second">seconds</string>
+    <string name="label_move_down">%s Move Down</string>
+    <string name="label_move_up">%s Move Up</string>
+    <string name="label_moved_down">Moved Down</string>
+    <string name="label_moved_up">Moved up</string>
+    <string name="label_music_search">Search my phone music</string>
+    <string name="label_music_select">Open music selection pop-up</string>
+    <string name="label_mute">Mute on</string>
+    <string name="label_next">"Next song "</string>
+    <string name="label_next_sound_effect">Next sound effect</string>
+    <string name="label_nine">구</string>
+    <string name="label_now_playing">Open current playing lists</string>
+    <string name="label_oepn_music_popup">Open %s music selection pop-up</string>
+    <string name="label_one">일</string>
+    <string name="label_open">Open</string>
+    <string name="label_open_browser">It will be opened in browser</string>
+    <string name="label_open_option">Open %s options</string>
+    <string name="label_open_overflow">Open Speakers found options</string>
+    <string name="label_option">"%s Option "</string>
+    <string name="label_password_hint">Enter your password.</string>
+    <string name="label_pause">Pause</string>
+    <string name="label_paused">Playing...</string>
+    <string name="label_play">Play</string>
+    <string name="label_play_time">%2$s of %1$s, %3$s, %4$s</string>
+    <string name="label_playback">Playback view</string>
+    <string name="label_playback_slide">Play slide</string>
+    <string name="label_player_lyrics">Show lyrics</string>
+    <string name="label_playing">Paused</string>
+    <string name="label_point">점</string>
+    <string name="label_prev_sound_effect">Previous sound effect</string>
+    <string name="label_previous">"Previous song "</string>
+    <string name="label_refresh">"Search again "</string>
+    <string name="label_remove_favorite">Remove Favorites</string>
+    <string name="label_repeat_all">"Repeat settings - Currently repeat all On "</string>
+    <string name="label_repeat_folder">"Repeat settings - Currently repeat folder On "</string>
+    <string name="label_repeat_off">"Repeat settings - Currently listening repeatedly Off "</string>
+    <string name="label_repeat_one">"Repeat settings - Currently 1 song listening repeatedly On "</string>
+    <string name="label_row_column">%1$s, Row [%2$d], Column [%3$d]</string>
+    <string name="label_second">second</string>
+    <string name="label_select_all">Select All</string>
+    <string name="label_selected">%s selected</string>
+    <string name="label_seven">칠</string>
+    <string name="label_shuffle_off">Shuffle Settings - Currently listening shuffle Off</string>
+    <string name="label_shuffle_on">"Shuffle Settings - Currently listening shuffle On "</string>
+    <string name="label_six">육</string>
+    <string name="label_soundeffect">"Sound Effect "</string>
+    <string name="label_speaker_mute">%s Mute</string>
+    <string name="label_speaker_refresh">Refresh connected speakers</string>
+    <string name="label_speaker_searching">Searching for speakers…</string>
+    <string name="label_speaker_select">Send to Speaker</string>
+    <string name="label_speaker_unmute">%s Unmute</string>
+    <string name="label_stop">"Stop "</string>
+    <string name="label_surround">Set %s surround</string>
+    <string name="label_surround_l_selected">%s L selected</string>
+    <string name="label_surround_nothing_selected">%s L/R not all selected</string>
+    <string name="label_surround_r_selected">%s R selected</string>
+    <string name="label_three">삼</string>
+    <string name="label_title">Title</string>
+    <string name="label_tone_control">Tone control</string>
+    <string name="label_treble_sound_effect">The treble setting value is %1$d. Minimum Value %2$d dB, Maximum Value %3$d dB</string>
+    <string name="label_two">이</string>
+    <string name="label_unmute">Mute off</string>
+    <string name="label_unselected">%s not selected</string>
+    <string name="label_update">Update</string>
+    <string name="label_update_cancel">Cancel %s update.</string>
+    <string name="label_update_speaker">Update %s.</string>
+    <string name="label_volume">Volume</string>
+    <string name="label_volume_change">Volume for %1$s is %2$d.</string>
+    <string name="label_wooferlevel">The woofer level setting value is %1$d dB. Minimum Value %2$d dB, Maximum Value %3$d dB</string>
+    <string name="label_zero">영</string>
+    <string name="las650m">LAS650M</string>
+    <string name="las660m">LAS660M</string>
+    <string name="las750m">LAS750M</string>
+    <string name="las760m">LAS760M</string>
+    <string name="las855m">LAS855M</string>
+    <string name="las860m">LAS860M</string>
+    <string name="las950m">LAS950M</string>
+    <string name="latest_version">Latest version</string>
+    <string name="led_indicator">Speaker LED</string>
+    <string name="lg_optical">LG Optical</string>
+    <string name="lg_tv">LG TV</string>
+    <string name="lg_tv_new">LG TV</string>
+    <string name="lg_tv_not_connected">Set the TV speaker output to LG Sound Sync.</string>
+    <string name="location_permission_guide">To find and search nearby speaker, location authorization setting is required.</string>
+    <string name="location_permission_setting">Location usage setting</string>
+    <string name="location_permission_title">Location authorization setting guide</string>
+    <string name="lock_screen">Lock Screen Setting</string>
+    <string name="make_playlists">Make a new Playlist.</string>
+    <string name="manage_service_description">Interface and manage Music Flow and various services.</string>
+    <string name="manual_setup">Manual connection</string>
+    <string name="media_add_speaker">Add speakers</string>
+    <string name="media_next">Play next media</string>
+    <string name="media_pause">Pause media</string>
+    <string name="media_play">Play media</string>
+    <string name="media_playback_error">Cannot play this file</string>
+    <string name="media_prev">Play previous media</string>
+    <string name="media_refresh_speakers">Refresh speakers</string>
+    <string name="media_route">Media route</string>
+    <string name="media_search">Search</string>
+    <string name="media_select">Select</string>
+    <string name="media_server_is_running">Media server is running</string>
+    <string name="media_stop">Play stop media</string>
+    <string name="mesh_network">Mesh Network</string>
+    <string name="mesh_network_caution">Cautions : Before changing the channel, turn on the power of all connected LG Music Flow and stand by.</string>
+    <string name="mesh_network_change_channel">Changing channel</string>
+    <string name="mesh_network_channel">Mesh Network Channel</string>
+    <string name="mesh_network_channel_description">It resets Mesh Network channel</string>
+    <string name="mesh_network_channel_full_fail">"No channels have been changed due to a failed connection between the speakers. "</string>
+    <string name="mesh_network_channel_guide">"If interruptions occur during LG Music Flow music play, you can change Mesh Network channel to improve the network speed.
+
+If Music Flow Wi-Fi is not properly connected after changing Mesh Network channel, select Menu > Add Speaker to re-connect audio."</string>
+    <string name="mesh_network_channel_name">Channel name</string>
+    <string name="mesh_network_channel_node_fail">If Music Flow Wi-Fi is not properly connected after changing Mesh Network channel, select Menu > Add Speaker to re-connect audio.</string>
+    <string name="mesh_network_configuration">Mesh network composition</string>
+    <string name="mesh_network_configuration_caution">"Cautions : Do not power off Music Flow. "</string>
+    <string name="mesh_network_configuration_check">Checking network composition…</string>
+    <string name="mesh_network_configuration_content">"Compose as Mesh network to optimize the usage environment.
+
+1. Connect 1 or more speakers using an ethernet cable.
+2. It can be setup when 2 or more speakers are connected.
+3. Before setup, power on all connected speakers and standby."</string>
+    <string name="mesh_network_configuration_description">It reorganizes Mesh Network.</string>
+    <string name="mesh_network_configuration_fail">Mesh network composition failed.</string>
+    <string name="mesh_network_configuration_fail_content">"Did you fail setting up the mesh network?
+
+1. Power on all speakers before setting up mesh network.
+
+2. It can be setup when 2 or more speakers are connected.
+
+3. At least 1 speaker must be connected using ethernet cable.
+
+4. After connecting with a cable, wait 10 seconds to check if it is connected, and then try again. "</string>
+    <string name="mesh_network_configuration_in_progress">Composing Mesh network…</string>
+    <string name="mesh_network_configuration_retry">Retry</string>
+    <string name="mesh_network_configuration_start">Start</string>
+    <string name="mesh_network_configuration_success">Mesh network composition is completed.</string>
+    <string name="mesh_network_connection">Mesh Network direct connection</string>
+    <string name="mesh_network_connection_description">It directly connects mobile device to Mesh Network.</string>
+    <string name="mesh_network_in_use">Used</string>
+    <string name="mesh_network_no_speaker_for_mesh_configuration">1 or more speakers should be connected using ethernet cable.</string>
+    <string name="mic">MIC</string>
+    <string name="mic_new">MIC</string>
+    <string name="min_15">15 mins</string>
+    <string name="min_30">30 mins</string>
+    <string name="min_45">45 mins</string>
+    <string name="mr140">MR140</string>
+    <string name="mr_button_content_description">Cast button</string>
+    <string name="mr_cast_button_connected">Cast button. Connected</string>
+    <string name="mr_cast_button_connecting">Cast button. Connecting</string>
+    <string name="mr_cast_button_disconnected">Cast button. Disconnected</string>
+    <string name="mr_chooser_searching">Finding devices</string>
+    <string name="mr_chooser_title">Cast to</string>
+    <string name="mr_controller_album_art">Album art</string>
+    <string name="mr_controller_casting_screen">Casting screen</string>
+    <string name="mr_controller_close_description">Close</string>
+    <string name="mr_controller_collapse_group">Collapse</string>
+    <string name="mr_controller_disconnect">Disconnect</string>
+    <string name="mr_controller_expand_group">Expand</string>
+    <string name="mr_controller_no_info_available">No info available</string>
+    <string name="mr_controller_no_media_selected">No media selected</string>
+    <string name="mr_controller_pause">Pause</string>
+    <string name="mr_controller_play">Play</string>
+    <string name="mr_controller_stop">Stop</string>
+    <string name="mr_controller_stop_casting">Stop casting</string>
+    <string name="mr_controller_volume_slider">Volume slider</string>
+    <string name="mr_system_route_name">System</string>
+    <string name="mr_user_route_category_name">Devices</string>
+    <string name="multiroom_media_route_provider_service">LG Music Flow Media Route Provider Service</string>
+    <string name="music_cover_edit_online_streaming_service">@string/navigation_online_services</string>
+    <string name="music_cover_edit_online_streaming_service_count_alert">There are no items selected.</string>
+    <string name="music_cover_favorites_empty">"Select 'Like' on the songs to like."</string>
+    <string name="music_cover_google_cast">Chromecast</string>
+    <string name="music_cover_mostplayed_empty">Frequently listened music are displayed.</string>
+    <string name="music_cover_move_to_setup_wizard">Open the LG Music Flow connection screen.</string>
+    <string name="music_cover_online_streaming_service">@string/navigation_online_services</string>
+    <string name="music_cover_online_streaming_service_edit">Edit</string>
+    <string name="music_cover_timeline_empty">You can see which music you listened to recently.</string>
+    <string name="music_cover_unregistered_speaker_campaign_for_cp">You can enjoy various music streaming services.</string>
+    <string name="music_flow">"Music Flow "</string>
+    <string name="music_flow_bar">"SoundBar "</string>
+    <string name="music_flow_portable">"Portable Audio "</string>
+    <string name="music_flow_streaming_service">Music Flow Streaming Service</string>
+    <string name="musiclibrary_terminated_popup_body">"Music recommendation service has ended.
+Thank you for using."</string>
+    <string name="musix_match">Musixmatch</string>
+    <string name="my_library">My Playlists</string>
+    <string name="my_playlist">My playlist</string>
+    <string name="my_songs">My songs</string>
+    <string name="napster">Napster</string>
+    <string name="navigation_add_speakers">Add Speaker</string>
+    <string name="navigation_category_etc">Etc.</string>
+    <string name="navigation_category_music">Music</string>
+    <string name="navigation_category_speakers">Speakers</string>
+    <string name="navigation_connected_speakers">Connected Speakers</string>
+    <string name="navigation_drawer_close">Close MusicFlow Player menu view</string>
+    <string name="navigation_drawer_open">Open MusicFlow Player menu view</string>
+    <string name="navigation_music_library_local_phone">My Phone</string>
+    <string name="navigation_music_library_local_tablet">My Phone</string>
+    <string name="navigation_music_library_remote">Music Library</string>
+    <string name="navigation_music_server">Music Server</string>
+    <string name="navigation_my_music_cover">Home</string>
+    <string name="navigation_online_services">Streaming Services</string>
+    <string name="navigation_settings">@string/settings</string>
+    <string name="need_to_sign_in">Sign in to use this service.</string>
+    <string name="need_to_sign_in_to_deezer">Please log in to your Deezer account.</string>
+    <string name="need_to_update">Need to update</string>
+    <string name="need_to_update_speaker">You need to update the speaker.</string>
+    <string name="network_status">The network connection status of the speakers is not stable.</string>
+    <string name="new_alarm">New alarm</string>
+    <string name="new_playlist">New playlist</string>
+    <string name="new_setup">간편 연결</string>
+    <string name="new_setup_bluetooth_request_message">You can easily connect with Bluetooth. Would you like to turn on Bluetooth?</string>
+    <string name="new_setup_bluetooth_request_title">Simple connection</string>
+    <string name="new_setup_candidate">Speakers for simple connection</string>
+    <string name="new_setup_connection_fail_message">"%1$s is not connected.
+
+Check the connection with the audio or the router, and try again."</string>
+    <string name="new_setup_connection_fail_title">@string/setup_connection_fail</string>
+    <string name="new_setup_connection_title">@string/new_setup_guide_connecting_title</string>
+    <string name="new_setup_guide_connecting">"Connecting with network.
+Next step could be proceeded after completing the connection."</string>
+    <string name="new_setup_guide_connecting_title">Network connection</string>
+    <string name="new_setup_guide_for_legacy_setup">"The version of a speaker is not supported by simple connection.
+
+After completing the simple connection, you can connect manually."</string>
+    <string name="new_setup_learn_more"><u>Learn more</u></string>
+    <string name="new_setup_power_guide">Power connection guide</string>
+    <string name="new_setup_prepare_setup">@string/searching_speakers</string>
+    <string name="new_setup_prepare_speakers_description">When LG Music Flow power is completely on, click [Next].</string>
+    <string name="new_setup_prepare_speakers_title">Preparing the product</string>
+    <string name="new_setup_progress_cancelled">Connection is cancelled</string>
+    <string name="new_setup_progress_command_written">Preparing connection…</string>
+    <string name="new_setup_progress_connected_to_network">Connected to the network</string>
+    <string name="new_setup_progress_connecting_to_network">Connecting to the network…</string>
+    <string name="new_setup_progress_connection_complete">Network connection is complete.</string>
+    <string name="new_setup_progress_connection_fail">Failed to connect to the network</string>
+    <string name="new_setup_progress_fail_not_defined">@string/new_setup_progress_connection_fail</string>
+    <string name="new_setup_progress_invalid_password">Password is incorrect.</string>
+    <string name="new_setup_progress_network_not_found">Network is not found.</string>
+    <string name="new_setup_progress_no_response_speaker">No speaker response</string>
+    <string name="new_setup_progress_searching_for_network">Searching for the network…</string>
+    <string name="new_setup_progress_waiting_for_connection">Connection waiting…</string>
+    <string name="new_setup_progress_waiting_for_response">Checking speaker connection…</string>
+    <string name="new_setup_search_title">Speakers found</string>
+    <string name="new_setup_select_products">@string/select_rear_speaker</string>
+    <string name="new_setup_tag_instruction">instruction</string>
+    <string name="new_setup_tag_registration">registration</string>
+    <string name="new_setup_unsupport">Other speakers</string>
+    <string name="new_setup_wifi_dialog_error_message">Incorrect password</string>
+    <string name="new_setup_wifi_dialog_error_title">Password error</string>
+    <string name="new_setup_wifi_dialog_title">Wireless network connection</string>
+    <string name="night_mode">@string/eq_night</string>
+    <string name="no_app_installed">"No application contents
+Do you want to install?"</string>
+    <string name="no_song">No song</string>
+    <string name="no_speaker_description">You can use it by connecting to Music Flow product.</string>
+    <string name="not_available">This track is not available in your country</string>
+    <string name="not_repeat">"Don't repeat"</string>
+    <string name="notification_sound">Alarm sound</string>
+    <string name="np8340">NP8340</string>
+    <string name="np8350">NP8350</string>
+    <string name="np8540">NP8540</string>
+    <string name="np8740">NP8740</string>
+    <string name="npr_one">NPR One</string>
+    <string name="off">Off</string>
+    <string name="open_source_apache_component">Android Open Source Project, android-volley 1.0.16, androidasync 2.0.2, com.sothree.slidinguppanel:library 3.1.1, com.viewpagerindicator:library 2.4.1, gson 2.3.1, isoparser 1.0.2, leakcanary 1.4-SNAPSHOT, Materialish-Progress 1.5, org.eclipse.jetty 8.1.15.v20140411, picasso 2.4.0, recyclerview-animators 1.2.0, robospice-spring-android 1.4.14, Seismic 1.0.2, simple-xml 2.7.1, StikcyHeaderRecyclerView 0.4.1, urlbuilder 1.3.2, vorbis-java-core 0.6</string>
+    <string name="open_source_cling_component">Cling 2.1.1</string>
+    <string name="open_source_component">Component(s)</string>
+    <string name="open_source_contents_1">"
+Those products identified by the Product Type and Model Range above from LG Electronics, Inc. (\"LGE\") contain the open source software detailed below. Please refer to the indicated open source licenses (as are included following this notice) for the terms and conditions of their use.
+"</string>
+    <string name="open_source_contents_2">"
+The source code for the above may be obtained free of charge from LGE at http://opensource.lge.com. LGE will also provide open source code to you on CD-ROM for a charge covering the cost of performing such distribution (such as the cost of media, shipping, and handling) upon email request to opensource@lge.com. This offer is valid for three (3) years from the date on which you purchased the product.
+
+Please be informed that LG Electronics products may contain open source software listed in the tables below.
+"</string>
+    <string name="open_source_contents_3" formatted="false">"
+CDDL 1.1
+
+Version 1.1
+1. Definitions.
+
+1.1. “Contributor” means each individual or entity that creates or contributes to the creation of Modifications.
+
+1.2. “Contributor Version” means the combination of the Original Software, prior Modifications used by a Contributor (if any), and the Modifications made by that particular Contributor.
+
+1.3. “Covered Software” means (a) the Original Software, or (b) Modifications, or (c) the combination of files containing Original Software with files containing Modifications, in each case including portions thereof.
+
+1.4. “Executable” means the Covered Software in any form other than Source Code.
+
+1.5. “Initial Developer” means the individual or entity that first makes Original Software available under this License.
+
+1.6. “Larger Work” means a work which combines Covered Software or portions thereof with code not governed by the terms of this License.
+
+1.7. “License” means this document.
+
+1.8. “Licensable” means having the right to grant, to the maximum extent possible, whether at the time of the initial grant or subsequently acquired, any and all of the rights conveyed herein.
+
+1.9. “Modifications” means the Source Code and Executable form of any of the following:
+
+A. Any file that results from an addition to, deletion from or modification of the contents of a file containing Original Software or previous Modifications;
+
+B. Any new file that contains any part of the Original Software or previous Modification; or
+
+C. Any new file that is contributed or otherwise made available under the terms of this License.
+
+1.10. “Original Software” means the Source Code and Executable form of computer software code that is originally released under this License.
+
+1.11. “Patent Claims” means any patent claim(s), now owned or hereafter acquired, including without limitation, method, process, and apparatus claims, in any patent Licensable by grantor.
+
+1.12. “Source Code” means (a) the common form of computer software code in which modifications are made and (b) associated documentation included in or with such code.
+
+1.13. “You” (or “Your”) means an individual or a legal entity exercising rights under, and complying with all of the terms of, this License. For legal entities, “You” includes any entity which controls, is controlled by, or is under common control with You. For purposes of this definition, “control” means (a) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (b) ownership of more than fifty percent (50%) of the outstanding shares or beneficial ownership of such entity.
+
+2. License Grants.
+
+2.1. The Initial Developer Grant.
+Conditioned upon Your compliance with Section 3.1 below and subject to third party intellectual property claims, the Initial Developer hereby grants You a world-wide, royalty-free, non-exclusive license:
+
+(a) under intellectual property rights (other than patent or trademark) Licensable by Initial Developer, to use, reproduce, modify, display, perform, sublicense and distribute the Original Software (or portions thereof), with or without Modifications, and/or as part of a Larger Work; and
+
+(b) under Patent Claims infringed by the making, using or selling of Original Software, to make, have made, use, practice, sell, and offer for sale, and/or otherwise dispose of the Original Software (or portions thereof).
+
+(c) The licenses granted in Sections 2.1(a) and (b) are effective on the date Initial Developer first distributes or otherwise makes the Original Software available to a third party under the terms of this License.
+
+(d) Notwithstanding Section 2.1(b) above, no patent license is granted: (1) for code that You delete from the Original Software, or (2) for infringements caused by: (i) the modification of the Original Software, or (ii) the combination of the Original Software with other software or devices.
+
+2.2. Contributor Grant.
+Conditioned upon Your compliance with Section 3.1 below and subject to third party intellectual property claims, each Contributor hereby grants You a world-wide, royalty-free, non-exclusive license:
+
+(a) under intellectual property rights (other than patent or trademark) Licensable by Contributor to use, reproduce, modify, display, perform, sublicense and distribute the Modifications created by such Contributor (or portions thereof), either on an unmodified basis, with other Modifications, as Covered Software and/or as part of a Larger Work; and
+
+(b) under Patent Claims infringed by the making, using, or selling of Modifications made by that Contributor either alone and/or in combination with its Contributor Version (or portions of such combination), to make, use, sell, offer for sale, have made, and/or otherwise dispose of: (1) Modifications made by that Contributor (or portions thereof); and (2) the combination of Modifications made by that Contributor with its Contributor Version (or portions of such combination).
+
+(c) The licenses granted in Sections 2.2(a) and 2.2(b) are effective on the date Contributor first distributes or otherwise makes the Modifications available to a third party.
+
+(d) Notwithstanding Section 2.2(b) above, no patent license is granted: (1) for any code that Contributor has deleted from the Contributor Version; (2) for infringements caused by: (i) third party modifications of Contributor Version, or (ii) the combination of Modifications made by that Contributor with other software (except as part of the Contributor Version) or other devices; or (3) under Patent Claims infringed by Covered Software in the absence of Modifications made by that Contributor.
+
+3. Distribution Obligations.
+
+3.1. Availability of Source Code.
+Any Covered Software that You distribute or otherwise make available in Executable form must also be made available in Source Code form and that Source Code form must be distributed only under the terms of this License. You must include a copy of this License with every copy of the Source Code form of the Covered Software You distribute or otherwise make available. You must inform recipients of any such Covered Software in Executable form as to how they can obtain such Covered Software in Source Code form in a reasonable manner on or through a medium customarily used for software exchange.
+
+3.2. Modifications.
+The Modifications that You create or to which You contribute are governed by the terms of this License. You represent that You believe Your Modifications are Your original creation(s) and/or You have sufficient rights to grant the rights conveyed by this License.
+
+3.3. Required Notices.
+You must include a notice in each of Your Modifications that identifies You as the Contributor of the Modification. You may not remove or alter any copyright, patent or trademark notices contained within the Covered Software, or any notices of licensing or any descriptive text giving attribution to any Contributor or the Initial Developer.
+
+3.4. Application of Additional Terms.
+You may not offer or impose any terms on any Covered Software in Source Code form that alters or restricts the applicable version of this License or the recipients' rights hereunder. You may choose to offer, and to charge a fee for, warranty, support, indemnity or liability obligations to one or more recipients of Covered Software. However, you may do so only on Your own behalf, and not on behalf of the Initial Developer or any Contributor. You must make it absolutely clear that any such warranty, support, indemnity or liability obligation is offered by You alone, and You hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of warranty, support, indemnity or liability terms You offer.
+
+3.5. Distribution of Executable Versions.
+You may distribute the Executable form of the Covered Software under the terms of this License or under the terms of a license of Your choice, which may contain terms different from this License, provided that You are in compliance with the terms of this License and that the license for the Executable form does not attempt to limit or alter the recipient's rights in the Source Code form from the rights set forth in this License. If You distribute the Covered Software in Executable form under a different license, You must make it absolutely clear that any terms which differ from this License are offered by You alone, not by the Initial Developer or Contributor. You hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of any such terms You offer.
+
+3.6. Larger Works.
+You may create a Larger Work by combining Covered Software with other code not governed by the terms of this License and distribute the Larger Work as a single product. In such a case, You must make sure the requirements of this License are fulfilled for the Covered Software.
+
+4. Versions of the License.
+
+4.1. New Versions.
+Oracle is the initial license steward and may publish revised and/or new versions of this License from time to time. Each version will be given a distinguishing version number. Except as provided in Section 4.3, no one other than the license steward has the right to modify this License.
+
+4.2. Effect of New Versions.
+You may always continue to use, distribute or otherwise make the Covered Software available under the terms of the version of the License under which You originally received the Covered Software. If the Initial Developer includes a notice in the Original Software prohibiting it from being distributed or otherwise made available under any subsequent version of the License, You must distribute and make the Covered Software available under the terms of the version of the License under which You originally received the Covered Software. Otherwise, You may also choose to use, distribute or otherwise make the Covered Software available under the terms of any subsequent version of the License published by the license steward.
+
+4.3. Modified Versions.
+When You are an Initial Developer and You want to create a new license for Your Original Software, You may create and use a modified version of this License if You: (a) rename the license and remove any references to the name of the license steward (except to note that the license differs from this License); and (b) otherwise make it clear that the license contains terms which differ from this License.
+
+5. DISCLAIMER OF WARRANTY.
+COVERED SOFTWARE IS PROVIDED UNDER THIS LICENSE ON AN “AS IS” BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE COVERED SOFTWARE IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE COVERED SOFTWARE IS WITH YOU. SHOULD ANY COVERED SOFTWARE PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL DEVELOPER OR ANY OTHER CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY COVERED SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+6. TERMINATION.
+
+6.1. This License and the rights granted hereunder will terminate automatically if You fail to comply with terms herein and fail to cure such breach within 30 days of becoming aware of the breach. Provisions which, by their nature, must remain in effect beyond the termination of this License shall survive.
+
+6.2. If You assert a patent infringement claim (excluding declaratory judgment actions) against Initial Developer or a Contributor (the Initial Developer or Contributor against whom You assert such claim is referred to as “Participant”) alleging that the Participant Software (meaning the Contributor Version where the Participant is a Contributor or the Original Software where the Participant is the Initial Developer) directly or indirectly infringes any patent, then any and all rights granted directly or indirectly to You by such Participant, the Initial Developer (if the Initial Developer is not the Participant) and all Contributors under Sections 2.1 and/or 2.2 of this License shall, upon 60 days notice from Participant terminate prospectively and automatically at the expiration of such 60 day notice period, unless if within such 60 day period You withdraw Your claim with respect to the Participant Software against such Participant either unilaterally or pursuant to a written agreement with Participant.
+
+6.3. If You assert a patent infringement claim against Participant alleging that the Participant Software directly or indirectly infringes any patent where such claim is resolved (such as by license or settlement) prior to the initiation of patent infringement litigation, then the reasonable value of the licenses granted by such Participant under Sections 2.1 or 2.2 shall be taken into account in determining the amount or value of any payment or license.
+
+6.4. In the event of termination under Sections 6.1 or 6.2 above, all end user licenses that have been validly granted by You or any distributor hereunder prior to termination (excluding licenses granted to You by any distributor) shall survive termination.
+
+7. LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL DEVELOPER, ANY OTHER CONTRIBUTOR, OR ANY DISTRIBUTOR OF COVERED SOFTWARE, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY'S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+8. U.S. GOVERNMENT END USERS.
+
+The Covered Software is a “commercial item,” as that term is defined in 48 C.F.R. 2.101 (Oct. 1995), consisting of “commercial computer software” (as that term is defined at 48 C.F.R. § 252.227-7014(a)(1)) and “commercial computer software documentation” as such terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent with 48 C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995), all U.S. Government End Users acquire Covered Software with only those rights set forth herein. This U.S. Government Rights clause is in lieu of, and supersedes, any other FAR, DFAR, or other clause or provision that addresses Government rights in computer software under this License.
+
+9. MISCELLANEOUS.
+
+This License represents the complete agreement concerning subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. This License shall be governed by the law of the jurisdiction specified in a notice contained within the Original Software (except to the extent applicable law, if any, provides otherwise), excluding such jurisdiction's conflict-of-law provisions. Any litigation relating to this License shall be subject to the jurisdiction of the courts located in the jurisdiction and venue specified in a notice contained within the Original Software, with the losing party responsible for costs, including, without limitation, court costs and reasonable attorneys' fees and expenses. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. Any law or regulation which provides that the language of a contract shall be construed against the drafter shall not apply to this License. You agree that You alone are responsible for compliance with the United States export administration regulations (and the export control laws and regulation of any other countries) when You use, distribute or otherwise make available any Covered Software.
+
+10. RESPONSIBILITY FOR CLAIMS.
+
+As between Initial Developer and the Contributors, each party is responsible for claims and damages arising, directly or indirectly, out of its utilization of rights under this License and You agree to work with Initial Developer and Contributors to distribute such responsibility on an equitable basis. Nothing herein is intended or shall be deemed to constitute any admission of liability.
+
+NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)
+The code released under the CDDL shall be governed by the laws of the State of California (excluding conflict-of-law provisions). Any litigation relating to this License shall be subject to the jurisdiction of the Federal Courts of the Northern District of California and the state courts of the State of California, with venue lying in Santa Clara County, California.
+
+
+Apache License 2.0
+
+Version 2.0, January 2004
+
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+\"License\" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+
+\"Licensor\" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+
+\"Legal Entity\" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, \"control\" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+
+\"You\" (or \"Your\") shall mean an individual or Legal Entity exercising permissions granted by this License.
+
+\"Source\" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+
+\"Object\" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+
+\"Work\" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+
+\"Derivative Works\" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+
+\"Contribution\" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, \"submitted\" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as \"Not a Contribution.\"
+
+\"Contributor\" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+
+2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+
+(a) You must give any other recipients of the Work or Derivative Works a copy of this License; and
+
+(b) You must cause any modified files to carry prominent notices stating that You changed the files; and
+
+(c) You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+
+(d) If the Work includes a \"NOTICE\" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+
+You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+
+9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
+
+END OF TERMS AND CONDITIONS
+
+APPENDIX: How to apply the Apache License to your work.
+
+To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets \"[]\" replaced with your own identifying information. (Don't include the brackets!) The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same \"printed page\" as the copyright notice for easier identification within third-party archives.
+
+Copyright [yyyy] [name of copyright owner]
+
+Licensed under the Apache License, Version 2.0 (the \"License\");
+
+you may not use this file except in compliance with the License.
+
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
+
+ISC License
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+
+
+THE SOFTWARE IS PROVIDED \"AS IS\" AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+MIT License
+
+expandable-recycler-view 1.0.3
+Copyright (c) 2015 Big Nerd Ranch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+mp3agic 0.8.2
+Copyright (c) 2006-2013 Michael Patricios http://github.com/mpatric/mp3agic
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+"</string>
+    <string name="open_source_isc_component">ormlite-android 4.48</string>
+    <string name="open_source_license">License</string>
+    <string name="open_source_license_apache">Apache License 2.0</string>
+    <string name="open_source_license_cddl">CDDL 1.1</string>
+    <string name="open_source_license_isc">ISC License</string>
+    <string name="open_source_license_mit">MIT License</string>
+    <string name="open_source_license_text_1">"\### Open Source Software Notice ###
+
+This product from LG Electronics, Inc. contains the open source software detailed below. Please refer to the indicated open source licenses (as are included following this notice) for the terms and conditions of their use.
+Cling 2.1.1 (CDDL-1.1)
+Copyright (c) 2015, 4th Line GmbH, Switzerland, http://4thline.com/
+
+The source code for the above may be obtained free of charge from LG Electronics, Inc. at https://opensource.lge.com.LG Electronics, Inc. will also provide open source code to you on CD-ROM for a charge covering the cost of performing such distribution (such as the cost of media, shipping, and handling) upon email request to opensource@lge.com. This offer is valid for a period of three years after our last shipment of this product. This offer is valid to anyone in receipt of this information.
+Please be informed that  LG Electronics, Inc.   product may contain open source software listed in to tables below.
+
+"</string>
+    <string name="open_source_license_text_10">"2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+
+"</string>
+    <string name="open_source_license_text_11">"4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+
+     (a) You must give any other recipients of the Work or Derivative Works a copy of this License; and
+
+     (b) You must cause any modified files to carry prominent notices stating that You changed the files; and
+
+     (c) You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+
+"</string>
+    <string name="open_source_license_text_12">"(d) If the Work includes a \"NOTICE\" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+
+"</string>
+    <string name="open_source_license_text_13">"You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+
+"</string>
+    <string name="open_source_license_text_14">"6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+"</string>
+    <string name="open_source_license_text_15">"8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+
+"</string>
+    <string name="open_source_license_text_16">"9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
+
+"</string>
+    <string name="open_source_license_text_17">"END OF TERMS AND CONDITIONS
+
+APPENDIX: How to apply the Apache License to your work.
+
+To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets \"[]\" replaced with your own identifying information. (Don't include the brackets!)  The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same \"printed page\" as the copyright notice for easier identification within third-party archives.
+
+"</string>
+    <string name="open_source_license_text_18">"Copyright [yyyy] [name of copyright owner]
+
+Licensed under the Apache License, Version 2.0 (the \"License\");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an \"AS IS\" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+_________________________________________________________________________________________________________________________"</string>
+    <string name="open_source_license_text_19">"
+
+CDDL-1.1
+
+
+COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)
+Version 1.1
+
+1. Definitions.
+
+1.1. “Contributor” means each individual or entity that creates or contributes to the creation of Modifications.
+
+1.2. “Contributor Version” means the combination of the Original Software, prior Modifications used by a Contributor (if any), and the Modifications made by that particular Contributor.
+
+"</string>
+    <string name="open_source_license_text_2">"Android Open Source Project  (Apache-2.0)
+Copyright (c) 2005-2016, The Android Open Source Project
+
+Android Sliding Up Panel 3.1.1 (Apache-2.0)
+
+android-ibeacon-service  (Apache-2.0)
+Copyright (c) 2014 Radius Networks
+        android-SimpleCursorLoader  (Apache-2.0)
+Copyright (c) 2012 CodeSlap - Cristian Castiblanco
+
+android-volley 1.0.16 (Apache-2.0)
+Copyright (c) 2014,2015,2016 Xiaoke Zhang
+Copyright (c) 2011 The Android Open Source Project
+
+androidasync 2.0.2 (Apache-2.0)
+Copyright (c) 2013 Koushik Dutta
+
+"</string>
+    <string name="open_source_license_text_20">"1.3. “Covered Software” means (a) the Original Software, or (b) Modifications, or (c) the combination of files containing Original Software with files containing Modifications, in each case including portions thereof.
+
+1.4. “Executable” means the Covered Software in any form other than Source Code.
+
+1.5. “Initial Developer” means the individual or entity that first makes Original Software available under this License.
+
+1.6. “Larger Work” means a work which combines Covered Software or portions thereof with code not governed by the terms of this License.
+
+"</string>
+    <string name="open_source_license_text_21">"1.7. “License” means this document.
+
+1.8. “Licensable” means having the right to grant, to the maximum extent possible, whether at the time of the initial grant or subsequently acquired, any and all of the rights conveyed herein.
+
+1.9. “Modifications” means the Source Code and Executable form of any of the following:
+
+     A. Any file that results from an addition to, deletion from or modification of the contents of a file containing Original Software or previous Modifications;
+
+     B. Any new file that contains any part of the Original Software or previous Modification; or
+
+     C. Any new file that is contributed or otherwise made available under the terms of this License.
+
+"</string>
+    <string name="open_source_license_text_22">"1.10. “Original Software” means the Source Code and Executable form of computer software code that is originally released under this License.
+
+1.11. “Patent Claims” means any patent claim(s), now owned or hereafter acquired, including without limitation, method, process, and apparatus claims, in any patent Licensable by grantor.
+
+1.12. “Source Code” means (a) the common form of computer software code in which modifications are made and (b) associated documentation included in or with such code.
+
+1.13. “You” (or “Your”) means an individual or a legal entity exercising rights under, and complying with all of the terms of, this License. For legal entities, “You” includes any entity which controls, is controlled by, or is under common control with You. For purposes of this definition, “control” means (a) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (b) ownership of more than fifty percent (50%) of the outstanding shares or beneficial ownership of such entity.
+
+"</string>
+    <string name="open_source_license_text_23">"2. License Grants.
+
+2.1. The Initial Developer Grant.
+Conditioned upon Your compliance with Section 3.1 below and subject to third party intellectual property claims, the Initial Developer hereby grants You a world-wide, royalty-free, non-exclusive license:
+
+     (a) under intellectual property rights (other than patent or trademark) Licensable by Initial Developer, to use, reproduce, modify, display, perform, sublicense and distribute the Original Software (or portions thereof), with or without Modifications, and/or as part of a Larger Work; and
+
+"</string>
+    <string name="open_source_license_text_24">"(b) under Patent Claims infringed by the making, using or selling of Original Software, to make, have made, use, practice, sell, and offer for sale, and/or otherwise dispose of the Original Software (or portions thereof).
+
+     (c) The licenses granted in Sections 2.1(a) and (b) are effective on the date Initial Developer first distributes or otherwise makes the Original Software available to a third party under the terms of this License.
+
+     (d) Notwithstanding Section 2.1(b) above, no patent license is granted: (1) for code that You delete from the Original Software, or (2) for infringements caused by: (i) the modification of the Original Software, or (ii) the combination of the Original Software with other software or devices.
+
+"</string>
+    <string name="open_source_license_text_25">"2.2. Contributor Grant.
+Conditioned upon Your compliance with Section 3.1 below and subject to third party intellectual property claims, each Contributor hereby grants You a world-wide, royalty-free, non-exclusive license:
+
+     (a) under intellectual property rights (other than patent or trademark) Licensable by Contributor to use, reproduce, modify, display, perform, sublicense and distribute the Modifications created by such Contributor (or portions thereof), either on an unmodified basis, with other Modifications, as Covered Software and/or as part of a Larger Work; and
+
+"</string>
+    <string name="open_source_license_text_26">"(b) under Patent Claims infringed by the making, using, or selling of Modifications made by that Contributor either alone and/or in combination with its Contributor Version (or portions of such combination), to make, use, sell, offer for sale, have made, and/or otherwise dispose of: (1) Modifications made by that Contributor (or portions thereof); and (2) the combination of Modifications made by that Contributor with its Contributor Version (or portions of such combination).
+
+     (c) The licenses granted in Sections 2.2(a) and 2.2(b) are effective on the date Contributor first distributes or otherwise makes the Modifications available to a third party.
+
+     (d) Notwithstanding Section 2.2(b) above, no patent license is granted: (1) for any code that Contributor has deleted from the Contributor Version; (2) for infringements caused by: (i) third party modifications of Contributor Version, or (ii) the combination of Modifications made by that Contributor with other software (except as part of the Contributor Version) or other devices; or (3) under Patent Claims infringed by Covered Software in the absence of Modifications made by that Contributor.
+
+"</string>
+    <string name="open_source_license_text_27">"3. Distribution Obligations.
+
+3.1. Availability of Source Code.
+Any Covered Software that You distribute or otherwise make available in Executable form must also be made available in Source Code form and that Source Code form must be distributed only under the terms of this License. You must include a copy of this License with every copy of the Source Code form of the Covered Software You distribute or otherwise make available. You must inform recipients of any such Covered Software in Executable form as to how they can obtain such Covered Software in Source Code form in a reasonable manner on or through a medium customarily used for software exchange.
+
+"</string>
+    <string name="open_source_license_text_28">"3.2. Modifications.
+The Modifications that You create or to which You contribute are governed by the terms of this License. You represent that You believe Your Modifications are Your original creation(s) and/or You have sufficient rights to grant the rights conveyed by this License.
+
+3.3. Required Notices.
+You must include a notice in each of Your Modifications that identifies You as the Contributor of the Modification. You may not remove or alter any copyright, patent or trademark notices contained within the Covered Software, or any notices of licensing or any descriptive text giving attribution to any Contributor or the Initial Developer.
+
+"</string>
+    <string name="open_source_license_text_29">"3.4. Application of Additional Terms.
+You may not offer or impose any terms on any Covered Software in Source Code form that alters or restricts the applicable version of this License or the recipients' rights hereunder. You may choose to offer, and to charge a fee for, warranty, support, indemnity or liability obligations to one or more recipients of Covered Software. However, you may do so only on Your own behalf, and not on behalf of the Initial Developer or any Contributor. You must make it absolutely clear that any such warranty, support, indemnity or liability obligation is offered by You alone, and You hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of warranty, support, indemnity or liability terms You offer.
+
+"</string>
+    <string name="open_source_license_text_3">"expandable-recycler-view 1.0.3 (MIT)
+Copyright (c) 2015 Big Nerd Ranch
+
+gson 2.3.1 (Apache-2.0)
+Copyright (c) 2008 Google Inc.
+
+JakeWharton-ViewPagerIndicator 2.4.1 (Apache-2.0)
+Copyright (C) 2012 Jake Wharton
+Copyright (C) 2011 Patrik Akerfeldt
+Copyright (C) 2011 Francisco Figueiredo Jr
+
+Java URL builder 2.0.9 (Apache-2.0)
+Copyright(c) 2014 Mikael Gueck
+
+Jetty 8.1.15.v20140411 (Apache-2.0)
+
+leakcanary 1.4-SNAPSHOT (Apache-2.0)
+Copyright (c) 2015 Square, Inc.
+
+"</string>
+    <string name="open_source_license_text_30">"3.5. Distribution of Executable Versions.
+You may distribute the Executable form of the Covered Software under the terms of this License or under the terms of a license of Your choice, which may contain terms different from this License, provided that You are in compliance with the terms of this License and that the license for the Executable form does not attempt to limit or alter the recipient's rights in the Source Code form from the rights set forth in this License. If You distribute the Covered Software in Executable form under a different license, You must make it absolutely clear that any terms which differ from this License are offered by You alone, not by the Initial Developer or Contributor. You hereby agree to indemnify the Initial Developer and every Contributor for any liability incurred by the Initial Developer or such Contributor as a result of any such terms You offer.
+
+"</string>
+    <string name="open_source_license_text_31">"3.6. Larger Works.
+You may create a Larger Work by combining Covered Software with other code not governed by the terms of this License and distribute the Larger Work as a single product. In such a case, You must make sure the requirements of this License are fulfilled for the Covered Software.
+
+4. Versions of the License.
+
+4.1. New Versions.
+Oracle is the initial license steward and may publish revised and/or new versions of this License from time to time. Each version will be given a distinguishing version number. Except as provided in Section 4.3, no one other than the license steward has the right to modify this License.
+
+"</string>
+    <string name="open_source_license_text_32">"4.2. Effect of New Versions.
+You may always continue to use, distribute or otherwise make the Covered Software available under the terms of the version of the License under which You originally received the Covered Software. If the Initial Developer includes a notice in the Original Software prohibiting it from being distributed or otherwise made available under any subsequent version of the License, You must distribute and make the Covered Software available under the terms of the version of the License under which You originally received the Covered Software. Otherwise, You may also choose to use, distribute or otherwise make the Covered Software available under the terms of any subsequent version of the License published by the license steward.
+
+4.3. Modified Versions.
+When You are an Initial Developer and You want to create a new license for Your Original Software, You may create and use a modified version of this License if You: (a) rename the license and remove any references to the name of the license steward (except to note that the license differs from this License); and (b) otherwise make it clear that the license contains terms which differ from this License.
+
+"</string>
+    <string name="open_source_license_text_33">"5. DISCLAIMER OF WARRANTY.
+COVERED SOFTWARE IS PROVIDED UNDER THIS LICENSE ON AN “AS IS” BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE COVERED SOFTWARE IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE COVERED SOFTWARE IS WITH YOU. SHOULD ANY COVERED SOFTWARE PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL DEVELOPER OR ANY OTHER CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY COVERED SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.
+
+"</string>
+    <string name="open_source_license_text_34">"6. TERMINATION.
+
+6.1. This License and the rights granted hereunder will terminate automatically if You fail to comply with terms herein and fail to cure such breach within 30 days of becoming aware of the breach. Provisions which, by their nature, must remain in effect beyond the termination of this License shall survive.
+
+"</string>
+    <string name="open_source_license_text_35">"6.2. If You assert a patent infringement claim (excluding declaratory judgment actions) against Initial Developer or a Contributor (the Initial Developer or Contributor against whom You assert such claim is referred to as “Participant”) alleging that the Participant Software (meaning the Contributor Version where the Participant is a Contributor or the Original Software where the Participant is the Initial Developer) directly or indirectly infringes any patent, then any and all rights granted directly or indirectly to You by such Participant, the Initial Developer (if the Initial Developer is not the Participant) and all Contributors under Sections 2.1 and/or 2.2 of this License shall, upon 60 days notice from Participant terminate prospectively and automatically at the expiration of such 60 day notice period, unless if within such 60 day period You withdraw Your claim with respect to the Participant Software against such Participant either unilaterally or pursuant to a written agreement with Participant.
+
+"</string>
+    <string name="open_source_license_text_36">"6.3. If You assert a patent infringement claim against Participant alleging that the Participant Software directly or indirectly infringes any patent where such claim is resolved (such as by license or settlement) prior to the initiation of patent infringement litigation, then the reasonable value of the licenses granted by such Participant under Sections 2.1 or 2.2 shall be taken into account in determining the amount or value of any payment or license.
+
+6.4. In the event of termination under Sections 6.1 or 6.2 above, all end user licenses that have been validly granted by You or any distributor hereunder prior to termination (excluding licenses granted to You by any distributor) shall survive termination.
+
+"</string>
+    <string name="open_source_license_text_37">"7. LIMITATION OF LIABILITY.
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL DEVELOPER, ANY OTHER CONTRIBUTOR, OR ANY DISTRIBUTOR OF COVERED SOFTWARE, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY'S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.
+
+"</string>
+    <string name="open_source_license_text_38">"8. U.S. GOVERNMENT END USERS.
+
+The Covered Software is a “commercial item,” as that term is defined in 48 C.F.R. 2.101 (Oct. 1995), consisting of “commercial computer software” (as that term is defined at 48 C.F.R. § 252.227-7014(a)(1)) and “commercial computer software documentation” as such terms are used in 48 C.F.R. 12.212 (Sept. 1995). Consistent with 48 C.F.R. 12.212 and 48 C.F.R. 227.7202-1 through 227.7202-4 (June 1995), all U.S. Government End Users acquire Covered Software with only those rights set forth herein. This U.S. Government Rights clause is in lieu of, and supersedes, any other FAR, DFAR, or other clause or provision that addresses Government rights in computer software under this License.
+
+"</string>
+    <string name="open_source_license_text_39">"9. MISCELLANEOUS.
+
+This License represents the complete agreement concerning subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. This License shall be governed by the law of the jurisdiction specified in a notice contained within the Original Software (except to the extent applicable law, if any, provides otherwise), excluding such jurisdiction's conflict-of-law provisions. Any litigation relating to this License shall be subject to the jurisdiction of the courts located in the jurisdiction and venue specified in a notice contained within the Original Software, with the losing party responsible for costs, including, without limitation, court costs and reasonable attorneys' fees and expenses. The application of the United Nations Convention on Contracts for the International Sale of Goods is expressly excluded. Any law or regulation which provides that the language of a contract shall be construed against the drafter shall not apply to this License. You agree that You alone are responsible for compliance with the United States export administration regulations (and the export control laws and regulation of any other countries) when You use, distribute or otherwise make available any Covered Software.
+
+"</string>
+    <string name="open_source_license_text_4">"Materialish-Progress 1.5 (Apache-2.0)
+mp3agic 0.8.2 (MIT)
+Copyright (c) 2006-2013 Michael Patricios
+
+Mp3VoiceRecorderSampleForAndroid  (MIT)
+Copyright (c) 2011-2012 Yuichi Hirano
+
+mp4parser 1.0.2 (Apache-2.0)
+Copyright (c) 2008 CoreMedia AG, Hamburg
+Copyright (c) 2012 Sebastian Annies, Hamburg
+Copyright  (c) 2011 castLabs, Berlin
+
+ormlite-android 4.48 (ISC)
+Copyright (c) 2010 to 2011 by Gray Watson
+
+This file is part of the ORMLite package.
+The author may be contacted via http://ormlite.sourceforge.net/
+
+"</string>
+    <string name="open_source_license_text_40">"10. RESPONSIBILITY FOR CLAIMS.
+
+As between Initial Developer and the Contributors, each party is responsible for claims and damages arising, directly or indirectly, out of its utilization of rights under this License and You agree to work with Initial Developer and Contributors to distribute such responsibility on an equitable basis. Nothing herein is intended or shall be deemed to constitute any admission of liability.
+
+NOTICE PURSUANT TO SECTION 9 OF THE COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)
+The code released under the CDDL shall be governed by the laws of the State of California (excluding conflict-of-law provisions). Any litigation relating to this License shall be subject to the jurisdiction of the Federal Courts of the Northern District of California and the state courts of the State of California, with venue lying in Santa Clara County, California.
+
+
+_________________________________________________________________________________________________________________________
+
+
+"</string>
+    <string name="open_source_license_text_41">"ISC
+
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+_________________________________________________________________________________________________________________________
+
+
+"</string>
+    <string name="open_source_license_text_42">"MIT
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+"</string>
+    <string name="open_source_license_text_43">"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+
+(OSSNotice-3321_Music Flow Player (android)_1.9.84-_210329)"</string>
+    <string name="open_source_license_text_5">"ParallaxScroll  (MIT)
+Copyright (c) 2014 Nir Hartmann
+
+picasso 2.4.0 (Apache-2.0)
+Copyright (c) 2013 Square, Inc.
+
+recyclerview-animators 1.2.0 (Apache-2.0)
+Copyright (c) 2015 Wasabeef
+
+RingDroid  (Apache-2.0)
+Copyright (c) 2008 - 2011 Google Inc.
+
+robospice-spring-android 1.4.14 (Apache-2.0)
+
+Seismic 1.0.2 (Apache-2.0)
+
+SimpleXML 2.7.1 (Apache-2.0)
+
+sticky-headers-recyclerview 0.4.1 (Apache-2.0)
+
+VerticalSeekBar  (Apache-2.0)
+Copyright (c) 2005-2013, The Android Open Source Project
+Copyright (c) 2015 Haruki Hasegawa
+
+vorbis-java 0.6 (Apache-2.0)
+Copyright (c) 2012 Nick Burch"</string>
+    <string name="open_source_license_text_6">"
+
+
+
+_________________________________________________________________________________________________________________________
+
+
+Apache-2.0
+
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+\"License\" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+
+\"Licensor\" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+
+"</string>
+    <string name="open_source_license_text_7">"\"Legal Entity\" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, \"control\" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+
+\"You\" (or \"Your\") shall mean an individual or Legal Entity exercising permissions granted by this License.
+
+\"Source\" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+
+"</string>
+    <string name="open_source_license_text_8">"\"Object\" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+
+\"Work\" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+
+\"Derivative Works\" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+
+"</string>
+    <string name="open_source_license_text_9">"\"Contribution\" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, \"submitted\" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as \"Not a Contribution.\"
+
+\"Contributor\" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+
+"</string>
+    <string name="open_source_licenses">Open source licenses</string>
+    <string name="open_source_mit_component">expandable-recycler-view 1.0.3, mp3agic 0.8.2</string>
+    <string name="open_source_software_name">Model Number/Range</string>
+    <string name="open_source_software_name_contents">Music Flow Player (android)</string>
+    <string name="open_source_software_type">Product Type</string>
+    <string name="open_source_software_type_contents">Android App</string>
+    <string name="open_source_title">"LGE Open Source Software Notice
+"</string>
+    <string name="optical_1">Optical In 1</string>
+    <string name="optical_2">Optical In 2</string>
+    <string name="optical_2_new">Optical 2</string>
+    <string name="optical_hdmi_arc">Optical/HDMI ARC</string>
+    <string name="optical_in">Optical In</string>
+    <string name="optical_new">Optical</string>
+    <string name="optical_not_in">Connect an optical input cable</string>
+    <string name="package_pandora">com.pandora.android</string>
+    <string name="package_rapsody">com.rhapsody</string>
+    <string name="package_spotify">com.spotify.music</string>
+    <string name="pandora">Pandora</string>
+    <string name="password">Password</string>
+    <string name="password_toggle_content_description">Toggle password visibility</string>
+    <string name="path_password_eye">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
+    <string name="path_password_eye_mask_strike_through">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_eye_mask_visible">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
+    <string name="path_password_strike_through">M3.27,4.27 L19.74,20.74</string>
+    <string name="permission_access_warning">Information on access allowance</string>
+    <string name="permission_access_warning_description">"In case no access is allowed, some Music Flow functions may be restricted.
+
+[Restricted functions]
+- Connect a speaker
+- Music Library
+- Play music on My Phone
+- Auto Music Play
+- Preferred music recommendation"</string>
+    <string name="permission_setting">App authority setting</string>
+    <string name="permission_setting_description">It is a function which can be used after an app authority is allowed at the Android setting.</string>
+    <string name="play">Play</string>
+    <string name="play_next">Play next</string>
+    <string name="play_radio">Play radio channel</string>
+    <string name="playlist_favorites">Favorites</string>
+    <string name="playlist_most_played">Most Played</string>
+    <string name="playlist_my_playlists">My Playlists</string>
+    <string name="playlist_timeline">Timeline</string>
+    <string name="portable">Portable</string>
+    <string name="portable_in">Portable</string>
+    <string name="portable_new">Portable</string>
+    <string name="portable_not_in">Connect a portable input cable</string>
+    <string name="power_guide_portable_no1">Press power button at the top of the product.</string>
+    <string name="power_guide_portable_no2">While the speaker is initializing, the power LED on the top blinks in white.</string>
+    <string name="power_guide_portable_no3">When the power is turned on correctly and (function) LED blinks white, it is ready to connect with simple connection.</string>
+    <string name="power_guide_portable_tip1">[Tip!] Click (function) button shortly so that (function) LED changes to white.</string>
+    <string name="power_guide_portable_tip2">Click (function) button shortly so that (function) LED changes to white.</string>
+    <string name="power_guide_portable_title">Preparing Portable Audio</string>
+    <string name="power_guide_smart_audio_h3_title">Preparing H3(NP8340)</string>
+    <string name="power_guide_smart_audio_h5h7_title">Preparing H5/H7(NP8540/NP8740)</string>
+    <string name="power_guide_smart_audio_no1">Connect the power cable at the back of the product.</string>
+    <string name="power_guide_smart_audio_no2">While the unit is initializing, the Bluetooth and (wifi) LED will blink.</string>
+    <string name="power_guide_smart_audio_no3">The speaker is ready to connect when only the (wifi) LED blinks.</string>
+    <string name="power_guide_smart_audio_tip1">[Tip!] Click (function) button so that (wifi) LED is on.</string>
+    <string name="power_guide_smart_audio_tip2">Click (function) button so that (wifi) LED is on.</string>
+    <string name="power_guide_soundbar_no1">@string/power_guide_smart_audio_no1</string>
+    <string name="power_guide_soundbar_no2">HELLO is displayed in the FLD at the front of the product.</string>
+    <string name="power_guide_soundbar_no3">"When 'HELLO' disappears and (wifi) LED blinks in white, it is ready to connect with simple connection."</string>
+    <string name="power_guide_soundbar_tip1">"[Tip!] Click (function) button so that 'Wi-Fi' is displayed."</string>
+    <string name="power_guide_soundbar_tip2">"Click (function) button so that 'Wi-Fi' is displayed."</string>
+    <string name="power_guide_soundbar_title">Initializing soundbar</string>
+    <string name="privacy_policy_link">https://kr.m.lgaccount.com/customer/privacy</string>
+    <string name="product_update">Device version info.</string>
+    <string name="project_id">musicflow-735b9</string>
+    <string name="queue">Queue</string>
+    <string name="radio_channel">Radio Channels</string>
+    <string name="radio_not_available">No radio channel available.</string>
+    <string name="rdio">Rdio</string>
+    <string name="re_setting">Reset</string>
+    <string name="rear_box">Rear speaker output</string>
+    <string name="rear_box_level">Rear speaker level</string>
+    <string name="rear_box_origin">Original sound</string>
+    <string name="rear_box_origin_description">Listen to the sound from the original source channel.</string>
+    <string name="rear_box_surround">Surround</string>
+    <string name="rear_box_surround_description">You can always listen to the sound from the rear speaker.</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="recommended">Deezer Picks</string>
+    <string name="recommended_albums">Recommended Albums</string>
+    <string name="recommended_playlists">Playlists you may like</string>
+    <string name="recommended_tracks">Recommended Tracks</string>
+    <string name="remove_from_album_successfully">"'%1$s' was successfully removed from your favourite albums."</string>
+    <string name="remove_from_artist_successfully">"'%1$s' was successfully removed from your favourite artists."</string>
+    <string name="remove_from_playlist">Remove from playlist</string>
+    <string name="removed_from_favorites">Removed from your favorites.</string>
+    <string name="removed_from_playlist_successfully">"'%1$s' was successfully removed from playlist '%2$s'."</string>
+    <string name="rename">Rename</string>
+    <string name="retry">@string/mesh_network_configuration_retry</string>
+    <string name="rhapsody">Rhapsody</string>
+    <string name="rhapsody_account_another_location">"Your account is in use in another location.
+Would you like to continue playing?"</string>
+    <string name="rhapsody_add_to_library">Add to Library</string>
+    <string name="rhapsody_artist_albums">"Artist's Albums"</string>
+    <string name="rhapsody_artist_top_tracks">"Artist's Top Tracks"</string>
+    <string name="rhapsody_browse">Browse</string>
+    <string name="rhapsody_featured">Featured</string>
+    <string name="rhapsody_featured_alblums">Featured Albums</string>
+    <string name="rhapsody_featured_playlists">Featured PlayLists</string>
+    <string name="rhapsody_info_added">Added</string>
+    <string name="rhapsody_info_alert">Alert</string>
+    <string name="rhapsody_info_confirm">Confirm</string>
+    <string name="rhapsody_info_data_does_not_exist">Data does not exist.</string>
+    <string name="rhapsody_info_removed">Removed</string>
+    <string name="rhapsody_library">Library</string>
+    <string name="rhapsody_login_noti">Enter your %s credentials in Settings to start.</string>
+    <string name="rhapsody_new_release">New Releases</string>
+    <string name="rhapsody_noti_account_expired_1">"Your account seems to have expired. 
+Please visit http://account.napster.com 
+to upgrade or renew your account."</string>
+    <string name="rhapsody_noti_account_expired_2">"Your account seems to have expired. 
+Please visit http://account.rhapsody.com 
+to upgrade or renew your account."</string>
+    <string name="rhapsody_noti_create_account_1">"If you do not have one, 
+please go to "<a href="http://account.napster.com">http://www.napster.com</a>"
+to create an account."</string>
+    <string name="rhapsody_noti_create_account_2">"If you do not have one, 
+please go to "<a href="http://account.rhapsody.com">http://www.rhapsody.com</a>"
+to create an account."</string>
+    <string name="rhapsody_popular">Popular</string>
+    <string name="rhapsody_radio">Radio</string>
+    <string name="rhapsody_radio_artist">Artist Stations</string>
+    <string name="rhapsody_radio_genre">Genre Stations</string>
+    <string name="rhapsody_similar_artist_contemporary">Contemporary Artists</string>
+    <string name="rhapsody_similar_artist_following">Following Artists</string>
+    <string name="rhapsody_similar_artist_influencing">Influencing Artists</string>
+    <string name="rhapsody_similar_artists">Similar Artists</string>
+    <string name="rhapsody_top_albums">Top Albums</string>
+    <string name="rhapsody_top_artists">Top Artists</string>
+    <string name="route_description">LG Music Flow Playback</string>
+    <string name="search_clear_suggestions">Clear</string>
+    <string name="search_hint">@string/media_search</string>
+    <string name="search_menu_title">Search</string>
+    <string name="search_result_albums">@string/tab_albums</string>
+    <string name="search_result_artists">@string/tab_artists</string>
+    <string name="search_result_songs">@string/tab_songs</string>
+    <string name="search_settings_description">Artist, albums, and tracks</string>
+    <string name="searching_speakers">Searching for speakers …</string>
+    <string name="select_playlist">Select one of your playlists</string>
+    <string name="select_rear_speaker">Please select the speaker to connect.</string>
+    <string name="select_song_to_play">Select a song to play.</string>
+    <string name="select_speaker">@string/navigation_category_speakers</string>
+    <string name="send_to_speaker">Send to Speaker</string>
+    <string name="set">Set</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="settings">Settings</string>
+    <string name="settings_advanced">Advanced settings</string>
+    <string name="settings_alarm_and_timer">Alarm/Sleep Timer</string>
+    <string name="settings_date_time">Time Zone</string>
+    <string name="settings_description">You can manage various functions of Music Flow.</string>
+    <string name="settings_general">General</string>
+    <string name="settings_google_cast">Chromecast</string>
+    <string name="settings_manage_account">Account Management</string>
+    <string name="settings_music_library">@string/navigation_music_library_remote</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_speakers">@string/navigation_category_speakers</string>
+    <string name="settings_updates">Version Info.</string>
+    <string name="setup_add_product">Add connection</string>
+    <string name="setup_add_product_icon">(add)</string>
+    <string name="setup_add_product_to_connect_description_01_bridge">Press (add) button on the back of the Bridge to make additional connections.</string>
+    <string name="setup_add_product_to_connect_description_01_portable">To connect an additional unit, briefly press the button on the side (add) of the portable speaker.</string>
+    <string name="setup_add_product_to_connect_description_01_smartaudio">Press (add) button on the back of the Music Flow speaker to connect</string>
+    <string name="setup_add_product_to_connect_description_01_soundbar">Press (add) button at the top of the SoundBar to connect.</string>
+    <string name="setup_add_product_to_connect_description_02">When it is ready to connect, the (wifi) LED flashes red as shown in the figure.</string>
+    <string name="setup_add_product_to_connect_description_02_portable">When it is ready to connect, the (function) LED flashes red as shown in the figure.</string>
+    <string name="setup_ap_name">Network Name</string>
+    <string name="setup_ap_password">@string/password</string>
+    <string name="setup_bridge">Bridge</string>
+    <string name="setup_bridge_connection_title">Connect Bridge</string>
+    <string name="setup_change_ap_not_peroperly_connected">"It is not properly connected. "</string>
+    <string name="setup_change_ap_ssid">MusicFlow_Setup</string>
+    <string name="setup_change_ap_step_first">1. On the Home screen, select Setup >Wi-Fi.</string>
+    <string name="setup_change_ap_step_second">2. Select %s to connect.</string>
+    <string name="setup_change_ap_step_third">3. Return to the %s App again.</string>
+    <string name="setup_complete_connections_title">Connection completed.</string>
+    <string name="setup_connect_musicflow_product_smartaudio">Connect Multi-room Audio</string>
+    <string name="setup_connect_musicflow_product_soundbar">Connect SoundBar</string>
+    <string name="setup_connect_product">Connect product</string>
+    <string name="setup_connecting">Connecting…</string>
+    <string name="setup_connecting_to_home_ap">Connecting to [%s] …</string>
+    <string name="setup_connection_fail">Connection failed</string>
+    <string name="setup_finish">Finish</string>
+    <string name="setup_function_icon">(function)</string>
+    <string name="setup_help">Help</string>
+    <string name="setup_help_for_wired_connection_description_no_1_bridge">If Bridge is not detected?</string>
+    <string name="setup_help_for_wired_connection_description_no_1_portable">If Portable speaker is not detected?</string>
+    <string name="setup_help_for_wired_connection_description_no_1_smartaudio">If speaker is not detected?</string>
+    <string name="setup_help_for_wired_connection_description_no_1_soundbar">If SoundBar is not detected?</string>
+    <string name="setup_help_for_wired_connection_description_no_2">1. Check if %s product is powered on.</string>
+    <string name="setup_help_for_wired_connection_description_no_3">It is off. Check if power cable is connected.</string>
+    <string name="setup_help_for_wired_connection_description_no_4">It is being turned on. Wait until it is properly turned on and blinking stops, and try to connect again.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_bridge">2. Please check if the LED of the Bridge is solid white.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_portable">2. Please check if the (wifi) LED of the Portable speaker is solid white.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_smartaudio">2. Please check if the (wifi) LED of the speaker is solid white.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_soundbar">2. Please check if the (wifi) LED of the SoundBar is solid white.</string>
+    <string name="setup_help_for_wired_connection_description_no_6">It is not connected to the network. Check cable connection status and check if AP is working properly</string>
+    <string name="setup_help_for_wired_connection_description_no_7_bridge">3. Check if Bridge is connected to the same network as the mobile device.</string>
+    <string name="setup_help_for_wired_connection_description_no_7_smartaudio">3. Check if Multi-room Audio is connected to the same network as the mobile device.</string>
+    <string name="setup_help_for_wired_connection_description_no_7_soundbar">3. Check if SoundBar is connected to the same network as the mobile device.</string>
+    <string name="setup_help_for_wired_connection_description_no_8">Network Name: %s</string>
+    <string name="setup_help_for_wired_connection_description_no_9_bridge">If not connected to the same network, please change the Smart device settings to the same network as the Bridge.</string>
+    <string name="setup_help_for_wired_connection_description_no_9_smartaudio">If not connected to the same network, please change the Settings> Wi-Fi of the Smart device to the same network as the speaker.</string>
+    <string name="setup_help_for_wired_connection_description_no_9_soundbar">If not connected to the same network, please change the samrt device Wi-Fi settings to the same network as the SoundBar.</string>
+    <string name="setup_help_for_wireless_add_connection">Wireless add network guide</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_2">1. If the additional speaker you want to connect is too far from the previously connected speaker, it may not be able to connect. Move the additonal speaker you want to connect closer, or make a wired connection.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_3">@string/setup_help_for_wireless_connection_description_no_3</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_4">@string/setup_help_for_wired_connection_description_no_3</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_5">@string/setup_help_for_wired_connection_description_no_4</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_bridge">3. Please check if the (wifi) LED of the Bridge is flashing red.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_portable">3. Please check if the (function) LED of the Portable speaker is flashing red.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_smartaudio">3. Please check if the (wifi) LED of the speaker is flashing red.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_soundbar">3. Please check if the (wifi) LED of the SoundBar is flashing red.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_7">It is in standby mode. Press the power button to turn on the power, check and press (add) button again.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_8">It is initial connection mode. Confirm the (add) button location and press again.</string>
+    <string name="setup_help_for_wireless_connection_description_no_10">"5. If the Music Flow speaker is not detected even after attempting steps 1–4, please try again after connecting to the \"Music Flow_Setup\" by entering the Wi-Fi settings of mobile. "</string>
+    <string name="setup_help_for_wireless_connection_description_no_2">1. If the smart device and the Music Flow speaker are too far apart, it may not be detected. Please move the smart device closer to the product.</string>
+    <string name="setup_help_for_wireless_connection_description_no_3">2. Check if %s product is powered on.</string>
+    <string name="setup_help_for_wireless_connection_description_no_4">@string/setup_help_for_wired_connection_description_no_3</string>
+    <string name="setup_help_for_wireless_connection_description_no_5">@string/setup_help_for_wired_connection_description_no_4</string>
+    <string name="setup_help_for_wireless_connection_description_no_6">3. Please check if the (wifi) LED is flashing in white/red.</string>
+    <string name="setup_help_for_wireless_connection_description_no_7">It is in standby mode. Press the power button to turn on the power, check and press (wifi) button again.</string>
+    <string name="setup_help_for_wireless_connection_description_no_8">It is the additional connection mode. Confirm the (wifi) button location and press again.</string>
+    <string name="setup_help_for_wireless_connection_description_no_9">4. Check the name and password of the AP to connect again. The Music Flow speaker and the smart device have to be connected to the same network.</string>
+    <string name="setup_index_add_product">add_product</string>
+    <string name="setup_index_add_product_done">add_product_done</string>
+    <string name="setup_index_bridge">bridge</string>
+    <string name="setup_index_connection_connecting">connection connecting</string>
+    <string name="setup_index_connection_done">connection done</string>
+    <string name="setup_index_connection_fail">connection fail</string>
+    <string name="setup_index_connection_mode">connection_mode</string>
+    <string name="setup_index_portable_no_1">portable1</string>
+    <string name="setup_index_portable_no_2">portable2</string>
+    <string name="setup_index_portable_no_3">portable3</string>
+    <string name="setup_index_portable_no_4">portable4</string>
+    <string name="setup_index_select_product">select_product</string>
+    <string name="setup_index_welcome">welcome</string>
+    <string name="setup_index_wifi_warning">wifi_warning</string>
+    <string name="setup_index_wired">wired</string>
+    <string name="setup_index_wired_connection_done">wired connection done</string>
+    <string name="setup_index_wireless_no_1">wireless1</string>
+    <string name="setup_index_wireless_no_2">wireless2</string>
+    <string name="setup_index_wireless_no_3">wireless3</string>
+    <string name="setup_index_wireless_no_4">wireless4</string>
+    <string name="setup_input_ap_password_description">Please enter your network password.</string>
+    <string name="setup_input_ap_password_portable">Connecting Portable speaker to wireless network.</string>
+    <string name="setup_input_ap_password_smartaudio">Connecting Multi-room speaker to wireless network.</string>
+    <string name="setup_input_ap_password_soundbar">Connecting SoundBar to wireless network.</string>
+    <string name="setup_installing_music_flow">Installing Music Flow product</string>
+    <string name="setup_multiroom_audio">Multi-room Audio</string>
+    <string name="setup_multiroom_bridge">Bridge</string>
+    <string name="setup_multiroom_portable">Portable Audio</string>
+    <string name="setup_multiroom_sound_bar">SoundBar</string>
+    <string name="setup_music_flow">Music Flow</string>
+    <string name="setup_next">Next</string>
+    <string name="setup_no_speaker_bridge">There is no Bridge connected.</string>
+    <string name="setup_no_speaker_portable">There is no Portable speaker connected.</string>
+    <string name="setup_no_speaker_smartaudio">There is no Multi-room speaker connected.</string>
+    <string name="setup_no_speaker_soundbar">There is no SoundBar connected.</string>
+    <string name="setup_portable">Portable audio</string>
+    <string name="setup_portable_connection_description_no_1">"1. Please briefly press the button on the side (wifi) of the portable speaker to connect. "</string>
+    <string name="setup_portable_connection_description_no_2">2. When it is ready to connect, (function) LED blinks in red/white as in the figure.</string>
+    <string name="setup_portable_connection_title">Connect Portable Audio</string>
+    <string name="setup_prev">Back</string>
+    <string name="setup_search_again">@string/mesh_network_configuration_retry</string>
+    <string name="setup_searching_speaker">Connecting the %s …</string>
+    <string name="setup_select_method_to_connect_to_ap_bridge">Select the method to connect Bridge and AP.</string>
+    <string name="setup_select_method_to_connect_to_ap_smartaudio">Select the method to connect Music Flow speakers and AP.</string>
+    <string name="setup_select_method_to_connect_to_ap_soundbar">Select the method to connect SoundBar and AP.</string>
+    <string name="setup_select_product">Select product</string>
+    <string name="setup_select_product_description">Please select the speaker to connect to the Music Flow network.</string>
+    <string name="setup_select_wired_connection_bridge">공유기와 브릿지를 유선으로 연결합니다.</string>
+    <string name="setup_select_wired_connection_smartaudio">Connect the router and the speaker by wire.</string>
+    <string name="setup_select_wired_connection_soundbar">Connect the router and the SoundBar by wire.</string>
+    <string name="setup_select_wireless_connection_bridge">공유기와 브릿지를 무선으로 연결합니다.</string>
+    <string name="setup_select_wireless_connection_smartaduio">Connect the router and the speaker wirelessly.</string>
+    <string name="setup_select_wireless_connection_soundbar">Connect the router and SoundBar wirelessly.</string>
+    <string name="setup_show_pw">Display password</string>
+    <string name="setup_skip">Skip</string>
+    <string name="setup_smart_audio">Music Flow</string>
+    <string name="setup_sound_bar">SoundBar</string>
+    <string name="setup_sound_bar_check_check_connection_between_TV_and_sound_bar">[Check connection between TV and sound bar]</string>
+    <string name="setup_sound_bar_check_sound_bar">[Check sound bar]</string>
+    <string name="setup_sound_bar_check_tv">[Check TV]</string>
+    <string name="setup_sound_bar_choose_description">Select the method to connect SoundBar and TV.</string>
+    <string name="setup_sound_bar_common_guide">"3. Set TV sound output to external speaker.
+(For details, refer to TV manual)"</string>
+    <string name="setup_sound_bar_connection_complete">SoundBar and TV connection is completed.</string>
+    <string name="setup_sound_bar_connection_title">SoundBar and TV connection completed</string>
+    <string name="setup_sound_bar_hdmi_description">Connect TV and SoundBar with HDMI cable.</string>
+    <string name="setup_sound_bar_hdmi_description_01">@string/setup_sound_bar_optical_description_01</string>
+    <string name="setup_sound_bar_hdmi_description_02">2. Connect HDMI cable to the back of the TV and the SoundBar, and turn on the power of the TV.</string>
+    <string name="setup_sound_bar_hdmi_description_03">"[Tip] Connect TV HDMI(ARC) In connector and sound bar's HDMI(ARC) Out connector. "</string>
+    <string name="setup_sound_bar_hdmi_title">HDMI cable connection</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_01">"If sound can not be heard from the SoundBar?
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_02">[Check sound bar]</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_03">"1. Check if TV ARC is displayed on the SoundBar.
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_04">"2. Check if the volume of the SoundBar is at adequate level.
+
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_05">[Check TV]</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_06">"1. Check if TV power is on and the volume is at adequate level.
+
+2. Check if TV output setting is set to external speaker. For details on TV output setting, refer to TV manual.
+
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_07">[Check connection between TV and sound bar]</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_08">"Please check if the HDMI(ARC) terminal of TV is connected to the HDMI OUT(TV ARC) terminal of the Sound bar.
+If TV does not support HDMI ARC, connect with optical cable."</string>
+    <string name="setup_sound_bar_help_for_optical_description_01">"If sound can not be heard from the SoundBar?
+"</string>
+    <string name="setup_sound_bar_help_for_optical_description_02">[Check sound bar]</string>
+    <string name="setup_sound_bar_help_for_optical_description_03">1. Check if OPTICAL is displayed on the SoundBar. If OPTICAL is not displayed, press Function button on the remote controller or (function) button at the top of the SoundBar to change to OPTICAL function.</string>
+    <string name="setup_sound_bar_help_for_optical_description_04">"2. Check if the volume of the SoundBar is at adequate level.
+
+"</string>
+    <string name="setup_sound_bar_help_for_optical_description_05">[Check TV]</string>
+    <string name="setup_sound_bar_help_for_optical_description_06">"1. Check if TV power is on and the volume is at adequate level.
+
+2. Check if TV output setting is set to external speaker. For details on TV output setting, refer to TV manual."</string>
+    <string name="setup_sound_bar_optical_description">Connect TV and SoundBar with optical cable.</string>
+    <string name="setup_sound_bar_optical_description_01">1. Turn off the power of the TV</string>
+    <string name="setup_sound_bar_optical_description_02">2. Connect optical cable to the back of the TV and the SoundBar, and turn on the power of the TV.</string>
+    <string name="setup_sound_bar_optical_title">Optical cable connection</string>
+    <string name="setup_sound_bar_title">Connect SoundBar and TV</string>
+    <string name="setup_start">Start</string>
+    <string name="setup_terms_of_use">TERMS OF USE</string>
+    <string name="setup_terms_of_use_accept">Accept</string>
+    <string name="setup_terms_of_use_contents_1">"These Terms of Use apply to those individuals and groups who use LG’s Music Flow Player (LG Music Flow Player), any software(s) associated with LG Music Flow Player, this application  and any services associated this application  (collectively “LG Software”). They set out LGE’s responsibilities to you as well as identifying the “dos” and “don’ts” that you should be aware of when you use the LG Software. LG Software is proprietary software owned by LG Electronics Inc., a corporation registered in Korea with its registered office at Yeouido-dong 20, Yeoungdeungpo-gu, Seoul, Korea. LGE, and its licensors (“LGE”, “us” or “we”)."</string>
+    <string name="setup_terms_of_use_contents_10">"This Agreement shall be governed by the laws of the Republic of Korea, excluding their conflicts of laws provisions.
+If you have any questions or comments about these Terms of Use please contact www.lg.com.
+
+These Terms of Use may be updated by LGE from time to time. If we make a material change to our Terms of Use, we will update you via your LG Software or other means.
+
+"</string>
+    <string name="setup_terms_of_use_contents_11">"Open source software notice
+To obtain the source code under GPL, LGPL, MPL and other open source licenses, that is contained in this product, please visit http://opensource.lge.com .
+In addition to the source code, all referred license terms, warranty disclaimers and copyright notices are available for download.
+LG Electronics will also provide open source code to you on CD-ROM for a charge covering the cost of performing such distribution (such as the cost of media, shipping and handling) upon email request to opensource@lge.com. This offer is valid for three (3) years from the date on which you purchased the product.
+
+"</string>
+    <string name="setup_terms_of_use_contents_12">"[Any translation of this Terms of Use is done for local requirements and in the event of a discrepancy between the English and any non-English versions, the English version of this Terms of Use shall govern, to the extent not prohibited by local law in your jurisdiction.]
+
+Last Updated : 8/14/2014
+
+"</string>
+    <string name="setup_terms_of_use_contents_13" />
+    <string name="setup_terms_of_use_contents_14" />
+    <string name="setup_terms_of_use_contents_15" />
+    <string name="setup_terms_of_use_contents_16" />
+    <string name="setup_terms_of_use_contents_17" />
+    <string name="setup_terms_of_use_contents_2">"By accessing or using LG Software, you confirm that you accept these Terms of Use and that you agree to comply with them. If you do not agree to these Terms of Use, you may not access or use the LG Software.
+We grant you a non-exclusive license to use the pre-installed copy of LG Software solely to the extent necessary for you to use your LG Music Flow Player personally and for no other purpose."</string>
+    <string name="setup_terms_of_use_contents_3">"You acknowledge that all ownership rights in LG Software anywhere in the world belong exclusively to us and that no ownership rights in LG Software are transferred to you. You are only entitled to the limited use of LG Software as is granted in these license terms.
+You may not copy, modify, decompile or reverse engineer our software in any way unless you are allowed to do so by law. We reserve the right to suspend, withdraw or discontinue all or part of the Services without notice if we consider that you are in breach of these Terms of Use."</string>
+    <string name="setup_terms_of_use_contents_4">"You acknowledge that LG Software has not been developed to meet your individual requirements. We make no promises or guarantees that LG Software is free from bugs or errors or that it will always be available.  We use commercially reasonable efforts to provide LG Software on a continuous, high quality basis but cannot guarantee that they will always be available, uninterrupted or error free. It is possible that we may have to interrupt or discontinue the LG Software or suspend or restrict your use of all or any part of the Services where we consider it reasonably necessary for technical, operational, security, legal or regulatory reasons."</string>
+    <string name="setup_terms_of_use_contents_5">"We do not accept any responsibility if for any reason the Services or any part of them are unavailable at any time or for any period.
+Although you may use LG Software to download and access content or applications made available by third parties on your LG Software, we make no promises or guarantees that you will always be able to access such content or applications. So far as we are legally able to do so, we exclude any warranties, conditions or other terms which may be implied into these license terms by law."</string>
+    <string name="setup_terms_of_use_contents_6">So far as we are legally able to do so, we exclude any liability for any loss or damage incurred by you or any other person in connection with your use of LG Software. We are only responsible for loss or damage suffered that is a foreseeable result of our breach of these license terms or our negligence up to the amount specified below, but we are not responsible for any loss or damage that is not foreseeable . Loss or damage is foreseeable if it is an obvious consequence of our breach or if it was contemplated by you and us when you starting using LG Software.</string>
+    <string name="setup_terms_of_use_contents_7">"For any loss or damage that is not excluded under these license terms, whether in contract, tort (including negligence) or otherwise, the total liability of us and our group of companies to you is limited to the amount that you paid for your LG Software service. To the extent permissible under the applicable laws, some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, or have legislation that restricts the limitation or exclusion of liability, so the above limitation may not apply to you.
+Nothing is these license terms shall limit or exclude our liability for death or personal injury relating from our negligence, fraud or fraudulent misrepresentation or any other liability that cannot be excluded or limited by law."</string>
+    <string name="setup_terms_of_use_contents_8">"LG Software provides access to “apps” and link to other services owned and operated by third parties, such as content providers. Any third party apps, services and content that you access via the Services are made available to you by these third party providers and are outside the scope of these Terms of Use.
+Your dealings with any third party providers are solely between you and the relevant provider and may be subject to the provider’s own terms and conditions and privacy policy. We encourage you to read these documents, although we are not responsible for their content. We do not accept any responsibility for apps, services or content provided by third party providers.
+
+"</string>
+    <string name="setup_terms_of_use_contents_9">"We may impose limits on the use of or access to certain third party content, application or services, in any case without notice or liability. We expressly disclaims any responsibility or liability for any change, interruption, disabling, removal of or suspension of any content, application or service made available through this LG Software. We are neither responsible nor liable for customer service related to the content, application and services. Any question or request for service relating to third party’s content, application or services should be made directly to the respective content and service providers or application developers, as appropriate.
+These terms do not affect your statutory rights as a consumer.
+
+"</string>
+    <string name="setup_terms_of_use_decline">Decline</string>
+    <string name="setup_try_again">Please try again.</string>
+    <string name="setup_use_now">Use app now</string>
+    <string name="setup_welcome">Welcome</string>
+    <string name="setup_welcome_description">Enjoy a variety of music via the Music Flow!</string>
+    <string name="setup_wired_connection">Wired connection</string>
+    <string name="setup_wired_connection_description_no_1">"Connect LAN cable to the back of the %s speaker to connect. "</string>
+    <string name="setup_wired_connection_description_no_2">"When it is connected to the network, (wifi) LED becomes white. "</string>
+    <string name="setup_wired_connection_title">Connect with cable</string>
+    <string name="setup_wireless_connection">Wireless connection</string>
+    <string name="setup_wireless_connection_description_no_1_smartaudio">"Press (wifi) button at the back of the Multi-room Audio to connect. "</string>
+    <string name="setup_wireless_connection_description_no_1_soundbar">"Press (wifi) button at the top of the SoundBar to connect. "</string>
+    <string name="setup_wireless_connection_description_no_2">When it is ready to connect, (wifi) LED blinks in red/white as in the figure.</string>
+    <string name="setup_wireless_connection_title">Connect wirelessly</string>
+    <string name="setup_wireless_wifi_icon">(wifi)</string>
+    <string name="share_usage_date">Share usage data</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="signin">Sign In</string>
+    <string name="signout">Sign Out</string>
+    <string name="sj6">SJ6</string>
+    <string name="sj8">SJ8</string>
+    <string name="sj9">SJ9</string>
+    <string name="sleep_timer">Sleep Timer</string>
+    <string name="songza">Songza</string>
+    <string name="sound_bar">Sound Bar</string>
+    <string name="sound_effect">Sound Effect</string>
+    <string name="sound_effect_for_setting">Sound effect</string>
+    <string name="sound_plate">SoundPlate</string>
+    <string name="sound_tracker">SoundTracker</string>
+    <string name="speaker_description">Settings for the Music Flow product.</string>
+    <string name="speaker_name">Speaker name</string>
+    <string name="speaker_not_connected">There is no connected Music Flow product.</string>
+    <string name="speaker_register">Installing Music Flow product</string>
+    <string name="speaker_update_check">speaker update check</string>
+    <string name="speaker_update_description">"You need to update the speaker.
+Do you want to update the software?"</string>
+    <string name="speaker_updating_description">Updating speaker.</string>
+    <string name="spotify">Spotify</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="stb_tv_remote">Using the TV / settop box remote control</string>
+    <string name="stb_tv_remote_description">Use the TV / settop box remote control to control the sound bar.</string>
+    <string name="surround_channel_destroy">Disconnecting Rear Surround connection</string>
+    <string name="surround_channel_destroy_for_group_setting">To play as a group, the surround connection should be released in advance. Do you want to disconnect the surround connection?</string>
+    <string name="surround_channel_not_ready">There are not enough speakers to connect to Rear Surround</string>
+    <string name="surround_channel_title">Making surround environment</string>
+    <string name="system_version">System version</string>
+    <string name="tab_albums">Albums</string>
+    <string name="tab_artists">Artists</string>
+    <string name="tab_dms">DMS</string>
+    <string name="tab_folders">Folders</string>
+    <string name="tab_genres">Genres</string>
+    <string name="tab_radios">Radios</string>
+    <string name="tab_shows">Shows</string>
+    <string name="tab_songs">Songs</string>
+    <string name="tab_stations">Stations</string>
+    <string name="tab_talks">Talks</string>
+    <string name="test_tone_description">The set value will be reflected to the overall sound effect.</string>
+    <string name="timer_description">You can set a time to automatically turn off the speaker.</string>
+    <string name="title_activity_equalizer">Equalizer</string>
+    <string name="title_activity_recommendation">Recommendation</string>
+    <string name="title_playlists">Playlists</string>
+    <string name="top_tracks">Top Tracks</string>
+    <string name="tracks">Tracks</string>
+    <string name="treble">Treble</string>
+    <string name="tunein">TuneIn</string>
+    <string name="turn_off_internet_unavailable">Turn off Internet unavailable</string>
+    <string name="turn_off_smart_wifi_service">Turn off Smart Wi-Fi</string>
+    <string name="turn_on_wifi">Turn on Wi-Fi</string>
+    <string name="tutorial">User Guide</string>
+    <string name="tv_remote">Using the TV remote control</string>
+    <string name="tv_remote_description">Control the sound bar using the TV remote control.</string>
+    <string name="tx_alert_dialog">"If the connected device is not Music Flow product, only ungroup function is supported.
+Additional control is possible through the connected device."</string>
+    <string name="update">Update</string>
+    <string name="update_caution">"Caution:
+Do not turn off the power of Music Flow program and product until update has completed.
+When the update is completed, the device reboots automatically."</string>
+    <string name="update_description">You can update Music Flow to the latest version.</string>
+    <string name="update_failed">Update failed</string>
+    <string name="update_minor_bug_fix">Minor Bug fix</string>
+    <string name="update_notice">Update notice</string>
+    <string name="updated">Update is complete.</string>
+    <string name="updating">Updating…</string>
+    <string name="usb">USB</string>
+    <string name="weekend">Weekend</string>
+    <string name="whats_hot">"What's hot"</string>
+    <string name="wifi_signal_weak">Weak network signal</string>
+    <string name="woofer_level">Woofer level</string>
+</resources>

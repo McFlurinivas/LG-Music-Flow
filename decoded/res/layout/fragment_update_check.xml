@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/proto_header_setup" />
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="287.0dip">
+        <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@id/update_check_progress_wheel" android:layout_width="60.0dip" android:layout_height="60.0dip" wheel:matProg_barColor="@color/multiroom_highlight" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@android:id/text1" style="@style/WizardFormNormal" />
+    </LinearLayout>
+</LinearLayout>

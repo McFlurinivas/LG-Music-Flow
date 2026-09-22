@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="center_horizontal" android:id="@id/__faq_a1" android:layout_width="15.0dip" android:layout_height="wrap_content" android:text="1." android:layout_alignParentTop="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:id="@id/setup_wireless_step_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/setup_help_for_wired_connection_description_no_4" android:layout_weight="1.0" android:layout_toRightOf="@id/__faq_a1" />
+    </LinearLayout>
+    <ImageView android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_device_wifi" android:layout_weight="0.5" />
+    <RelativeLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="center_horizontal" android:id="@id/__faq_a2" android:layout_width="15.0dip" android:layout_height="wrap_content" android:text="2." android:layout_alignParentTop="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:id="@id/setup_wireless_step_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/setup_help_for_wired_connection_description_no_5_smartaudio" android:layout_toRightOf="@id/__faq_a2" />
+    </RelativeLayout>
+    <com.lge.media.musicflow.setup.steps.CenterAnimatedImageView android:id="@android:id/icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_led_lamp_bg" android:layout_weight="0.5" />
+</LinearLayout>

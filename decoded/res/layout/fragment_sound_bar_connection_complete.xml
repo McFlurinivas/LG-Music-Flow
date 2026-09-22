@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/proto_header_setup" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="#ff464556" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setup_sound_bar_connection_complete" />
+    </LinearLayout>
+    <include layout="@layout/footer_two_button_horizontally" />
+</LinearLayout>

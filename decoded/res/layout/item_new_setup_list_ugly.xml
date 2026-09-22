@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="8.0dip" android:paddingRight="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_layout" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/list_item_tone_test">
+        <CheckBox android:theme="@style/Theme.Multiroom" android:enabled="true" android:gravity="left|center" android:id="@id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lyt_list_item" android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/checkbox">
+            <ImageView android:id="@id/list_item_speaker_icon" android:background="@drawable/wiz_list_product_h5" android:focusable="false" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginRight="2.0dip" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/multiroom_medium_text_size" android:textColor="@color/multiroom_primary_text" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/list_item_speaker_name" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="65.0" />
+                <TextView android:textSize="@dimen/multiroom_small_text_size" android:textColor="@color/multiroom_secondary_text" android:ellipsize="end" android:gravity="top" android:layout_gravity="center_vertical" android:id="@id/list_item_speaker_model" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="35.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:id="@id/list_item_tone_test" android:background="@drawable/ic_setup_tone" android:focusable="false" android:layout_width="@dimen/setup_list_item_button_width" android:layout_height="@dimen/setup_list_item_button_height" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

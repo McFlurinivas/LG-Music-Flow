@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/empty_textview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_song" />
+    <GridView android:scrollbarStyle="outsideOverlay" android:layout_gravity="center" android:id="@id/album_grid_view" android:paddingLeft="@dimen/album_grid_padding_left" android:paddingTop="@dimen/album_grid_padding_top" android:paddingRight="@dimen/album_grid_padding_right" android:paddingBottom="@dimen/album_grid_padding_bottom" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="@dimen/album_grid_horizontal_spacing" android:verticalSpacing="@dimen/album_grid_vertical_spacing" android:stretchMode="columnWidth" android:columnWidth="@dimen/album_grid_item_width" android:numColumns="auto_fit" android:fastScrollEnabled="true" />
+</RelativeLayout>

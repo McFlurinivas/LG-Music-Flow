@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/alert_dialog_padding" android:paddingTop="@dimen/alert_dialog_padding" android:paddingRight="@dimen/alert_dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/alert_dialog_title_size" android:textColor="@color/multiroom_highlight" android:id="@id/dialog_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    <Button android:layout_gravity="center_vertical" android:id="@id/dialog_close_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+</RelativeLayout>

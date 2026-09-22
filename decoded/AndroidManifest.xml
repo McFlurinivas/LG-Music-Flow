@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.lge.media.musicflow" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <queries>
+        <package android:name="com.lguplus.ho_client_impl"/>
+        <package android:name="com.google.android.apps.chromecast.app"/>
+        <package android:name="com.rhapsody"/>
+        <package android:name="com.spotify.music"/>
+        <package android:name="com.pandora.android"/>
+        <package android:name="com.clearchannel.iheartradio.controller"/>
+        <package android:name="com.google.android.music"/>
+        <package android:name="tunein.player"/>
+        <package android:name="org.npr.one"/>
+    </queries>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.lge.media.musicflow.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.lge.media.musicflow.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.lge.media.musicflow.MediaApplication" android:requestLegacyExternalStorage="true" android:theme="@style/Theme.Multiroom" android:usesCleartextTraffic="true">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.lge.media.musicflow.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MUSIC_PLAYER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.APP_MUSIC"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="launch" android:scheme="musicflow"/>
+            </intent-filter>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.SubActivity" android:parentActivityName="com.lge.media.musicflow.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.MainActivity"/>
+        </activity>
+        <service android:name="com.lge.media.musicflow.playback.PlaybackService"/>
+        <service android:name="com.lge.media.musicflow.route.MediaRouteService"/>
+        <service android:name="com.lge.media.musicflow.upnp.MultiroomUpnpService"/>
+        <service android:name="com.lge.media.musicflow.route.MultiroomRemotePlayService"/>
+        <service android:exported="false" android:label="@string/multiroom_media_route_provider_service" android:name="com.lge.media.musicflow.route.MultiroomMediaRouteProviderService" android:process=":music_flow_media_route_provider">
+            <intent-filter>
+                <action android:name="android.media.MediaRouteProviderService"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="com.lge.media.musicflow.MediaActionReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+                <action android:name="com.lge.media.musicflow.local_device_added"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.tracks.AlbumTracksActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.artists.albums.songs.ArtistSongsActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.playlists.userplaylists.members.UserPlaylistMembersActivity" android:parentActivityName="com.lge.media.musicflow.playlists.PlaylistsTabHostActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.playlists.PlaylistsTabHostActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.genres.members.GenreMembersActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.folders.members.FolderMembersActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.onlineservice.embedded.EmbeddedActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.settings.SettingsActivity" android:parentActivityName="com.lge.media.musicflow.settings.SettingsRootActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.settings.SettingsRootActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.settings.SettingsRootActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity" android:windowSoftInputMode="stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.settings.advanced.AdvancedActivity" android:parentActivityName="com.lge.media.musicflow.settings.SettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.settings.SettingsActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.playlists.PlaylistsTabHostActivity" android:parentActivityName="com.lge.media.musicflow.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.MainActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.AgreementActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.SetupWelcomeActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label=" " android:name="com.lge.media.musicflow.setup.AddProductActivity"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.soundbar.SoundBarActivity"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.googlecast.SetupGoogleCastActivity"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.update.SetupUpdateCheckActivity"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.onlineservice.embedded.search.OnlineSearchActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="android.app.default_searchable" android:value=".search.OnlineSearchActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.musiccover.recommendation.RecommendationActivity" android:parentActivityName="com.lge.media.musicflow.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.MainActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.playlists.nowplaying.NowPlayingListActivity"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.search.MusicSearchActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="android.app.default_searchable" android:value=".search.MusicSearchActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.onlineservice.embedded.rhapsody.fragment.RhapsodyAlertDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.lge.media.musicflow.search.RecentSearchSuggestionProvider" android:name="com.lge.media.musicflow.search.RecentSearchSuggestionProvider"/>
+        <provider android:authorities="com.lge.media.musicflow.onlineservice.embedded.search.RecentOnlineSearchSuggestionProvider" android:name="com.lge.media.musicflow.onlineservice.embedded.search.RecentOnlineSearchSuggestionProvider"/>
+        <service android:enabled="true" android:exported="true" android:name="com.lge.media.musicflow.route.bleseamless.BleSeamlessService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.musiccover.onlineserviceedit.OnlineServiceEditActivity" android:parentActivityName="com.lge.media.musicflow.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.MainActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.ezsetup.SetupProcessActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.setup.ezsetup.PrepareSetupActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label=" " android:name="com.lge.media.musicflow.onlineservice.embedded.deezer.DeezerTracksActivity" android:parentActivityName="com.lge.media.musicflow.onlineservice.embedded.EmbeddedActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".onlineservice.embedded.EmbeddedActivity"/>
+        </activity>
+        <activity android:label=" " android:name="com.lge.media.musicflow.onlineservice.embedded.rhapsody.RhapsodyTracksActivity" android:parentActivityName="com.lge.media.musicflow.onlineservice.embedded.EmbeddedActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".onlineservice.embedded.EmbeddedActivity"/>
+        </activity>
+        <activity android:label=" " android:name="com.lge.media.musicflow.onlineservice.embedded.juke.JukeTabBaseActivity" android:parentActivityName="com.lge.media.musicflow.onlineservice.embedded.EmbeddedActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".onlineservice.embedded.EmbeddedActivity"/>
+        </activity>
+        <activity android:label=" " android:name="com.lge.media.musicflow.onlineservice.embedded.juke.albums.JukeTracksActivity" android:parentActivityName="com.lge.media.musicflow.onlineservice.embedded.EmbeddedActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".onlineservice.embedded.EmbeddedActivity"/>
+        </activity>
+        <activity android:label=" " android:name="com.lge.media.musicflow.onlineservice.embedded.rhapsody.fragment.RhapsodyMenuTypeActivity" android:parentActivityName="com.lge.media.musicflow.onlineservice.embedded.search.OnlineSearchActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".onlineservice.embedded.search.OnlineSearchActivity"/>
+        </activity>
+        <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.upnp.mediaservers.mediacontent.MediaContentsActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.navigation.NavigationActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity" android:windowSoftInputMode="stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:alwaysRetainTaskState="false" android:clearTaskOnLaunch="true" android:enabled="true" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:label="" android:name="com.lge.media.musicflow.DummyActivity" android:noHistory="true" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:label="" android:launchMode="singleTop" android:name="com.lge.media.musicflow.permission.PermissionActivity"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.lge.media.musicflow"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.lge.media.musicflow.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

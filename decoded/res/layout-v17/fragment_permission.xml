@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/proto_header_setup" />
+    <android.support.v4.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageView" android:background="@drawable/illust_positon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/multiroom_primary_text" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/location_permission_guide" android:layout_below="@id/imageView" android:layout_centerHorizontal="true" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/footer_two_button_horizontally" />
+</LinearLayout>

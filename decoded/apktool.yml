@@ -1,0 +1,17 @@
+version: 2.12.1
+apkFileName: com.lge.media.musicflow_1.9.94-1994_minAPI14(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 14
+  targetSdkVersion: 30
+packageInfo:
+  forcedPackageId: 127
+versionInfo:
+  versionCode: 1994
+  versionName: 1.9.94
+doNotCompress:
+- arsc
+- png
+- wav

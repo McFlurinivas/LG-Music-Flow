@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/play_album" android:visible="false" android:title="@string/juke_play_now" app:showAsAction="never" />
+    <item android:id="@id/play_playlist" android:visible="false" android:title="@string/juke_play_now" app:showAsAction="never" />
+    <item android:id="@id/play" android:visible="false" android:title="@string/juke_play_now" app:showAsAction="never" />
+    <item android:id="@id/play_next" android:visible="false" android:title="@string/juke_play_next" app:showAsAction="never" />
+    <item android:id="@id/add_to_queue" android:visible="false" android:title="@string/juke_add_to_queue" app:showAsAction="never" />
+    <item android:id="@id/add_to_playlist" android:visible="false" android:title="@string/juke_add_to_playlist" app:showAsAction="never" />
+    <item android:id="@id/remove_from_playlist" android:visible="false" android:title="@string/juke_remove_from_playlist" app:showAsAction="never" />
+    <item android:id="@id/add_to_my_music" android:visible="false" android:title="@string/juke_add_to_my_music" app:showAsAction="never" />
+    <item android:id="@id/remove_from_my_music" android:visible="false" android:title="@string/juke_remove_from_my_music" app:showAsAction="never" />
+    <item android:id="@id/go_to_artist" android:visible="false" android:title="@string/juke_go_to_artist" app:showAsAction="never" />
+    <item android:id="@id/go_to_album" android:visible="false" android:title="@string/juke_go_to_album" app:showAsAction="never" />
+    <item android:id="@id/rename_playlist" android:visible="false" android:title="@string/juke_rename_playlist" app:showAsAction="never" />
+    <item android:id="@id/remove_playlist" android:visible="false" android:title="@string/juke_remove_playlist" app:showAsAction="never" />
+</menu>

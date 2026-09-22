@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_grid_item_height">135.0dip</dimen>
+    <dimen name="album_grid_item_width">135.0dip</dimen>
+    <dimen name="list_item_folder_thumbnail_height">47.0dip</dimen>
+    <dimen name="list_item_folder_thumbnail_width">47.0dip</dimen>
+    <dimen name="list_item_height">70.0dip</dimen>
+    <dimen name="list_item_padding_right">15.0dip</dimen>
+    <dimen name="list_item_thumbnail_height">64.0dip</dimen>
+    <dimen name="list_item_thumbnail_width">64.0dip</dimen>
+    <dimen name="playback_panel_height">80.0dip</dimen>
+</resources>

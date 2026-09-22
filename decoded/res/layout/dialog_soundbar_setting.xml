@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/list_item_padding_left" android:paddingRight="@dimen/list_item_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center" android:id="@id/progress_value" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center_vertical" android:id="@id/zero_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/progress_bar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="300" android:thumb="@drawable/icon_music_player_sliderthumb" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:gravity="center_vertical" android:id="@id/max_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

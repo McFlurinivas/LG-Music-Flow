@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_setting_height" android:layout_marginLeft="@dimen/list_item_setting_padding" android:layout_marginRight="@dimen/list_item_setting_padding">
+        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/black" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/setting_list_item_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mesh_network_channel_name" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="85.0" android:marqueeRepeatLimit="marquee_forever"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <TextView android:textSize="@dimen/list_item_desc_text_size" android:ellipsize="end" android:id="@id/setting_list_option_text_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:background="#ff707070" android:layout_width="fill_parent" android:layout_height="0.30000007dip" />
+    <ListView android:layout_gravity="center" android:id="@android:id/list" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/default_list_item_selector" android:horizontalSpacing="@dimen/list_item_padding_horizontal" android:verticalSpacing="@dimen/list_item_padding_vertical" android:stretchMode="columnWidth" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_setting_padding" android:layout_marginTop="@dimen/list_item_padding_vertical" android:layout_marginRight="@dimen/list_item_setting_padding" android:layout_marginBottom="@dimen/list_item_padding_vertical">
+        <TextView android:textSize="@dimen/list_item_desc_text_size" android:textColor="#ff83828c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:text="@string/mesh_network_caution" />
+    </LinearLayout>
+</LinearLayout>

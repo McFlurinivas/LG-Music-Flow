@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/track_header_height" app:layout_collapseMode="parallax"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/header_background" android:background="@color/track_header_bg" android:layout_width="fill_parent" android:layout_height="@dimen/track_header_height" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/header_description_layout" android:paddingLeft="@dimen/track_header_padding_side" android:paddingRight="@dimen/track_header_padding_side" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/header_image" android:background="@drawable/cover_art_shadow" android:layout_width="@dimen/track_header_image_width" android:layout_height="@dimen/track_header_image_height" />
+            <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip">
+                <TextView android:textSize="@dimen/track_header_album_title_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|bottom" android:id="@id/track_header_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxLines="2" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/track_header_album_artist_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/track_header_sub_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxLines="2" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/track_header_album_info_text_size" android:textColor="@color/white" android:gravity="left|top" android:id="@id/track_header_desc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

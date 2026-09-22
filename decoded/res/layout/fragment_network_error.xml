@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_network_error_whole" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/proto_header_setup" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_network_error" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/fail_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_fail" android:layout_centerInParent="true" />
+            <TextView android:id="@id/fail_text" android:layout_below="@id/fail_image" android:layout_centerHorizontal="true" style="@style/SetupErrorDescription" />
+        </RelativeLayout>
+        <Button android:textSize="14.0sp" android:textColor="@color/setup_bottom_btn_text_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/setup_help_button" android:background="@drawable/first_use_btn" android:layout_width="304.0dip" android:layout_height="36.0dip" android:layout_marginLeft="28.0dip" android:layout_marginRight="28.0dip" android:layout_marginBottom="20.0dip" android:text="@string/setup_help" android:textAllCaps="false" />
+        <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="54.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <Button android:id="@id/cancel_btn" android:text="@android:string/cancel" style="@style/SetupBottomTwoButtonHorizontally" />
+                <View android:background="@color/setup_divider_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+                <Button android:id="@id/search_again_btn" android:text="@string/setup_search_again" style="@style/SetupBottomTwoButtonHorizontally" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

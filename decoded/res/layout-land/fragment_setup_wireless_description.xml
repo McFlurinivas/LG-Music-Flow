@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/header_layout" android:background="#ff242433" android:layout_width="fill_parent" android:layout_height="@dimen/header_setup_height" android:layout_alignParentTop="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/setup_action_bar_title_text" android:gravity="center" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_two_button_layout" android:layout_below="@id/header_layout">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="500.0dip">
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="right" android:layout_width="16.0sp" android:layout_height="wrap_content" android:text="1." />
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="left" android:id="@id/setup_wireless_description_no_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_device_wifi" android:layout_weight="0.5" />
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="right" android:layout_width="16.0sp" android:layout_height="wrap_content" android:text="2." />
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="left" android:id="@id/setup_wireless_description_no_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+            <com.lge.media.musicflow.setup.steps.CenterAnimatedImageView android:id="@android:id/icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_led_lamp_bg" android:layout_weight="0.5" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/footer_two_button_layout" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@android:id/button1" style="@style/SetupBottomTwoButtonHorizontally" />
+            <View android:background="@color/setup_divider_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <Button android:id="@android:id/button2" style="@style/SetupBottomTwoButtonHorizontally" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

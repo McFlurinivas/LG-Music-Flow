@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/playback_panel_collapsed" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/playback_panel_play_info_layout" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/playback_panel_cover_art" android:layout_width="@dimen/playback_panel_head_cover_art_width" android:layout_height="@dimen/playback_panel_head_cover_art_height" android:layout_marginLeft="@dimen/playback_panel_head_cover_margin_left" android:layout_marginRight="@dimen/playback_panel_head_cover_margin_right" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/playback_panel_head_text_margin_top" android:layout_marginBottom="@dimen/playback_panel_head_text_margin_bottom" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="45.0">
+                <TextView android:textSize="@dimen/playback_panel_head_speaker_name_text_size" android:textColor="@color/playback_playinfo_track_title" android:ellipsize="middle" android:gravity="bottom" android:id="@id/panel_speaker_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:fontFamily="@string/font_regular" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="55.0">
+                <TextView android:textSize="@dimen/playback_panel_head_title_text_size" android:textColor="@color/playback_playinfo_track_artist" android:gravity="top" android:id="@id/playback_panel_track_info" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Track title" android:singleLine="true" android:fontFamily="@string/font_regular" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/playback_collapsed_panel_send_to_speaker" android:background="@drawable/button_background" android:padding="@dimen/playback_panel_head_image_button_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_playback_global_add_speaker" android:scaleType="center" android:contentDescription="@string/label_speaker_select" />
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="48.0dip" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/playback_play_pause_panel_control" android:background="@drawable/button_background" android:padding="@dimen/playback_panel_head_image_button_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="9.0dip" android:src="@drawable/ic_global_mini_player_play" android:scaleType="center" />
+        <ImageButton android:id="@id/playback_stop_panel_control" android:background="@drawable/button_background" android:padding="@dimen/playback_panel_head_image_button_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="9.0dip" android:src="@drawable/ic_global_mini_player_stop" android:scaleType="center" android:contentDescription="@string/label_stop" />
+        <com.pnikosis.materialishprogress.ProgressWheel android:id="@id/panel_progress_wheel" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="9.0dip" wheel:matProg_barColor="@color/multiroom_secondary_text" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
+    </FrameLayout>
+</LinearLayout>

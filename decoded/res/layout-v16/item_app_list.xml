@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@android:id/checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    <ImageView android:id="@android:id/icon" android:layout_width="@dimen/list_item_thumbnail_width" android:layout_height="@dimen/list_item_thumbnail_height" android:layout_marginRight="7.0dip" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_padding_vertical" android:layout_marginRight="5.0dip" android:minHeight="@dimen/list_item_height" android:layout_weight="85.0" android:dividerPadding="1.0dip">
+        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/playlist_title_normal" android:ellipsize="end" android:gravity="left|bottom" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="@string/font_regular" />
+        <TextView android:textSize="@dimen/list_item_subtitle_text_size" android:textColor="@color/multiroom_secondary_text" android:ellipsize="end" android:gravity="left|top" android:layout_gravity="center_vertical" android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFamily="@string/font_regular" />
+    </LinearLayout>
+</LinearLayout>

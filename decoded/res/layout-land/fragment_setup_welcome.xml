@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_two_button_layout">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/wiz_main_bg" android:layout_width="fill_parent" android:layout_height="500.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/title_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="22.0sp" android:textColor="#ff464556" android:gravity="center|top" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="49.0dip" android:text="@string/setup_welcome" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff464556" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="84.0dip" android:text="@string/setup_welcome_description" />
+                </RelativeLayout>
+                <ImageView android:id="@id/image_main_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="130.0dip" android:src="@drawable/wiz_main_logo" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_main_product" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="19.0dip" android:src="@drawable/wiz_main_product" android:layout_below="@id/image_main_logo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/footer_two_button_layout" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <Button android:textSize="17.0sp" android:textColor="@color/setup_welcome_text_color" android:gravity="left|center" android:id="@android:id/button1" android:background="@drawable/setup_button_background" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/setup_connect_product" android:drawableLeft="@drawable/wiz_main_list_product_audio" android:drawableRight="@drawable/wiz_main_list_arrow" android:drawablePadding="20.0dip" android:textAllCaps="false" />
+        <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <Button android:textSize="17.0sp" android:textColor="@color/setup_welcome_text_color" android:gravity="left|center" android:id="@android:id/button2" android:background="@drawable/setup_button_background" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/setup_use_now" android:drawableLeft="@drawable/wiz_main_list_product_phone" android:drawableRight="@drawable/wiz_main_list_arrow" android:drawablePadding="20.0dip" android:textAllCaps="false" />
+    </LinearLayout>
+</RelativeLayout>

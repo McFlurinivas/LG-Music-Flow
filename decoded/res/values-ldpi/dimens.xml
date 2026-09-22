@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="music_cover_area_width">360.0dip</dimen>
+    <dimen name="music_cover_menu_item_extra_width">196.0dip</dimen>
+    <dimen name="music_cover_menu_item_width">98.0dip</dimen>
+    <dimen name="music_cover_menu_padding_side">10.0dip</dimen>
+    <dimen name="music_cover_menu_padding_top">10.0dip</dimen>
+    <dimen name="music_cover_recommend_text_padding_top">10.0dip</dimen>
+    <dimen name="music_cover_recommend_text_size">29.0sp</dimen>
+</resources>

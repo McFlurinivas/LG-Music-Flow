@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d albums</item>
+        <item quantity="one">1 album</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d canciones</item>
+        <item quantity="one">1 canciones</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d veces</item>
+        <item quantity="one">1 vez</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">Se ha realizado la conexión de %d unidades.</item>
+        <item quantity="one">Se ha realizado la conexión de %d unidades.</item>
+    </plurals>
+</resources>

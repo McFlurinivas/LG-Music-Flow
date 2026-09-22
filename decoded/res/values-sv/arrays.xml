@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alarm_and_timer_array">
+        <item>@string/alarms</item>
+        <item>@string/sleep_timer</item>
+    </string-array>
+    <string-array name="cp_package_array">
+        <item>@string/package_rapsody</item>
+        <item>@string/package_spotify</item>
+        <item>@string/package_pandora</item>
+    </string-array>
+    <string-array name="deezer_chart_array">
+        <item>@string/tracks</item>
+        <item>@string/albums</item>
+        <item>@string/artists</item>
+    </string-array>
+    <string-array name="deezer_recommended_array">
+        <item>@string/recommended_tracks</item>
+        <item>@string/recommended_playlists</item>
+        <item>@string/recommended_albums</item>
+    </string-array>
+    <string-array name="deezer_root_array">
+        <item>@string/whats_hot</item>
+        <item>@string/radio_channel</item>
+        <item>@string/my_library</item>
+        <item>@string/favorite_album</item>
+        <item>@string/favorite_artist</item>
+        <item>@string/recommendations</item>
+    </string-array>
+    <string-array name="deezer_whats_hot_array">
+        <item>@string/charts</item>
+        <item>@string/recommended</item>
+    </string-array>
+    <string-array name="duration_array">
+        <item>@string/min_15</item>
+        <item>@string/min_30</item>
+        <item>@string/min_45</item>
+        <item>@string/hour_1</item>
+        <item>@string/hour_2</item>
+    </string-array>
+    <string-array name="equalizer_preset_reverb">
+        <item>Ingen</item>
+        <item>Litet rum</item>
+        <item>Medelstort rum</item>
+        <item>Stort rum</item>
+        <item>Medelstor sal</item>
+        <item>Stor sal</item>
+        <item>Tallrik</item>
+    </string-array>
+    <string-array name="notification_sound_array">
+        <item>@string/default_alarm</item>
+        <item>@string/my_playlist</item>
+    </string-array>
+    <string-array name="speaker_setting_for_all_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/group_compress</item>
+        <item>@string/sound_effect_for_setting</item>
+        <item>@string/battery</item>
+        <item>@string/drc</item>
+        <item>@string/night_mode</item>
+        <item>@string/auto_volume</item>
+        <item>@string/av_sync</item>
+        <item>@string/woofer_level</item>
+        <item>@string/rear_box</item>
+        <item>@string/rear_box_level</item>
+        <item>@string/auto_display</item>
+        <item>@string/auto_power</item>
+        <item>@string/bt_stand_by_mode</item>
+        <item>@string/bt_connect_limit</item>
+        <item>@string/connect_to_tv</item>
+        <item>@string/tv_remote</item>
+        <item>@string/stb_tv_remote</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+        <item>@string/share_usage_date</item>
+        <item>@string/google_cast_learn_about</item>
+    </string-array>
+    <string-array name="speaker_setting_for_soundbar_google_cast_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/drc</item>
+        <item>@string/night_mode</item>
+        <item>@string/auto_volume</item>
+        <item>@string/av_sync</item>
+        <item>@string/woofer_level</item>
+        <item>@string/auto_display</item>
+        <item>@string/auto_power</item>
+        <item>@string/connect_to_tv</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+        <item>@string/share_usage_date</item>
+        <item>@string/google_cast_learn_about</item>
+    </string-array>
+    <string-array name="speaker_setting_for_soundbar_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/drc</item>
+        <item>@string/night_mode</item>
+        <item>@string/auto_volume</item>
+        <item>@string/av_sync</item>
+        <item>@string/woofer_level</item>
+        <item>@string/auto_display</item>
+        <item>@string/auto_power</item>
+        <item>@string/connect_to_tv</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+    </string-array>
+    <string-array name="speaker_setting_google_cast_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/sound_effect_for_setting</item>
+        <item>@string/battery</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+        <item>@string/share_usage_date</item>
+        <item>@string/google_cast_learn_about</item>
+    </string-array>
+    <string-array name="speaker_setting_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/sound_effect_for_setting</item>
+        <item>@string/battery</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+    </string-array>
+    <string-array name="timer_array">
+        <item>@string/off</item>
+        <item>@string/min_15</item>
+        <item>@string/min_30</item>
+        <item>@string/min_45</item>
+        <item>@string/hour_1</item>
+        <item>@string/hour_2</item>
+    </string-array>
+    <string-array name="update_array">
+        <item>@string/app_version</item>
+        <item>@string/product_update</item>
+    </string-array>
+</resources>

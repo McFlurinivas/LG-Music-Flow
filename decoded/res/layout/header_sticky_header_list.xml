@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/list_item_title_text_size" android:textStyle="bold" android:textColor="@android:color/primary_text_light" android:layout_gravity="start" android:id="@android:id/text1" android:padding="@dimen/list_item_padding_horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_margin_left" />
+    <View android:id="@id/playback_panel_cover_art_divider" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_alignBottom="@android:id/text1" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d 相冊</item>
+        <item quantity="one">1 相冊</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d 首歌曲</item>
+        <item quantity="one">1 首歌曲</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d 次</item>
+        <item quantity="one">1 次</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">%d 個單元連線完成。</item>
+        <item quantity="one">1 個單元連線完成。</item>
+    </plurals>
+</resources>

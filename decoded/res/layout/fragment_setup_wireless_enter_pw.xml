@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_password" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/proto_header_setup" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="95.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginTop="16.0dip" android:text="@string/setup_ap_name" />
+                <RelativeLayout android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="19.0sp" android:textColor="#ff565565" android:id="@id/ssid_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/setup_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/setup_input_ap_password_description" />
+                <RelativeLayout android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_marginTop="10.0dip">
+                    <EditText android:textSize="16.0sp" android:textColor="#ff565565" android:gravity="left" android:id="@id/ap_password" android:background="#00000000" android:saveEnabled="false" android:layout_width="280.0dip" android:layout_height="wrap_content" android:hint="@string/label_password_hint" android:layout_centerInParent="true" android:inputType="textPassword" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="right|bottom" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/checkbox_layout" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginRight="4.0dip">
+                    <CheckBox android:id="@id/checkbox_hide_pw" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff464556" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/setup_show_pw" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/footer_one_button" />
+</LinearLayout>

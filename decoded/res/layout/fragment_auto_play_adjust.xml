@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+        <RelativeLayout android:id="@id/layout_guide_image" android:layout_width="fill_parent" android:layout_height="160.0dip">
+            <ImageView android:id="@id/distance_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="91.0dip" android:src="@drawable/set_ble_length_01" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/distance_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="91.0dip" android:src="@drawable/set_ble_length_02" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/distance_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="91.0dip" android:src="@drawable/set_ble_length_03" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/distance_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="91.0dip" android:src="@drawable/set_ble_length_04" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/distance_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="91.0dip" android:src="@drawable/set_ble_length_05" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="72.0dip" android:src="@drawable/set_ble_length_phone" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/speaker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="218.0dip" android:layout_marginTop="64.0dip" />
+        </RelativeLayout>
+        <TextView android:gravity="center" android:id="@id/detected_speaker" android:paddingTop="40.0dip" android:layout_width="fill_parent" android:layout_height="86.0dip" android:singleLine="false" style="@style/AutoMusicPlayAdjustNormalLight" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="169.0dip">
+            <RelativeLayout android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_centerVertical="true">
+                    <View android:layout_gravity="center_vertical" android:background="@color/trans_white" android:layout_width="0.70000005dip" android:layout_height="12.0dip" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/trans_white" android:layout_width="0.70000005dip" android:layout_height="12.0dip" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/multiroom_highlight" android:layout_width="0.70000005dip" android:layout_height="12.0dip" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/trans_white" android:layout_width="0.70000005dip" android:layout_height="12.0dip" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/trans_white" android:layout_width="0.70000005dip" android:layout_height="12.0dip" />
+                </LinearLayout>
+                <SeekBar android:id="@id/sensitivity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:paddingLeft="36.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <TextView android:gravity="left|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_music_play_closer" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/AutoMusicPlayAdjustNormalLight" />
+                <TextView android:gravity="center|top" android:id="@id/threshold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_music_play_normal" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/AutoMusicPlayAdjustNormalLight" />
+                <TextView android:gravity="right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_music_play_farther" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/AutoMusicPlayAdjustNormalLight" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="#ff83828c" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auto_music_play_adjust_tip1" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff565565" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/auto_music_play_adjust_tip2" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="56.0dip" />
+    </LinearLayout>
+</ScrollView>

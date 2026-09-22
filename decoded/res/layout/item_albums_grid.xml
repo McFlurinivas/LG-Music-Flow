@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="@dimen/album_grid_item_width" android:layout_height="@dimen/album_grid_item_height">
+        <ImageView android:id="@id/album_cover_art" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        <RelativeLayout android:background="@color/album_grid_item_desc_background" android:layout_width="fill_parent" android:layout_height="@dimen/album_grid_desc_height" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/album_grid_desc_padding_left" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0sp" android:layout_weight="85.0">
+                    <TextView android:textSize="@dimen/album_title_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/album_item_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Album Title" android:singleLine="true" android:layout_weight="15.0" />
+                    <TextView android:textSize="@dimen/album_artist_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|top" android:id="@id/album_item_desc" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Artist" android:singleLine="true" android:layout_weight="11.0" />
+                </LinearLayout>
+                <View android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="15.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="80.0" />
+                <RelativeLayout android:id="@id/album_item_context_menu" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0">
+                    <ImageView android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_global_list_album_edit_cue" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

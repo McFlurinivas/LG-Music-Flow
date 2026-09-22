@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/music_cover_top_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.5">
+        <RelativeLayout android:id="@id/layout_my_songs" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="noHideDescendants">
+            <com.lge.media.musicflow.widget.PressHighlightImageButton android:textAppearance="@style/TextAppearance.MyMusicCover.Recommend" android:gravity="left|top" android:id="@id/recommend_button" android:background="@drawable/cover_skip_area" android:layout_width="fill_parent" android:layout_height="fill_parent" app:textPaddingLeft="@dimen/music_cover_recommend_text_padding_side" app:textPaddingRight="@dimen/music_cover_recommend_text_padding_side" app:textPaddingTop="@dimen/music_cover_recommend_text_padding_top" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_speaker_layout_in_view" android:background="@drawable/cover_skip_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="start|top" android:orientation="vertical" android:id="@id/default_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.MyMusicCover.RecommendDefault" android:textSize="24.0sp" android:gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/music_cover_recommend_text_padding_side" android:layout_marginTop="@dimen/music_cover_recommend_text_padding_top" android:layout_marginRight="@dimen/music_cover_recommend_text_padding_side" android:text="@string/my_songs" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/view_my_songs" android:focusable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:contentDescription="@string/my_songs" />
+            <FrameLayout android:layout_gravity="bottom" android:background="#4c000000" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/cp_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="113.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:minHeight="23.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="#ffb5b5b5" android:gravity="center_vertical" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/music_cover_online_streaming_service" android:layout_weight="1.0" />
+                        <Button android:textSize="13.0sp" android:textColor="#ffa78cff" android:layout_gravity="right" android:id="@id/cp_edit_button_for_exists" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_cover_online_streaming_service_edit" />
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@id/horizontal_recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/no_cp_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="113.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:minHeight="23.0dip">
+                        <TextView android:textSize="13.0sp" android:textColor="#ffb5b5b5" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/music_cover_online_streaming_service" android:layout_weight="1.0" />
+                        <Button android:textSize="13.0sp" android:textColor="#ffa78cff" android:layout_gravity="right" android:id="@id/cp_edit_button_for_empty" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_cover_online_streaming_service_edit" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/cp_campaign_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/music_cover_unregistered_speaker_campaign_for_cp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/music_cover_menu_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/music_cover_menu_coach_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/music_cover_menu_1st_row" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_centerHorizontal="true">
+                <com.lge.media.musicflow.widget.PressHighlightImageButton android:textAppearance="@style/TextAppearance.MyMusicCover.MenuItem" android:gravity="center" android:id="@id/favorites" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/playlist_favorites" android:layout_weight="1.0" app:textPaddingLeft="5.0dip" app:textPaddingRight="5.0dip" />
+                <com.lge.media.musicflow.widget.PressHighlightImageButton android:textAppearance="@style/TextAppearance.MyMusicCover.MenuItem" android:gravity="center" android:id="@id/timeline" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/music_cover_menu_item_margin" android:text="@string/playlist_timeline" android:layout_weight="1.0" app:textPaddingLeft="5.0dip" app:textPaddingRight="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/music_cover_menu_2nd_row" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/music_cover_menu_item_margin" android:layout_weight="1.0" android:layout_below="@id/music_cover_menu_1st_row" android:layout_centerHorizontal="true">
+                <com.lge.media.musicflow.widget.PressHighlightImageButton android:textAppearance="@style/TextAppearance.MyMusicCover.MenuItem" android:gravity="center" android:id="@id/most_played" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/playlist_most_played" android:maxLines="2" android:layout_weight="1.0" app:textPaddingLeft="5.0dip" app:textPaddingRight="5.0dip" />
+                <com.lge.media.musicflow.widget.PressHighlightImageButton android:textAppearance="@style/TextAppearance.MyMusicCover.MenuItem" android:gravity="center" android:id="@id/user_playlist" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/music_cover_menu_item_margin" android:text="@string/playlist_my_playlists" android:maxLines="2" android:layout_weight="1.0" app:textPaddingLeft="5.0dip" app:textPaddingRight="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

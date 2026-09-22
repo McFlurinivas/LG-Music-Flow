@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/alert_dialog_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/treble_layout" android:focusable="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="#ff464556" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/treble" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-5dB" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="5dB" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.lge.media.musicflow.playback.CustomSeekBar android:layout_gravity="center_horizontal" android:id="@id/treble_custom_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="10" android:progress="5" android:progressDrawable="@drawable/multiroom_scrubber_track_holo_light" android:thumb="@drawable/icon_music_player_sliderthumb" />
+        <TextView android:textSize="13.0sp" android:textColor="#fff22f66" android:gravity="center" android:id="@id/treble_value" android:layout_width="16.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bass_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="#ff464556" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="38.0dip" android:text="@string/bass" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="-5dB" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="17.0sp" android:textColor="#ff464556" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="5dB" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.lge.media.musicflow.playback.CustomSeekBar android:layout_gravity="center_horizontal" android:id="@id/bass_custom_progressbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="10" android:progress="5" android:progressDrawable="@drawable/multiroom_scrubber_track_holo_light" android:thumb="@drawable/icon_music_player_sliderthumb" />
+        <TextView android:textSize="13.0sp" android:textColor="#fff22f66" android:gravity="center" android:id="@id/bass_value" android:layout_width="16.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ff464556" android:gravity="center" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/test_tone_description" />
+</LinearLayout>

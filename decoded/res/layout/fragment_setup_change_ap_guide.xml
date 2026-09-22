@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/proto_header_setup" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v4.widget.NestedScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/setup_change_ap_step_first" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:id="@id/textview_change_ap_setup_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" />
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/setup_change_ap_border" android:layout_width="280.0dip" android:layout_height="40.0dip" android:layout_marginTop="40.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/setup_description_text" android:layout_gravity="center_vertical" android:id="@id/textview_ssid" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_music_input_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:id="@id/textview_change_ap_setup_third" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+            <include layout="@layout/footer_two_button_horizontally" />
+        </LinearLayout>
+        <View android:id="@id/dim_view" android:background="#99000000" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@id/progress_wheel" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" wheel:matProg_barColor="@color/multiroom_highlight" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
+    </FrameLayout>
+</LinearLayout>

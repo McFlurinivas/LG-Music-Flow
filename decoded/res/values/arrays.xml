@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="actionbar_album">
+        <item>Album Grid</item>
+        <item>Album List</item>
+    </string-array>
+    <string-array name="alarm_and_timer_array">
+        <item>@string/alarms</item>
+        <item>@string/sleep_timer</item>
+    </string-array>
+    <string-array name="allfavorite_menu">
+        <item>@string/iheartradio_menu_favorites</item>
+        <item>@string/iheartradio_menu_recently_played</item>
+    </string-array>
+    <string-array name="browse_sub_menu">
+        <item>@string/top_tracks</item>
+        <item>@string/rhapsody_top_albums</item>
+        <item>@string/rhapsody_top_artists</item>
+    </string-array>
+    <string-array name="cp_package_array">
+        <item>@string/package_rapsody</item>
+        <item>@string/package_spotify</item>
+        <item>@string/package_pandora</item>
+    </string-array>
+    <string-array name="deezer_chart_array">
+        <item>@string/tracks</item>
+        <item>@string/albums</item>
+        <item>@string/artists</item>
+    </string-array>
+    <string-array name="deezer_recommended_array">
+        <item>@string/recommended_tracks</item>
+        <item>@string/recommended_playlists</item>
+        <item>@string/recommended_albums</item>
+    </string-array>
+    <string-array name="deezer_root_array">
+        <item>@string/whats_hot</item>
+        <item>@string/radio_channel</item>
+        <item>@string/my_library</item>
+        <item>@string/favorite_album</item>
+        <item>@string/favorite_artist</item>
+        <item>@string/recommendations</item>
+    </string-array>
+    <string-array name="deezer_whats_hot_array">
+        <item>@string/charts</item>
+        <item>@string/recommended</item>
+    </string-array>
+    <string-array name="default_pet_name">
+        <item></item>
+        <item>Smart Audio NP8340</item>
+        <item>Smart Audio NP8540</item>
+        <item>Smart Audio NP8740</item>
+        <item>Sound Bar LAS650M</item>
+        <item>Sound Bar LAS750M</item>
+        <item>Sound Bar LAS855M</item>
+        <item>Sound Bar LAS950M</item>
+        <item>Music Flow H3</item>
+        <item>Music Flow H4</item>
+        <item>Music Flow H5</item>
+        <item>Music Flow H7</item>
+        <item>Music Flow HS6</item>
+        <item>Smart Audio NP8350</item>
+        <item>Music Flow LAS650M</item>
+        <item>Music Flow LAS851M</item>
+        <item>Music Flow LAS750M</item>
+        <item>Music Flow HS7</item>
+        <item>Music Flow LAS751M</item>
+        <item>Music Flow LAS950M</item>
+        <item>Music Flow HS9</item>
+        <item>Bridge</item>
+        <item>Music Flow R1</item>
+    </string-array>
+    <string-array name="duration_array">
+        <item>@string/min_15</item>
+        <item>@string/min_30</item>
+        <item>@string/min_45</item>
+        <item>@string/hour_1</item>
+        <item>@string/hour_2</item>
+    </string-array>
+    <string-array name="equalizer_preset_reverb">
+        <item>None</item>
+        <item>Small room</item>
+        <item>Medium room</item>
+        <item>Large room</item>
+        <item>Medium hall</item>
+        <item>Large hall</item>
+        <item>Plate</item>
+    </string-array>
+    <string-array name="featured_menu">
+        <item>@string/rhapsody_featured_playlists</item>
+        <item>@string/rhapsody_featured_alblums</item>
+    </string-array>
+    <string-array name="general_list_array">
+        <item>@string/lock_screen</item>
+    </string-array>
+    <string-array name="get_info">
+        <item>Title</item>
+        <item>Artist</item>
+        <item>Album</item>
+        <item>Duration</item>
+        <item>Size</item>
+        <item>Codec</item>
+        <item>Compression</item>
+        <item>Channel</item>
+        <item>Bit rate</item>
+        <item>Sample rate</item>
+        <item>Sample size</item>
+    </string-array>
+    <string-array name="iheartradio_menu">
+        <item>@string/iheartradio_menu_live_radio</item>
+        <item>@string/iheartradio_menu_create_station</item>
+        <item>@string/iheartradio_menu_favorites</item>
+        <item>@string/iheartradio_menu_talk</item>
+    </string-array>
+    <string-array name="juke_artist_tab_titles">
+        <item>@string/juke_albums</item>
+        <item>@string/juke_tracks</item>
+        <item>@string/juke_similar_artists</item>
+    </string-array>
+    <string-array name="juke_chart_tab_titles">
+        <item>@string/juke_tracks</item>
+        <item>@string/juke_albums</item>
+    </string-array>
+    <string-array name="juke_genre_tab_titles">
+        <item>@string/juke_suggested</item>
+        <item>@string/juke_albums</item>
+        <item>@string/juke_tracks</item>
+    </string-array>
+    <string-array name="juke_main_menu">
+        <item>@string/juke_menu_new_recommend</item>
+        <item>@string/juke_menu_public_playlists</item>
+        <item>@string/juke_menu_charts</item>
+        <item>@string/juke_menu_radios</item>
+        <item>@string/juke_menu_genres</item>
+        <item>@string/juke_menu_my_playlists</item>
+        <item>@string/juke_menu_my_music</item>
+    </string-array>
+    <string-array name="juke_my_artist_tab_titles">
+        <item>@string/juke_tracks</item>
+        <item>@string/juke_albums</item>
+        <item>@string/juke_similar_artists</item>
+    </string-array>
+    <string-array name="juke_my_music_tab_titles">
+        <item>@string/juke_artists</item>
+        <item>@string/juke_albums</item>
+        <item>@string/juke_tracks</item>
+    </string-array>
+    <string-array name="liveradio_menu">
+        <item>@string/iheartradio_menu_cities</item>
+        <item>@string/iheartradio_menu_station_near_you</item>
+        <item>@string/iheartradio_menu_entertainment</item>
+        <item>@string/iheartradio_menu_talk_radio</item>
+    </string-array>
+    <string-array name="liveradio_talk_menu">
+        <item>@string/iheartradio_menu_news_n_talk</item>
+        <item>@string/iheartradio_menu_public_radio</item>
+        <item>@string/iheartradio_menu_sports</item>
+    </string-array>
+    <string-array name="notification_sound_array">
+        <item>@string/default_alarm</item>
+        <item>@string/my_playlist</item>
+    </string-array>
+    <string-array name="radio_menu">
+        <item>@string/rhapsody_radio_artist</item>
+        <item>@string/rhapsody_radio_genre</item>
+    </string-array>
+    <string-array name="recently_played_menu">
+        <item>@string/iheartradio_menu_live_radio</item>
+        <item>@string/iheartradio_menu_music</item>
+        <item>@string/iheartradio_menu_talk</item>
+    </string-array>
+    <string-array name="rhapsody_library_menu">
+        <item>@string/my_library</item>
+        <item>@string/tracks</item>
+        <item>@string/albums</item>
+        <item>@string/artists</item>
+    </string-array>
+    <string-array name="rhapsody_main_menu">
+        <item>@string/rhapsody_new_release</item>
+        <item>@string/rhapsody_popular</item>
+        <item>@string/rhapsody_featured</item>
+        <item>@string/rhapsody_library</item>
+        <item>@string/rhapsody_browse</item>
+        <item>@string/rhapsody_radio</item>
+    </string-array>
+    <string-array name="rhapsody_popular_artist_sub_category_menu">
+        <item>@string/rhapsody_artist_top_tracks</item>
+        <item>@string/rhapsody_artist_albums</item>
+        <item>@string/rhapsody_similar_artists</item>
+    </string-array>
+    <string-array name="rhapsody_popular_artist_sub_category_similar_option_menu">
+        <item>@string/rhapsody_similar_artist_contemporary</item>
+        <item>@string/rhapsody_similar_artist_following</item>
+        <item>@string/rhapsody_similar_artist_influencing</item>
+    </string-array>
+    <string-array name="rhapsody_popular_category_menu">
+        <item>@string/tracks</item>
+        <item>@string/albums</item>
+        <item>@string/artists</item>
+    </string-array>
+    <string-array name="rhapsody_search_artist_sub_category_menu">
+        <item>@string/rhapsody_artist_top_tracks</item>
+        <item>@string/rhapsody_artist_albums</item>
+    </string-array>
+    <string-array name="setting_array">
+        <item>@string/settings_general</item>
+        <item>@string/settings_speakers</item>
+        <item>@string/settings_alarm_and_timer</item>
+        <item>@string/settings_date_time</item>
+        <item>@string/settings_advanced</item>
+        <item>@string/settings_google_cast</item>
+        <item>@string/settings_updates</item>
+        <item>@string/settings_privacy_policy</item>
+        <item>@string/open_source_licenses</item>
+    </string-array>
+    <string-array name="setting_date_time_array">
+        <item>@string/date_time_automatic_time_zone</item>
+        <item>@string/date_time_set_time_zone</item>
+    </string-array>
+    <string-array name="setting_google_cast">
+        <item>@string/google_cast_setting_learn_more</item>
+        <item>@string/google_cast_setting_ready_apps</item>
+        <item>@string/google_cast_setting_groups</item>
+        <item>@string/google_cast_setting_legal</item>
+    </string-array>
+    <string-array name="setting_google_cast_groups">
+        <item>@string/google_cast_setting_learn_about_cast_groups</item>
+        <item>@string/google_cast_setting_how_to_cast_to_a_group</item>
+    </string-array>
+    <string-array name="setting_google_cast_legal">
+        <item>@string/google_cast_setting_terms_of_service</item>
+        <item>@string/google_cast_setting_privacy_of_policy</item>
+        <item>@string/google_cast_setting_open_source_license</item>
+    </string-array>
+    <string-array name="speaker_setting_for_all_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/group_compress</item>
+        <item>@string/sound_effect_for_setting</item>
+        <item>@string/battery</item>
+        <item>@string/drc</item>
+        <item>@string/night_mode</item>
+        <item>@string/auto_volume</item>
+        <item>@string/av_sync</item>
+        <item>@string/woofer_level</item>
+        <item>@string/rear_box</item>
+        <item>@string/rear_box_level</item>
+        <item>@string/auto_display</item>
+        <item>@string/auto_power</item>
+        <item>@string/bt_stand_by_mode</item>
+        <item>@string/bt_connect_limit</item>
+        <item>@string/connect_to_tv</item>
+        <item>@string/tv_remote</item>
+        <item>@string/stb_tv_remote</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+        <item>@string/share_usage_date</item>
+        <item>@string/google_cast_learn_about</item>
+    </string-array>
+    <string-array name="speaker_setting_for_soundbar_google_cast_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/drc</item>
+        <item>@string/night_mode</item>
+        <item>@string/auto_volume</item>
+        <item>@string/av_sync</item>
+        <item>@string/woofer_level</item>
+        <item>@string/auto_display</item>
+        <item>@string/auto_power</item>
+        <item>@string/connect_to_tv</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+        <item>@string/share_usage_date</item>
+        <item>@string/google_cast_learn_about</item>
+    </string-array>
+    <string-array name="speaker_setting_for_soundbar_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/drc</item>
+        <item>@string/night_mode</item>
+        <item>@string/auto_volume</item>
+        <item>@string/av_sync</item>
+        <item>@string/woofer_level</item>
+        <item>@string/auto_display</item>
+        <item>@string/auto_power</item>
+        <item>@string/connect_to_tv</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+    </string-array>
+    <string-array name="speaker_setting_google_cast_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/sound_effect_for_setting</item>
+        <item>@string/battery</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+        <item>@string/share_usage_date</item>
+        <item>@string/google_cast_learn_about</item>
+    </string-array>
+    <string-array name="speaker_setting_list_array">
+        <item>@string/rename</item>
+        <item>@string/led_indicator</item>
+        <item>@string/ip_information</item>
+        <item>@string/sound_effect_for_setting</item>
+        <item>@string/battery</item>
+        <item>@string/initialization</item>
+        <item>@string/system_version</item>
+    </string-array>
+    <string-array name="timer_array">
+        <item>@string/off</item>
+        <item>@string/min_15</item>
+        <item>@string/min_30</item>
+        <item>@string/min_45</item>
+        <item>@string/hour_1</item>
+        <item>@string/hour_2</item>
+    </string-array>
+    <string-array name="update_array">
+        <item>@string/app_version</item>
+        <item>@string/product_update</item>
+    </string-array>
+</resources>

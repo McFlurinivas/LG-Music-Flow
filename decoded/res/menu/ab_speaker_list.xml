@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/refresh_loading_01" android:id="@id/speaker_refresh" android:title="@string/label_speaker_refresh" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_global_menu_add_speaker_normal" android:id="@id/speaker_add_item" android:title="@string/label_add_speaker" app:showAsAction="always" />
+</menu>

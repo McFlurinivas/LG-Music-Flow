@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_global_menu_edit_normal" android:id="@id/alarm_edit_item" android:title="@string/edit_alarm" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_global_menu_alarm_normal" android:id="@id/alarm_add_item" android:title="@string/new_alarm" app:showAsAction="always" />
+</menu>

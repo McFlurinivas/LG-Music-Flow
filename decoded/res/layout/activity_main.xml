@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lge.media.musicflow.widget.SlidingUpPanelLayout android:gravity="bottom" android:id="@id/sliding_up_panel_layout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:umanoDragView="@id/playback_sliding_up_panel" app:umanoInitialState="hidden" app:umanoPanelHeight="@dimen/playback_panel_height" app:umanoShadowHeight="@dimen/playback_panel_shadow_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:orientation="vertical" android:id="@id/appbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+                <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="end" android:id="@id/toolbar_progress_wheel" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:matProg_barColor="@color/lightgray" app:matProg_barWidth="3.0dip" app:matProg_progressIndeterminate="true" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+    </android.support.design.widget.CoordinatorLayout>
+    <fragment android:name="com.lge.media.musicflow.playback.PlaybackFragment" android:id="@id/playback_sliding_up_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.lge.media.musicflow.widget.SlidingUpPanelLayout>

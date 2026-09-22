@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d 장의 앨범</item>
+        <item quantity="one">한 장의 앨범</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d 곡</item>
+        <item quantity="one">한 곡</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d 회</item>
+        <item quantity="one">1 회</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">%d대 연결이 완료되었습니다.</item>
+        <item quantity="one">1대 연결이 완료되었습니다.</item>
+    </plurals>
+</resources>

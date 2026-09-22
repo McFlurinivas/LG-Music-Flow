@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d 相册</item>
+        <item quantity="one">1 专辑</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d首歌曲</item>
+        <item quantity="one">1首歌曲</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d 次</item>
+        <item quantity="one">1 次</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">%d个装置连接已完成。</item>
+        <item quantity="one">%d个装置连接已完成。</item>
+    </plurals>
+</resources>

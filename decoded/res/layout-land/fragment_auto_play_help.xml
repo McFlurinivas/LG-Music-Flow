@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="600.0dip" android:layout_marginTop="45.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="152.0dip">
+            <ImageView android:id="@id/guide_img_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" android:layout_marginTop="36.0dip" android:src="@drawable/set_ble_speaker_img" />
+            <ImageView android:id="@id/guide_img_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="221.0dip" android:layout_marginTop="36.0dip" android:src="@drawable/set_ble_speaker_img" />
+            <ImageView android:id="@id/guide_img_21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="211.0dip" android:src="@drawable/set_ble_tagging_img_01" />
+            <ImageView android:id="@id/guide_img_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="211.0dip" android:src="@drawable/set_ble_tagging_img_02" />
+            <ImageView android:id="@id/guide_img_31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="164.0dip" android:layout_marginTop="38.0dip" android:src="@drawable/set_ble_phone_img" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/guide_img_32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="176.0dip" android:layout_marginTop="34.0dip" android:src="@drawable/set_ble_phone_img" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/guide_img_41" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="21.0dip" android:src="@drawable/set_ble_note_img_01" />
+            <ImageView android:id="@id/guide_img_42" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="127.0dip" android:layout_marginTop="108.0dip" android:src="@drawable/set_ble_note_img_02" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/guide_img_43" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="180.0dip" android:layout_marginTop="108.0dip" android:src="@drawable/set_ble_note_img_03" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/guide_img_44" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="215.0dip" android:layout_marginTop="87.0dip" android:src="@drawable/set_ble_note_img_04" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/guide_img_55" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="320.0dip" android:layout_marginTop="21.0dip" android:src="@drawable/set_ble_note_img_05" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="53.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="22.0dip" android:text="@string/auto_music_play_guide" style="@style/AutoMusicPlayNormalLight" />
+        <TextView android:textStyle="bold" android:gravity="top" android:id="@id/how_to_use_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="@string/auto_music_play_usage_title" style="@style/AutoMusicPlayNormal" />
+        <RelativeLayout android:gravity="top" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:gravity="center_horizontal" android:id="@id/__usage_num1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." android:layout_alignParentTop="true" style="@style/AutoMusicPlayNormalLight" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/auto_music_play_usage1" android:layout_toRightOf="@id/__usage_num1" style="@style/AutoMusicPlayNormalLight" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="top" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:gravity="center_horizontal" android:id="@id/__usage_num2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2." android:layout_alignParentTop="true" style="@style/AutoMusicPlayNormalLight" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/auto_music_play_usage2" android:layout_toRightOf="@id/__usage_num2" style="@style/AutoMusicPlayNormalLight" />
+        </RelativeLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/auto_music_play_usage3" style="@style/AutoMusicPlayNormalLight" />
+        <View android:layout_width="fill_parent" android:layout_height="56.0dip" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

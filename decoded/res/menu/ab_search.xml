@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_global_menu_search_normal" android:id="@id/media_search_menu_item" android:title="@string/label_music_search" app:actionViewClass="android.support.v7.widget.SearchView" app:showAsAction="ifRoom|collapseActionView" />
+    <item android:id="@id/search_clear_suggestions" android:title="@string/search_clear_suggestions" app:showAsAction="never" />
+    <item android:id="@id/action_close" android:title="@string/close" app:showAsAction="never" />
+</menu>

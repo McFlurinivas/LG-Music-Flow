@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Перейти на главный экран</string>
+    <string name="abc_action_bar_up_description">Перейти вверх</string>
+    <string name="abc_action_menu_overflow_description">Другие параметры</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Показать все</string>
+    <string name="abc_activitychooserview_choose_application">Выбрать приложение</string>
+    <string name="abc_capital_off">ОТКЛ.</string>
+    <string name="abc_capital_on">ВКЛ.</string>
+    <string name="abc_search_hint">Поиск</string>
+    <string name="abc_searchview_description_clear">Удалить запрос</string>
+    <string name="abc_searchview_description_query">Поисковый запрос</string>
+    <string name="abc_searchview_description_search">Поиск</string>
+    <string name="abc_searchview_description_submit">Отправить запрос</string>
+    <string name="abc_searchview_description_voice">Голосовой поиск</string>
+    <string name="abc_shareactionprovider_share_with">Открыть доступ</string>
+    <string name="abc_shareactionprovider_share_with_application">Открыть доступ приложению \"%s\"</string>
+    <string name="abc_toolbar_collapse_description">Свернуть</string>
+    <string name="add_application">Добавить приложение</string>
+    <string name="add_playlist_error">Выберите композицию.</string>
+    <string name="add_to_playlist">Добавить в список воспроизведения</string>
+    <string name="add_to_queue">Добавить в очередь</string>
+    <string name="added_to_album_successfully">"'%1$s' был успешно добавлен в список ваших любимых альбомов."</string>
+    <string name="added_to_artist_successfully">Исполнитель добавлен в избранное.</string>
+    <string name="added_to_favorites">Добавлено в \"Избранное\".</string>
+    <string name="added_to_playlist">Добавлено в список воспроизведения</string>
+    <string name="added_to_playlist_successfully">"'%1$s' был успешно добавлен в плейлист '%2$s'."</string>
+    <string name="added_to_queue">Добавлено в очередь</string>
+    <string name="advanced_description">Advanced features</string>
+    <string name="alarm">Будильник</string>
+    <string name="alarm_and_timer_description">Вы можете включить и отключить Music Flow в назначенное время.</string>
+    <string name="alarm_description">Music Flow своевременно уведомит вас об этом.</string>
+    <string name="alarm_select_speaker">Выберите динамик</string>
+    <string name="alarm_warning_comment">Для каждого устройства можно установить до семи сигналов будильника.</string>
+    <string name="alarms">Будильник</string>
+    <string name="albums">альбомов</string>
+    <string name="all_songs">Вся музыкаВся музыка</string>
+    <string name="app_exit">Выход</string>
+    <string name="app_name">Music Flow Player</string>
+    <string name="app_update_description">"Для эффективного использования приложения его необходимо обновить.
+Обновить программное обеспечение?"</string>
+    <string name="app_version">Сведения о версии приложения</string>
+    <string name="arc">HDMI(ARC)</string>
+    <string name="artist_unknown">Неизвестный исполнитель</string>
+    <string name="artists">Исполнители</string>
+    <string name="auto">авто</string>
+    <string name="auto_display">Автоматическое включение/выключение дисплея</string>
+    <string name="auto_display_description">Отсутствие движения в течение некоторого периода времени ведет к автоматическому отключению дисплея.</string>
+    <string name="auto_music_play">Автовоспроизведение музыки</string>
+    <string name="auto_music_play_adjust">Настройки чувствительности</string>
+    <string name="auto_music_play_adjust_description">Вы можете задать рабочий диапазон автоматическое воспроизведение музыки для Music Flow и мобильного устройства, отрегулировав чувствительность режима Bluetooth мобильного устройства.</string>
+    <string name="auto_music_play_adjust_detected">Обнаружен динамик.</string>
+    <string name="auto_music_play_adjust_help_faq_a1">Найдите подходящий уровень и установите его, изменяя чувствительность в направлении от сильной к слабой.</string>
+    <string name="auto_music_play_adjust_help_faq_a2">Установите более сильный уровень чувствительности, а затем повторите настройку.</string>
+    <string name="auto_music_play_adjust_help_faq_q1">Что делать, если автоматическое воспроизведение музыки работает даже в случае, когда мобильное устройство находится далеко от динамиков?</string>
+    <string name="auto_music_play_adjust_help_faq_q2">Что делать, если автоматическое воспроизведение музыки работает неудовлетворительно даже в случае, когда мобильное устройство находится рядом с динамиками?</string>
+    <string name="auto_music_play_adjust_help_text1">Вы можете задать рабочий диапазон автоматическое воспроизведение музыки для Music Flow и мобильного устройства, отрегулировав чувствительность режима Bluetooth мобильного устройства.</string>
+    <string name="auto_music_play_adjust_help_text2">Попытайтесь задать соответствующий уровень чувствительности операции воспроизведения для вашего мобильного устройства и Music Flow.</string>
+    <string name="auto_music_play_adjust_help_title">Настройки чувствительности</string>
+    <string name="auto_music_play_adjust_not_detected">Нет обнаруженных динамиков.</string>
+    <string name="auto_music_play_adjust_tip1">Совет. Если динамик не обнаружен,</string>
+    <string name="auto_music_play_adjust_tip2">расположите мобильное устройство ближе к динамику.</string>
+    <string name="auto_music_play_bluetooth_request_message">"Для использования функции автоматического воспроизведения музыки должна быть включена функция Bluetooth.
+Включить Bluetooth?"</string>
+    <string name="auto_music_play_closer">Слабая</string>
+    <string name="auto_music_play_description">Воспроизведение текущей музыки путем привязки мобильного устройства к LG Music Flow.</string>
+    <string name="auto_music_play_farther">Сильная</string>
+    <string name="auto_music_play_gesture">Жесты</string>
+    <string name="auto_music_play_gesture_description">Если потрясти мобильное устройство из стороны в сторону, использовавшиеся ранее динамики прекратят воспроизведение, и в дальнейшем воспроизведение будет осуществляться мобильным устройством.</string>
+    <string name="auto_music_play_guide">Функция привязки мобильного устройства к LG Music Flow для непрерывного воспроизведения музыки с устройства, кроме LG Music Flow или мобильных устройств.</string>
+    <string name="auto_music_play_normal">Нормально</string>
+    <string name="auto_music_play_usage1">Включите функцию Bluetooth в настройках мобильного устройства.</string>
+    <string name="auto_music_play_usage2">Выполните привязку мобильного устройства к LG Music Flow для воспроизведения в течение 1 секунды.</string>
+    <string name="auto_music_play_usage3">При этом устройство должно поддерживать технологию BLE.</string>
+    <string name="auto_music_play_usage_title">Использование</string>
+    <string name="auto_power">Автоматическое Вкл/Выкл питания</string>
+    <string name="auto_power_description">Саундбар включается и отключается в соответствии с состоянием ТВ.</string>
+    <string name="auto_volume">Вкл/Выкл автоматического уровня громкости</string>
+    <string name="auto_volume_description">Предотвращает внезапное увеличение громкости.</string>
+    <string name="aux">AUX</string>
+    <string name="av_sync">AV синхронизация</string>
+    <string name="balance">Баланс</string>
+    <string name="bass">НЧ</string>
+    <string name="battery">Оставшееся время работы батареи</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="bluetooth_turning_on">Включение Bluetooth…</string>
+    <string name="bluray_disc_home_theater_system">LG Blu-ray домашний кинотеатр</string>
+    <string name="bluray_disc_player">Blu-ray плеер</string>
+    <string name="bridge">"Bridge "</string>
+    <string name="bt_connect">Устройство подключено к %s.</string>
+    <string name="bt_connect_limit">Ограничение на подключение Bluetooth</string>
+    <string name="bt_connect_limit_description">Настроить подключение устройства Bluetooth только в функции Bluetooth.</string>
+    <string name="bt_fi_already_connected">%s подключен к другому устройству. Нажатие кнопки Продолжить сохранит Bluetooth-соединение Желаете продолжить?</string>
+    <string name="bt_fi_connection_title">Соединение по Bluetooth</string>
+    <string name="bt_fi_continue">Продолжить</string>
+    <string name="bt_fi_new_connection">Для работы %s необходимо соединить динамик и мобильный телефон по Bluetooth. Начать соединение?</string>
+    <string name="bt_not_connect">Bluetooth-устройство не подключено.</string>
+    <string name="bt_party">Воспроизведение с нескольких устройств в режиме Bluetooth</string>
+    <string name="bt_party_description">Когда подключено два или более Bluetooth-устройств, задается режим воспроизведения.</string>
+    <string name="bt_party_mode">ВЕЧЕРИНКА</string>
+    <string name="bt_party_mode_description">Если музыка воспроизводится с одного устройства, воспроизведение с других устройств может осуществляться.</string>
+    <string name="bt_private_mode">ЛИЧНОЕ</string>
+    <string name="bt_private_mode_description">Если музыка воспроизводится с одного устройства, воспроизведение с других устройств не осуществляется.</string>
+    <string name="bt_stand_by_mode">Режим ожидания Bluetooth</string>
+    <string name="bt_stand_by_mode_description">Связь с устройством Bluetooth поддерживается даже при отсутствии подключения к сети.</string>
+    <string name="cancel_connection">Будут отменены все работающие подключения. Отменить?</string>
+    <string name="change">Заменить</string>
+    <string name="charts">Хит-парады</string>
+    <string name="close">Закр.</string>
+    <string name="coach_mark_function_desc">Вы можете проверить, а затем изменить функцию, которая сейчас используется.</string>
+    <string name="coach_mark_function_title">[Функции]</string>
+    <string name="coach_mark_grouping_desc">Вы можете прослушивать музыку, воспроизводимую в Music Flow через другой продукт.</string>
+    <string name="coach_mark_grouping_title">[Группировка]</string>
+    <string name="coach_mark_menu_desc">Посредством касания вы можете переместиться в нужное меню.</string>
+    <string name="coach_mark_menu_title">[Меню]</string>
+    <string name="coach_mark_playlist_desc">В него включаются и отображаются композиции, которые вам нравятся и которые прослушивались вами.</string>
+    <string name="coach_mark_playlist_title">[Список воспроизведения]</string>
+    <string name="coach_mark_search_desc">Вы можете выполнять поиск музыкальных композиций.</string>
+    <string name="coach_mark_search_title">[Поиск]</string>
+    <string name="common_google_play_services_enable_button">Включить</string>
+    <string name="common_google_play_services_enable_text">Для работы приложения \"%1$s\" требуется включить сервисы Google Play.</string>
+    <string name="common_google_play_services_enable_title">Включите сервисы Google Play</string>
+    <string name="common_google_play_services_install_button">Установить</string>
+    <string name="common_google_play_services_install_text">Для работы приложения \"%1$s\" требуется установить сервисы Google Play.</string>
+    <string name="common_google_play_services_install_title">Установите сервисы Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Ошибка сервисов Google Play</string>
+    <string name="common_google_play_services_unknown_issue">Приложению \"%1$s\" не удается подключиться к сервисам Google Play. Повторите попытку.</string>
+    <string name="common_google_play_services_unsupported_text">Для работы с приложением \"%1$s\" требуются сервисы Google Play. Они не поддерживаются на вашем устройстве.</string>
+    <string name="common_google_play_services_update_button">Обновить</string>
+    <string name="common_google_play_services_update_text">Чтобы запустить приложение \"%1$s\", обновите сервисы Google Play.</string>
+    <string name="common_google_play_services_update_title">Обновите сервисы Google Play</string>
+    <string name="common_google_play_services_updating_text">Сервисы Google Play, необходимые для работы приложения \"%1$s\", в настоящий момент обновляются.</string>
+    <string name="common_google_play_services_wear_update_text">Версия сервисов Google Play устарела. Они автоматически обновятся в ближайшее время.</string>
+    <string name="common_open_on_phone">Открыть на телефоне</string>
+    <string name="common_signin_button_text">Войти</string>
+    <string name="common_signin_button_text_long">Войти через аккаунт Google</string>
+    <string name="connect">Подключить</string>
+    <string name="connect_to_tv">@string/setup_sound_bar_title</string>
+    <string name="connect_to_tv_description">Вы можете легко соединить ТВ и саундбар.</string>
+    <string name="connect_wifi">Подключите с помощью Wi-Fi.</string>
+    <string name="cp_login_failed">Вход в систему не удался.</string>
+    <string name="cp_login_succeed">Осуществлен вход в систему.</string>
+    <string name="cp_playback_error">Невозможно осуществить трансляцию.</string>
+    <string name="daily">Ежедневно</string>
+    <string name="date_time_automatic_time_zone">Автоматический часовой пояс</string>
+    <string name="date_time_automatic_time_zone_description">Использовать время, предоставленное сетью</string>
+    <string name="date_time_set_time_zone">Задать часовой пояс</string>
+    <string name="deezer_add_to_favorite">Добавить в любимые альбомы</string>
+    <string name="deezer_add_to_playlist">Добавить в плейлист</string>
+    <string name="deezer_add_to_tracks_you_love">Добавить к любимым трекам</string>
+    <string name="deezer_album_page">Страница альбома</string>
+    <string name="deezer_artist_page">Страница исполнителя</string>
+    <string name="deezer_remove_from_favorite">Удалить из любимых треков</string>
+    <string name="deezer_remove_from_library">Удалить из библиотеки</string>
+    <string name="deezer_remove_from_playlist">@string/deezer_remove_from_favorite</string>
+    <string name="deezer_remove_from_tracks_you_love">Удалить из любимых треков</string>
+    <string name="default_alarm">Мелодия сигнала по умолчанию</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_playlist">Удалить список воспроизведения</string>
+    <string name="denial">@string/setup_terms_of_use_decline</string>
+    <string name="device_reboot">The device reboots automatically.</string>
+    <string name="dlna">Wi-Fi</string>
+    <string name="downloading">Загрузка…</string>
+    <string name="drc">DRC</string>
+    <string name="duration">Продолжительность сигнала</string>
+    <string name="edit_alarm">Редактировать будильник</string>
+    <string name="edit_playlist">Редактировать список воспроизведения</string>
+    <string name="email">Email address</string>
+    <string name="eq_bass">НЧ</string>
+    <string name="eq_bass_blast">Басы</string>
+    <string name="eq_boost">Усиление</string>
+    <string name="eq_cinema">Кино</string>
+    <string name="eq_flat">Выравнивание звука</string>
+    <string name="eq_movie">Фильм</string>
+    <string name="eq_music">Музыка</string>
+    <string name="eq_news">Новости</string>
+    <string name="eq_night">Ночь</string>
+    <string name="eq_standard">Стандартный</string>
+    <string name="eq_treble_bass">ВЧ / НЧ</string>
+    <string name="eq_user_eq">Эквалайзер</string>
+    <string name="eq_voice">Голос</string>
+    <string name="equalizer_bass_boost">Усиление баса</string>
+    <string name="equalizer_preset">Предварительные настройки</string>
+    <string name="equalizer_preset_custom">Пользовательский</string>
+    <string name="equalizer_preset_reverb">Предварительно настроить реверберацию</string>
+    <string name="equalizer_preset_title">Предварительные настройки</string>
+    <string name="equalizer_title">Эквалайзер</string>
+    <string name="equalizer_virtualizer">Виртуализатор</string>
+    <string name="fail">Ошибка</string>
+    <string name="favorite_album">Мои альбомы</string>
+    <string name="favorite_artist">Исполнители</string>
+    <string name="friend_playlist">Плейлисты друзей</string>
+    <string name="function">Функции</string>
+    <string name="general_description">Это настройки, упрощающие использование Music Flow</string>
+    <string name="genre_unknown">Неизвестный жанр</string>
+    <string name="go_to_internet_unavailable">Для надлежащего подключения к беспроводной сети отключите функцию \"Internet Unavailable (Интернет недоступен)\".</string>
+    <string name="go_to_smart_wifi_service">Для правильного беспроводного соединения отключите на устройстве функцию \"Смарт Wi-Fi\"</string>
+    <string name="go_to_wifi_connection">Перейти на Wi-Fi подключение</string>
+    <string name="go_to_wifi_connection_description">Для использования Music Flow необходимо Wi-Fi-подключение. Подключиться к Wi-Fi?</string>
+    <string name="go_to_wifi_connection_title">Для использования Music Flow необходимо Wi-Fi-подключение.</string>
+    <string name="google_cast_close">@string/close</string>
+    <string name="google_cast_device_update">Обновление для динамика</string>
+    <string name="google_cast_fail_update">Update failed. Do you want us to retry?</string>
+    <string name="google_cast_function_apply">Google Cast функция применяется</string>
+    <string name="google_cast_learn_about">О политике конфиденциальности в отношении встроенной технологии Chromecast</string>
+    <string name="google_cast_no_thanks">Нет</string>
+    <string name="google_cast_playback_app_name">Casting</string>
+    <string name="google_cast_privacy_legal">политику конфиденциальности</string>
+    <string name="google_cast_read_more">Подробнее…</string>
+    <string name="google_cast_select_google_cast_learn_more">Транслируйте музыку со смартфона или планшета на устройство Music Flow</string>
+    <string name="google_cast_service">Служба Chromecast</string>
+    <string name="google_cast_service_description">Нажимая \"Принять\", вы принимаете Условия использования и политику конфиденциальности.</string>
+    <string name="google_cast_service_legal">Условия использования</string>
+    <string name="google_cast_setting_groups">Группы динамиков</string>
+    <string name="google_cast_setting_groups_description">Если необходимо использовать Chromecast в режиме нескольких комнат, необходимо создать группу в приложении Гугл Дом.</string>
+    <string name="google_cast_setting_how_to_cast_to_a_group">Как запустить трансляцию на группу динамиков</string>
+    <string name="google_cast_setting_launch_google_home">"'Google Home App' 바로가기"</string>
+    <string name="google_cast_setting_learn_about_cast_groups">О группах динамиков</string>
+    <string name="google_cast_setting_learn_more">Как начать трансляцию</string>
+    <string name="google_cast_setting_legal">Юридические документы , регулирующие использование встроенной технологии Chromecast</string>
+    <string name="google_cast_setting_open_source_license">@string/open_source_licenses</string>
+    <string name="google_cast_setting_privacy_of_policy">Политика конфиденциальности Google</string>
+    <string name="google_cast_setting_ready_apps">Приложения с поддержкой технологии Chromecast</string>
+    <string name="google_cast_setting_terms_of_service">Условия использования Google</string>
+    <string name="google_cast_share_data_description">Отправлять в Google данные об использовании встроенной технологии Chromecast и отчеты о сбоях</string>
+    <string name="google_cast_speaker_list_grouping_notice">Cast for Audio 서비스를 이용할 수 없습니다.</string>
+    <string name="google_cast_speaker_update_list_version_info">Version Info</string>
+    <string name="google_cast_step_one_update_rules">Не выключайте продукт во время обновления.</string>
+    <string name="google_cast_step_two_update_rules">Подождите, пока электропитание продукта не выключится автоматически и не включится снова после завершения обновления.</string>
+    <string name="google_cast_step_update_rules_title">[Внимание!]</string>
+    <string name="google_cast_title">Chromecast</string>
+    <string name="google_cast_tos">В политике конфиденциальности говорится о том, какие данные Google собирает при настройке и использовании Chromecast. В настройках этого приложения можно изменить параметры конфиденциальности встроенной технологии Chromecast , например указать, будет ли устройство отправлять в Google отчеты об использовании или сбоях.</string>
+    <string name="google_cast_total_update">Обновить все</string>
+    <string name="google_cast_update_check">Проверка обновлений…</string>
+    <string name="google_cast_ver_info">Chromecast :</string>
+    <string name="group_compress">Передача компрессированного звукового сигнала</string>
+    <string name="group_compress_auto_description">При передаче осуществляется автоматическое изменение коэффициента компрессии в зависимости от состояния сети.</string>
+    <string name="group_compress_description">Для воспроизведения нескольких файлов без задержек звуковой сигнал сжимается при передаче от его источника.</string>
+    <string name="group_compress_description_tip">При компрессии звукового сигнала во время передачи качество сигнала может ухудшиться.</string>
+    <string name="group_destroy">"Для воспроизведения в режиме объемного звучания сначала следует отключить групповой режим. Отключить групповой режим?  "</string>
+    <string name="group_destroy_for_google_cast">Групповое воспроизведение было остановлено в связи с использованием Chromecast</string>
+    <string name="group_none_compress">Без компрессии</string>
+    <string name="group_not_supported_in_google_cast">Данный продукт не поддерживает групповое воспроизведение во время использования Chromecast</string>
+    <string name="grouping">Группирование</string>
+    <string name="grouping_guide_description">"Можно наслаждаться музыкой одновременно на нескольких устройствах Music Flow с помощью группировки.
+
+Должно быть подключено 2 или более динамиков."</string>
+    <string name="grouping_play_together">Music Flow для совместного воспроизведения</string>
+    <string name="hdmi_1">Вход HDMI 1</string>
+    <string name="hdmi_2">Вход HDMI 2</string>
+    <string name="hdmi_3">Вход HDMI 3</string>
+    <string name="hdmi_in">Вход HDMI</string>
+    <string name="hdmi_not_in">Подключить HDMI-кабель</string>
+    <string name="hour_1">1 ч.</string>
+    <string name="hour_2">2 ч.</string>
+    <string name="id">Логин</string>
+    <string name="iheartradio_add_to_favorite">Add to Favorite Stations</string>
+    <string name="iheartradio_build_custom_radio">Nice! Building Custom Station.</string>
+    <string name="iheartradio_build_custom_radio_fail">Cannot Create Custom Station.</string>
+    <string name="iheartradio_delete_from_favorite">Remove from Favorites</string>
+    <string name="iheartradio_favorite_added">favorite station added</string>
+    <string name="iheartradio_favorite_deleted">favorite station deleted</string>
+    <string name="iheartradio_guide_create_radio">"1. Click the search icon above.
+
+2. Enter any station, artist, song or show to create a custom station based on what you searched for.
+
+3. Once created, the station will be added to your Recently Played. Then you can save it to your Favorites."</string>
+    <string name="iheartradio_info_create_account">Don‘t have an account? Visit <a href="http://www.iheart.com">http://www.iheart.com</a> to create a free account</string>
+    <string name="iheartradio_info_day_skip_limit">Sorry, you’ve reached your daily skip limit. You can still thumb down a song. Want to know more? See help.iheartradio.com.</string>
+    <string name="iheartradio_info_favorite_limit_size_over">Favorite limit size OVER.</string>
+    <string name="iheartradio_info_hour_skip_limit">Sorry, You’ve reached your skip limit for this station. You can still thumb down a song. Want to know more? See help.iheartradio.com.</string>
+    <string name="iheartradio_info_loading">Loading…</string>
+    <string name="iheartradio_info_no_seed_to_play">No seed to play</string>
+    <string name="iheartradio_info_not_yet_supported">Not yet supported</string>
+    <string name="iheartradio_menu_all_favorites">All Favorite</string>
+    <string name="iheartradio_menu_cities">Cities</string>
+    <string name="iheartradio_menu_create_station">Create Station</string>
+    <string name="iheartradio_menu_entertainment">Music &amp; Entertainment</string>
+    <string name="iheartradio_menu_favorites">Favorites</string>
+    <string name="iheartradio_menu_live_radio">Live Radio</string>
+    <string name="iheartradio_menu_music">Music</string>
+    <string name="iheartradio_menu_news_n_talk">News &amp; Talk</string>
+    <string name="iheartradio_menu_public_radio">Public Radio</string>
+    <string name="iheartradio_menu_recently_played">Recently Played</string>
+    <string name="iheartradio_menu_sports">Sports</string>
+    <string name="iheartradio_menu_station_near_you">Stations Near You</string>
+    <string name="iheartradio_menu_talk">Talk</string>
+    <string name="iheartradio_menu_talk_radio">Talk Radio</string>
+    <string name="iheartradio_search_info">Enter any station, artist, song, or show</string>
+    <string name="iheartradio_station_delete">Delete Station</string>
+    <string name="iheartradio_station_deleted">station deleted.</string>
+    <string name="initialization">Инициализировать</string>
+    <string name="initialization_question">Настройки продукта продукта Music Flow будет возвращены в исходное состояние.</string>
+    <string name="ip_information">Информация об IP-адресе.</string>
+    <string name="juke_add_to_my_music">Добавить в «Мою музыку»</string>
+    <string name="juke_add_to_playlist">Добавить в список воспроизведения</string>
+    <string name="juke_add_to_queue">Добавить в очередь</string>
+    <string name="juke_albums">Альбомы</string>
+    <string name="juke_artists">Исполнители</string>
+    <string name="juke_create_new_playlist">Создать новый список воспроизведения</string>
+    <string name="juke_empty_playlist">Этот список воспроизведения пуст. Добавьте дорожки.</string>
+    <string name="juke_genre_alternative">Alternative</string>
+    <string name="juke_genre_ambient">Ambient</string>
+    <string name="juke_genre_blues">Blues</string>
+    <string name="juke_genre_children">Children</string>
+    <string name="juke_genre_christmas">Christmas</string>
+    <string name="juke_genre_classic">Classic</string>
+    <string name="juke_genre_country">Country</string>
+    <string name="juke_genre_dance">Dance</string>
+    <string name="juke_genre_hip_hop">Hip-Hop</string>
+    <string name="juke_genre_hit_songs">Hit-Songs</string>
+    <string name="juke_genre_jazz">Jazz</string>
+    <string name="juke_genre_latin">Latin</string>
+    <string name="juke_genre_metal">Metal</string>
+    <string name="juke_genre_pop_rock">Pop/Rock</string>
+    <string name="juke_genre_reggae">Reggae</string>
+    <string name="juke_genre_religious">Religious</string>
+    <string name="juke_genre_soul">Soul</string>
+    <string name="juke_genre_soundtracks">Soundtracks</string>
+    <string name="juke_genre_world">World</string>
+    <string name="juke_go_to_album">Перейти к альбому</string>
+    <string name="juke_go_to_artist">Перейти к исполнителю</string>
+    <string name="juke_menu_charts">Чарты</string>
+    <string name="juke_menu_genres">Жанры</string>
+    <string name="juke_menu_my_music">Моя музыка</string>
+    <string name="juke_menu_my_playlists">Мои списки воспроизведения</string>
+    <string name="juke_menu_new_recommend">Новые и рекомендуемые</string>
+    <string name="juke_menu_public_playlists">Общедоступные списки воспроизведения</string>
+    <string name="juke_menu_radios">Радиостанции</string>
+    <string name="juke_msg_add_my_music">Добавить в «Мою музыку»</string>
+    <string name="juke_msg_add_playlist_success">Добавить в список воспроизведения</string>
+    <string name="juke_msg_create_account">"У вас нет учетной записи JUKE?
+Тогда просто зарегистрируйтесь на сайте 
+"<a href="http://www.juke.com">http://www.juke.com</a> прямо сейчас!</string>
+    <string name="juke_msg_create_playlist_success">Список воспроизведения сохранен</string>
+    <string name="juke_msg_dto_user_notification">Обратите внимание: используя такую учетную запись, вы можете прослушивать только 30-секундные отрывки.</string>
+    <string name="juke_msg_exception">К сожалению, произошло нечто неожиданное!</string>
+    <string name="juke_msg_no_user_found">Проверьте имя пользователя, пароль и повторите попытку.</string>
+    <string name="juke_msg_not_premium_subscription_user">Требуется подписка JUKE или использование купленного содержимого. Вы можете получить учетную запись на сайте juke.com</string>
+    <string name="juke_msg_premium_subscription_expired">Истек срок действия вашей подписки JUKE. Продлите ее на сайте juke.com.</string>
+    <string name="juke_msg_remove_from_playlist_success">Дорожка удалена</string>
+    <string name="juke_msg_remove_my_music">Удалено из «Моей музыки»</string>
+    <string name="juke_msg_remove_playlist_success">Список воспроизведения удален</string>
+    <string name="juke_msg_sample_track">Эта дорожка доступна только в виде 30-секундного отрывка.</string>
+    <string name="juke_msg_wait_for_loading">Подождите…</string>
+    <string name="juke_no_data">Данные отсутствуют</string>
+    <string name="juke_no_my_playlist">У вас еще нет ни одного списка воспроизведения.</string>
+    <string name="juke_no_search_album">Нет альбомов, соответствующих условиям вашего поиска</string>
+    <string name="juke_no_search_artist">Нет исполнителей, соответствующих условиям вашего поиска</string>
+    <string name="juke_no_search_track">Нет дорожек, соответствующих условиям вашего поиска</string>
+    <string name="juke_no_similar_artist">Аналогичные исполнители отсутствуют</string>
+    <string name="juke_play_next">Воспроизвести далее</string>
+    <string name="juke_play_now">Воспроизвести сейчас</string>
+    <string name="juke_play_playlist">Воспроизвести список воспроизведения</string>
+    <string name="juke_remove_from_my_music">Удалить из «Моей музыки»</string>
+    <string name="juke_remove_from_playlist">Удалить из списка воспроизведения</string>
+    <string name="juke_remove_playlist">Удалить</string>
+    <string name="juke_rename_playlist">Переименовать список воспроизведения</string>
+    <string name="juke_rename_playlist_title">Переименовать список воспроизведения</string>
+    <string name="juke_search">Поиск</string>
+    <string name="juke_similar_artists">Аналогичные</string>
+    <string name="juke_suggested">Предлагаемые</string>
+    <string name="juke_termination">"Это приложение вскоре прекратит поддерживать службу JUKE (начиная с декабря 2017 г.).
+Передать во встроенный Chromecast с помощью приложения JUKE."</string>
+    <string name="juke_tracks">Дорожки</string>
+    <string name="label_add_favorite">Добавить в избранное</string>
+    <string name="label_add_speaker">Добавить динамик</string>
+    <string name="label_add_to_playlist">"Добавить "</string>
+    <string name="label_alarm_am_pm">Настройки часового пояса. %s</string>
+    <string name="label_alarm_hour">Настройки часов. %s час.</string>
+    <string name="label_alarm_hour_down">Настройки часов. Вниз</string>
+    <string name="label_alarm_hour_up">Настройки часов. Вверх</string>
+    <string name="label_alarm_minute">Настройки минут. %s мин.</string>
+    <string name="label_alarm_minute_down">Настройки минут. Вниз</string>
+    <string name="label_alarm_minute_up">Настройки минут. Вверх</string>
+    <string name="label_alarm_volume_change">Громкость будильника %1$d из %2$d.</string>
+    <string name="label_auto_music_play_adjust">Текущее значение чувствительности %2$d из %1$d. Слабая %3$d, Сильная %4$d</string>
+    <string name="label_avsync">Значение настройки AV синхронизация составляет %1$d мс. Минимальное значение %2$d ms, максимальное значение %3$d ms</string>
+    <string name="label_balance_sound_effect">Значение баланса громкости динамика: [%1$s] %2$d. L%3$d [%4$d%%], R%5$d [%6$d%%]</string>
+    <string name="label_balance_sound_effect_zero">Значение баланса громкости динамика: %1$d. L%2$d [%3$d%%], R%4$d [%5$d%%]</string>
+    <string name="label_bass_sound_effect">Значение настройки баса равно %1$d. Минимальное значение %2$d dB, максимальное значение %3$d dB</string>
+    <string name="label_channel_change">%1$s Смена канала</string>
+    <string name="label_channel_left">Левый динамик</string>
+    <string name="label_channel_mono">Mono</string>
+    <string name="label_channel_right">Правый динамик</string>
+    <string name="label_channel_stereo">Stereo</string>
+    <string name="label_close">Закр.</string>
+    <string name="label_close_coachmark">Закрыть подсказку</string>
+    <string name="label_close_option">Закрыть параметры %s</string>
+    <string name="label_close_playback">Следующий исполнитель</string>
+    <string name="label_current_sound_effect">Текущий звуковой эффект - %s.</string>
+    <string name="label_delete_input">Удалить введенное содержимое</string>
+    <string name="label_dislike">Не нравится</string>
+    <string name="label_edit">Изменить</string>
+    <string name="label_enter_id">Введите ваш ID</string>
+    <string name="label_enter_password">Введите ваш пароль.</string>
+    <string name="label_execute_app">Запустить %s</string>
+    <string name="label_functions">Открыть всплывающее окно выбора функции для %s</string>
+    <string name="label_go_back_to_previous">Переход на предыдущий экран</string>
+    <string name="label_group">Группировать %s</string>
+    <string name="label_group_speaker_info">%2$s воспроизводится с %1$s</string>
+    <string name="label_help">Открыть всплывающее окно руководства</string>
+    <string name="label_hour">час.</string>
+    <string name="label_indexer">\u0009Индекс</string>
+    <string name="label_input_speaker_name">Пожалуйста, введите имя динамика.</string>
+    <string name="label_legacy_help">Справка %s</string>
+    <string name="label_lg_smart_audio_menu">Открыть меню LG Music Flow</string>
+    <string name="label_like">Нравится</string>
+    <string name="label_linked_device">Подключенное устройство</string>
+    <string name="label_list_content">"[%2$d] из [%1$d] элементов
+"</string>
+    <string name="label_listen_to_sound">Прослушивание звука %s</string>
+    <string name="label_loading">Загрузка…</string>
+    <string name="label_mini_player">Мини плеер</string>
+    <string name="label_minute">мин.</string>
+    <string name="label_more_than_one_hour">час.</string>
+    <string name="label_more_than_one_minute">мин.</string>
+    <string name="label_more_than_one_second">сек.</string>
+    <string name="label_move_down">%s Переместить вниз</string>
+    <string name="label_move_up">%s Переместить вверх</string>
+    <string name="label_moved_down">Перемещено вниз</string>
+    <string name="label_moved_up">Перемещено вверх</string>
+    <string name="label_music_search">Поиск музыки в моем телефоне</string>
+    <string name="label_music_select">Открыть всплывающее окно выбора музыки</string>
+    <string name="label_mute">Звук включен</string>
+    <string name="label_next">Следующая песня</string>
+    <string name="label_next_sound_effect">Следующий звуковой эффект</string>
+    <string name="label_now_playing">Открыть текущие списки воспроизведения</string>
+    <string name="label_oepn_music_popup">Открыть всплывающее окно выбора музыки %s</string>
+    <string name="label_open">открыть</string>
+    <string name="label_open_browser">Откроется в браузере</string>
+    <string name="label_open_option">Открыть параметры %s</string>
+    <string name="label_open_overflow">Открыть параметры Динамик найден</string>
+    <string name="label_option">%s опция</string>
+    <string name="label_password_hint">Введите ваш пароль.</string>
+    <string name="label_pause">Пауза</string>
+    <string name="label_paused">Приостановлено</string>
+    <string name="label_play">воспроизвести</string>
+    <string name="label_play_time">%2$s %1$s, %3$s, %4$s</string>
+    <string name="label_playback">Просмотр воспроизведения</string>
+    <string name="label_playback_slide">Воспроизвести слайд</string>
+    <string name="label_player_lyrics">Посмотреть текст песни</string>
+    <string name="label_playing">Воспроизведение...</string>
+    <string name="label_prev_sound_effect">Предыдущий звуковой эффект</string>
+    <string name="label_previous">Предыдущая песня</string>
+    <string name="label_refresh">Искать снова</string>
+    <string name="label_remove_favorite">Удалить из избранного</string>
+    <string name="label_repeat_all">"Повторить настройки - текущее повторное прослушивание всего Вкл. "</string>
+    <string name="label_repeat_folder">"Повторить настройки - текущее повторное прослушивание папки Вкл. "</string>
+    <string name="label_repeat_off">"Повторить настройки - текущее повторное прослушивание Выкл. "</string>
+    <string name="label_repeat_one">"Повторить настройки - текущее повторное прослушивание 1 песни Вкл. "</string>
+    <string name="label_row_column">%1$s, Строка [%2$d], столбик [%3$d]</string>
+    <string name="label_second">сек.</string>
+    <string name="label_select_all">Взять все</string>
+    <string name="label_selected">%s выбран</string>
+    <string name="label_shuffle_off">"Настройки воспроизведения в случайном порядке - текущее прослушивание в случайном порядке Выкл. "</string>
+    <string name="label_shuffle_on">"Настройки воспроизведения в случайном порядке - текущее прослушивание в случайном порядке Вкл. "</string>
+    <string name="label_soundeffect">Звуковой эффект</string>
+    <string name="label_speaker_mute">Выключить звук для %s</string>
+    <string name="label_speaker_refresh">Обновить подключенные динамики</string>
+    <string name="label_speaker_searching">Поиск динамиков…</string>
+    <string name="label_speaker_select">Отправить на динамик</string>
+    <string name="label_speaker_unmute">Включить звук для %s</string>
+    <string name="label_stop">стоп</string>
+    <string name="label_surround">Установить объемное звучание для %s</string>
+    <string name="label_surround_l_selected">%s выбран в качестве левого (L)</string>
+    <string name="label_surround_nothing_selected">%s не выбран в качестве левого/правого (L/R)</string>
+    <string name="label_surround_r_selected">%s выбран в качестве правого (R)</string>
+    <string name="label_title">Заголовок</string>
+    <string name="label_tone_control">Регулировка тембра</string>
+    <string name="label_treble_sound_effect">Значение установки высоких частот равно %1$d. Минимальное значение %2$d dB, максимальное значение %3$d dB</string>
+    <string name="label_unmute">Звук выключен</string>
+    <string name="label_unselected">%s не выбран</string>
+    <string name="label_update">Обновить</string>
+    <string name="label_update_cancel">Отменить обновление %s.</string>
+    <string name="label_update_speaker">Обновить %s.</string>
+    <string name="label_volume">Громкость</string>
+    <string name="label_volume_change">Громкость для %1$s равна %2$d.</string>
+    <string name="label_wooferlevel">Значение настройки громкость сабвуфера составляет %1$d дБ. Минимальное значение %2$d dB, максимальное значение %3$d dB</string>
+    <string name="latest_version">Последняя версия</string>
+    <string name="led_indicator">Световой индикатор динамика</string>
+    <string name="lg_tv">LG TV</string>
+    <string name="lg_tv_not_connected">Установите для выходного сигнала динамика ТВ функцию LG Sound Sync.</string>
+    <string name="location_permission_guide">Чтобы выполнить поиск расположенного поблизости динамика и найти его, требуется настроить авторизацию расположения.</string>
+    <string name="location_permission_setting">Настройка использования расположения</string>
+    <string name="location_permission_title">Руководство по настройке авторизации расположения</string>
+    <string name="lock_screen">Настройка экрана блокировки</string>
+    <string name="make_playlists">Создать новый список воспроизведения.</string>
+    <string name="manage_service_description">Интерфейс и управление Music Flow и различными службами.</string>
+    <string name="manual_setup">Подключение вручную</string>
+    <string name="media_add_speaker">Add speakers</string>
+    <string name="media_playback_error">Невозможно воспроизвести данный файл</string>
+    <string name="media_refresh_speakers">Refresh speakers</string>
+    <string name="media_search">Поиск</string>
+    <string name="media_select">Выбор</string>
+    <string name="media_server_is_running">Сервер мультимедиа работает</string>
+    <string name="mesh_network">Ячеистая сеть (Mesh network)</string>
+    <string name="mesh_network_caution">Внимание! : Перед изменением канала отключите питание всех подключенных устройств LG Music Flow и перейдите в режим ожидания.</string>
+    <string name="mesh_network_change_channel">Изменение канала</string>
+    <string name="mesh_network_channel">Канал Mesh Network</string>
+    <string name="mesh_network_channel_description">Канал Mesh Network при этом сбрасывается</string>
+    <string name="mesh_network_channel_full_fail">"Ни один канал не был изменен из-за неправильного выполнения подключения между динамиками. "</string>
+    <string name="mesh_network_channel_guide">"Если воспроизведение музыки через LG Music Flow происходит с перебоями, можно изменить канал Mesh Network для повышения скорости передачи данных по сети.
+
+При неправильном Wi-Fi подключении устройства Music Flow после смены канала Mesh Network выберите Меню > Добавить динамик, чтобы переподключить канал аудио."</string>
+    <string name="mesh_network_channel_name">Название канала</string>
+    <string name="mesh_network_channel_node_fail">При неправильном Wi-Fi подключении устройства Music Flow после смены канала Mesh Network выберите Меню > Добавить динамик, чтобы переподключить канал аудио.</string>
+    <string name="mesh_network_configuration">Составление смешанной сети</string>
+    <string name="mesh_network_configuration_caution">"Внимание! : Не отключайте Music Flow. "</string>
+    <string name="mesh_network_configuration_check">Идет проверка составления сети…</string>
+    <string name="mesh_network_configuration_content">"Составить в виде смешанной сети, чтобы выполнить оптимизацию использования среды.
+
+1. Подключите 1 или несколько динамиков с помощью кабеля Ethernet.
+2. Такая настройка может выполняться при подключении 2 или более динамиков.
+3. Перед выполнением настройки включите все подсоединенные динамики и перейдите в режим ожидания. "</string>
+    <string name="mesh_network_configuration_description">Реорганизация канала Mesh Network.</string>
+    <string name="mesh_network_configuration_fail">Ошибка составления смешанной сети</string>
+    <string name="mesh_network_configuration_fail_content">"Вам не удалось настроить смешанную сеть?
+
+1. Перед настройкой смешанной сети включите все динамики.
+
+2. Такая настройка может выполняться при подключении 2 или более динамиков.
+
+3. По крайней мере, 1 динамик должен быть подключен с помощью кабеля Ethernet.
+
+4. Осуществив подключение с помощью кабеля, подождите 10 секунд, чтобы проверить наличие подключения, а затем повторите попытку. "</string>
+    <string name="mesh_network_configuration_in_progress">Выполняется составление смешанной сети…</string>
+    <string name="mesh_network_configuration_retry">повторить</string>
+    <string name="mesh_network_configuration_start">старт</string>
+    <string name="mesh_network_configuration_success">Составление смешанной сети завершено.</string>
+    <string name="mesh_network_connection">Прямое подключение к каналу Mesh Network</string>
+    <string name="mesh_network_connection_description">Прямое подключение мобильного устройства к каналу Mesh Network.</string>
+    <string name="mesh_network_in_use">Используется</string>
+    <string name="mesh_network_no_speaker_for_mesh_configuration">1 или большее число динамиков должно быть подключено с помощью Ethernet-кабеля.</string>
+    <string name="mic">MIC</string>
+    <string name="min_15">15 мин.</string>
+    <string name="min_30">30 мин.</string>
+    <string name="min_45">45 мин.</string>
+    <string name="mr_button_content_description">Кнопка трансляции</string>
+    <string name="mr_cast_button_connected">Кнопка трансляции. Устройство подключено.</string>
+    <string name="mr_cast_button_connecting">Кнопка трансляции. Устройство подключается.</string>
+    <string name="mr_cast_button_disconnected">Кнопка трансляции. Устройство отключено.</string>
+    <string name="mr_chooser_searching">Поиск устройств…</string>
+    <string name="mr_chooser_title">Выберите устройство</string>
+    <string name="mr_controller_album_art">Обложка</string>
+    <string name="mr_controller_casting_screen">Подключение к удаленному монитору</string>
+    <string name="mr_controller_close_description">Закрыть</string>
+    <string name="mr_controller_collapse_group">Свернуть</string>
+    <string name="mr_controller_disconnect">Отключить</string>
+    <string name="mr_controller_expand_group">Развернуть</string>
+    <string name="mr_controller_no_info_available">Данных нет</string>
+    <string name="mr_controller_no_media_selected">Медиафайл не выбран</string>
+    <string name="mr_controller_pause">Приостановить</string>
+    <string name="mr_controller_play">Воспроизвести</string>
+    <string name="mr_controller_stop">Остановить</string>
+    <string name="mr_controller_stop_casting">Прекратить трансляцию</string>
+    <string name="mr_controller_volume_slider">Регулятор громкости</string>
+    <string name="mr_system_route_name">Система</string>
+    <string name="mr_user_route_category_name">Устройства</string>
+    <string name="music_cover_edit_online_streaming_service">@string/navigation_online_services</string>
+    <string name="music_cover_edit_online_streaming_service_count_alert">Выберите хотя бы один элемент</string>
+    <string name="music_cover_favorites_empty">Выберите \"Нравится\" для композиций, которые вам нравятся.</string>
+    <string name="music_cover_google_cast">Chromecast</string>
+    <string name="music_cover_mostplayed_empty">Отображается часто прослушиваемая музыка.</string>
+    <string name="music_cover_move_to_setup_wizard">Откройте экран подключения LG Music Flow.</string>
+    <string name="music_cover_online_streaming_service">@string/navigation_online_services</string>
+    <string name="music_cover_online_streaming_service_edit">Изменить</string>
+    <string name="music_cover_timeline_empty">Вы можете просмотреть музыку, которую вы прослушивали до сих пор.</string>
+    <string name="music_cover_unregistered_speaker_campaign_for_cp">Вы можете пользоваться различными службами потоковой музыки.</string>
+    <string name="music_flow">"Music Flow "</string>
+    <string name="music_flow_bar">"SoundBar "</string>
+    <string name="music_flow_portable">"Portable Audio "</string>
+    <string name="music_flow_streaming_service">Сервис потоковой передачи Music Flow</string>
+    <string name="musiclibrary_terminated_popup_body">"Работа службы музыкальных рекомендаций завершена.
+Благодарим за использование."</string>
+    <string name="my_library">Мои плейлисты</string>
+    <string name="my_playlist">Мой список воспроизведения</string>
+    <string name="my_songs">Мои песни</string>
+    <string name="navigation_add_speakers">Добавить динамик</string>
+    <string name="navigation_category_etc">и т. д.</string>
+    <string name="navigation_category_music">Музыка</string>
+    <string name="navigation_category_speakers">Динамики</string>
+    <string name="navigation_connected_speakers">Подключенные динамики</string>
+    <string name="navigation_drawer_close">Закрыть экран меню MusicFlow Player</string>
+    <string name="navigation_drawer_open">Открыть экран меню MusicFlow Player</string>
+    <string name="navigation_music_library_local_phone">Мой телефон</string>
+    <string name="navigation_music_library_local_tablet">Мой телефон</string>
+    <string name="navigation_music_library_remote">Музыкальная коллекция</string>
+    <string name="navigation_music_server">Музыкальный сервер</string>
+    <string name="navigation_my_music_cover">Главный экран</string>
+    <string name="navigation_online_services">Сервис потоковой передачи</string>
+    <string name="navigation_settings">@string/settings</string>
+    <string name="need_to_sign_in">Для использования данного сервиса вам надо авторизоваться</string>
+    <string name="need_to_sign_in_to_deezer">Подключитесь к вашему аккануту на Deezer.</string>
+    <string name="need_to_update">Требуется обновление</string>
+    <string name="need_to_update_speaker">Требуется обновление динамика.</string>
+    <string name="network_status">Состояние сетевого подключения динамиков не является устойчивым.</string>
+    <string name="new_alarm">Новый сигнал будильника</string>
+    <string name="new_playlist">Новый список воспроизведения</string>
+    <string name="new_setup_bluetooth_request_message">Подключение может легко осуществляться с использованием Bluetooth. Включить Bluetooth?</string>
+    <string name="new_setup_bluetooth_request_title">Простое подключение</string>
+    <string name="new_setup_candidate">Динамики для простого подключения</string>
+    <string name="new_setup_connection_fail_message">"Нет подключения \"%1$s\"
+
+Проверьте соединение с аудио или маршрутизатором и повторите попытку."</string>
+    <string name="new_setup_connection_fail_title">@string/setup_connection_fail</string>
+    <string name="new_setup_connection_title">@string/new_setup_guide_connecting_title</string>
+    <string name="new_setup_guide_connecting">"Подключение по сети.
+К следующему шагу можно перейти после выполнения подключения."</string>
+    <string name="new_setup_guide_connecting_title">Сетевое соединение</string>
+    <string name="new_setup_guide_for_legacy_setup">"Данная версия динамика не поддерживается простым подключением.
+
+После завершения процесса автоматического соединения, вы можете создать соединение вручную."</string>
+    <string name="new_setup_learn_more"><u>Подробнее</u></string>
+    <string name="new_setup_power_guide">Инструкция по подключению питания</string>
+    <string name="new_setup_prepare_setup">@string/searching_speakers</string>
+    <string name="new_setup_prepare_speakers_description">При полностью включенном питании LG Music Flow щелкните [Далее].</string>
+    <string name="new_setup_prepare_speakers_title">Подготовка продукта</string>
+    <string name="new_setup_progress_cancelled">Подключение отменено</string>
+    <string name="new_setup_progress_command_written">Подготовка соединения…</string>
+    <string name="new_setup_progress_connected_to_network">Подключено к сети</string>
+    <string name="new_setup_progress_connecting_to_network">Подключение к сети…</string>
+    <string name="new_setup_progress_connection_complete">Сетевое соединение завершено.</string>
+    <string name="new_setup_progress_connection_fail">Ошибка подключения к сети</string>
+    <string name="new_setup_progress_fail_not_defined">@string/new_setup_progress_connection_fail</string>
+    <string name="new_setup_progress_invalid_password">Неверный пароль</string>
+    <string name="new_setup_progress_network_not_found">Сеть не найдена.</string>
+    <string name="new_setup_progress_no_response_speaker">Отсутствие ответа динамика</string>
+    <string name="new_setup_progress_searching_for_network">Поиск сети…</string>
+    <string name="new_setup_progress_waiting_for_connection">Ожидание соединения…</string>
+    <string name="new_setup_progress_waiting_for_response">Проверка подключения динамика…</string>
+    <string name="new_setup_search_title">Динамик найден</string>
+    <string name="new_setup_select_products">@string/select_rear_speaker</string>
+    <string name="new_setup_unsupport">Другие динамики</string>
+    <string name="new_setup_wifi_dialog_error_message">Неправильный пароль</string>
+    <string name="new_setup_wifi_dialog_error_title">Неверный пароль</string>
+    <string name="new_setup_wifi_dialog_title">Подключение по беспроводной сети</string>
+    <string name="night_mode">@string/eq_night</string>
+    <string name="no_app_installed">"Такое приложение не существует
+Вы хотите установить данное приложение?"</string>
+    <string name="no_song">Нет песни</string>
+    <string name="no_speaker_description">Возможно использовать путем подключения к устройству Music Flow.</string>
+    <string name="not_available">Этот трек не доступен в вашей стране.</string>
+    <string name="not_repeat">Не повторять</string>
+    <string name="notification_sound">сигнал будильника</string>
+    <string name="off">Выкл.</string>
+    <string name="open_source_licenses">Лицензии на ПО с открытым исходным кодом</string>
+    <string name="optical_1">Оптич. Вход 1</string>
+    <string name="optical_2">Оптич. Вход 2</string>
+    <string name="optical_in">Оптич. Вход</string>
+    <string name="optical_not_in">Подключить оптический кабель</string>
+    <string name="password">Пароль</string>
+    <string name="permission_access_warning">Информация о разрешении доступа</string>
+    <string name="permission_access_warning_description">"Если доступ не разрешен, использование некоторых функций Music Flow может быть ограничено.
+
+[Функции, использование которых ограничено]
+- Подключите динамик
+- Музыкальная коллекция
+- Воспроизведение музыки с помощью функции Мой телефон
+- Автовоспроизведение музыки
+- Рекомендация по предпочитаемой музыке"</string>
+    <string name="permission_setting">Настройка полномочий приложений</string>
+    <string name="permission_setting_description">Это функция, которая может быть использована после разрешения использования полномочий приложений в настройках Android.</string>
+    <string name="play">воспроизвести</string>
+    <string name="play_next">Воспроизвести следующий</string>
+    <string name="play_radio">Слушать радиостанцию</string>
+    <string name="playlist_favorites">Избранное</string>
+    <string name="playlist_most_played">Часто воспроизводится</string>
+    <string name="playlist_my_playlists">Мой список воспроизведения</string>
+    <string name="playlist_timeline">Шкала времени</string>
+    <string name="portable">Портативный</string>
+    <string name="portable_in">Портативный</string>
+    <string name="portable_not_in">Подключить кабель для портативного устройства</string>
+    <string name="power_guide_portable_no1">Нажмите кнопку питания на верхней части устройства.</string>
+    <string name="power_guide_portable_no2">В процессе инициализации динамика светодиод питания на верхней панели мигает белым цветом.</string>
+    <string name="power_guide_portable_no3">Когда питание включено правильно и светодиод кнопки (function) мигает белым цветом, может выполняться простое подключение.</string>
+    <string name="power_guide_portable_tip1">[Tip!] Нажмите кнопку (function), не фиксируя ее, чтобы цвет светодиода (function) сменился на белый.</string>
+    <string name="power_guide_portable_tip2">Нажмите кнопку (function), не фиксируя ее, чтобы цвет светодиода (function) сменился на белый.</string>
+    <string name="power_guide_portable_title">Подготовка портативного динамика</string>
+    <string name="power_guide_smart_audio_h3_title">Подготовка H3(NP8340)</string>
+    <string name="power_guide_smart_audio_h5h7_title">Подготовка H5/H7(NP8540/NP8740)</string>
+    <string name="power_guide_smart_audio_no1">Подключите кабель питания к задней панели изделия.</string>
+    <string name="power_guide_smart_audio_no2">В процессе инициализации устройства будут мигать светодиоды Bluetooth и (wifi).</string>
+    <string name="power_guide_smart_audio_no3">Динамик будет готов к подключению, когда будет мигать только светодиод (wifi).</string>
+    <string name="power_guide_smart_audio_tip1">[Совет.] Нажмите кнопку (function), чтобы включился светодиод (wifi).</string>
+    <string name="power_guide_smart_audio_tip2">Нажмите кнопку (function), чтобы включился светодиод (wifi).</string>
+    <string name="power_guide_soundbar_no1">@string/power_guide_smart_audio_no1</string>
+    <string name="power_guide_soundbar_no2">На передней панели устройства в поле FLD отображается надпись HELLO.</string>
+    <string name="power_guide_soundbar_no3">Когда надпись \"HELLO\" исчезнет и светодиод (wifi) начнет мигать белым цветом, может выполняться простое подключение.</string>
+    <string name="power_guide_soundbar_tip1">[Tip!] Нажмите кнопку (function), чтобы отобразилась надпись \"Wi-Fi\".</string>
+    <string name="power_guide_soundbar_tip2">Нажмите кнопку (function), чтобы отобразилась надпись \"Wi-Fi\".</string>
+    <string name="power_guide_soundbar_title">Подготовка саундбара</string>
+    <string name="product_update">Сведения о версии устройства</string>
+    <string name="queue">Очередь</string>
+    <string name="radio_channel">Радиоканалы</string>
+    <string name="radio_not_available">Нет доступных раСтраница исполнителядиостанций.</string>
+    <string name="re_setting">Сброс</string>
+    <string name="rear_box">Выход заднего динамика</string>
+    <string name="rear_box_level">"Громкость заднего динамика "</string>
+    <string name="rear_box_origin">Звучание первоисточника</string>
+    <string name="rear_box_origin_description">Наслаждайтесь звуком с канала первоисточника.</string>
+    <string name="rear_box_surround">Объемное звучание</string>
+    <string name="rear_box_surround_description">Вы всегда можете наслаждаться звуком с заднего динамика.</string>
+    <string name="recommendations">Рекомендации</string>
+    <string name="recommended">Deezer рекомендует</string>
+    <string name="recommended_albums">Рекомендуемые альбомы</string>
+    <string name="recommended_playlists">Рекомендуемые плейлисты</string>
+    <string name="recommended_tracks">Рекомендуемые треки</string>
+    <string name="remove_from_album_successfully">"'%1$s' был успешно удален из ваших любимых альбомов."</string>
+    <string name="remove_from_artist_successfully">"'%1$s' был успешно удален из списка ваших любимых исполнителей."</string>
+    <string name="remove_from_playlist">Удалить из плейлиста</string>
+    <string name="removed_from_favorites">Удалено из \"Избранного\".</string>
+    <string name="removed_from_playlist_successfully">"'%1$s' был успешно удален из плейлиста '%2$s'."</string>
+    <string name="rename">переименовать</string>
+    <string name="retry">@string/mesh_network_configuration_retry</string>
+    <string name="rhapsody_account_another_location">"Ваша учетная запись используется в другом местоположении.
+Продолжить воспроизведение?"</string>
+    <string name="rhapsody_add_to_library">Добавить в библиотеку</string>
+    <string name="rhapsody_artist_albums">Альбомы исполнителя</string>
+    <string name="rhapsody_artist_top_tracks">Топ-композиции исполнителя</string>
+    <string name="rhapsody_browse">Обзор</string>
+    <string name="rhapsody_featured">Рекомендуемые</string>
+    <string name="rhapsody_featured_alblums">Рекомендуемые альбомы</string>
+    <string name="rhapsody_featured_playlists">Рекомендуемые списки воспроизведения</string>
+    <string name="rhapsody_info_added">Добавлено</string>
+    <string name="rhapsody_info_alert">Предупреждение</string>
+    <string name="rhapsody_info_confirm">Подтвердить</string>
+    <string name="rhapsody_info_data_does_not_exist">Данные не существуют.</string>
+    <string name="rhapsody_info_removed">Удалено</string>
+    <string name="rhapsody_library">Библиотека</string>
+    <string name="rhapsody_login_noti">Введите учётные данные для %s в поле Настройки, чтобы начать.</string>
+    <string name="rhapsody_new_release">Новые выпуски</string>
+    <string name="rhapsody_noti_account_expired_1">Срок действия вашей учётной записи истёк. Посетите страницу http://account.napster.com, чтобы обновить или возобновить учётную запись.</string>
+    <string name="rhapsody_noti_account_expired_2">Срок действия вашей учётной записи истёк. Посетите страницу http://account.rhapsody.com, чтобы обновить или возобновить учётную запись.</string>
+    <string name="rhapsody_noti_create_account_1">При отсутствии учетной записи перейдите по ссылке <a href="http://account.napster.com">http://www.napster.com</a>, чтобы создать её.</string>
+    <string name="rhapsody_noti_create_account_2">При отсутствии учетной записи перейдите по ссылке <a href="http://account.rhapsody.com">http://www.rhapsody.com</a>, чтобы создать её.</string>
+    <string name="rhapsody_popular">Популярные</string>
+    <string name="rhapsody_radio">Радио</string>
+    <string name="rhapsody_radio_artist">Станции – исполнители</string>
+    <string name="rhapsody_radio_genre">Станции – жанры</string>
+    <string name="rhapsody_similar_artist_contemporary">Современные исполнители</string>
+    <string name="rhapsody_similar_artist_following">Новые исполнители</string>
+    <string name="rhapsody_similar_artist_influencing">Влиятельные исполнители</string>
+    <string name="rhapsody_similar_artists">Аналогичные исполнители</string>
+    <string name="rhapsody_top_albums">Топ-альбомы</string>
+    <string name="rhapsody_top_artists">Топ-исполнители</string>
+    <string name="search_clear_suggestions">Очистить</string>
+    <string name="search_hint">@string/media_search</string>
+    <string name="search_menu_title">Поиск</string>
+    <string name="search_result_albums">@string/tab_albums</string>
+    <string name="search_result_artists">@string/tab_artists</string>
+    <string name="search_result_songs">@string/tab_songs</string>
+    <string name="searching_speakers">Поиск динамиков…</string>
+    <string name="select_playlist">Выберите плейлист</string>
+    <string name="select_rear_speaker">Выберите динамик для подключения.</string>
+    <string name="select_song_to_play">Выберите песню для воспроизведения.</string>
+    <string name="select_speaker">Выбрать динамик</string>
+    <string name="send_to_speaker">Отправить на динамик</string>
+    <string name="set">Настроить</string>
+    <string name="set_alarm">Настроить будильник</string>
+    <string name="set_timer">Настроить таймер</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_advanced">Дополнительные настройки</string>
+    <string name="settings_alarm_and_timer">Будильник / Таймер выключения</string>
+    <string name="settings_date_time">Часовой пояс</string>
+    <string name="settings_description">Вы можете управлять различными функциями Music Flow.</string>
+    <string name="settings_general">Общие</string>
+    <string name="settings_google_cast">Chromecast</string>
+    <string name="settings_manage_account">Управление учетной записью</string>
+    <string name="settings_music_library">@string/navigation_music_library_remote</string>
+    <string name="settings_privacy_policy">Политика конфиденциальности</string>
+    <string name="settings_speakers">@string/navigation_category_speakers</string>
+    <string name="settings_updates">Сведения о версии</string>
+    <string name="setup_add_product">Добавить подключение</string>
+    <string name="setup_add_product_to_connect_description_01_bridge">Нажмите кнопку (add) на задней панели сетевого моста, чтобы выполнить подключение.</string>
+    <string name="setup_add_product_to_connect_description_01_portable">Кратковременно нажмите кнопку на стороне (add) Портативного динамика для дополнительного подключения.</string>
+    <string name="setup_add_product_to_connect_description_01_smartaudio">Нажмите кнопку (add) на задней панели динамика Music Flow, чтобы выполнить подключение.</string>
+    <string name="setup_add_product_to_connect_description_01_soundbar">Нажмите кнопку (add) на верхней панели SoundBar, чтобы выполнить подключение.</string>
+    <string name="setup_add_product_to_connect_description_02">Когда устройство будет готово к подключению, светодиодный индикатор (wifi) начнет мигать красным светом, как показано на рисунке.</string>
+    <string name="setup_add_product_to_connect_description_02_portable">Когда устройство будет готово к подключению, светодиодный индикатор (function) начнет мигать красным светом, как показано на рисунке.</string>
+    <string name="setup_ap_name">Сетевое имя</string>
+    <string name="setup_ap_password">@string/password</string>
+    <string name="setup_bridge">Bridge</string>
+    <string name="setup_bridge_connection_title">Подключение сетевого моста.</string>
+    <string name="setup_change_ap_not_peroperly_connected">"Подключение выполнено неправильно. "</string>
+    <string name="setup_change_ap_step_first">1. На главном экране выберите Настройки> Wi-Fi.</string>
+    <string name="setup_change_ap_step_second">2. Выбрать %s для соединения.</string>
+    <string name="setup_change_ap_step_third">3. Вернуться к %s обратно к приложению.</string>
+    <string name="setup_complete_connections_title">Подключение завершено.</string>
+    <string name="setup_connect_musicflow_product_smartaudio">Подключение Multi-room Audio</string>
+    <string name="setup_connect_musicflow_product_soundbar">Подключение SoundBar</string>
+    <string name="setup_connect_product">Подключение изделия</string>
+    <string name="setup_connecting">Подключение…</string>
+    <string name="setup_connecting_to_home_ap">Подключение к [%s] …</string>
+    <string name="setup_connection_fail">Не удалось подключиться.</string>
+    <string name="setup_finish">Готово</string>
+    <string name="setup_help">Помощь</string>
+    <string name="setup_help_for_wired_connection_description_no_1_bridge">Если сетевой мост не обнаружен?</string>
+    <string name="setup_help_for_wired_connection_description_no_1_portable">Если Портативный Динамик не обнаружен?</string>
+    <string name="setup_help_for_wired_connection_description_no_1_smartaudio">Если Multi-room Audio не обнаружен?</string>
+    <string name="setup_help_for_wired_connection_description_no_1_soundbar">Если SoundBar не обнаружен?</string>
+    <string name="setup_help_for_wired_connection_description_no_2">1. Убедитесь, что устройство %s включено.</string>
+    <string name="setup_help_for_wired_connection_description_no_3">Устройство выключено. Проверьте правильность подключения кабеля.</string>
+    <string name="setup_help_for_wired_connection_description_no_4">Устройство сейчас включено. Подождите, пока оно не будет включено и не прекратится мигание светодиода, и повторите попытку.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_bridge">2. Проверьте, не горит ли светодиодный индикатор сетевой мост не мигающим белым светом.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_portable">2. Проверьте, не горит ли светодиодный индикатор (wifi) портативного динамика немигающим белым светом.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_smartaudio">2. Проверьте, не горит ли светодиодный индикатор (wifi) продукта Multi-room Audio немигающим белым светом.</string>
+    <string name="setup_help_for_wired_connection_description_no_5_soundbar">2. Проверьте, не горит ли светодиодный индикатор (wifi) продукта SoundBar немигающим белым светом.</string>
+    <string name="setup_help_for_wired_connection_description_no_6">Устройство не подключено к сети. Проверьте состояние подключенного кабеля, а также убедитесь, что роутер работает правильно</string>
+    <string name="setup_help_for_wired_connection_description_no_7_bridge">3. Проверьте, подключено ли устройство Bridge к той же сети, что и мобильное устройство.</string>
+    <string name="setup_help_for_wired_connection_description_no_7_smartaudio">3. Проверьте, подключено ли устройство Multi-room Audio к той же сети, что и мобильное устройство.</string>
+    <string name="setup_help_for_wired_connection_description_no_7_soundbar">3. Проверьте, подключено ли устройство SoundBar к той же сети, что и мобильное устройство.</string>
+    <string name="setup_help_for_wired_connection_description_no_8">Сетевое имя: %s</string>
+    <string name="setup_help_for_wired_connection_description_no_9_bridge">Если отсутствует подключение к одной и той же сети, измените сеть мобильного устройства на ту же сеть, что и у сетевого моста в меню Настройки мобильного устройства> Wi-Fi.</string>
+    <string name="setup_help_for_wired_connection_description_no_9_smartaudio">Если отсутствует подключение к одной и той же сети, измените сеть мобильного устройства на ту же сеть, что и у Multi-room Audio в меню Настройки мобильного устройства> Wi-Fi.</string>
+    <string name="setup_help_for_wired_connection_description_no_9_soundbar">Если отсутствует подключение к одной и той же сети, измените сеть мобильного устройства на ту же сеть, что и у саундбара в меню Настройки мобильного устройства> Wi-Fi.</string>
+    <string name="setup_help_for_wireless_add_connection">Wireless add network guide</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_2">1. Если подключаемый дополнительно продукт находится далеко от ранее подключенной аудиосистемы, его, возможно, не удастся подключить. Переместите подключаемый дополнительно продукт ближе или подключите его с помощью проводного соединения.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_3">@string/setup_help_for_wireless_connection_description_no_3</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_4">@string/setup_help_for_wired_connection_description_no_3</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_5">@string/setup_help_for_wired_connection_description_no_4</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_bridge">3. Проверьте, не горит ли светодиодный индикатор (wifi) сетевого моста мигающим красным светом.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_portable">3. Проверьте, не горит ли светодиодный индикатор (function) Портативного Динамика мигающим красным светом.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_smartaudio">3. Проверьте, не горит ли светодиодный индикатор (wifi) продутка Multi-room Audio мигающим красным светом.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_6_soundbar">3. Проверьте, не горит ли светодиодный индикатор (wifi) продутка SoundBar мигающим красным светом.</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_7">Устройство находится в ждущем режиме. Нажмите кнопку питания, чтобы включить устройство, и после проверки нажмите еще раз кнопку (add).</string>
+    <string name="setup_help_for_wireless_add_connection_description_no_8">Это исходный режим подключения. Подтвердите расположение кнопки (add) и нажмите повторно.</string>
+    <string name="setup_help_for_wireless_connection_description_no_10">5. Если продукт не обнаружен даже после выполнения всех условий 1, 2, 3, 4, повторите попытку после подключения к \"Music Flow_Setup\", введя настройки Wi-Fi мобильного устройства.</string>
+    <string name="setup_help_for_wireless_connection_description_no_2">1. Если мобильное устройство и продукт находятся друг от друга на большом расстоянии, он может быть не обнаружен. Переместите мобильное устройство ближе к продукту.</string>
+    <string name="setup_help_for_wireless_connection_description_no_3">2. Убедитесь, что устройство %s включено.</string>
+    <string name="setup_help_for_wireless_connection_description_no_4">@string/setup_help_for_wired_connection_description_no_3</string>
+    <string name="setup_help_for_wireless_connection_description_no_5">@string/setup_help_for_wired_connection_description_no_4</string>
+    <string name="setup_help_for_wireless_connection_description_no_6">3. Проверьте, не мигает ли светодиодный индикатор (wifi) попеременно красным и белым светом.</string>
+    <string name="setup_help_for_wireless_connection_description_no_7">Устройство находится в ждущем режиме. Нажмите кнопку питания, чтобы включить устройство, и после проверки нажмите еще раз кнопку (wifi).</string>
+    <string name="setup_help_for_wireless_connection_description_no_8">Это дополнительный режим подключения. Подтвердите расположение кнопки (wifi) и нажмите повторно.</string>
+    <string name="setup_help_for_wireless_connection_description_no_9">4. Проверьте имя и пароль роутера для выполнения повторного подключения. Продукт и мобильное устройство должны быть подключены к одной и той же сети.</string>
+    <string name="setup_input_ap_password_description">Введите свой сетевой пароль.</string>
+    <string name="setup_input_ap_password_portable">Подключение Портативного динамика к беспроводной сети.</string>
+    <string name="setup_input_ap_password_smartaudio">Подключение Multi-room Audio к беспроводной сети.</string>
+    <string name="setup_input_ap_password_soundbar">Подключение SoundBar к беспроводной сети.</string>
+    <string name="setup_installing_music_flow">Установка продукта Music Flow</string>
+    <string name="setup_multiroom_audio">Саундбар</string>
+    <string name="setup_multiroom_bridge">Bridge</string>
+    <string name="setup_multiroom_portable">Сетевой мост</string>
+    <string name="setup_multiroom_sound_bar">Портативный Динамик</string>
+    <string name="setup_next">Далее</string>
+    <string name="setup_no_speaker_bridge">Отсутствует подключенный сетевой мост.</string>
+    <string name="setup_no_speaker_portable">Отсутствует подключенный Портативный Динамик.</string>
+    <string name="setup_no_speaker_smartaudio">Отсутствует подключенный Multi-room Audio.</string>
+    <string name="setup_no_speaker_soundbar">Отсутствует подключенный SoundBar.</string>
+    <string name="setup_portable">Portable audio</string>
+    <string name="setup_portable_connection_description_no_1">1. Кратковременно нажмите кнопку на стороне (wifi) Портативного динамика для подключения.</string>
+    <string name="setup_portable_connection_description_no_2">2. Когда устройство будет готово к подключению, светодиодный индикатор (function) начнет попеременно мигать красным и белым светом, как показано на рисунке.</string>
+    <string name="setup_portable_connection_title">Подключение Портативного Динамика</string>
+    <string name="setup_prev">Назад</string>
+    <string name="setup_search_again">@string/mesh_network_configuration_retry</string>
+    <string name="setup_searching_speaker">Подключение %s …</string>
+    <string name="setup_select_method_to_connect_to_ap_bridge">Выберите метод подключения Сетевой мост и AP.</string>
+    <string name="setup_select_method_to_connect_to_ap_smartaudio">Выберите метод подключения динамиков Smart Audio и роутера.</string>
+    <string name="setup_select_method_to_connect_to_ap_soundbar">Выберите метод подключения саундбара и роутера.</string>
+    <string name="setup_select_product">Выберите продукт</string>
+    <string name="setup_select_product_description">Выберите продукт для подключения к Music Flow.</string>
+    <string name="setup_select_wired_connection_bridge">공유기와 브릿지를 유선으로 연결합니다.</string>
+    <string name="setup_select_wired_connection_smartaudio">Соедините роутер и Multi-room Audio проводом.</string>
+    <string name="setup_select_wired_connection_soundbar">Соедините роутер и SoundBar проводом.</string>
+    <string name="setup_select_wireless_connection_bridge">공유기와 브릿지를 무선으로 연결합니다.</string>
+    <string name="setup_select_wireless_connection_smartaduio">Соедините роутер и Multi-room Audio беспроводным методом.</string>
+    <string name="setup_select_wireless_connection_soundbar">Соедините роутер и SoundBar беспроводным методом.</string>
+    <string name="setup_show_pw">Отображение пароля</string>
+    <string name="setup_skip">Пропустить</string>
+    <string name="setup_smart_audio">Music Flow</string>
+    <string name="setup_sound_bar">SoundBar</string>
+    <string name="setup_sound_bar_check_check_connection_between_TV_and_sound_bar">[Проверьте подключение саундбара к телевизору]</string>
+    <string name="setup_sound_bar_check_sound_bar">[Проверьте саундбар]</string>
+    <string name="setup_sound_bar_check_tv">[Проверьте ТВ]</string>
+    <string name="setup_sound_bar_choose_description">Выберите метод подключения SoundBar и телевизора.</string>
+    <string name="setup_sound_bar_common_guide">"3. Задайте вывод звука телевизора на внешний динамик.
+(Более подробные сведения см. в руководстве по телевизору)"</string>
+    <string name="setup_sound_bar_connection_complete">Подключение SoundBar и телевизора завершено.</string>
+    <string name="setup_sound_bar_connection_title">Подключение SoundBar и телевизора завершено</string>
+    <string name="setup_sound_bar_hdmi_description">Подключить телевизор и SoundBar с помощью кабеля HDMI.</string>
+    <string name="setup_sound_bar_hdmi_description_01">@string/setup_sound_bar_optical_description_01</string>
+    <string name="setup_sound_bar_hdmi_description_02">2. Подсоедините кабель HDMI к задней панели телевизора и SoundBar и включите телевизор.</string>
+    <string name="setup_sound_bar_hdmi_description_03">"[Совет] Подключите один разъем кабеля к разъему HDMI(ARC) In телевизора, а другой разъем кабеля в гнездо HDMI(ARC) Out саундбара. "</string>
+    <string name="setup_sound_bar_hdmi_title">Подключение с помощью кабеля HDMI</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_01">"Не слышен звук из SoundBar
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_02">[Проверьте саундбар]</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_03">"1. Проверьте, отображается ли TV ARC на SoundBar.
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_04">"2. Проверьте, является ли нормальным уровень громкости SoundBar.
+
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_05">[Проверьте ТВ]</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_06">"1. Проверьте, включен ли телевизор и является ли нормальным уровень громкости.
+
+2. Проверьте, задан ли в настройках телевизора внешний динамик. Сведения о настройке телевизора см. в руководстве по телевизору.
+
+"</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_07">[Проверьте подключение саундбара к телевизору]</string>
+    <string name="setup_sound_bar_help_for_hdmi_description_08">"Проверьте подключение терминала HDMI (ARC) телевизора к терминалу HDMI OUT(TV ARC) саундбара.
+Если телевизор не поддерживает HDMI ARC, используйте для подключения оптический кабель."</string>
+    <string name="setup_sound_bar_help_for_optical_description_01">"Не слышен звук из SoundBar
+"</string>
+    <string name="setup_sound_bar_help_for_optical_description_02">[Проверьте саундбар]</string>
+    <string name="setup_sound_bar_help_for_optical_description_03">1. Проверьте, отображается ли OPTICAL на SoundBar. Если OPTICAL не отображается, нажмите кнопку Function на пульте дистанционного управления или кнопку (function) в верхней части SoundBar, чтобы выбрать функцию OPTICAL.</string>
+    <string name="setup_sound_bar_help_for_optical_description_04">"2. Проверьте, является ли нормальным уровень громкости SoundBar.
+
+"</string>
+    <string name="setup_sound_bar_help_for_optical_description_05">[Проверьте ТВ]</string>
+    <string name="setup_sound_bar_help_for_optical_description_06">"1. Проверьте, включен ли телевизор и является ли нормальным уровень громкости.
+
+2. Проверьте, задан ли в настройках телевизора внешний динамик. Сведения о настройке телевизора см. в руководстве по телевизору."</string>
+    <string name="setup_sound_bar_optical_description">Подключить телевизор и SoundBar с помощью оптического кабеля.</string>
+    <string name="setup_sound_bar_optical_description_01">1. Отключите телевизор от электропитания</string>
+    <string name="setup_sound_bar_optical_description_02">2. Подсоедините оптический кабель к задней панели телевизора и SoundBar и включите телевизор.</string>
+    <string name="setup_sound_bar_optical_title">Подключение с помощью оптического кабеля</string>
+    <string name="setup_sound_bar_title">Подключение SoundBar и телевизора</string>
+    <string name="setup_start">Начать</string>
+    <string name="setup_terms_of_use">УСЛОВИЯ ИСПОЛЬЗОВАНИЯ</string>
+    <string name="setup_terms_of_use_accept">Принять</string>
+    <string name="setup_terms_of_use_contents_1">"Настоящие Условия использования применяются к тем лицам и группам, которые пользуются
+приложением Music Flow Player компании LG (LG Music Flow Player), любым программным
+обеспечением (программными обеспечениями), связанным(и) с LG Music Flow Player, данным
+приложением и любыми услугами, связанными с данным приложением (в совокупности – «ПО LG»). В них изложены обязанности, возлагаемые компанией LGE на Вас, а также даны пояснения в отношении разрешений и запретов, которые необходимо учитывать при использовании ПО LG. ПО LG представляет
+собой проприетарное программное обеспечение, принадлежащее LG Electronics Inc.,
+зарегистрированной в Корее корпорации с зарегистрированным офисом по адресу Yeouido-dong 20, Yeoungdeungpo-gu, Seoul, Корея. LGE и ее лицензиары («LGE», «нас/нам» или «мы»)."</string>
+    <string name="setup_terms_of_use_contents_10">"Данное Соглашение регулируется законодательством Республики Корея, если оно не противоречит
+законодательным нормам.
+Если у Вас есть вопросы или замечания по поводу данных Условий использования, посетите наш
+веб-сайт www.lg.com.
+"</string>
+    <string name="setup_terms_of_use_contents_11">"Компания LGE может время от времени обновлять данные Условия использования. Если мы
+внесем существенное изменение в наши Условиях использования, мы проинформируем Вас об
+этом через ПО LG или другим способом.
+
+
+"</string>
+    <string name="setup_terms_of_use_contents_12">"[Любой перевод данных Условий использования осуществляется с учетом местных требований, и в
+случае несоответствия между английской и какой-либо неанглоязычной версиями английская
+версия данных Условий использования является определяющей, в той степени, в какой это не
+запрещено местным законодательством в Вашей юрисдикции.]
+
+
+Последнее обновление: 04.09.2014
+
+"</string>
+    <string name="setup_terms_of_use_contents_13" />
+    <string name="setup_terms_of_use_contents_14" />
+    <string name="setup_terms_of_use_contents_15" />
+    <string name="setup_terms_of_use_contents_16" />
+    <string name="setup_terms_of_use_contents_17" />
+    <string name="setup_terms_of_use_contents_2">"Получая доступ к ПО LG или пользуясь им, Вы подтверждаете, что принимаете данные Условия использования и соглашаетесь соблюдать их. Если Вы не согласны с настоящими Условиями
+пользования, Вы не можете получить доступ к ПО LG и пользоваться им.
+Мы предоставляем Вам неисключительную лицензию на использование предустановленной копии ПО LG исключительно в объеме, необходимом для пользования плеером LG Music Flow Player в личных, а не в каких-либо иных целях.
+Вы признаете, что все права собственности на ПО LG в любой точке мира принадлежат исключительно нам и что никакие права собственности на ПО LG Вам не передаются. Вы имеете право
+только на ограниченное использование ПО LG, как это разрешено в настоящих условиях лицензии."</string>
+    <string name="setup_terms_of_use_contents_3">"Вы не можете каким-либо образом копировать, изменять наше ПО или выполнять его
+декомпиляцию или обратное проектирование, разве что имеете право делать это по закону. Мы
+оставляем за собой право приостановить, отозвать или прекратить предоставление всех Услуг или их части без предварительного уведомления, если сочтем, что Вы нарушаете данные Условия
+использования.
+Вы соглашаетесь с тем, что ПО LG разработано не для того, чтобы удовлетворять Вашим
+индивидуальным требованиям. Мы не даем никаких обещаний или гарантий того, что в ПО LG нет
+никаких ошибок или дефектов или что оно всегда будет доступно. Мы используем все коммерчески
+разумные усилия, чтобы предоставить ПО LG на постоянной, высококачественной основе, но не
+можем гарантировать, что оно всегда будет доступно и будет работать без сбоев и ошибок. "</string>
+    <string name="setup_terms_of_use_contents_4">"Вполне возможно, что нам придется прервать или прекратить использование Вами ПО LG или
+приостановить или ограничить предоставление всех Услуг или любой их части, когда, по нашему
+мнению, это будет обоснованно необходимо по техническим, эксплуатационным, юридическим,
+правовым причинам или в целях безопасности.
+Мы не несем никакой ответственности, если по какой-либо причине Услуги или какая-либо их
+часть будут недоступны когда-либо или в течение какого-либо периода.
+Хотя Вы можете использовать ПО LG для загрузки и получения доступа к контенту или
+приложениям, предоставляемым третьими сторонами при использовании Вашего ПО LG, мы не
+даем никаких обещаний и гарантий того, что Вы всегда будете иметь доступ к такому контенту
+или приложениям. Насколько мы юридически в состоянии сделать это, мы исключаем какие-либо
+гарантии, положения или другие условия, которые могут подразумеваться в данных условиях
+лицензии по закону."</string>
+    <string name="setup_terms_of_use_contents_5">"Насколько мы юридически в состоянии сделать это, мы исключаем какую-либо ответственность за
+любые убытки или ущерб, понесенные Вами или любым другим лицом в связи с использованием Вами ПО LG. Мы несем ответственность только за убытки или ущерб, считающиеся предсказуемым
+результатом нарушения нами данных условий лицензии или нашей небрежности,
+до суммы, указанной ниже, но мы не несем ответственности за любые непредсказуемые убытки
+или ущерб. Убытки или ущерб считаются предсказуемыми, если они являются очевидным
+следствием нашего нарушения или если это было согласовано Вами и нами, когда Вы начинали
+использовать ПО LG."</string>
+    <string name="setup_terms_of_use_contents_6">"За убытки или ущерб, не исключенные в рамках данных условий лицензии, в силу договора или деликта (включая халатность) или по какой-либо иной причине, совокупный размер нашей
+ответственности и ответственности нашей группы компаний в отношении Вас ограничен суммой,
+которую Вы заплатили за пользование ПО LG. В той степени, которая допустима в соответствии с
+действующим законодательством, некоторые юрисдикции не допускают ограничение или
+исключение ответственности за случайные или косвенные убытки, или имеют законодательство,
+которое ограничивает такое ограничение или исключение ответственности, поэтому указанное
+выше ограничение может не распространяться на Вас."</string>
+    <string name="setup_terms_of_use_contents_7">"Нет ничего, вследствие чего данные условия лицензии ограничивали или исключали бы нашу
+ответственность за смерть или телесные повреждения, являющиеся результатом нашей халатности,
+мошенничества или намеренного введения в заблуждение или иного обязательства, которое не
+может быть исключено или ограничено законом.
+ПО LG обеспечивает доступ к приложениям и подключение к другим услугам, принадлежащим
+третьим сторонам и обслуживаемым ими, например, контент-провайдерам. Любые приложения,
+услуги и контент третьих сторон, доступ к которым Вы получаете благодаря пользованию
+Услугами, будут предоставляться Вам этими сторонними провайдерами и выходят за рамки
+данных Условий использования."</string>
+    <string name="setup_terms_of_use_contents_8">"Ваши отношения с любыми сторонними провайдерами являются делом, касающимся исключительно Вас и соответствующего провайдера, и могут быть предметом собственных условий и положений такого провайдера, а также его политики конфиденциальности. Рекомендуем Вам прочитать эти документы, несмотря на то, что мы не несем ответственности за их содержание. Мы не несем
+никакой ответственности за приложения, услуг или контент, предоставляемые сторонними
+провайдерами.
+"</string>
+    <string name="setup_terms_of_use_contents_9">"Мы можем наложить ограничения на использование определенного стороннего контента или услуг или на доступ к ним, в любом случае это произойдет без уведомления и каких-либо обязательств с нашей стороны. Мы прямо указываем на то, что не несем никакой ответственности за
+какое-либо изменение, прерывание работы, отключение, удаление или приостановление любого
+контента, приложения или услуг, доступных благодаря использованию данного ПО LG. Мы также не несем ответственности за обслуживание клиентов, связанное с такого рода контентом,
+приложением и услугами. Любые вопросы или запросы на обслуживание, касающиеся контента,
+приложения или услуг третьих сторон, следует направлять непосредственно соответствующим
+провайдерам контента и услуг или разработчикам прикладных систем, в зависимости от ситуации.
+Настоящие условия не влияют на Ваши законные права как потребителя.
+"</string>
+    <string name="setup_terms_of_use_decline">Отклонить</string>
+    <string name="setup_try_again">Повторите попытку.</string>
+    <string name="setup_use_now">Использовать приложение сейчас</string>
+    <string name="setup_welcome">Добро пожаловать</string>
+    <string name="setup_welcome_description">Наслаждайтесь богатством музыкальных композиций с помощью Music Flow!</string>
+    <string name="setup_wired_connection">Проводное подключение</string>
+    <string name="setup_wired_connection_description_no_1">"Подсоедините кабель локальной сети к задней панели динамика %s, чтобы выполнить подключение. "</string>
+    <string name="setup_wired_connection_description_no_2">"После подключения к сети светодиодный индикатор (wifi) загорится белым светом. "</string>
+    <string name="setup_wired_connection_title">Подключение с помощью кабеля</string>
+    <string name="setup_wireless_connection">беспроводное подключение</string>
+    <string name="setup_wireless_connection_description_no_1_smartaudio">"Нажмите кнопку (wifi) на задней панели Multi-room Audio, чтобы выполнить подключение. "</string>
+    <string name="setup_wireless_connection_description_no_1_soundbar">"Нажмите кнопку (wifi) на верхней панели SoundBar, чтобы выполнить подключение. "</string>
+    <string name="setup_wireless_connection_description_no_2">Когда устройство будет готово к подключению, светодиодный индикатор (wifi) начнет попеременно мигать красным и белым светом, как показано на рисунке.</string>
+    <string name="setup_wireless_connection_title">Беспроводное подключение</string>
+    <string name="share_usage_date">Отправлять данные об использовании</string>
+    <string name="shuffle">В случайном порядке</string>
+    <string name="signin">Войти</string>
+    <string name="signout">Выйти</string>
+    <string name="sleep_timer">Таймер выключения</string>
+    <string name="sound_bar">Саундбар</string>
+    <string name="sound_effect">Звуковой эффект</string>
+    <string name="sound_effect_for_setting">Звуковой эффект</string>
+    <string name="sound_plate">SoundPlate</string>
+    <string name="speaker_description">Настройки продукта Music Flow.</string>
+    <string name="speaker_name">Имя динамика</string>
+    <string name="speaker_not_connected">Отсутствует подключенный продукт Music Flow.</string>
+    <string name="speaker_register">Установка продукта Music Flow</string>
+    <string name="speaker_update_description">"Требуется обновление динамика.
+Обновить программное обеспечение?"</string>
+    <string name="speaker_updating_description">Обновление динамика.</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+    <string name="stb_tv_remote">Использование пульта дистанционного управления телевизора / телевизионной приставки</string>
+    <string name="stb_tv_remote_description">Используйте пульт дистанционного управления телевизора / телевизионной приставки для управления саундбаром.</string>
+    <string name="surround_channel_destroy">Отключение соединения заднего канала объемного звучания</string>
+    <string name="surround_channel_destroy_for_group_setting">Для воспроизведения в групповом режиме сначала следует отключить режим объемного звучания. Желаете отключить объемное соединение?</string>
+    <string name="surround_channel_not_ready">Недостаточно динамиков для подключения к заднему каналу объемного звучания</string>
+    <string name="surround_channel_title">Формирование среды объемного звучания</string>
+    <string name="system_version">Версия системы</string>
+    <string name="tab_albums">альбомы</string>
+    <string name="tab_artists">Исполнители</string>
+    <string name="tab_folders">Папка</string>
+    <string name="tab_genres">Жанры</string>
+    <string name="tab_radios">Radios</string>
+    <string name="tab_shows">Shows</string>
+    <string name="tab_songs">Песни</string>
+    <string name="tab_stations">Stations</string>
+    <string name="tab_talks">Talks</string>
+    <string name="test_tone_description">Заданное значение будет отображаться для общего звукового эффекта.</string>
+    <string name="timer_description">Вы можете задать время для автоматического отключения динамика.</string>
+    <string name="title_activity_equalizer">Эквалайзер</string>
+    <string name="title_activity_recommendation">Рекомендация</string>
+    <string name="title_playlists">Список воспроизведения</string>
+    <string name="top_tracks">ТОП-треки</string>
+    <string name="tracks">Треки</string>
+    <string name="treble">ВЧ</string>
+    <string name="turn_off_internet_unavailable">Отключить функцию \"Интернет недоступен\"</string>
+    <string name="turn_off_smart_wifi_service">Отключить функцию \"Смарт Wi-Fi\"</string>
+    <string name="turn_on_wifi">Включить Wi-Fi</string>
+    <string name="tutorial">Руководство пользователя</string>
+    <string name="tv_remote">Использование пульта дистанционного управления телевизора</string>
+    <string name="tv_remote_description">Управление саундбаром с помощью пульта дистанционного управления телевизора.</string>
+    <string name="tx_alert_dialog">"Если подключенное устройство не имеет функции Music Flow, поддерживается только функция разгруппировки.
+Возможно дополнительное управление с подключенного устройства."</string>
+    <string name="update">Обновить</string>
+    <string name="update_caution">"Предупреждение:
+Не выключайте устройство и программу Music Flow, пока обновление не будет завершено.
+После завершения обновления устройство перегружается автоматически."</string>
+    <string name="update_description">Вы можете обновить Music Flow до последней версии.</string>
+    <string name="update_failed">Не удалось выполнить обновление</string>
+    <string name="update_minor_bug_fix">Корректор незначительных помех</string>
+    <string name="update_notice">Уведомление об обновлении</string>
+    <string name="updated">Обновление завершено.</string>
+    <string name="updating">Обновление…</string>
+    <string name="weekend">Выходные</string>
+    <string name="whats_hot">Что нового</string>
+    <string name="wifi_signal_weak">Слабый сигнал сети</string>
+    <string name="woofer_level">громкость сабвуфера</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_grid_item_height">105.0dip</dimen>
+    <dimen name="album_grid_item_width">105.0dip</dimen>
+    <dimen name="header_setup_title_height">126.0dip</dimen>
+</resources>

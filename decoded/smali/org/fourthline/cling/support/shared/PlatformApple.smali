@@ -1,0 +1,100 @@
+.class public Lorg/fourthline/cling/support/shared/PlatformApple;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lorg/fourthline/cling/support/shared/PlatformApple$AppListenerProxy;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static setup(Lorg/seamless/swing/Controller;Ljava/lang/String;)V
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/seamless/swing/Controller<",
+            "Ljavax/swing/JFrame;",
+            ">;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
+
+    const-string v0, "apple.laf.useScreenMenuBar"
+
+    const-string v1, "true"
+
+    invoke-static {v0, v1}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "com.apple.mrj.application.apple.menu.about.name"
+
+    invoke-static {v0, p1}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    const-string p1, "apple.awt.showGrowBox"
+
+    invoke-static {p1, v1}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    const-string p1, "com.apple.eawt.Application"
+
+    invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object v0
+
+    const-string v1, "com.apple.eawt.ApplicationListener"
+
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    new-array v3, v2, [Ljava/lang/Class;
+
+    const/4 v4, 0x0
+
+    aput-object v1, v3, v4
+
+    const-string v1, "addApplicationListener"
+
+    invoke-virtual {p1, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object p1
+
+    const-string v1, "com.apple.eawt.ApplicationAdapter"
+
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1, p0}, Lorg/fourthline/cling/support/shared/PlatformApple$AppListenerProxy;->newInstance(Ljava/lang/Object;Lorg/seamless/swing/Controller;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    new-array v1, v2, [Ljava/lang/Object;
+
+    aput-object p0, v1, v4
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d Album</item>
+        <item quantity="one">1 Album</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d låtar</item>
+        <item quantity="one">1 låtar</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d gånger</item>
+        <item quantity="one">1 gånger</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">Anslutningen av %d enheter slutförd.</item>
+        <item quantity="one">Anslutningen av %d enheter slutförd.</item>
+    </plurals>
+</resources>

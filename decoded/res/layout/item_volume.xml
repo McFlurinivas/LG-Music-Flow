@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/item_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.Small.Multiroom" android:id="@id/speaker_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/speaker_image" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <com.lge.media.musicflow.playback.CustomStepSeekBar android:layout_gravity="center_vertical" android:id="@id/volume" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="100" android:thumb="@drawable/icon_music_player_sliderthumb" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/surround_channel_status" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/setup_background_color" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="#ff242433" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/header_setup_height">
+        <TextView android:textSize="20.0sp" android:textColor="@color/setup_action_bar_title_text" android:gravity="center" android:layout_gravity="center" android:id="@android:id/title" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <Button android:layout_gravity="center_vertical" android:id="@id/refresh_button" android:background="@drawable/refresh_loading_01" android:visibility="gone" android:layout_width="@dimen/header_setup_title_button" android:layout_height="@dimen/header_setup_title_button" android:layout_marginRight="10.0dip" android:contentDescription="@string/label_refresh" />
+        <com.pnikosis.materialishprogress.ProgressWheel android:id="@id/dialog_progress_wheel" android:padding="8.0dip" android:visibility="gone" android:layout_width="@dimen/header_setup_height" android:layout_height="@dimen/header_setup_height" android:contentDescription="@string/label_speaker_searching" wheel:matProg_barColor="@color/lightgray" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
+        <ImageButton android:id="@id/overflow_menu" android:background="@drawable/button_background" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_global_list_edit_cue" android:scaleType="center" android:contentDescription="@string/label_open_overflow" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/list_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v7.widget.RecyclerView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/lyt_two_button" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <Button android:id="@id/btn_bottom_left" style="@style/SetupBottomTwoButtonHorizontally" />
+            <View android:background="@color/setup_divider_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <Button android:id="@id/btn_bottom_right" style="@style/SetupBottomTwoButtonHorizontally" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/lyt_single_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <Button android:id="@id/btn_bottom_single" style="@style/SetupBottomTwoButtonHorizontally" />
+    </LinearLayout>
+</LinearLayout>

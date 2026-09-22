@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d albüm</item>
+        <item quantity="one">1 albüm</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d Şarkı</item>
+        <item quantity="one">1 şarkı</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d defa</item>
+        <item quantity="one">1 zaman</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">%d birim bağlantısı tamamlandı.</item>
+        <item quantity="one">1 birim bağlantısı tamamlandı.</item>
+    </plurals>
+</resources>

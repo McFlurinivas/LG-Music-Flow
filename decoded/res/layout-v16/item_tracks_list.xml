@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingLeft="@dimen/list_item_padding_left" android:paddingRight="@dimen/list_item_padding_right" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/track_number_text_size" android:textColor="@color/track_number_text" android:gravity="center" android:id="@id/tracks_list_track_number" android:layout_width="45.0dip" android:layout_height="45.0dip" android:singleLine="true" android:fontFamily="@string/font_regular" />
+            <CheckBox android:layout_gravity="center" android:id="@id/tracks_list_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_weight="85.0">
+            <TextView android:textSize="@dimen/track_title_text_size" android:textColor="@color/track_title_text" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/tracks_list_track_title" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="55.0" android:fontFamily="@string/font_regular" />
+            <TextView android:textSize="@dimen/track_artist_text_size" android:textColor="@color/track_artist_text" android:ellipsize="end" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/tracks_list_track_artist" android:layout_width="fill_parent" android:layout_height="0.0dip" android:singleLine="true" android:layout_weight="45.0" android:fontFamily="@string/font_regular" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/list_item_desc_text_size" android:gravity="right|center" android:id="@id/tracks_list_track_duration" android:paddingLeft="@dimen/list_item_padding_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:fontFamily="@string/font_regular" />
+        <ImageButton android:gravity="right|center" android:id="@id/list_item_overflow_menu" android:background="@drawable/button_background" android:padding="@dimen/list_item_padding_right" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_global_list_edit_cue" android:scaleType="center" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/wiz_list_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/up_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/latest_device" android:background="@drawable/wiz_list_icon_new" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/device_image" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="17.0sp" android:textColor="@color/update_list_device_name_text" android:id="@id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/update_list_status_text" android:layout_gravity="center_vertical" android:id="@id/update_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.0dip" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/function_key" android:background="@drawable/setup_device_update_btn" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:id="@id/progressbar_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/update_progressbar" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyleHorizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

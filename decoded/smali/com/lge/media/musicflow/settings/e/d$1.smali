@@ -1,0 +1,50 @@
+.class Lcom/lge/media/musicflow/settings/e/d$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/lge/media/musicflow/settings/e/d;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/lge/media/musicflow/settings/e/d;
+
+
+# direct methods
+.method constructor <init>(Lcom/lge/media/musicflow/settings/e/d;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/lge/media/musicflow/settings/e/d$1;->a:Lcom/lge/media/musicflow/settings/e/d;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+
+    iget-object p1, p0, Lcom/lge/media/musicflow/settings/e/d$1;->a:Lcom/lge/media/musicflow/settings/e/d;
+
+    invoke-virtual {p1}, Lcom/lge/media/musicflow/settings/e/d;->getContext()Landroid/content/Context;
+
+    move-result-object p1
+
+    const-string v0, "com.google.android.apps.chromecast.app"
+
+    invoke-static {p1, v0}, Lcom/lge/media/musicflow/j/g;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    return-void
+.end method

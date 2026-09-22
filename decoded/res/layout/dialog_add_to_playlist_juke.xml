@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/alert_dialog_padding" android:paddingRight="@dimen/alert_dialog_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="16.0dip" android:textColor="@color/create_new_playlist" android:gravity="left|center" android:id="@id/create_new_playlist" android:background="@drawable/button_background" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="59.0dip" android:text="@string/make_playlists" android:drawableLeft="@drawable/ic_popup_add_playlist" android:drawablePadding="3.0dip" />
+    <ProgressBar android:gravity="center" android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:progressBarStyleLarge" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="?selectableItemBackground" />
+</LinearLayout>

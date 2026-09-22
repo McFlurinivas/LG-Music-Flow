@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d альбомов</item>
+        <item quantity="one">1 альбом</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d композиций</item>
+        <item quantity="one">1 композиция</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d раз</item>
+        <item quantity="one">1 раз</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">Завершено подключение %d устройств.</item>
+        <item quantity="one">Завершено подключение %d устройств.</item>
+    </plurals>
+</resources>

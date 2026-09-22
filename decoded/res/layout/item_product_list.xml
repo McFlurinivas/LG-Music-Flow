@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/select_speaker_layout" android:background="@drawable/wiz_list_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/radio_button" android:focusable="false" android:clickable="false" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+    <ImageView android:id="@id/speaker_image" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/ic_product_list_music_flow" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/setup_list_item_text" android:gravity="left" android:id="@id/speaker_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="number_of_albums">
+        <item quantity="other">%d albums</item>
+        <item quantity="one">1 album</item>
+    </plurals>
+    <plurals name="number_of_songs">
+        <item quantity="other">%d nummers geleden</item>
+        <item quantity="one">1 nummer</item>
+    </plurals>
+    <plurals name="playlist_played_times">
+        <item quantity="other">%d tijden</item>
+        <item quantity="one">1 tijd</item>
+    </plurals>
+    <plurals name="setup_complete_connections">
+        <item quantity="other">De verbinding van %d units is voltooid.</item>
+        <item quantity="one">De verbinding van %d units is voltooid.</item>
+    </plurals>
+</resources>

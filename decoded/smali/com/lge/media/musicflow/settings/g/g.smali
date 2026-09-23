@@ -410,7 +410,11 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    const/4 v5, 0x6
+    iget v5, p0, Lcom/lge/media/musicflow/settings/g/g;->e:I
+
+    iget v6, p0, Lcom/lge/media/musicflow/settings/g/g;->f:I
+
+    sub-int/2addr v5, v6
 
     invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 

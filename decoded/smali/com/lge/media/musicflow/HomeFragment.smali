@@ -40,6 +40,8 @@
 
 .field private static final LAYOUT_SPEAKER_ROW:I = 0x7f0c0107
 
+.field private static final ID_BANNER_ART:I = 0x7f0903c5
+
 .field private static final ID_APP_BAR:I = 0x7f090055
 
 .field private static final ID_CONTENT_CONTAINER:I = 0x7f09009a
@@ -231,6 +233,71 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 380
+    return-void
+.end method
+
+.method private applyBannerArt(Ljava/util/Collection;)V
+    .locals 3
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mRoot:Landroid/view/View;
+
+    if-eqz v0, :cond_ret
+
+    if-eqz p1, :cond_ret
+
+    :try_start_0
+    const v1, 0x7f0903c5
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    instance-of v1, v0, Landroid/widget/ImageView;
+
+    if-eqz v1, :cond_ret
+
+    invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_ret
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    instance-of v2, v1, Lcom/lge/media/musicflow/route/e;
+
+    if-eqz v2, :cond_ret
+
+    check-cast v1, Lcom/lge/media/musicflow/route/e;
+
+    invoke-virtual {v1}, Lcom/lge/media/musicflow/route/e;->t()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/lge/media/musicflow/SpeakerSheet;->modelArt(Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_ret
+
+    check-cast v0, Landroid/widget/ImageView;
+
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    :cond_ret
     return-void
 .end method
 
@@ -512,99 +579,98 @@
 .end method
 
 .method private connectedSpeakers()Ljava/util/Collection;
-    .registers 5
+    .registers 6
 
-    .line 309
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 312
-    :try_start_5
+    :try_start_map
     invoke-static {}, Lcom/lge/media/musicflow/HomeFragment;->getMediaRouteMap()Ljava/util/Map;
 
     move-result-object v1
-    :try_end_9
-    .catchall {:try_start_5 .. :try_end_9} :catchall_33
+    :try_end_map
+    .catchall {:try_start_map .. :try_end_map} :catchall_map
 
-    .line 315
-    nop
+    if-nez v1, :cond_have_map
 
-    .line 316
-    if-nez v1, :cond_d
-
-    .line 317
     return-object v0
 
-    .line 319
-    :cond_d
+    :cond_have_map
     invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    .line 320
-    :goto_15
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_32
-
-    .line 321
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 322
-    instance-of v3, v2, Lcom/lge/media/musicflow/route/e;
+    invoke-interface {v2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
-    if-nez v3, :cond_24
+    move-result-object v2
 
-    .line 323
-    goto :goto_15
-
-    .line 325
-    :cond_24
-    check-cast v2, Lcom/lge/media/musicflow/route/e;
-
-    .line 327
-    :try_start_26
-    invoke-virtual {v2}, Lcom/lge/media/musicflow/route/e;->x()Z
+    :goto_next
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
 
-    if-eqz v3, :cond_2f
+    if-eqz v3, :cond_done
 
-    .line 328
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_2f
-    .catchall {:try_start_26 .. :try_end_2f} :catchall_30
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 331
-    :cond_2f
-    goto :goto_31
+    move-result-object v3
 
-    .line 330
-    :catchall_30
-    move-exception v2
+    instance-of v4, v3, Lcom/lge/media/musicflow/route/e;
 
-    .line 332
-    :goto_31
-    goto :goto_15
+    if-eqz v4, :goto_next
 
-    .line 333
-    :cond_32
+    check-cast v3, Lcom/lge/media/musicflow/route/e;
+
+    :try_start_row
+    invoke-virtual {v3}, Lcom/lge/media/musicflow/route/e;->x()Z
+
+    move-result v4
+
+    if-eqz v4, :goto_row_done
+
+    invoke-virtual {v3}, Lcom/lge/media/musicflow/route/e;->u()Z
+
+    move-result v4
+
+    if-nez v4, :goto_row_done
+
+    invoke-static {v1, v3}, Lcom/lge/media/musicflow/route/e;->a(Ljava/util/Map;Lcom/lge/media/musicflow/route/e;)Lcom/lge/media/musicflow/route/e;
+
+    move-result-object v3
+
+    if-eqz v3, :goto_row_done
+
+    invoke-virtual {v3}, Lcom/lge/media/musicflow/route/e;->r()Z
+
+    move-result v4
+
+    if-nez v4, :goto_row_done
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :goto_row_done
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_row
+    .catchall {:try_start_row .. :try_end_row} :catchall_row
+
+    :goto_row_done
+    goto :goto_next
+
+    :catchall_row
+    move-exception v4
+
+    goto :goto_next
+
+    :cond_done
     return-object v0
 
-    .line 313
-    :catchall_33
+    :catchall_map
     move-exception v1
 
-    .line 314
     return-object v0
 .end method
 
@@ -1091,6 +1157,8 @@
 
     move-result-object v1
 
+    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/HomeFragment;->applyBannerArt(Ljava/util/Collection;)V
+
     invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1452,26 +1520,38 @@
 .end method
 
 .method private stateOf(Lcom/lge/media/musicflow/route/e;)I
-    .registers 2
+    .registers 4
 
-    .line 347
+    const/4 v0, 0x0
+
+    if-eqz p1, :cond_off
+
     :try_start_0
-    invoke-virtual {p1}, Lcom/lge/media/musicflow/route/e;->s()I
+    invoke-virtual {p1}, Lcom/lge/media/musicflow/route/e;->h()Z
 
-    move-result p1
-    :try_end_4
-    .catchall {:try_start_0 .. :try_end_4} :catchall_5
+    move-result v1
 
-    return p1
+    if-eqz v1, :cond_off
 
-    .line 348
-    :catchall_5
-    move-exception p1
+    invoke-virtual {p1}, Lcom/lge/media/musicflow/route/e;->c()Z
 
-    .line 349
-    const/4 p1, 0x0
+    move-result v1
 
-    return p1
+    if-eqz v1, :cond_off
+
+    const/4 v0, 0x1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_off
+    return v0
+
+    :catchall_0
+    move-exception v1
+
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 

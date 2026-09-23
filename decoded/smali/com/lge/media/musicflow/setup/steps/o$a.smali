@@ -262,7 +262,7 @@
 
     if-nez v2, :cond_1
 
-    const v2, 0x7f080231
+    const v2, 0x7f080571
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setBackgroundResource(I)V
 

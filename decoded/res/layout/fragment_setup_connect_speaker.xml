@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:background="@color/bg_base" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto">
     <include layout="@layout/proto_header_setup" />
     <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_search_speaker" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@id/add_speaker_progress_wheel" android:layout_width="60.0dip" android:layout_height="60.0dip" wheel:matProg_barColor="@color/multiroom_highlight" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
-        <TextView android:textColor="@color/text_primary" android:id="@id/connecting_textview" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/setup_connecting" />
+        <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@id/add_speaker_progress_wheel" android:layout_width="60.0dip" android:layout_height="60.0dip" wheel:matProg_barColor="@color/accent_music" wheel:matProg_barWidth="3.0dip" wheel:matProg_progressIndeterminate="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_secondary" android:id="@id/connecting_textview" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/setup_connecting" />
     </LinearLayout>
 </LinearLayout>

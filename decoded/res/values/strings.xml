@@ -1898,4 +1898,6 @@ When the update is completed, the device reboots automatically."</string>
     <string name="spk_power_standby">Standby</string>
     <string name="spk_power_off">Power off (1 min)</string>
     <string name="spk_power_off_confirm">Stop playback and power the speaker off in about a minute, using its sleep timer. Use Turn on (Wi-Fi) to bring it back.</string>
+    <string name="stp_error_hint_wireless">Make sure the speaker is powered on, its Wi-Fi LED is blinking, and your phone is on the 2.4 GHz network you want to use.</string>
+    <string name="stp_error_hint_wired">Make sure the speaker is powered on and its LAN cable is plugged into the same router as your phone.</string>
 </resources>

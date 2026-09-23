@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:orientation="vertical" android:background="@color/setup_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:background="@color/bg_base" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:orientation="horizontal" android:id="@id/header_layout" android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="@dimen/header_setup_height" android:layout_alignParentTop="true">
-        <TextView android:textSize="20.0sp" android:textColor="@color/setup_action_bar_title_text" android:gravity="center" android:layout_gravity="center" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
-    </LinearLayout>
-    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_two_button_layout" android:layout_below="@id/header_layout">
-        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="500.0dip">
-            <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="left" android:id="@id/setup_portable_description_no_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" />
-            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_device_wifi_portable" android:layout_weight="0.5" />
-            <TextView android:textSize="16.0sp" android:textColor="@color/setup_description_text" android:gravity="left" android:id="@id/setup_portable_description_no_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:text="@string/setup_portable_connection_description_no_2" />
-            <com.lge.media.musicflow.setup.steps.CenterAnimatedImageView android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wiz_connect_led_lamp_bg" android:layout_weight="0.5" />
+
+    <include layout="@layout/proto_header_setup" />
+
+    <android.support.v4.widget.NestedScrollView android:scrollbars="none" android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="16.0dip" android:paddingTop="4.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip">
+
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/home_greet_accent" android:gravity="center" android:background="@drawable/stp_step_badge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="1" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/text_secondary" android:gravity="left" android:id="@id/setup_portable_description_no_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lineSpacingExtra="3.0dip" />
+            </LinearLayout>
+
+            <FrameLayout android:background="@drawable/spk_section_bg" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="12.0dip">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="12.0dip" android:scaleType="fitCenter" android:src="@drawable/wiz_connect_device_wifi_portable" />
+            </FrameLayout>
+
+            <LinearLayout android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="2.0dip">
+                <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/home_greet_accent" android:gravity="center" android:background="@drawable/stp_step_badge" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text="2" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/text_secondary" android:gravity="left" android:id="@id/setup_portable_description_no_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lineSpacingExtra="3.0dip" android:text="@string/setup_portable_connection_description_no_2" />
+            </LinearLayout>
+
+            <FrameLayout android:background="@drawable/spk_section_bg" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="12.0dip">
+                <com.lge.media.musicflow.setup.steps.CenterAnimatedImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wiz_connect_led_lamp_bg" />
+            </FrameLayout>
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/footer_two_button_layout" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true">
-        <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-        <LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-            <Button android:id="@android:id/button1" style="@style/SetupBottomTwoButtonHorizontally" />
-            <View android:background="@color/setup_divider_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
-            <Button android:id="@android:id/button2" style="@style/SetupBottomTwoButtonHorizontally" />
-        </LinearLayout>
-    </LinearLayout>
-</RelativeLayout>
+
+    <include layout="@layout/footer_two_button_horizontally" />
+
+</LinearLayout>

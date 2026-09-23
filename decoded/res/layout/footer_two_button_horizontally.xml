@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:id="@id/footer_two_button_layout" android:background="@color/bg_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="54.0dip"
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:id="@id/footer_two_button_layout" android:background="@color/bg_base" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="18.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:background="@color/setup_divider_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
-    <LinearLayout android:gravity="center|bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
-        <Button android:id="@android:id/button1" style="@style/SetupBottomTwoButtonHorizontally" />
-        <View android:background="@color/setup_divider_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
-        <Button android:id="@android:id/button2" style="@style/SetupBottomTwoButtonHorizontally" />
-    </LinearLayout>
+    <Button android:id="@android:id/button1" style="@style/SetupWizardGhostButton" />
+    <Button android:id="@android:id/button2" style="@style/SetupWizardPrimaryButton" android:layout_marginLeft="10.0dip" />
 </LinearLayout>

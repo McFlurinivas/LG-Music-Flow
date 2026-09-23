@@ -122,7 +122,7 @@
 .end method
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 4
+    .locals 3
 
     const p3, 0x7f0c007d
 
@@ -221,16 +221,6 @@
     const/4 p3, 0x0
 
     invoke-virtual {v2, p3}, Landroid/support/v7/widget/RecyclerView;->setItemAnimator(Landroid/support/v7/widget/RecyclerView$ItemAnimator;)V
-
-    new-instance p3, Landroid/support/v7/widget/DividerItemDecoration;
-
-    invoke-virtual {p0}, Lcom/lge/media/musicflow/setup/ezsetup/h;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-direct {p3, v3, v0}, Landroid/support/v7/widget/DividerItemDecoration;-><init>(Landroid/content/Context;I)V
-
-    invoke-virtual {v2, p3}, Landroid/support/v7/widget/RecyclerView;->addItemDecoration(Landroid/support/v7/widget/RecyclerView$ItemDecoration;)V
 
     invoke-virtual {v2, v1}, Landroid/support/v7/widget/RecyclerView;->setLayoutManager(Landroid/support/v7/widget/RecyclerView$LayoutManager;)V
 

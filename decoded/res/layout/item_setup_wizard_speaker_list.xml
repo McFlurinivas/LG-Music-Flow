@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height">
-        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:background="@drawable/wiz_list_bg" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <ImageView android:id="@id/list_item_speaker_icon" android:background="@drawable/wiz_list_product_h5" android:focusable="false" android:layout_width="@dimen/list_item_thumbnail_width" android:layout_height="@dimen/list_item_thumbnail_height" android:scaleType="fitXY" />
-            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="@dimen/list_item_height" android:layout_marginLeft="@dimen/list_item_padding_vertical" android:layout_weight="85.0">
-                <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/setup_description_text" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/list_item_speaker_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/music_flow" android:singleLine="true" />
-            </LinearLayout>
-        </LinearLayout>
-        <Button android:id="@id/list_item_test_tone_button" android:background="@drawable/ic_setup_tone" android:focusable="false" android:layout_width="@dimen/setup_list_item_button_width" android:layout_height="@dimen/setup_list_item_button_height" android:layout_marginLeft="15.0dip" />
+
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:background="@drawable/spk_wide_bg" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingLeft="13.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip">
+        <FrameLayout android:background="@drawable/spk_tile_icon_bg" android:layout_width="48.0dip" android:layout_height="48.0dip">
+            <ImageView android:id="@id/list_item_speaker_icon" android:layout_gravity="center" android:background="@drawable/wiz_list_product_h5" android:focusable="false" android:layout_width="34.0dip" android:layout_height="34.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@id/list_item_speaker_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="12.0dip" android:singleLine="true" android:text="@string/music_flow" />
     </LinearLayout>
-</RelativeLayout>
+
+    <Button android:id="@id/list_item_test_tone_button" android:background="@drawable/ic_setup_tone" android:focusable="false" android:layout_width="@dimen/setup_list_item_button_width" android:layout_height="@dimen/setup_list_item_button_height" android:layout_marginLeft="12.0dip" />
+
+</LinearLayout>

@@ -342,6 +342,30 @@
     :goto_2
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(I)V
 
+    const v1, 0x7f0903c6
+
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/widget/TextView;
+
+    sget-object p3, Lcom/lge/media/musicflow/setup/steps/f;->r:Lcom/lge/media/musicflow/setup/steps/n;
+
+    iget p3, p3, Lcom/lge/media/musicflow/setup/steps/n;->i:I
+
+    if-ne p3, v0, :cond_5
+
+    const p3, 0x7f1004dc
+
+    goto :goto_3
+
+    :cond_5
+    const p3, 0x7f1004db
+
+    :goto_3
+    invoke-virtual {v1, p3}, Landroid/widget/TextView;->setText(I)V
+
     invoke-virtual {p1, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z

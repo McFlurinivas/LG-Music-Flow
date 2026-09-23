@@ -153,7 +153,7 @@
     <color name="setup_description_text">#ff9a9aa8</color>
     <color name="setup_divider_line">#ff2e2e3a</color>
     <color name="setup_guideline_text">#fff2f2f5</color>
-    <color name="setup_highlight_text_color">#ffff2e6d</color>
+    <color name="setup_highlight_text_color">@color/accent_music</color>
     <color name="setup_line">#ff2e2e3a</color>
     <color name="setup_link_text">#fff2f2f5</color>
     <color name="setup_list_item_background_normal">#00000000</color>
@@ -161,7 +161,7 @@
     <color name="setup_list_item_background_selected">@color/multiroom_background_pressed</color>
     <color name="setup_list_item_line">#ff2e2e3a</color>
     <color name="setup_list_item_text_color">#fff2f2f5</color>
-    <color name="setup_list_item_text_color_pressed">#ffff2e6d</color>
+    <color name="setup_list_item_text_color_pressed">@color/accent_music</color>
     <color name="setup_step">#ffff2e6d</color>
     <color name="setup_text_color">#fff2f2f5</color>
     <color name="setup_title_text">#fff2f2f5</color>
@@ -234,4 +234,7 @@
     <color name="spk_glow_core">#663c6dff</color>
     <color name="spk_glow_edge">#003c6dff</color>
     <color name="spk_tile_icon">#ff272134</color>
+    <color name="stp_err_glow_core">#55ff2e6d</color>
+    <color name="stp_err_glow_edge">#00ff2e6d</color>
+    <color name="stp_err_ring_stroke">#ff4a2740</color>
 </resources>

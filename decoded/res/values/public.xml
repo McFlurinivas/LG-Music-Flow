@@ -5274,6 +5274,7 @@
     <public type="drawable" name="ic_spk_effect" id="0x7f080540" />
     <public type="drawable" name="ic_spk_compress" id="0x7f080541" />
     <public type="drawable" name="ic_spk_tune" id="0x7f080542" />
+    <public type="drawable" name="ic_spk_battery" id="0x7f080562" />
     <public type="drawable" name="spk_tile_normal" id="0x7f080543" />
     <public type="drawable" name="spk_tile_pressed" id="0x7f080544" />
     <public type="drawable" name="spk_tile_bg" id="0x7f080545" />
@@ -5292,6 +5293,7 @@
     <public type="id" name="spk_rename" id="0x7f0903a4" />
     <public type="id" name="spk_model" id="0x7f0903a5" />
     <public type="id" name="spk_hero_img" id="0x7f0903a6" />
+    <public type="id" name="home_banner_art" id="0x7f0903c5" />
     <public type="id" name="spk_row_icon" id="0x7f0903a7" />
     <public type="id" name="spk_tile_icon_box" id="0x7f0903a8" />
     <public type="id" name="spk_wide_container" id="0x7f0903a9" />
@@ -5426,4 +5428,35 @@
     <public type="id" name="vol_hud_name" id="0x7f0903c2" />
     <public type="id" name="vol_hud_value" id="0x7f0903c3" />
     <public type="id" name="vol_hud_bar" id="0x7f0903c4" />
+    <public type="drawable" name="stp_primary_normal" id="0x7f080563" />
+    <public type="drawable" name="stp_primary_pressed" id="0x7f080564" />
+    <public type="drawable" name="stp_primary_btn" id="0x7f080565" />
+    <public type="drawable" name="stp_ghost_normal" id="0x7f080566" />
+    <public type="drawable" name="stp_ghost_pressed" id="0x7f080567" />
+    <public type="drawable" name="stp_ghost_btn" id="0x7f080568" />
+    <public type="drawable" name="stp_step_badge" id="0x7f080569" />
+    <public type="drawable" name="ic_stp_power_in" id="0x7f08056a" />
+    <public type="drawable" name="ic_stp_caret" id="0x7f08056b" />
+    <public type="style" name="SetupWizardGhostButton" id="0x7f1101c4" />
+    <public type="style" name="SetupWizardPrimaryButton" id="0x7f1101c5" />
+    <public type="drawable" name="stp_primary_disabled" id="0x7f08056c" />
+    <public type="color" name="stp_primary_btn_text" id="0x7f060101" />
+    <public type="color" name="stp_ghost_btn_text" id="0x7f060102" />
+    <public type="style" name="SetupWizardPrimaryButtonWide" id="0x7f1101c6" />
+    <public type="style" name="SetupWizardTextButton" id="0x7f1101c7" />
+    <public type="drawable" name="ic_stp_tone" id="0x7f08056d" />
+    <public type="drawable" name="stp_tone_normal" id="0x7f08056e" />
+    <public type="drawable" name="stp_tone_pressed" id="0x7f08056f" />
+    <public type="drawable" name="ic_stp_tone_off" id="0x7f080570" />
+    <public type="drawable" name="stp_tone_disabled" id="0x7f080571" />
+    <public type="color" name="stp_err_glow_core" id="0x7f060103" />
+    <public type="color" name="stp_err_glow_edge" id="0x7f060104" />
+    <public type="color" name="stp_err_ring_stroke" id="0x7f060105" />
+    <public type="drawable" name="stp_err_glow" id="0x7f080572" />
+    <public type="drawable" name="stp_err_ring" id="0x7f080573" />
+    <public type="drawable" name="ic_stp_error" id="0x7f080574" />
+    <public type="style" name="SetupWizardGhostButtonWide" id="0x7f1101c8" />
+    <public type="string" name="stp_error_hint_wireless" id="0x7f1004db" />
+    <public type="string" name="stp_error_hint_wired" id="0x7f1004dc" />
+    <public type="id" name="stp_error_hint" id="0x7f0903c6" />
 </resources>

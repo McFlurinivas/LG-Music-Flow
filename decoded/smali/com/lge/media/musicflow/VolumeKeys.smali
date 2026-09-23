@@ -239,6 +239,56 @@
     return-void
 .end method
 
+.method private static resolve(Lcom/lge/media/musicflow/route/e;)Lcom/lge/media/musicflow/route/e;
+    .locals 2
+
+    if-eqz p0, :cond_none
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/route/e;->u()Z
+
+    move-result v0
+
+    if-nez v0, :cond_none
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/route/e;->r()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_ret
+
+    invoke-static {}, Lcom/lge/media/musicflow/l;->getMediaRouteMap()Ljava/util/Map;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_none
+
+    invoke-static {v1, p0}, Lcom/lge/media/musicflow/route/e;->a(Ljava/util/Map;Lcom/lge/media/musicflow/route/e;)Lcom/lge/media/musicflow/route/e;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_none
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/route/e;->r()Z
+
+    move-result v0
+
+    if-nez v0, :cond_none
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :cond_ret
+    return-object p0
+
+    :catchall_0
+    move-exception v0
+
+    :cond_none
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
 .method public static targetRoute(Landroid/app/Activity;)Lcom/lge/media/musicflow/route/e;
     .locals 8
 
@@ -354,7 +404,9 @@
     move-object v0, v3
 
     :goto_done
-    nop
+    invoke-static {v0}, Lcom/lge/media/musicflow/VolumeKeys;->resolve(Lcom/lge/media/musicflow/route/e;)Lcom/lge/media/musicflow/route/e;
+
+    move-result-object v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

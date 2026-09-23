@@ -38,11 +38,7 @@
 
     iget-object v0, p0, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment$1;->this$0:Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;
 
-    invoke-static {v0}, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->access$000(Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;)Lcom/lge/media/musicflow/onlineservice/OnlineServiceFragment$OnlineServiceAdapter;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/lge/media/musicflow/onlineservice/OnlineServiceFragment$OnlineServiceAdapter;->notifyDataSetChanged()V
+    invoke-static {v0}, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->access$000(Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;)V
 
     return-void
 .end method

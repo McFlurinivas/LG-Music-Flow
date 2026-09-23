@@ -353,18 +353,6 @@
     return-void
 
     :cond_1
-    invoke-static {}, Lcom/lge/media/musicflow/l;->hasSpeakers()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    invoke-static {}, Lcom/lge/media/musicflow/l;->hasSpeakersWithoutTX()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
     const-string v1, "OnlineServiceFragment"
 
     invoke-virtual {v0, v1}, Landroid/support/v4/app/p;->a(Ljava/lang/String;)Landroid/support/v4/app/k;

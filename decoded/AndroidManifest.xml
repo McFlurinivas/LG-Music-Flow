@@ -13,6 +13,26 @@
         <package android:name="org.npr.one"/>
         <package android:name="com.google.android.youtube"/>
         <package android:name="com.google.android.apps.youtube.music"/>
+        <package android:name="com.amazon.mp3"/>
+        <package android:name="deezer.android.app"/>
+        <package android:name="com.aspiro.tidal"/>
+        <package android:name="com.soundcloud.android"/>
+        <package android:name="com.jio.media.jiobeats"/>
+        <package android:name="com.bsbportal.music"/>
+        <package android:name="com.gaana"/>
+        <package android:name="com.qobuz.music"/>
+        <package android:name="au.com.shiftyjelly.pocketcasts"/>
+        <package android:name="com.netflix.mediaclient"/>
+        <package android:name="com.disney.disneyplus"/>
+        <package android:name="com.amazon.avod.thirdpartyclient"/>
+        <package android:name="com.google.android.videos"/>
+        <package android:name="in.startv.hotstar"/>
+        <package android:name="com.plexapp.android"/>
+        <package android:name="org.videolan.vlc"/>
+        <package android:name="com.mxtech.videoplayer.ad"/>
+        <package android:name="com.sonyliv"/>
+        <package android:name="com.graymatrix.did"/>
+        <package android:name="com.twitch.android.app"/>
     </queries>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>

@@ -464,18 +464,6 @@
     goto :goto_4
 
     :cond_5
-    invoke-static {}, Lcom/lge/media/musicflow/l;->hasSpeakers()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
-    invoke-static {}, Lcom/lge/media/musicflow/l;->hasSpeakersWithoutTX()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_6
-
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/lge/media/musicflow/SubActivity;

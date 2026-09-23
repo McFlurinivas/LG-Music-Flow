@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/svc_scroll" android:background="@color/bg_base" android:scrollbars="none" android:fillViewport="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingTop="18.0dip" android:paddingBottom="28.0dip">
+
+        <!-- Page heading -->
+        <TextView android:textSize="27.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="20.0dip" android:text="@string/home_stream_music" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:text="@string/svc_page_sub" />
+
+        <!-- Music apps -->
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="26.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/svc_music_header" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:gravity="center" android:id="@id/svc_music_count" android:background="@drawable/home_count_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minWidth="18.0dip" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:id="@id/svc_music_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+
+        <!-- Chromecast apps -->
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/ic_svc_cast" android:contentDescription="@string/svc_cast_header" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/svc_cast_header" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:gravity="center" android:id="@id/svc_cast_count" android:background="@drawable/home_count_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minWidth="18.0dip" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip" android:text="@string/svc_cast_sub" />
+
+        <LinearLayout android:orientation="vertical" android:id="@id/svc_cast_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+
+        <LinearLayout android:orientation="vertical" android:id="@id/svc_cast_empty" android:background="@drawable/home_np_empty_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:padding="18.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/svc_cast_empty" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

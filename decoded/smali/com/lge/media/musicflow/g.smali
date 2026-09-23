@@ -561,9 +561,9 @@
 
     invoke-direct {v1, p0}, Lcom/lge/media/musicflow/g$a;-><init>(Lcom/lge/media/musicflow/g;)V
 
-    const-wide/16 v2, 0x1f4
+    const-wide/16 v2, 0x12c
 
-    const-wide/16 v4, 0x1f4
+    const-wide/16 v4, 0x12c
 
     invoke-virtual/range {v0 .. v5}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
 
@@ -745,11 +745,32 @@
 
     move-result v1
 
+    const/16 v2, 0x18
+
+    if-eq v1, v2, :cond_vol
+
+    const/16 v2, 0x19
+
+    if-eq v1, v2, :cond_vol
+
+    goto :goto_super
+
+    :cond_vol
+    iget-boolean v2, p0, Lcom/lge/media/musicflow/g;->mHasVolumeKeyPressed:Z
+
+    if-nez v2, :cond_handle
+
+    invoke-static {p0}, Lcom/lge/media/musicflow/VolumeKeys;->hasTarget(Landroid/app/Activity;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_handle
+
     invoke-static {}, Lcom/lge/media/musicflow/g;->isLocalPlaying()Z
 
     move-result v2
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_handle
 
     invoke-static {}, Lcom/lge/media/musicflow/playback/b;->n()Lcom/lge/media/musicflow/i/a;
 
@@ -759,53 +780,39 @@
 
     move-result v2
 
-    if-eqz v2, :cond_5
+    if-eqz v2, :goto_super
 
-    :cond_0
-    const/16 v2, 0x18
-
+    :cond_handle
     const/4 v3, 0x1
 
-    if-eq v1, v2, :cond_3
+    const/16 v2, 0x18
 
-    const/16 v2, 0x19
+    if-ne v1, v2, :cond_isdown
 
-    if-eq v1, v2, :cond_1
+    const/4 v2, 0x1
 
-    goto :goto_2
+    goto :goto_updown
 
-    :cond_1
-    if-nez v0, :cond_2
+    :cond_isdown
+    const/4 v2, 0x0
 
-    const/4 p1, 0x0
+    :goto_updown
+    if-nez v0, :cond_keyup
 
-    iput-boolean p1, p0, Lcom/lge/media/musicflow/g;->mHasVolumeUpPressed:Z
+    iput-boolean v2, p0, Lcom/lge/media/musicflow/g;->mHasVolumeUpPressed:Z
 
-    :goto_0
     invoke-direct {p0}, Lcom/lge/media/musicflow/g;->setVolumePressed()V
 
     return v3
 
-    :cond_2
-    if-ne v0, v3, :cond_5
+    :cond_keyup
+    if-ne v0, v3, :goto_super
 
-    goto :goto_1
-
-    :cond_3
-    if-nez v0, :cond_4
-
-    iput-boolean v3, p0, Lcom/lge/media/musicflow/g;->mHasVolumeUpPressed:Z
-
-    goto :goto_0
-
-    :cond_4
-    if-ne v0, v3, :cond_5
-
-    :goto_1
     invoke-direct {p0}, Lcom/lge/media/musicflow/g;->setVolumeUnPressed()V
 
-    :cond_5
-    :goto_2
+    return v3
+
+    :goto_super
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
@@ -1529,6 +1536,10 @@
     invoke-virtual {v0, p0}, Landroid/nfc/NfcAdapter;->disableForegroundDispatch(Landroid/app/Activity;)V
 
     :cond_0
+    invoke-direct {p0}, Lcom/lge/media/musicflow/g;->setVolumeUnPressed()V
+
+    invoke-static {}, Lcom/lge/media/musicflow/VolumeHud;->hide()V
+
     invoke-super {p0}, Landroid/support/v7/app/AppCompatActivity;->onPause()V
 
     return-void
@@ -2160,6 +2171,15 @@
 .method protected requestVolume(Z)V
     .locals 4
 
+    invoke-static {p0, p1}, Lcom/lge/media/musicflow/VolumeKeys;->handle(Landroid/app/Activity;Z)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_legacy
+
+    return-void
+
+    :cond_legacy
     iget-object v0, p0, Lcom/lge/media/musicflow/g;->mPlaybackFragment:Lcom/lge/media/musicflow/playback/PlaybackFragment;
 
     if-eqz v0, :cond_0

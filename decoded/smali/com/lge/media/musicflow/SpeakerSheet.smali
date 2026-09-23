@@ -7,6 +7,7 @@
 .implements Landroid/widget/SeekBar$OnSeekBarChangeListener;
 .implements Landroid/content/DialogInterface$OnClickListener;
 .implements Landroid/content/DialogInterface$OnDismissListener;
+.implements Landroid/content/DialogInterface$OnKeyListener;
 .implements Ljava/lang/Runnable;
 
 
@@ -109,6 +110,8 @@
 
 .field private final mHost:Lcom/lge/media/musicflow/l;
 
+.field private mKeyAt:J
+
 .field private mLastSent:I
 
 .field private mRoot:Landroid/view/View;
@@ -118,6 +121,10 @@
 .field private mSeek:Landroid/widget/SeekBar;
 
 .field private final mUuid:Ljava/util/UUID;
+
+.field private static sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+.field private static sLastUuid:Ljava/util/UUID;
 
 
 # direct methods
@@ -199,6 +206,8 @@
     move-result v3
 
     if-eqz v3, :cond_fail
+
+    invoke-static {v2}, Lcom/lge/media/musicflow/SpeakerSheet;->setActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -348,6 +357,10 @@
 
     invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
 
+    const v2, 0x7f0903c1
+
+    invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->bind(I)V
+
     const v2, 0x7f090390
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -383,6 +396,8 @@
     invoke-virtual {v2, v4}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
 
     invoke-virtual {v2, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+
+    invoke-virtual {v2, p0}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
     invoke-virtual {v2}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -791,6 +806,8 @@
 .method public dismiss()V
     .registers 3
 
+    invoke-static {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->clearActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
+
     iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mDialog:Landroid/app/Dialog;
 
     const/4 v1, 0x0
@@ -908,11 +925,20 @@
     :cond_1d
     const v1, 0x7f0903ae
 
-    if-ne v0, v1, :cond_2
+    if-ne v0, v1, :cond_1e
 
     const/4 v1, 0x7
 
     invoke-direct {p0, v1, p1}, Lcom/lge/media/musicflow/SpeakerSheet;->onRow(ILandroid/view/View;)V
+
+    return-void
+
+    :cond_1e
+    const v1, 0x7f0903c1
+
+    if-ne v0, v1, :cond_2
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->powerMenu()V
 
     return-void
 
@@ -972,6 +998,8 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .registers 3
+
+    invoke-static {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->clearActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
 
     const/4 v0, 0x0
 
@@ -3260,13 +3288,38 @@
     :cond_mode3
     const/4 v3, 0x3
 
-    if-ne v2, v3, :goto_dismiss
+    if-ne v2, v3, :cond_mode4
 
     new-instance v3, Lcom/lge/media/musicflow/route/model/GroupCompressSet;
 
     invoke-direct {v3, v1}, Lcom/lge/media/musicflow/route/model/GroupCompressSet;-><init>(I)V
 
     invoke-direct {p0, v3}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    goto :goto_dismiss
+
+    :cond_mode4
+    const/4 v3, 0x4
+
+    if-ne v2, v3, :goto_dismiss
+
+    if-nez v1, :cond_power_1
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->sendWifi()V
+
+    goto :goto_dismiss
+
+    :cond_power_1
+    const/4 v3, 0x1
+
+    if-ne v1, v3, :cond_power_2
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->powerStandby()V
+
+    goto :goto_dismiss
+
+    :cond_power_2
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->confirmPowerOff()V
 
     :goto_dismiss
     :cond_dismiss
@@ -3292,6 +3345,202 @@
 
     invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->scheduleRefresh()V
 
+    return-void
+.end method
+
+.method private powerMenu()V
+    .locals 4
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/CharSequence;
+
+    const v1, 0x7f1004d7
+
+    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->string(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    const v1, 0x7f1004d8
+
+    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->string(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    const v1, 0x7f1004d9
+
+    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->string(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x2
+
+    aput-object v1, v0, v2
+
+    const/4 v1, 0x4
+
+    iput v1, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mChooseMode:I
+
+    const/4 v1, 0x3
+
+    new-array v1, v1, [I
+
+    fill-array-data v1, :array_0
+
+    iput-object v1, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mChooseValues:[I
+
+    const v1, 0x7f1004d6
+
+    const/4 v2, -0x1
+
+    invoke-direct {p0, v1, v0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->showChooser(I[Ljava/lang/CharSequence;I)V
+
+    return-void
+
+    :array_0
+    .array-data 4
+        0x0
+        0x1
+        0x2
+    .end array-data
+.end method
+
+.method private sendWifi()V
+    .locals 2
+
+    new-instance v0, Lcom/lge/media/musicflow/route/model/FunctionSetRequest;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lcom/lge/media/musicflow/route/model/FunctionSetRequest;-><init>(I)V
+
+    invoke-direct {p0, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mFunction:I
+
+    return-void
+.end method
+
+.method private powerStandby()V
+    .locals 2
+
+    new-instance v0, Lcom/lge/media/musicflow/route/model/PlayCmdRequest;
+
+    sget-object v1, Lcom/lge/media/musicflow/route/model/PlayCmdRequest$PlayCtrl;->STOP:Lcom/lge/media/musicflow/route/model/PlayCmdRequest$PlayCtrl;
+
+    invoke-direct {v0, v1}, Lcom/lge/media/musicflow/route/model/PlayCmdRequest;-><init>(Lcom/lge/media/musicflow/route/model/PlayCmdRequest$PlayCtrl;)V
+
+    invoke-direct {p0, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->sendWifi()V
+
+    return-void
+.end method
+
+.method public doPowerOff()V
+    .locals 2
+
+    new-instance v0, Lcom/lge/media/musicflow/route/model/PlayCmdRequest;
+
+    sget-object v1, Lcom/lge/media/musicflow/route/model/PlayCmdRequest$PlayCtrl;->STOP:Lcom/lge/media/musicflow/route/model/PlayCmdRequest$PlayCtrl;
+
+    invoke-direct {v0, v1}, Lcom/lge/media/musicflow/route/model/PlayCmdRequest;-><init>(Lcom/lge/media/musicflow/route/model/PlayCmdRequest$PlayCtrl;)V
+
+    invoke-direct {p0, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    new-instance v0, Lcom/lge/media/musicflow/route/model/SleepSetRequest;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Lcom/lge/media/musicflow/route/model/SleepSetRequest;-><init>(I)V
+
+    invoke-direct {p0, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    return-void
+.end method
+
+.method private confirmPowerOff()V
+    .locals 6
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mRoot:Landroid/view/View;
+
+    if-eqz v0, :cond_ret
+
+    :try_start_0
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    new-instance v1, Landroid/support/v7/app/AlertDialog$Builder;
+
+    const v2, 0x7f110002
+
+    invoke-direct {v1, v0, v2}, Landroid/support/v7/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
+
+    const v2, 0x7f1004d6
+
+    invoke-virtual {v1, v2}, Landroid/support/v7/app/AlertDialog$Builder;->setTitle(I)Landroid/support/v7/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    const v2, 0x7f1004da
+
+    invoke-direct {p0, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->string(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/support/v7/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/support/v7/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/lge/media/musicflow/SpeakerSheet$4;
+
+    invoke-direct {v2, p0}, Lcom/lge/media/musicflow/SpeakerSheet$4;-><init>(Lcom/lge/media/musicflow/SpeakerSheet;)V
+
+    const v3, 0x7f1004d9
+
+    invoke-virtual {v1, v3, v2}, Landroid/support/v7/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    const/high16 v3, 0x1040000
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v3, v4}, Landroid/support/v7/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/support/v7/app/AlertDialog$Builder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/support/v7/app/AlertDialog$Builder;->create()Landroid/support/v7/app/AlertDialog;
+
+    move-result-object v5
+
+    new-instance v4, Lcom/lge/media/musicflow/DialogDarkFix;
+
+    invoke-direct {v4}, Lcom/lge/media/musicflow/DialogDarkFix;-><init>()V
+
+    invoke-virtual {v5, v4}, Landroid/support/v7/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+
+    invoke-virtual {v5}, Landroid/support/v7/app/AlertDialog;->show()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    :cond_ret
     return-void
 .end method
 
@@ -4419,6 +4668,8 @@
     invoke-virtual {v1}, Lcom/lge/media/musicflow/SpeakerSheet;->sync()V
 
     invoke-direct {v1}, Lcom/lge/media/musicflow/SpeakerSheet;->startListening()V
+
+    invoke-static {v1}, Lcom/lge/media/musicflow/SpeakerSheet;->setActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -4433,6 +4684,8 @@
 
 .method public detach()V
     .locals 0
+
+    invoke-static {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->clearActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
 
     invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->stopListening()V
 
@@ -4812,4 +5065,251 @@
     invoke-virtual {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->dismiss()V
 
     return-void
+.end method
+
+.method static setActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
+    .locals 1
+
+    sput-object p0, Lcom/lge/media/musicflow/SpeakerSheet;->sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-eqz p0, :cond_ret
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mUuid:Ljava/util/UUID;
+
+    if-eqz v0, :cond_ret
+
+    sput-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sLastUuid:Ljava/util/UUID;
+
+    :cond_ret
+    return-void
+.end method
+
+.method static clearActive(Lcom/lge/media/musicflow/SpeakerSheet;)V
+    .locals 1
+
+    sget-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-ne v0, p0, :cond_ret
+
+    const/4 v0, 0x0
+
+    sput-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    :cond_ret
+    return-void
+.end method
+
+.method public static activeSheet()Lcom/lge/media/musicflow/SpeakerSheet;
+    .locals 1
+
+    sget-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    return-object v0
+.end method
+
+.method public static lastUuid()Ljava/util/UUID;
+    .locals 1
+
+    sget-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sLastUuid:Ljava/util/UUID;
+
+    return-object v0
+.end method
+
+.method public static nudgeActive(I)Z
+    .locals 3
+
+    const/4 v1, 0x0
+
+    sget-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-nez v0, :cond_go
+
+    return v1
+
+    :cond_go
+    iget-boolean v2, v0, Lcom/lge/media/musicflow/SpeakerSheet;->mPageMode:Z
+
+    if-nez v2, :cond_nudge
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->isShowing()Z
+
+    move-result v2
+
+    if-nez v2, :cond_nudge
+
+    return v1
+
+    :cond_nudge
+    invoke-virtual {v0, p0}, Lcom/lge/media/musicflow/SpeakerSheet;->nudgeBy(I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public nudgeBy(I)Z
+    .registers 10
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->route()Lcom/lge/media/musicflow/route/e;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_fail
+
+    iget v2, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mLastSent:I
+
+    if-gez v2, :cond_base
+
+    invoke-virtual {v1}, Lcom/lge/media/musicflow/route/e;->F()I
+
+    move-result v2
+
+    invoke-static {v2}, Lcom/lge/media/musicflow/l/b;->b(I)I
+
+    move-result v2
+
+    :cond_base
+    add-int/2addr v2, p1
+
+    if-gez v2, :cond_min
+
+    const/4 v2, 0x0
+
+    :cond_min
+    const/16 v3, 0x64
+
+    if-le v2, v3, :cond_max
+
+    const/16 v2, 0x64
+
+    :cond_max
+    invoke-virtual {v1}, Lcom/lge/media/musicflow/route/e;->G()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_nomute
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v1, v3}, Lcom/lge/media/musicflow/route/e;->a(Z)V
+
+    iget-object v4, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mHost:Lcom/lge/media/musicflow/l;
+
+    invoke-virtual {v1}, Lcom/lge/media/musicflow/route/e;->l()Ljava/net/InetSocketAddress;
+
+    move-result-object v5
+
+    new-instance v6, Lcom/lge/media/musicflow/route/model/MuteSetRequest;
+
+    invoke-direct {v6, v3}, Lcom/lge/media/musicflow/route/model/MuteSetRequest;-><init>(Z)V
+
+    const/4 v7, 0x0
+
+    invoke-virtual {v4, v5, v6, v7}, Lcom/lge/media/musicflow/l;->sendMultiroomRequest(Ljava/net/InetSocketAddress;Lcom/lge/media/musicflow/route/model/MultiroomRequest;Lcom/lge/media/musicflow/route/a$a;)V
+
+    :cond_nomute
+    iget-object v3, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mSeek:Landroid/widget/SeekBar;
+
+    if-eqz v3, :cond_seek
+
+    invoke-virtual {v3, v2}, Landroid/widget/SeekBar;->setProgress(I)V
+
+    :cond_seek
+    invoke-direct {p0, v1, v2}, Lcom/lge/media/musicflow/SpeakerSheet;->apply(Lcom/lge/media/musicflow/route/e;I)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :catchall_0
+    move-exception v1
+
+    :cond_fail
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
+    .registers 14
+
+    const/4 v0, 0x0
+
+    if-nez p3, :cond_have
+
+    return v0
+
+    :cond_have
+    const/16 v1, 0x18
+
+    if-eq p2, v1, :cond_vol
+
+    const/16 v1, 0x19
+
+    if-eq p2, v1, :cond_vol
+
+    return v0
+
+    :cond_vol
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_down
+
+    return v2
+
+    :cond_down
+    if-eqz v1, :cond_go
+
+    return v0
+
+    :cond_go
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    move-result-wide v3
+
+    invoke-virtual {p3}, Landroid/view/KeyEvent;->getRepeatCount()I
+
+    move-result v5
+
+    if-lez v5, :cond_act
+
+    iget-wide v6, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mKeyAt:J
+
+    sub-long v6, v3, v6
+
+    const-wide/16 v8, 0xfa
+
+    cmp-long v5, v6, v8
+
+    if-gez v5, :cond_act
+
+    return v2
+
+    :cond_act
+    iput-wide v3, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mKeyAt:J
+
+    const/16 v1, 0x18
+
+    if-ne p2, v1, :cond_dn
+
+    const/4 v1, 0x5
+
+    goto :goto_step
+
+    :cond_dn
+    const/4 v1, -0x5
+
+    :goto_step
+    invoke-virtual {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->nudgeBy(I)Z
+
+    return v2
 .end method

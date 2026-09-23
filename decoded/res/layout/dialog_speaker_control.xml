@@ -5,6 +5,7 @@
     <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
         <ImageView android:id="@id/spk_back" android:background="@drawable/spk_ghost_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_spk_back" android:contentDescription="@string/spk_back_label" />
         <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/spk_power" android:background="@drawable/spk_ghost_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_spk_power" android:contentDescription="@string/spk_power" />
     </LinearLayout>
 
     <ScrollView android:id="@id/spk_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">

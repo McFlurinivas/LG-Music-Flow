@@ -1280,6 +1280,8 @@
 
     invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
 
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->commitEq()V
+
     return-void
 
     :cond_not_bass
@@ -1300,6 +1302,8 @@
     invoke-direct {v1, v2, v0}, Lcom/lge/media/musicflow/route/model/EqualizerSetRequest;-><init>(II)V
 
     invoke-direct {p0, v1}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->commitEq()V
 
     return-void
 
@@ -1564,10 +1568,26 @@
     return-void
 .end method
 
+.method private commitEq()V
+    .locals 3
+
+    new-instance v0, Lcom/lge/media/musicflow/route/model/EqualizerSetRequest;
+
+    const/4 v1, 0x4
+
+    const/4 v2, 0x1
+
+    invoke-direct {v0, v1, v2}, Lcom/lge/media/musicflow/route/model/EqualizerSetRequest;-><init>(II)V
+
+    invoke-direct {p0, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    return-void
+.end method
+
 .method private listenTypes()[Lcom/lge/media/musicflow/route/d;
     .locals 3
 
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     new-array v0, v0, [Lcom/lge/media/musicflow/route/d;
 
@@ -1595,27 +1615,33 @@
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/lge/media/musicflow/route/d;->aM:Lcom/lge/media/musicflow/route/d;
+    sget-object v1, Lcom/lge/media/musicflow/route/d;->aN:Lcom/lge/media/musicflow/route/d;
 
     const/4 v2, 0x4
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/lge/media/musicflow/route/d;->n:Lcom/lge/media/musicflow/route/d;
+    sget-object v1, Lcom/lge/media/musicflow/route/d;->aM:Lcom/lge/media/musicflow/route/d;
 
     const/4 v2, 0x5
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/lge/media/musicflow/route/d;->s:Lcom/lge/media/musicflow/route/d;
+    sget-object v1, Lcom/lge/media/musicflow/route/d;->n:Lcom/lge/media/musicflow/route/d;
 
     const/4 v2, 0x6
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/lge/media/musicflow/route/d;->e:Lcom/lge/media/musicflow/route/d;
+    sget-object v1, Lcom/lge/media/musicflow/route/d;->s:Lcom/lge/media/musicflow/route/d;
 
     const/4 v2, 0x7
+
+    aput-object v1, v0, v2
+
+    sget-object v1, Lcom/lge/media/musicflow/route/d;->e:Lcom/lge/media/musicflow/route/d;
+
+    const/16 v2, 0x8
 
     aput-object v1, v0, v2
 
@@ -3602,6 +3628,8 @@
     invoke-direct {v3, v2, v1}, Lcom/lge/media/musicflow/route/model/EqualizerSetRequest;-><init>(II)V
 
     invoke-direct {p0, v3}, Lcom/lge/media/musicflow/SpeakerSheet;->send(Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->commitEq()V
 
     iput v1, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mEqPreset:I
 

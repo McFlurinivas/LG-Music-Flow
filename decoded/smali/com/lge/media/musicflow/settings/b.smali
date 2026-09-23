@@ -5,6 +5,14 @@
 .implements Lcom/lge/media/musicflow/route/MediaRouteService$a;
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/lge/media/musicflow/settings/b$1;
+    }
+.end annotation
+
+
 # direct methods
 .method public constructor <init>()V
     .locals 0
@@ -46,6 +54,26 @@
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public a(Landroid/view/View;)V
+    .locals 3
+
+    new-instance p1, Lcom/lge/media/musicflow/settings/b$1;
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/settings/b;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/lge/media/musicflow/settings/a;->e:Ljava/util/ArrayList;
+
+    const v2, 0x7f0c010f
+
+    invoke-direct {p1, p0, v0, v2, v1}, Lcom/lge/media/musicflow/settings/b$1;-><init>(Lcom/lge/media/musicflow/settings/b;Landroid/content/Context;ILjava/util/List;)V
+
+    iput-object p1, p0, Lcom/lge/media/musicflow/settings/a;->c:Landroid/widget/ArrayAdapter;
+
+    return-void
 .end method
 
 .method public b(I)V

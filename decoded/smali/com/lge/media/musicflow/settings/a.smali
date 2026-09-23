@@ -380,23 +380,40 @@
 .end method
 
 .method protected b(I)V
-    .locals 2
-
-    const/4 v0, -0x1
-
-    if-eq p1, v0, :cond_0
+    .locals 3
 
     iget-object v0, p0, Lcom/lge/media/musicflow/settings/a;->h:Landroid/view/View;
 
-    const v1, 0x7f090278
+    if-eqz v0, :cond_done
+
+    const v1, 0x7f090276
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    const/4 v2, -0x1
+
+    if-ne p1, v2, :cond_text
+
+    if-eqz v1, :cond_done
+
+    const/16 p1, 0x8
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setVisibility(I)V
+
+    return-void
+
+    :cond_text
+    const v2, 0x7f090278
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_done
 
     invoke-virtual {p0, p1}, Lcom/lge/media/musicflow/settings/a;->getString(I)Ljava/lang/String;
 
@@ -404,7 +421,13 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    :cond_0
+    if-eqz v1, :cond_done
+
+    const/4 p1, 0x0
+
+    invoke-virtual {v1, p1}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_done
     return-void
 .end method
 

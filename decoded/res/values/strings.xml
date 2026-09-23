@@ -1883,4 +1883,14 @@ When the update is completed, the device reboots automatically."</string>
     <string name="home_banner_title">Immersive Sound</string>
     <string name="home_banner_title2">for Every Moment</string>
     <string name="home_banner_sub">Control. Stream. Enjoy.</string>
+    <string name="stg_sub_general">App behaviour and playback</string>
+    <string name="stg_sub_speakers">Rename, group and manage devices</string>
+    <string name="stg_sub_alarm">Wake up to music or fade out to sleep</string>
+    <string name="stg_sub_timezone">Keep speaker clocks in sync</string>
+    <string name="stg_sub_advanced">Mesh network and auto music play</string>
+    <string name="stg_sub_cast">Cast-enabled apps and linked devices</string>
+    <string name="stg_sub_version">App and speaker firmware versions</string>
+    <string name="stg_sub_privacy">How your data is handled</string>
+    <string name="stg_sub_license">Third-party software notices</string>
+    <string name="stg_sub_developer">Diagnostics and test tools</string>
 </resources>

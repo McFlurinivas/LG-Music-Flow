@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="68.599976dip" android:layout_marginLeft="@dimen/list_item_setting_padding" android:layout_marginRight="@dimen/list_item_setting_padding"
+<LinearLayout android:orientation="vertical" android:background="@drawable/spk_wide_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/speaker_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="9.0"
-          xmlns:android="http://schemas.android.com/apk/res/android" />
-        <TextView android:textSize="@dimen/list_item_title_text_size" android:textColor="@color/text_primary" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/speaker_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"
-          xmlns:android="http://schemas.android.com/apk/res/android" />
+    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:ellipsize="end" android:id="@id/speaker_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginRight="10.0dip" android:singleLine="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:ellipsize="end" android:gravity="end|center_vertical" android:id="@id/speaker_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
     </LinearLayout>
-    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/setting_progressbar" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" style="?android:progressBarStyleHorizontal" />
+    <ProgressBar android:id="@id/setting_progressbar" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:max="100" style="?android:progressBarStyleHorizontal" />
 </LinearLayout>

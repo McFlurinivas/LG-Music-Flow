@@ -5388,4 +5388,31 @@
     <public type="string" name="svc_state_installed" id="0x7f1004c9" />
     <public type="string" name="svc_state_not_installed" id="0x7f1004ca" />
     <public type="string" name="svc_state_castable" id="0x7f1004cb" />
+    <public type="id" name="stg_menu_row" id="0x7f0903bb" />
+    <public type="id" name="stg_menu_icon_box" id="0x7f0903bc" />
+    <public type="id" name="stg_menu_icon" id="0x7f0903bd" />
+    <public type="id" name="stg_menu_title" id="0x7f0903be" />
+    <public type="id" name="stg_menu_sub" id="0x7f0903bf" />
+    <public type="id" name="stg_menu_go" id="0x7f0903c0" />
+    <public type="layout" name="item_settings_menu" id="0x7f0c010f" />
+    <public type="drawable" name="ic_stg_general" id="0x7f080556" />
+    <public type="drawable" name="ic_stg_speaker" id="0x7f080557" />
+    <public type="drawable" name="ic_stg_alarm" id="0x7f080558" />
+    <public type="drawable" name="ic_stg_timezone" id="0x7f080559" />
+    <public type="drawable" name="ic_stg_cast" id="0x7f08055a" />
+    <public type="drawable" name="ic_stg_version" id="0x7f08055b" />
+    <public type="drawable" name="ic_stg_privacy" id="0x7f08055c" />
+    <public type="drawable" name="ic_stg_license" id="0x7f08055d" />
+    <public type="drawable" name="ic_stg_developer" id="0x7f08055e" />
+    <public type="string" name="stg_sub_general" id="0x7f1004cc" />
+    <public type="string" name="stg_sub_speakers" id="0x7f1004cd" />
+    <public type="string" name="stg_sub_alarm" id="0x7f1004ce" />
+    <public type="string" name="stg_sub_timezone" id="0x7f1004cf" />
+    <public type="string" name="stg_sub_advanced" id="0x7f1004d0" />
+    <public type="string" name="stg_sub_cast" id="0x7f1004d1" />
+    <public type="string" name="stg_sub_version" id="0x7f1004d2" />
+    <public type="string" name="stg_sub_privacy" id="0x7f1004d3" />
+    <public type="string" name="stg_sub_license" id="0x7f1004d4" />
+    <public type="string" name="stg_sub_developer" id="0x7f1004d5" />
+    <public type="drawable" name="ic_stg_advanced" id="0x7f08055f" />
 </resources>

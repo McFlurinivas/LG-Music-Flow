@@ -3427,6 +3427,56 @@
     return-void
 .end method
 
+.method protected showBackNavigation(Landroid/view/View$OnClickListener;)V
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/l;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    instance-of v1, v0, Lcom/lge/media/musicflow/g;
+
+    if-eqz v1, :cond_x
+
+    check-cast v0, Lcom/lge/media/musicflow/g;
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/g;->getToolbar()Landroid/support/v7/widget/Toolbar;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_x
+
+    const v1, 0x7f080532
+
+    invoke-virtual {v0, v1}, Landroid/support/v7/widget/Toolbar;->setNavigationIcon(I)V
+
+    invoke-virtual {v0, p1}, Landroid/support/v7/widget/Toolbar;->setNavigationOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    :cond_x
+    return-void
+.end method
+
+.method protected restoreDrawerNavigation()V
+    .locals 2
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/l;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    instance-of v1, v0, Lcom/lge/media/musicflow/g;
+
+    if-eqz v1, :cond_x
+
+    check-cast v0, Lcom/lge/media/musicflow/g;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lcom/lge/media/musicflow/g;->setupNavigationDrawer(Z)V
+
+    :cond_x
+    return-void
+.end method
+
 .method protected setActionBarTitle(Ljava/lang/CharSequence;)V
     .locals 5
 

@@ -1,6 +1,7 @@
 .class public Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;
 .super Lcom/lge/media/musicflow/onlineservice/OnlineServiceFragment;
 .source "GoogleCastServiceFragment.java"
+.implements Landroid/view/View$OnClickListener;
 
 
 # static fields
@@ -1141,7 +1142,24 @@
 
     invoke-direct {p0}, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->buildCast()V
 
+    invoke-virtual {p0, p0}, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->showBackNavigation(Landroid/view/View$OnClickListener;)V
+
     return-object p1
+.end method
+
+.method public onClick(Landroid/view/View;)V
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_x
+
+    invoke-virtual {v0}, Landroid/support/v4/app/l;->onBackPressed()V
+
+    :cond_x
+    return-void
 .end method
 
 .method public onDestroyView()V
@@ -1150,6 +1168,8 @@
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->mRoot:Landroid/view/View;
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/onlineservice/googlecast/GoogleCastServiceFragment;->restoreDrawerNavigation()V
 
     invoke-super {p0}, Lcom/lge/media/musicflow/onlineservice/OnlineServiceFragment;->onDestroyView()V
 

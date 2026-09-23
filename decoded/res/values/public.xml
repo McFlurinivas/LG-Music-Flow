@@ -5365,4 +5365,27 @@
     <public type="id" name="spk_page_root" id="0x7f0903aa" />
     <public type="id" name="spk_page_caption" id="0x7f0903ab" />
     <public type="id" name="spk_page_list" id="0x7f0903ac" />
+    <public type="id" name="svc_scroll" id="0x7f0903b0" />
+    <public type="id" name="svc_music_container" id="0x7f0903b1" />
+    <public type="id" name="svc_music_count" id="0x7f0903b2" />
+    <public type="id" name="svc_cast_container" id="0x7f0903b3" />
+    <public type="id" name="svc_cast_count" id="0x7f0903b4" />
+    <public type="id" name="svc_cast_empty" id="0x7f0903b5" />
+    <public type="id" name="svc_row_icon" id="0x7f0903b6" />
+    <public type="id" name="svc_row_name" id="0x7f0903b7" />
+    <public type="id" name="svc_row_sub" id="0x7f0903b8" />
+    <public type="id" name="svc_row_chip" id="0x7f0903b9" />
+    <public type="id" name="svc_row_go" id="0x7f0903ba" />
+    <public type="layout" name="fragment_music_services" id="0x7f0c010d" />
+    <public type="layout" name="item_music_service" id="0x7f0c010e" />
+    <public type="drawable" name="ic_svc_music" id="0x7f080555" />
+    <public type="string" name="svc_page_sub" id="0x7f1004c3" />
+    <public type="string" name="svc_music_header" id="0x7f1004c4" />
+    <public type="string" name="svc_cast_header" id="0x7f1004c5" />
+    <public type="string" name="svc_cast_sub" id="0x7f1004c6" />
+    <public type="string" name="svc_cast_empty" id="0x7f1004c7" />
+    <public type="string" name="svc_chip_cast" id="0x7f1004c8" />
+    <public type="string" name="svc_state_installed" id="0x7f1004c9" />
+    <public type="string" name="svc_state_not_installed" id="0x7f1004ca" />
+    <public type="string" name="svc_state_castable" id="0x7f1004cb" />
 </resources>

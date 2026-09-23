@@ -1869,6 +1869,15 @@ When the update is completed, the device reboots automatically."</string>
     <string name="home_my_speaker">My Speaker</string>
     <string name="home_stream_music">Stream Music</string>
     <string name="home_see_all">See All</string>
+    <string name="svc_page_sub">Open a streaming or casting app on your speaker.</string>
+    <string name="svc_music_header">Music apps</string>
+    <string name="svc_cast_header">Chromecast-enabled apps</string>
+    <string name="svc_cast_sub">These apps can cast audio and video to your speaker.</string>
+    <string name="svc_cast_empty">No Chromecast-enabled apps found on this device.</string>
+    <string name="svc_chip_cast">Cast</string>
+    <string name="svc_state_installed">Installed on this device</string>
+    <string name="svc_state_not_installed">Not installed</string>
+    <string name="svc_state_castable">Chromecast built-in</string>
     <string name="home_settings">Settings</string>
     <string name="home_banner_kicker">BETTER TOGETHER</string>
     <string name="home_banner_title">Immersive Sound</string>

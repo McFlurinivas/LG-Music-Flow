@@ -218,4 +218,7 @@
     <color name="spk_btn_stroke">#ff3a3a4e</color>
     <color name="spk_track">#ff2e2e3e</color>
     <color name="accent_music_alt">#ffff2e6d</color>
+    <color name="spk_glow_core">#663c6dff</color>
+    <color name="spk_glow_edge">#003c6dff</color>
+    <color name="spk_tile_icon">#ff272134</color>
 </resources>

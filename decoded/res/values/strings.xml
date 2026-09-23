@@ -1832,7 +1832,7 @@ When the update is completed, the device reboots automatically."</string>
     <string name="home_previous">Previous track</string>
     <string name="home_play_pause">Play or pause</string>
     <string name="home_next">Next track</string>
-    <string name="spk_volume">VOLUME</string>
+    <string name="spk_volume">Volume</string>
     <string name="spk_speaker_settings">Speaker settings</string>
     <string name="spk_mute_label">Mute</string>
     <string name="spk_close_label">Close</string>
@@ -1845,4 +1845,19 @@ When the update is completed, the device reboots automatically."</string>
     <string name="spk_bass">Bass</string>
     <string name="spk_treble">Treble</string>
     <string name="spk_unknown">--</string>
+    <string name="spk_back_label">Back</string>
+    <string name="spk_rename_label">Rename speaker</string>
+    <string name="spk_more_label">All speakers</string>
+    <string name="spk_auto_volume">Auto Volume</string>
+    <string name="spk_auto_display">Auto Display</string>
+    <string name="spk_auto_power">Auto Power</string>
+    <string name="spk_group_compress">Compressed audio</string>
+    <string name="spk_tv_remote">Use TV Remote</string>
+    <string name="spk_bt_standby">BT Standby</string>
+    <string name="spk_night_mode">Night Mode</string>
+    <string name="spk_connect_tv">Connect to TV</string>
+    <string name="spk_bt_connected_to">"Connected to "</string>
+    <string name="spk_software_update">Software update</string>
+    <string name="spk_update_available">A new software update is available for your speaker.</string>
+    <string name="spk_update_uptodate">Your speaker software is already up to date.</string>
 </resources>

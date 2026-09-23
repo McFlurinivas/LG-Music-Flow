@@ -1,51 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<LinearLayout android:orientation="vertical" android:id="@id/spk_sheet_root" android:background="@color/bg_base" android:layout_width="fill_parent" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <View android:id="@id/spk_scrim" android:clickable="true" android:focusable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:minHeight="40.0dip" />
+    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+        <ImageView android:id="@id/spk_back" android:background="@drawable/spk_ghost_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_spk_back" android:contentDescription="@string/spk_back_label" />
+        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
 
-    <LinearLayout android:orientation="vertical" android:id="@id/spk_sheet_root" android:background="@drawable/spk_sheet_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="14.0dip">
+    <ScrollView android:id="@id/spk_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="26.0dip">
 
-        <View android:layout_gravity="center_horizontal" android:background="@drawable/spk_handle" android:layout_width="38.0dip" android:layout_height="5.0dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
 
-        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="6.0dip">
-            <FrameLayout android:id="@id/spk_avatar" android:background="@drawable/spk_avatar_bg" android:layout_width="54.0dip" android:layout_height="54.0dip">
-                <ImageView android:layout_gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_spk_speaker" android:contentDescription="@string/home_your_speakers" />
-            </FrameLayout>
-            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="14.0dip" android:layout_marginRight="8.0dip">
-                <TextView android:textSize="19.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/spk_name" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-                <TextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/spk_sub" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
-            </LinearLayout>
-            <ImageView android:id="@id/spk_close" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/ic_spk_close" android:contentDescription="@string/spk_close_label" />
-        </LinearLayout>
+                <FrameLayout android:id="@id/spk_avatar" android:background="@drawable/spk_avatar_bg" android:layout_width="52.0dip" android:layout_height="52.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_spk_speaker" android:contentDescription="@string/home_your_speakers" />
+                </FrameLayout>
 
-        <ScrollView android:id="@id/spk_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingBottom="10.0dip">
-
-                <LinearLayout android:orientation="vertical" android:background="@drawable/spk_panel_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="16.0dip" android:paddingLeft="16.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="12.0dip" android:layout_marginRight="6.0dip">
                     <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
-                        <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:id="@id/spk_vol_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:text="@string/spk_volume" />
-                        <ImageView android:id="@id/spk_mute" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_spk_volume" android:contentDescription="@string/spk_mute_label" />
-                        <TextView android:textSize="22.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:gravity="end" android:id="@id/spk_vol_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="58.0dip" />
+                        <TextView android:textSize="21.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/spk_name" android:singleLine="true" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/spk_rename" android:background="@drawable/spk_ghost_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_spk_pencil" android:contentDescription="@string/spk_rename_label" />
                     </LinearLayout>
-                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
-                        <ImageView android:id="@id/spk_vol_down" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_spk_minus" android:contentDescription="@string/spk_volume_down" />
-                        <SeekBar android:id="@id/spk_seek" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="100" android:maxHeight="8.0dip" android:minHeight="8.0dip" android:progressDrawable="@drawable/spk_seek_progress" android:thumb="@drawable/spk_seek_thumb" android:thumbOffset="0.0dip" android:contentDescription="@string/spk_volume" />
-                        <ImageView android:id="@id/spk_vol_up" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_spk_plus" android:contentDescription="@string/spk_volume_up" />
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <View android:background="@drawable/spk_dot_online" android:layout_width="7.0dip" android:layout_height="7.0dip" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:id="@id/spk_sub" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
                     </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/spk_model" android:visibility="gone" android:maxLines="2" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
                 </LinearLayout>
 
-                <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:id="@id/spk_sound_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="22.0dip" android:layout_marginBottom="8.0dip" android:text="@string/spk_sound_section" />
-
-                <LinearLayout android:orientation="vertical" android:id="@id/spk_sound_container" android:background="@drawable/spk_section_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
-
-                <TextView android:textSize="11.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:id="@id/spk_settings_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="22.0dip" android:layout_marginBottom="8.0dip" android:text="@string/spk_settings_section" />
-
-                <LinearLayout android:orientation="vertical" android:id="@id/spk_settings_container" android:background="@drawable/spk_section_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+                <FrameLayout android:layout_width="150.0dip" android:layout_height="86.0dip">
+                    <View android:layout_gravity="center" android:background="@drawable/spk_hero_glow" android:layout_width="140.0dip" android:layout_height="80.0dip" />
+                    <ImageView android:id="@id/spk_hero_img" android:layout_gravity="center" android:adjustViewBounds="true" android:scaleType="fitCenter" android:layout_width="150.0dip" android:layout_height="60.0dip" android:src="@drawable/img_spk_soundbar" android:contentDescription="@string/home_your_speakers" />
+                </FrameLayout>
 
             </LinearLayout>
-        </ScrollView>
 
-    </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/spk_panel_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip">
+                <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/spk_mute" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_spk_volume" android:contentDescription="@string/spk_mute_label" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/spk_vol_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="12.0dip" android:text="@string/spk_volume" />
+                    <TextView android:textSize="21.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:gravity="end" android:id="@id/spk_vol_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="58.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <ImageView android:id="@id/spk_vol_down" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/ic_spk_minus" android:contentDescription="@string/spk_volume_down" />
+                    <SeekBar android:id="@id/spk_seek" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:max="100" android:maxHeight="8.0dip" android:minHeight="8.0dip" android:progressDrawable="@drawable/spk_seek_progress" android:thumb="@drawable/spk_seek_thumb" android:thumbOffset="0.0dip" android:contentDescription="@string/spk_volume" />
+                    <ImageView android:id="@id/spk_vol_up" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/ic_spk_plus" android:contentDescription="@string/spk_volume_up" />
+                </LinearLayout>
+
+                <LinearLayout android:orientation="vertical" android:id="@id/spk_auto_vol" android:clickable="true" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <View android:background="@color/home_card_stroke" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/text_primary" android:id="@id/spk_auto_vol_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginRight="10.0dip" android:text="@string/spk_auto_volume" />
+                        <ImageView android:id="@id/spk_row_switch" android:scaleType="fitXY" android:layout_width="44.0dip" android:layout_height="25.0dip" android:src="@drawable/spk_switch_off" android:contentDescription="@string/spk_auto_volume" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical" android:id="@id/spk_sound_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" />
+
+            <LinearLayout android:orientation="vertical" android:id="@id/spk_wide_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" />
+
+            <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:id="@id/spk_more" android:background="@drawable/spk_wide_bg" android:clickable="true" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:paddingLeft="13.0dip" android:paddingTop="14.0dip" android:paddingRight="14.0dip" android:paddingBottom="14.0dip">
+                <FrameLayout android:background="@drawable/spk_tile_icon_bg" android:layout_width="38.0dip" android:layout_height="38.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_spk_gear" android:contentDescription="@string/settings_advanced" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:text="@string/settings_advanced" />
+                <ImageView android:scaleType="centerInside" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_spk_chevron" android:contentDescription="@string/settings_advanced" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

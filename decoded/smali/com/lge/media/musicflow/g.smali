@@ -78,6 +78,8 @@
 
 .field private mMediaRouteServiceConnection:Landroid/content/ServiceConnection;
 
+.field private mNavDrawer:Z
+
 .field private mOnBackPressedListener:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -2610,8 +2612,18 @@
     return-void
 .end method
 
+.method public hasNavigationDrawer()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/lge/media/musicflow/g;->mNavDrawer:Z
+
+    return v0
+.end method
+
 .method protected setupNavigationDrawer(Z)V
     .locals 2
+
+    iput-boolean p1, p0, Lcom/lge/media/musicflow/g;->mNavDrawer:Z
 
     invoke-virtual {p0}, Lcom/lge/media/musicflow/g;->getSupportActionBar()Landroid/support/v7/app/ActionBar;
 

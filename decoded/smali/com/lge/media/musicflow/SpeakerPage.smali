@@ -7,8 +7,6 @@
 # instance fields
 .field private mEngine:Lcom/lge/media/musicflow/SpeakerSheet;
 
-.field private mRoute:Lcom/lge/media/musicflow/route/e;
-
 .field private mSpeaker:Lcom/lge/media/musicflow/i/i;
 
 
@@ -179,8 +177,6 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/lge/media/musicflow/SpeakerPage;->mRoute:Lcom/lge/media/musicflow/route/e;
-
     if-eqz v1, :cond_title
 
     invoke-static {p0, v1, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->embed(Lcom/lge/media/musicflow/l;Lcom/lge/media/musicflow/route/e;Landroid/view/View;)Lcom/lge/media/musicflow/SpeakerSheet;
@@ -213,13 +209,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerPage;->mRoute:Lcom/lge/media/musicflow/route/e;
-
-    if-eqz v0, :cond_pop
-
-    invoke-static {p0, v0}, Lcom/lge/media/musicflow/SpeakerSheet;->show(Lcom/lge/media/musicflow/l;Lcom/lge/media/musicflow/route/e;)Lcom/lge/media/musicflow/SpeakerSheet;
-
-    :cond_pop
     invoke-virtual {p0}, Lcom/lge/media/musicflow/SpeakerPage;->getActivity()Landroid/support/v4/app/l;
 
     move-result-object v0

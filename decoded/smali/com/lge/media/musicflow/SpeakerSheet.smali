@@ -5638,7 +5638,7 @@
 .end method
 
 .method private openSettingsPage()V
-    .locals 3
+    .locals 4
 
     :try_start_0
     iget-object v0, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mUuid:Ljava/util/UUID;
@@ -5651,15 +5651,28 @@
 
     invoke-virtual {v1}, Lcom/lge/media/musicflow/l;->getActivity()Landroid/support/v4/app/l;
 
-    move-result-object v1
+    move-result-object v2
 
-    if-eqz v1, :cond_x
+    if-eqz v2, :cond_x
 
+    instance-of v3, v1, Lcom/lge/media/musicflow/HomeFragment;
+
+    if-eqz v3, :cond_open
+
+    check-cast v1, Lcom/lge/media/musicflow/HomeFragment;
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->uuidText()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lcom/lge/media/musicflow/HomeFragment;->pendSheet(Ljava/lang/String;)V
+
+    :cond_open
     invoke-static {v0}, Lcom/lge/media/musicflow/SpeakerPage;->newInstance(Ljava/util/UUID;)Lcom/lge/media/musicflow/SpeakerPage;
 
     move-result-object v0
 
-    invoke-virtual {v1}, Landroid/support/v4/app/l;->getSupportFragmentManager()Landroid/support/v4/app/p;
+    invoke-virtual {v2}, Landroid/support/v4/app/l;->getSupportFragmentManager()Landroid/support/v4/app/p;
 
     move-result-object v1
 

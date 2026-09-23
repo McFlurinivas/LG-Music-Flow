@@ -831,6 +831,14 @@
     return-void
 .end method
 
+.method pendSheet(Ljava/lang/String;)V
+    .registers 2
+
+    iput-object p1, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
+
+    return-void
+.end method
+
 .method private restoreSheet()V
     .registers 4
 
@@ -1566,6 +1574,8 @@
     invoke-virtual {p3, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
+
+    if-eqz v0, :cond_no_saved
 
     iput-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
 

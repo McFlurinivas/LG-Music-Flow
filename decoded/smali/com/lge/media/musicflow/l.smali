@@ -3440,6 +3440,12 @@
 
     check-cast v0, Lcom/lge/media/musicflow/g;
 
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/g;->hasNavigationDrawer()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_x
+
     invoke-virtual {v0}, Lcom/lge/media/musicflow/g;->getToolbar()Landroid/support/v7/widget/Toolbar;
 
     move-result-object v0
@@ -3469,7 +3475,11 @@
 
     check-cast v0, Lcom/lge/media/musicflow/g;
 
-    const/4 v1, 0x1
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/g;->hasNavigationDrawer()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_x
 
     invoke-virtual {v0, v1}, Lcom/lge/media/musicflow/g;->setupNavigationDrawer(Z)V
 

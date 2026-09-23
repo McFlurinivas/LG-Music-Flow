@@ -5459,4 +5459,17 @@
     <public type="string" name="stp_error_hint_wireless" id="0x7f1004db" />
     <public type="string" name="stp_error_hint_wired" id="0x7f1004dc" />
     <public type="id" name="stp_error_hint" id="0x7f0903c6" />
+    <public type="drawable" name="notif_vol_bg" id="0x7f080575" />
+    <public type="drawable" name="ic_stat_volume" id="0x7f080576" />
+    <public type="layout" name="notification_volume_card" id="0x7f0c0111" />
+    <public type="id" name="notif_vol_name" id="0x7f0903c7" />
+    <public type="id" name="notif_vol_value" id="0x7f0903c8" />
+    <public type="id" name="notif_vol_down" id="0x7f0903c9" />
+    <public type="id" name="notif_vol_mute" id="0x7f0903ca" />
+    <public type="id" name="notif_vol_up" id="0x7f0903cb" />
+    <public type="string" name="notif_vol_channel" id="0x7f1004dd" />
+    <public type="layout" name="notification_volume_card_big" id="0x7f0c0112" />
+    <public type="id" name="notif_vol_sub" id="0x7f0903cc" />
+    <public type="string" name="mute_on_call" id="0x7f1004de" />
+    <public type="string" name="mute_on_call_description" id="0x7f1004df" />
 </resources>

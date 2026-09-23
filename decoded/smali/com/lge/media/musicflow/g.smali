@@ -1457,6 +1457,8 @@
 
     invoke-super {p0, p1}, Landroid/support/v7/app/AppCompatActivity;->onNewIntent(Landroid/content/Intent;)V
 
+    invoke-virtual {p0, p1}, Lcom/lge/media/musicflow/g;->setIntent(Landroid/content/Intent;)V
+
     invoke-virtual {p0}, Lcom/lge/media/musicflow/g;->putIntentToTaskStackBuilder()V
 
     return-void

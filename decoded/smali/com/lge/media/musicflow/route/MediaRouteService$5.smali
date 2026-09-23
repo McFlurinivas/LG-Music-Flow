@@ -120,11 +120,16 @@
 
     move-result p1
 
-    if-eqz p1, :cond_7
+    iget-object p2, p0, Lcom/lge/media/musicflow/route/MediaRouteService$5;->a:Lcom/lge/media/musicflow/route/MediaRouteService;
 
-    iget-object p1, p0, Lcom/lge/media/musicflow/route/MediaRouteService$5;->a:Lcom/lge/media/musicflow/route/MediaRouteService;
+    if-eqz p1, :cond_a
 
-    invoke-virtual {p1}, Lcom/lge/media/musicflow/route/MediaRouteService;->af()V
+    invoke-virtual {p2}, Lcom/lge/media/musicflow/route/MediaRouteService;->af()V
+
+    goto :goto_2
+
+    :cond_a
+    invoke-virtual {p2}, Lcom/lge/media/musicflow/route/MediaRouteService;->ad()V
 
     goto :goto_2
 

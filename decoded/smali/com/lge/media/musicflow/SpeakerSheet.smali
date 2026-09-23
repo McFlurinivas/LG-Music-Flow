@@ -1496,6 +1496,14 @@
 
     :cond_txt
     invoke-direct {p0}, Lcom/lge/media/musicflow/SpeakerSheet;->syncMuteIcon()V
+
+    iget-object v3, p0, Lcom/lge/media/musicflow/SpeakerSheet;->mHost:Lcom/lge/media/musicflow/l;
+
+    invoke-virtual {v3}, Lcom/lge/media/musicflow/l;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcom/lge/media/musicflow/VolumeTile;->sync(Landroid/content/Context;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -5814,6 +5822,38 @@
     move-result v0
 
     return v0
+.end method
+
+.method public static toggleMuteActive()Z
+    .locals 3
+
+    const/4 v1, 0x0
+
+    sget-object v0, Lcom/lge/media/musicflow/SpeakerSheet;->sActive:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-nez v0, :cond_go
+
+    return v1
+
+    :cond_go
+    iget-boolean v2, v0, Lcom/lge/media/musicflow/SpeakerSheet;->mPageMode:Z
+
+    if-nez v2, :cond_mute
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->isShowing()Z
+
+    move-result v2
+
+    if-nez v2, :cond_mute
+
+    return v1
+
+    :cond_mute
+    invoke-direct {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->toggleMute()V
+
+    const/4 v1, 0x1
+
+    return v1
 .end method
 
 .method public nudgeBy(I)Z

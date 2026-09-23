@@ -132,6 +132,20 @@
 
     move-result v2
 
+    if-nez v2, :cond_1
+
+    iget-object v2, p0, Lcom/lge/media/musicflow/settings/d/a$1;->a:Lcom/lge/media/musicflow/settings/d/a;
+
+    const v7, 0x7f1004de
+
+    invoke-virtual {v2, v7}, Lcom/lge/media/musicflow/settings/d/a;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
     if-eqz v2, :cond_4
 
     :cond_1
@@ -190,6 +204,29 @@
     goto :goto_0
 
     :cond_3
+    iget-object v2, p0, Lcom/lge/media/musicflow/settings/d/a$1;->a:Lcom/lge/media/musicflow/settings/d/a;
+
+    const v7, 0x7f1004de
+
+    invoke-virtual {v2, v7}, Lcom/lge/media/musicflow/settings/d/a;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6
+
+    iget-object v2, p0, Lcom/lge/media/musicflow/settings/d/a$1;->a:Lcom/lge/media/musicflow/settings/d/a;
+
+    invoke-static {v2}, Lcom/lge/media/musicflow/settings/d/a;->c(Lcom/lge/media/musicflow/settings/d/a;)Z
+
+    move-result v2
+
+    goto :goto_0
+
+    :cond_6
     :goto_1
     new-instance v2, Lcom/lge/media/musicflow/settings/d/a$1$1;
 
@@ -230,9 +267,9 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result v0
 
-    if-eqz p1, :cond_5
+    if-eqz v0, :cond_5
 
     invoke-virtual {p3, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -245,6 +282,31 @@
     goto :goto_2
 
     :cond_5
+    iget-object v0, p0, Lcom/lge/media/musicflow/settings/d/a$1;->a:Lcom/lge/media/musicflow/settings/d/a;
+
+    const v7, 0x7f1004de
+
+    invoke-virtual {v0, v7}, Lcom/lge/media/musicflow/settings/d/a;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    invoke-virtual {p3, v4}, Landroid/widget/TextView;->setVisibility(I)V
+
+    const p1, 0x7f1004df
+
+    invoke-virtual {p3, p1}, Landroid/widget/TextView;->setText(I)V
+
+    invoke-virtual {p3, v5}, Landroid/widget/TextView;->setSelected(Z)V
+
+    goto :goto_2
+
+    :cond_7
     const/16 p1, 0x8
 
     invoke-virtual {p3, p1}, Landroid/widget/TextView;->setVisibility(I)V

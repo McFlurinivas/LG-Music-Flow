@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/notif_vol_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="8.0dip" android:paddingBottom="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/notif_vol_name" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/notif_vol_value" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+    </LinearLayout>
+
+    <ImageView android:id="@id/notif_vol_down" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_spk_minus" android:contentDescription="@string/spk_volume_down" />
+    <ImageView android:id="@id/notif_vol_mute" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_spk_volume" android:contentDescription="@string/spk_mute_label" />
+    <ImageView android:id="@id/notif_vol_up" android:background="@drawable/spk_round_btn" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_spk_plus" android:contentDescription="@string/spk_volume_up" />
+
+</LinearLayout>

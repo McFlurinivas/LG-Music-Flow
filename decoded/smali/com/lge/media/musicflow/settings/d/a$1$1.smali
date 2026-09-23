@@ -86,7 +86,7 @@
 
     move-result-object p1
 
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_2
 
     iget-object p2, p0, Lcom/lge/media/musicflow/settings/d/a$1$1;->b:Lcom/lge/media/musicflow/settings/d/a$1;
 
@@ -153,7 +153,52 @@
 
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
+    goto :goto_0
+
     :cond_1
+    iget-object p1, p0, Lcom/lge/media/musicflow/settings/d/a$1$1;->a:Ljava/lang/String;
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/settings/d/a$1$1;->b:Lcom/lge/media/musicflow/settings/d/a$1;
+
+    iget-object p2, p2, Lcom/lge/media/musicflow/settings/d/a$1;->a:Lcom/lge/media/musicflow/settings/d/a;
+
+    const v0, 0x7f1004de
+
+    invoke-virtual {p2, v0}, Lcom/lge/media/musicflow/settings/d/a;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    invoke-static {}, Lcom/lge/media/musicflow/settings/d/a;->g()Landroid/content/SharedPreferences;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/lge/media/musicflow/settings/d/a$1$1;->b:Lcom/lge/media/musicflow/settings/d/a$1;
+
+    iget-object p2, p2, Lcom/lge/media/musicflow/settings/d/a$1;->a:Lcom/lge/media/musicflow/settings/d/a;
+
+    invoke-static {p2}, Lcom/lge/media/musicflow/settings/d/a;->c(Lcom/lge/media/musicflow/settings/d/a;)Z
+
+    move-result p2
+
+    const-string v0, "mute_on_call"
+
+    invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    :cond_2
     :goto_0
     return-void
 .end method

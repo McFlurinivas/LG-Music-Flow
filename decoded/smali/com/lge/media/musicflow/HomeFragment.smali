@@ -839,8 +839,50 @@
     return-void
 .end method
 
+.method private tileSheet()V
+    .registers 5
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/HomeFragment;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_ret
+
+    invoke-virtual {v0}, Landroid/support/v4/app/l;->getIntent()Landroid/content/Intent;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_ret
+
+    const-string v2, "com.lge.media.musicflow.SHOW_SPEAKER_SHEET"
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_ret
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
+
+    iput-object v3, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_ret
+
+    :catchall_0
+    move-exception v0
+
+    :goto_ret
+    :cond_ret
+    return-void
+.end method
+
 .method private restoreSheet()V
     .registers 4
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->tileSheet()V
 
     iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
 
@@ -1132,6 +1174,12 @@
     invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->refreshSheet()V
 
     invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->restoreSheet()V
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/HomeFragment;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/lge/media/musicflow/VolumeTile;->sync(Landroid/content/Context;)V
     :try_end_b
     .catchall {:try_start_5 .. :try_end_b} :catchall_c
 

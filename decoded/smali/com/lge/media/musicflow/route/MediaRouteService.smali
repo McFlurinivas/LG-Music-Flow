@@ -609,6 +609,8 @@
 
     invoke-static {p0, p1, v0}, Lcom/lge/media/musicflow/route/e;->a(Landroid/content/Context;Ljava/util/UUID;Landroid/os/Bundle;)V
 
+    invoke-static {p0}, Lcom/lge/media/musicflow/VolumeTile;->sync(Landroid/content/Context;)V
+
     :cond_1
     return-void
 .end method
@@ -3109,6 +3111,27 @@
 .method public ae()V
     .locals 1
 
+    invoke-static {}, Lcom/lge/media/musicflow/MediaApplication;->a()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/lge/media/musicflow/VolumeKeys;->tileRoute()Lcom/lge/media/musicflow/route/e;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    sget-object v0, Lcom/lge/media/musicflow/route/MediaRouteService;->q:Lcom/lge/media/musicflow/playback/a;
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0, p0}, Lcom/lge/media/musicflow/playback/a;->b(Lcom/lge/media/musicflow/playback/b;)V
+
+    return-void
+
+    :cond_0
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/lge/media/musicflow/route/MediaRouteService;->stopForeground(Z)V
@@ -3697,6 +3720,8 @@
     .locals 3
 
     invoke-super {p0}, Lcom/lge/media/musicflow/playback/b;->onCreate()V
+
+    invoke-static {p0}, Lcom/lge/media/musicflow/CallMute;->recover(Landroid/content/Context;)V
 
     invoke-virtual {p0}, Lcom/lge/media/musicflow/route/MediaRouteService;->getApplicationContext()Landroid/content/Context;
 

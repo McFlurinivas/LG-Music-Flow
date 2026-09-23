@@ -866,6 +866,10 @@
 
     move-result-object v0
 
+    const/4 v1, 0x1
+
+    invoke-static {v1}, Lcom/lge/media/musicflow/VolumeTile;->setMedia(Z)V
+
     const/16 v1, 0x1bc
 
     invoke-virtual {p1, v1, v0}, Lcom/lge/media/musicflow/playback/b;->startForeground(ILandroid/app/Notification;)V
@@ -1041,6 +1045,10 @@
 # virtual methods
 .method public a()V
     .locals 2
+
+    const/4 v0, 0x0
+
+    invoke-static {v0}, Lcom/lge/media/musicflow/VolumeTile;->setMedia(Z)V
 
     iget-boolean v0, p0, Lcom/lge/media/musicflow/playback/a;->c:Z
 
@@ -1412,149 +1420,25 @@
 .end method
 
 .method public b(Lcom/lge/media/musicflow/playback/b;)V
-    .locals 7
+    .locals 2
 
     iget-boolean v0, p0, Lcom/lge/media/musicflow/playback/a;->c:Z
 
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
-    new-instance v0, Landroid/support/v4/app/ac$c;
+    const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
+    invoke-static {v0}, Lcom/lge/media/musicflow/VolumeTile;->setMedia(Z)V
 
-    const-string v2, "musicflow_channel_id"
-
-    invoke-direct {v0, v1, v2}, Landroid/support/v4/app/ac$c;-><init>(Landroid/content/Context;Ljava/lang/String;)V
-
-    const v1, 0x7f08027b
-
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/ac$c;->a(I)Landroid/support/v4/app/ac$c;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
-
-    const v4, 0x7f100031
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/support/v4/app/ac$c;->a(Ljava/lang/CharSequence;)Landroid/support/v4/app/ac$c;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
-
-    const v5, 0x7f100231
-
-    invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Landroid/support/v4/app/ac$c;->b(Ljava/lang/CharSequence;)Landroid/support/v4/app/ac$c;
-
-    move-result-object v2
-
-    const/4 v3, 0x0
-
-    invoke-direct {p0, v3}, Lcom/lge/media/musicflow/playback/a;->a(Z)Landroid/app/PendingIntent;
-
-    move-result-object v6
-
-    invoke-virtual {v2, v6}, Landroid/support/v4/app/ac$c;->a(Landroid/app/PendingIntent;)Landroid/support/v4/app/ac$c;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v3}, Landroid/support/v4/app/ac$c;->b(I)Landroid/support/v4/app/ac$c;
-
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v3, 0x10
-
-    if-lt v2, v3, :cond_0
-
-    const/4 v1, 0x1
-
-    invoke-virtual {v0, v1}, Landroid/support/v4/app/ac$c;->b(Z)Landroid/support/v4/app/ac$c;
-
-    move-result-object v1
-
-    const v2, 0x7f0801bf
-
-    iget-object v3, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
-
-    const v4, 0x7f100030
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-direct {p0}, Lcom/lge/media/musicflow/playback/a;->e()Landroid/app/PendingIntent;
-
-    move-result-object v4
-
-    invoke-virtual {v1, v2, v3, v4}, Landroid/support/v4/app/ac$c;->a(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/support/v4/app/ac$c;
-
-    goto :goto_0
-
-    :cond_0
-    new-instance v2, Landroid/widget/RemoteViews;
-
-    iget-object v3, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
-
-    invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v3
-
-    const v6, 0x7f0c00ec
-
-    invoke-direct {v2, v3, v6}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
-
-    const v3, 0x7f0901e6
-
-    invoke-virtual {v2, v3, v1}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
-
-    const v1, 0x7f0901e8
-
-    iget-object v3, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v1, v3}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
-
-    const v1, 0x7f0901e7
-
-    iget-object v3, p0, Lcom/lge/media/musicflow/playback/a;->d:Landroid/content/Context;
-
-    invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v1, v3}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
-
-    const v1, 0x7f0901e5
-
-    invoke-direct {p0}, Lcom/lge/media/musicflow/playback/a;->e()Landroid/app/PendingIntent;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v1, v3}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
-
-    invoke-virtual {v0, v2}, Landroid/support/v4/app/ac$c;->a(Landroid/widget/RemoteViews;)Landroid/support/v4/app/ac$c;
-
-    :goto_0
-    const/16 v1, 0x1bc
-
-    invoke-virtual {v0}, Landroid/support/v4/app/ac$c;->a()Landroid/app/Notification;
+    invoke-static {p1}, Lcom/lge/media/musicflow/VolumeTile;->build(Landroid/content/Context;)Landroid/app/Notification;
 
     move-result-object v0
 
+    const/16 v1, 0x1bc
+
     invoke-virtual {p1, v1, v0}, Lcom/lge/media/musicflow/playback/b;->startForeground(ILandroid/app/Notification;)V
 
-    :cond_1
+    :cond_0
     return-void
 .end method
 

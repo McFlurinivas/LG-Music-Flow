@@ -92,6 +92,12 @@
                 <action android:name="com.lge.media.musicflow.local_device_added"/>
             </intent-filter>
         </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.lge.media.musicflow.VolumeTile"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.lge.media.musicflow.CallMute">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
         <activity android:label=" " android:launchMode="singleTop" android:name="com.lge.media.musicflow.tracks.AlbumTracksActivity" android:parentActivityName="com.lge.media.musicflow.SubActivity">
             <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.lge.media.musicflow.SubActivity"/>
         </activity>

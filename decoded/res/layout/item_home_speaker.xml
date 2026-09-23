@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/home_speaker_row_bg" android:clickable="true" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingRight="14.0dip" android:paddingBottom="12.0dip"
+<LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:background="@drawable/home_speaker_row_bg" android:clickable="true" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:paddingLeft="14.0dip" android:paddingTop="14.0dip" android:paddingRight="16.0dip" android:paddingBottom="14.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:background="@drawable/spk_avatar_bg" android:layout_width="42.0dip" android:layout_height="42.0dip">
-        <ImageView android:layout_gravity="center" android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/ic_spk_speaker" android:contentDescription="@string/home_your_speakers" />
+    <FrameLayout android:background="@drawable/spk_avatar_bg" android:layout_width="54.0dip" android:layout_height="54.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_spk_speaker" android:contentDescription="@string/home_my_speaker" />
     </FrameLayout>
-    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="12.0dip" android:layout_marginRight="8.0dip">
-        <TextView android:textSize="15.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/home_speaker_name" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
-            <ImageView android:id="@id/home_speaker_dot" android:layout_width="8.0dip" android:layout_height="8.0dip" android:src="@drawable/home_dot_on" android:contentDescription="@string/home_connected" />
-            <TextView android:textSize="12.0sp" android:textColor="@color/text_secondary" android:id="@id/home_speaker_status" android:singleLine="true" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="6.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="14.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/text_primary" android:textStyle="bold" android:id="@id/home_speaker_name" android:singleLine="true" android:ellipsize="end" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <ImageView android:id="@id/home_speaker_dot" android:layout_width="9.0dip" android:layout_height="9.0dip" android:src="@drawable/home_dot_on" android:contentDescription="@string/home_connected" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_secondary" android:id="@id/home_speaker_status" android:singleLine="true" android:ellipsize="end" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginLeft="7.0dip" />
         </LinearLayout>
     </LinearLayout>
-    <TextView android:textSize="13.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:gravity="end" android:id="@id/home_speaker_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="36.0dip" />
-    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/ic_spk_chevron" android:contentDescription="@string/home_your_speakers" />
+    <ImageView android:id="@id/home_speaker_edit" android:background="@drawable/home_icon_btn_bg" android:clickable="true" android:focusable="true" android:scaleType="centerInside" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic_spk_pencil" android:contentDescription="@string/spk_rename_label" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/accent_music" android:textStyle="bold" android:gravity="end" android:id="@id/home_speaker_vol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="38.0dip" />
+    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/ic_spk_chevron" android:contentDescription="@string/home_my_speaker" />
 </LinearLayout>

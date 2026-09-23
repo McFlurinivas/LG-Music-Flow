@@ -1860,4 +1860,18 @@ When the update is completed, the device reboots automatically."</string>
     <string name="spk_software_update">Software update</string>
     <string name="spk_update_available">A new software update is available for your speaker.</string>
     <string name="spk_update_uptodate">Your speaker software is already up to date.</string>
+    <string name="home_greet_prefix">Good</string>
+    <string name="home_greet_morning">Morning</string>
+    <string name="home_greet_afternoon">Afternoon</string>
+    <string name="home_greet_evening">Evening</string>
+    <string name="home_greet_night">Night</string>
+    <string name="home_greet_sub">Your sound, your space</string>
+    <string name="home_my_speaker">My Speaker</string>
+    <string name="home_stream_music">Stream Music</string>
+    <string name="home_see_all">See All</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_banner_kicker">BETTER TOGETHER</string>
+    <string name="home_banner_title">Immersive Sound</string>
+    <string name="home_banner_title2">for Every Moment</string>
+    <string name="home_banner_sub">Control. Stream. Enjoy.</string>
 </resources>

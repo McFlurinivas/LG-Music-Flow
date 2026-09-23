@@ -8,7 +8,13 @@
 
 .field private static final DRW_DOT_ON:I = 0x7f0804ea
 
-.field private static final ID_ADD_SPEAKER:I = 0x7f090373
+.field private static final ID_ADD_BUTTON:I = 0x7f09039e
+
+.field private static final ID_GREET_WORD:I = 0x7f09039f
+
+.field private static final ID_SEE_ALL:I = 0x7f0903a0
+
+.field private static final ID_SETTINGS_BUTTON:I = 0x7f09039d
 
 .field private static final ID_ROW_DOT:I = 0x7f090371
 
@@ -34,7 +40,15 @@
 
 .field private static final LAYOUT_SPEAKER_ROW:I = 0x7f0c0107
 
+.field private static final ID_APP_BAR:I = 0x7f090055
+
+.field private static final ID_CONTENT_CONTAINER:I = 0x7f09009a
+
 .field private static final NAV_ADD_SPEAKERS:I = 0x7f0901c9
+
+.field private static final NAV_MUSIC_SERVICES:I = 0x7f0901cd
+
+.field private static final NAV_SETTINGS:I = 0x7f0901d4
 
 .field private static final NAV_SPEAKER_LIST:I = 0x7f0901d5
 
@@ -50,13 +64,25 @@
 
 .field private static final STR_CONNECTED:I = 0x7f100493
 
+.field private static final STR_GREET_AFTERNOON:I = 0x7f1004a8
+
+.field private static final STR_GREET_EVENING:I = 0x7f1004a9
+
+.field private static final STR_GREET_MORNING:I = 0x7f1004a7
+
+.field private static final STR_GREET_NIGHT:I = 0x7f1004aa
+
 .field private static final STR_HOME_TITLE:I = 0x7f100492
 
 .field private static final STR_STANDBY:I = 0x7f100494
 
 
 # instance fields
+.field private mChromeHidden:Z
+
 .field private final mHandler:Landroid/os/Handler;
+
+.field private mSavedTopMargin:I
 
 .field private mRoot:Landroid/view/View;
 
@@ -64,7 +90,13 @@
 
 .field private mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
 
+.field private mRenameRoute:Lcom/lge/media/musicflow/route/e;
+
 .field private mSpeakerSignature:Ljava/lang/String;
+
+.field private mClosedSheet:Ljava/lang/String;
+
+.field private mPendingSheet:Ljava/lang/String;
 
 .field private final mTick:Ljava/lang/Runnable;
 
@@ -87,6 +119,11 @@
     const-string v0, ""
 
     iput-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mSpeakerSignature:Ljava/lang/String;
+
+    .line 80
+    const/4 v0, -0x1
+
+    iput v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mSavedTopMargin:I
 
     .line 81
     new-instance v0, Lcom/lge/media/musicflow/HomeFragment$1;
@@ -145,10 +182,26 @@
     return-object p0
 .end method
 
+.method static synthetic access$600(Lcom/lge/media/musicflow/HomeFragment;I)V
+    .registers 2
+
+    invoke-direct {p0, p1}, Lcom/lge/media/musicflow/HomeFragment;->openNav(I)V
+
+    return-void
+.end method
+
 .method static synthetic access$500(Lcom/lge/media/musicflow/HomeFragment;Lcom/lge/media/musicflow/route/e;)V
     .registers 2
 
     invoke-direct {p0, p1}, Lcom/lge/media/musicflow/HomeFragment;->openSheet(Lcom/lge/media/musicflow/route/e;)V
+
+    return-void
+.end method
+
+.method static synthetic access$700(Lcom/lge/media/musicflow/HomeFragment;Lcom/lge/media/musicflow/route/e;)V
+    .registers 2
+
+    invoke-direct {p0, p1}, Lcom/lge/media/musicflow/HomeFragment;->promptRename(Lcom/lge/media/musicflow/route/e;)V
 
     return-void
 .end method
@@ -178,6 +231,283 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 380
+    return-void
+.end method
+
+.method private applyGreeting()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mRoot:Landroid/view/View;
+
+    if-nez v0, :cond_root
+
+    return-void
+
+    :cond_root
+    const v1, 0x7f09039f
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    instance-of v1, v0, Landroid/widget/TextView;
+
+    if-nez v1, :cond_tv
+
+    return-void
+
+    :cond_tv
+    check-cast v0, Landroid/widget/TextView;
+
+    invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
+
+    move-result-object v1
+
+    const/16 v2, 0xb
+
+    invoke-virtual {v1, v2}, Ljava/util/Calendar;->get(I)I
+
+    move-result v1
+
+    const/16 v2, 0xc
+
+    if-ge v1, v2, :cond_noon
+
+    const v2, 0x7f1004a7
+
+    goto :goto_set
+
+    :cond_noon
+    const/16 v2, 0x11
+
+    if-ge v1, v2, :cond_evening
+
+    const v2, 0x7f1004a8
+
+    goto :goto_set
+
+    :cond_evening
+    const/16 v2, 0x16
+
+    if-ge v1, v2, :cond_night
+
+    const v2, 0x7f1004a9
+
+    goto :goto_set
+
+    :cond_night
+    const v2, 0x7f1004aa
+
+    :goto_set
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
+
+    return-void
+.end method
+
+.method private bindNav(II)V
+    .locals 2
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mRoot:Landroid/view/View;
+
+    if-nez v0, :cond_root
+
+    return-void
+
+    :cond_root
+    invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    if-nez v0, :cond_view
+
+    return-void
+
+    :cond_view
+    new-instance v1, Lcom/lge/media/musicflow/HomeFragment$5;
+
+    invoke-direct {v1, p0, p2}, Lcom/lge/media/musicflow/HomeFragment$5;-><init>(Lcom/lge/media/musicflow/HomeFragment;I)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    return-void
+.end method
+
+.method private openNav(I)V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->hostActivity()Lcom/lge/media/musicflow/g;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_none
+
+    invoke-virtual {v0, p1}, Lcom/lge/media/musicflow/g;->openFragment(I)V
+
+    :cond_none
+    return-void
+.end method
+
+.method private hideAppChrome()V
+    .locals 5
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/HomeFragment;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    if-nez v0, :cond_act
+
+    return-void
+
+    :cond_act
+    :try_start_0
+    const v1, 0x7f090055
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/l;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_nobar
+
+    const/16 v2, 0x8
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_nobar
+    const v1, 0x7f09009a
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/l;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_done
+
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v2
+
+    instance-of v3, v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    if-eqz v3, :cond_done
+
+    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    iget v3, p0, Lcom/lge/media/musicflow/HomeFragment;->mSavedTopMargin:I
+
+    const/4 v4, -0x1
+
+    if-ne v3, v4, :cond_saved
+
+    iget v3, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    iput v3, p0, Lcom/lge/media/musicflow/HomeFragment;->mSavedTopMargin:I
+
+    :cond_saved
+    const/4 v3, 0x0
+
+    iput v3, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_done
+    const/4 v1, 0x1
+
+    iput-boolean v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mChromeHidden:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_out
+
+    :catchall_0
+    move-exception v1
+
+    :goto_out
+    return-void
+.end method
+
+.method private showAppChrome()V
+    .locals 5
+
+    iget-boolean v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mChromeHidden:Z
+
+    if-nez v0, :cond_hidden
+
+    return-void
+
+    :cond_hidden
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mChromeHidden:Z
+
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/HomeFragment;->getActivity()Landroid/support/v4/app/l;
+
+    move-result-object v0
+
+    if-nez v0, :cond_act
+
+    return-void
+
+    :cond_act
+    :try_start_0
+    const v1, 0x7f090055
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/l;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_nobar
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_nobar
+    iget v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mSavedTopMargin:I
+
+    const/4 v2, -0x1
+
+    if-ne v1, v2, :cond_have_margin
+
+    goto :goto_done
+
+    :cond_have_margin
+    const v1, 0x7f09009a
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/l;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_done
+
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v2
+
+    instance-of v3, v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    if-eqz v3, :cond_done
+
+    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    iget v3, p0, Lcom/lge/media/musicflow/HomeFragment;->mSavedTopMargin:I
+
+    iput v3, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    :cond_done
+    nop
+
+    :goto_done
+    nop
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_out
+
+    :catchall_0
+    move-exception v1
+
+    :goto_out
     return-void
 .end method
 
@@ -375,11 +705,118 @@
 
     iput-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
 
+    iput-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mClosedSheet:Ljava/lang/String;
+
     if-eqz v0, :cond_x
 
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->isShowing()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_dismiss
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->uuidText()Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mClosedSheet:Ljava/lang/String;
+
+    :cond_dismiss
     invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->dismiss()V
 
     :cond_x
+    return-void
+.end method
+
+.method public onSaveInstanceState(Landroid/os/Bundle;)V
+    .registers 5
+
+    invoke-super {p0, p1}, Lcom/lge/media/musicflow/l;->onSaveInstanceState(Landroid/os/Bundle;)V
+
+    if-eqz p1, :cond_ret
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-eqz v0, :cond_closed
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->isShowing()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_closed
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/SpeakerSheet;->uuidText()Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_put
+
+    :cond_closed
+    iget-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mClosedSheet:Ljava/lang/String;
+
+    :goto_put
+    if-eqz v1, :cond_ret
+
+    const-string v2, "home_sheet_uuid"
+
+    invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_ret
+    return-void
+.end method
+
+.method private restoreSheet()V
+    .registers 4
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
+
+    if-eqz v0, :cond_ret
+
+    iget-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
+
+    if-eqz v1, :cond_go
+
+    invoke-virtual {v1}, Lcom/lge/media/musicflow/SpeakerSheet;->isShowing()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_go
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
+
+    return-void
+
+    :cond_go
+    :try_start_0
+    invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/lge/media/musicflow/l;->findMediaRoute(Ljava/util/UUID;)Lcom/lge/media/musicflow/route/e;
+
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_have
+
+    :catchall_0
+    move-exception v1
+
+    const/4 v1, 0x0
+
+    :goto_have
+    if-eqz v1, :cond_ret
+
+    const/4 v2, 0x0
+
+    iput-object v2, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
+
+    invoke-direct {p0, v1}, Lcom/lge/media/musicflow/HomeFragment;->openSheet(Lcom/lge/media/musicflow/route/e;)V
+
+    :cond_ret
     return-void
 .end method
 
@@ -411,11 +848,122 @@
     return-void
 .end method
 
+.method private promptRename(Lcom/lge/media/musicflow/route/e;)V
+    .locals 3
+
+    if-nez p1, :cond_go
+
+    return-void
+
+    :cond_go
+    :try_start_0
+    invoke-virtual {p0}, Lcom/lge/media/musicflow/l;->getFragmentManager()Landroid/support/v4/app/p;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_ret
+
+    iput-object p1, p0, Lcom/lge/media/musicflow/HomeFragment;->mRenameRoute:Lcom/lge/media/musicflow/route/e;
+
+    invoke-direct {p0, p1}, Lcom/lge/media/musicflow/HomeFragment;->nameOf(Lcom/lge/media/musicflow/route/e;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/lge/media/musicflow/settings/g/c;->a(Ljava/lang/String;)Lcom/lge/media/musicflow/settings/g/c;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_ret
+
+    const/16 v2, 0x7d
+
+    invoke-virtual {v1, p0, v2}, Landroid/support/v4/app/j;->setTargetFragment(Landroid/support/v4/app/k;I)V
+
+    const-string v2, "home_rename_dialog"
+
+    invoke-virtual {v1, v0, v2}, Landroid/support/v4/app/j;->show(Landroid/support/v4/app/p;Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    :cond_ret
+    return-void
+.end method
+
+.method private applyRename(Landroid/content/Intent;)V
+    .locals 4
+
+    iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mRenameRoute:Lcom/lge/media/musicflow/route/e;
+
+    const/4 v1, 0x0
+
+    iput-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mRenameRoute:Lcom/lge/media/musicflow/route/e;
+
+    if-eqz p1, :cond_ret
+
+    if-eqz v0, :cond_ret
+
+    :try_start_0
+    const-string v1, "selected_name"
+
+    invoke-virtual {p1, v1}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_done
+
+    invoke-virtual {v0}, Lcom/lge/media/musicflow/route/e;->l()Ljava/net/InetSocketAddress;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_done
+
+    new-instance v3, Lcom/lge/media/musicflow/route/model/SpeakerInfoModifyRequest;
+
+    invoke-direct {v3, v1}, Lcom/lge/media/musicflow/route/model/SpeakerInfoModifyRequest;-><init>(Ljava/lang/String;)V
+
+    invoke-static {}, Lcom/lge/media/musicflow/route/a;->a()Lcom/lge/media/musicflow/route/a;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v2, v3}, Lcom/lge/media/musicflow/route/a;->a(Ljava/net/InetSocketAddress;Lcom/lge/media/musicflow/route/model/MultiroomRequest;)V
+
+    const-string v1, ""
+
+    iput-object v1, p0, Lcom/lge/media/musicflow/HomeFragment;->mSpeakerSignature:Ljava/lang/String;
+
+    :cond_done
+    nop
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    :cond_ret
+    return-void
+.end method
+
 .method public onActivityResult(IILandroid/content/Intent;)V
     .registers 5
 
     invoke-super {p0, p1, p2, p3}, Lcom/lge/media/musicflow/l;->onActivityResult(IILandroid/content/Intent;)V
 
+    const/16 v0, 0x7d
+
+    if-ne p1, v0, :cond_sheet
+
+    invoke-direct {p0, p3}, Lcom/lge/media/musicflow/HomeFragment;->applyRename(Landroid/content/Intent;)V
+
+    return-void
+
+    :cond_sheet
     iget-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mSheet:Lcom/lge/media/musicflow/SpeakerSheet;
 
     if-eqz v0, :cond_x
@@ -472,6 +1020,10 @@
     invoke-virtual {p1}, Lcom/lge/media/musicflow/route/e;->F()I
 
     move-result v0
+
+    invoke-static {v0}, Lcom/lge/media/musicflow/l/b;->b(I)I
+
+    move-result v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -504,6 +1056,8 @@
 
     .line 158
     invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->refreshSheet()V
+
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->restoreSheet()V
     :try_end_b
     .catchall {:try_start_5 .. :try_end_b} :catchall_c
 
@@ -839,6 +1393,23 @@
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_row_vol
+    const v5, 0x7f0903ad
+
+    invoke-virtual {v8, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_row_edit
+
+    invoke-virtual {v5, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    new-instance v6, Lcom/lge/media/musicflow/HomeFragment$6;
+
+    invoke-direct {v6, p0}, Lcom/lge/media/musicflow/HomeFragment$6;-><init>(Lcom/lge/media/musicflow/HomeFragment;)V
+
+    invoke-virtual {v5, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    :cond_row_edit
     invoke-virtual {v8, v4}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     new-instance v5, Lcom/lge/media/musicflow/HomeFragment$3;
@@ -908,6 +1479,17 @@
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .registers 5
 
+    if-eqz p3, :cond_no_saved
+
+    const-string v0, "home_sheet_uuid"
+
+    invoke-virtual {p3, v0}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mPendingSheet:Ljava/lang/String;
+
+    :cond_no_saved
     .line 93
     const p3, 0x7f0c0106
 
@@ -961,26 +1543,30 @@
     invoke-direct {p0, p1, p2}, Lcom/lge/media/musicflow/HomeFragment;->bindTile(ILjava/lang/String;)V
 
     .line 105
-    iget-object p1, p0, Lcom/lge/media/musicflow/HomeFragment;->mRoot:Landroid/view/View;
+    const p1, 0x7f09039d
 
-    const p2, 0x7f090373
+    const p2, 0x7f0901d4
 
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    .line 106
-    if-eqz p1, :cond_62
+    invoke-direct {p0, p1, p2}, Lcom/lge/media/musicflow/HomeFragment;->bindNav(II)V
 
     .line 107
-    new-instance p2, Lcom/lge/media/musicflow/HomeFragment$2;
+    const p1, 0x7f09039e
 
-    invoke-direct {p2, p0}, Lcom/lge/media/musicflow/HomeFragment$2;-><init>(Lcom/lge/media/musicflow/HomeFragment;)V
+    const p2, 0x7f0901c9
 
-    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-direct {p0, p1, p2}, Lcom/lge/media/musicflow/HomeFragment;->bindNav(II)V
+
+    .line 109
+    const p1, 0x7f0903a0
+
+    const p2, 0x7f0901cd
+
+    invoke-direct {p0, p1, p2}, Lcom/lge/media/musicflow/HomeFragment;->bindNav(II)V
+
+    .line 112
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->applyGreeting()V
 
     .line 116
-    :cond_62
     iget-object p1, p0, Lcom/lge/media/musicflow/HomeFragment;->mRoot:Landroid/view/View;
 
     return-object p1
@@ -1008,6 +1594,9 @@
     invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->closeSheet()V
 
     .line 147
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->showAppChrome()V
+
+    .line 148
     invoke-super {p0}, Lcom/lge/media/musicflow/l;->onDestroyView()V
 
     .line 147
@@ -1027,7 +1616,7 @@
     .line 139
     invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->closeSheet()V
 
-    .line 140
+    .line 141
     invoke-super {p0}, Lcom/lge/media/musicflow/l;->onPause()V
 
     .line 140
@@ -1079,6 +1668,12 @@
 
     .line 131
     :goto_18
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->applyGreeting()V
+
+    .line 132
+    invoke-direct {p0}, Lcom/lge/media/musicflow/HomeFragment;->hideAppChrome()V
+
+    .line 133
     const-string v0, ""
 
     iput-object v0, p0, Lcom/lge/media/musicflow/HomeFragment;->mSpeakerSignature:Ljava/lang/String;

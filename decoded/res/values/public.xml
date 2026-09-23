@@ -5316,6 +5316,51 @@
     <public type="string" name="spk_software_update" id="0x7f1004c0" />
     <public type="string" name="spk_update_available" id="0x7f1004c1" />
     <public type="string" name="spk_update_uptodate" id="0x7f1004c2" />
+    <public type="color" name="home_greet_accent" id="0x7f0600f1" />
+    <public type="color" name="home_icon_btn" id="0x7f0600f2" />
+    <public type="color" name="home_icon_btn_stroke" id="0x7f0600f3" />
+    <public type="color" name="home_add_btn" id="0x7f0600f4" />
+    <public type="color" name="home_speaker_card_start" id="0x7f0600f5" />
+    <public type="color" name="home_speaker_card_end" id="0x7f0600f6" />
+    <public type="color" name="home_speaker_card_pressed" id="0x7f0600f7" />
+    <public type="color" name="home_speaker_card_stroke" id="0x7f0600f8" />
+    <public type="color" name="home_banner_start" id="0x7f0600f9" />
+    <public type="color" name="home_banner_end" id="0x7f0600fa" />
+    <public type="color" name="home_glow_core" id="0x7f0600fb" />
+    <public type="color" name="home_glow_edge" id="0x7f0600fc" />
+    <public type="color" name="home_dot_live" id="0x7f0600fd" />
+    <public type="string" name="home_greet_prefix" id="0x7f1004a6" />
+    <public type="string" name="home_greet_morning" id="0x7f1004a7" />
+    <public type="string" name="home_greet_afternoon" id="0x7f1004a8" />
+    <public type="string" name="home_greet_evening" id="0x7f1004a9" />
+    <public type="string" name="home_greet_night" id="0x7f1004aa" />
+    <public type="string" name="home_greet_sub" id="0x7f1004ab" />
+    <public type="string" name="home_my_speaker" id="0x7f1004ac" />
+    <public type="string" name="home_stream_music" id="0x7f1004ad" />
+    <public type="string" name="home_see_all" id="0x7f1004ae" />
+    <public type="string" name="home_settings" id="0x7f1004af" />
+    <public type="string" name="home_banner_kicker" id="0x7f1004b0" />
+    <public type="string" name="home_banner_title" id="0x7f1004b1" />
+    <public type="string" name="home_banner_sub" id="0x7f1004b2" />
+    <public type="string" name="home_banner_title2" id="0x7f1004b3" />
+    <public type="drawable" name="home_icon_btn_normal" id="0x7f080525" />
+    <public type="drawable" name="home_icon_btn_pressed" id="0x7f080526" />
+    <public type="drawable" name="home_icon_btn_bg" id="0x7f080527" />
+    <public type="drawable" name="home_add_btn_normal" id="0x7f080528" />
+    <public type="drawable" name="home_add_btn_pressed" id="0x7f080529" />
+    <public type="drawable" name="home_add_btn_bg" id="0x7f08052a" />
+    <public type="drawable" name="home_speaker_card_normal" id="0x7f08052b" />
+    <public type="drawable" name="home_speaker_card_pressed" id="0x7f08052c" />
+    <public type="drawable" name="home_banner_bg" id="0x7f08052d" />
+    <public type="drawable" name="home_banner_glow" id="0x7f08052e" />
+    <public type="drawable" name="ic_home_plus" id="0x7f08052f" />
+    <public type="drawable" name="ic_home_apple_music_glyph" id="0x7f080530" />
+    <public type="drawable" name="img_home_soundbar" id="0x7f080531" />
+    <public type="id" name="home_settings_btn" id="0x7f09039d" />
+    <public type="id" name="home_add_btn" id="0x7f09039e" />
+    <public type="id" name="home_greet_word" id="0x7f09039f" />
+    <public type="id" name="home_see_all" id="0x7f0903a0" />
+    <public type="id" name="home_banner" id="0x7f0903a1" />
     <public type="layout" name="fragment_speaker_page" id="0x7f0c010c" />
     <public type="id" name="spk_page_root" id="0x7f0903aa" />
     <public type="id" name="spk_page_caption" id="0x7f0903ab" />
